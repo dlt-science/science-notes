@@ -5,6 +5,11 @@ format: jb-book
 root: intro
 chapters:
 - file: markdown
+<<<<<<< HEAD
 - file: notebooks
 - file: markdown-notebooks
 - file: ssi
+=======
+# - file: notebooks
+# - file: markdown-notebooks
+>>>>>>> 7f69439 (Content Updated)
