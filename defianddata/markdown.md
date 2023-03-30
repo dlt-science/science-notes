@@ -1,27 +1,34 @@
-# Governance In DeFi
-
-This article reviews the evolution of governance in DeFi protocols, security risks of associated with certain governance mechanisms and novel methods of on-chain governance.
-
 ## Introduction
 
 With centralisation the main theme of traditional finance, DeFi’s emerged as a viable alternative to the centralised financal institution building upon the peer-to-peer transactions functionality of cryptocurrencies. 
 
-## Governance Token
+## Governance Tokens
 
 Governance tokens are units that are interchangeable and serve to implement a voting mechanism among a group of participants. Through majority-voting schemes, holders can express their intentions for the development of the protocol `` {cite}`xu2022banks` ``.
 
 ## Evolution of Governance in DeFi Protocols
 The evolution of governance in a number of DeFi protocols often follows a pattern with three major stages, namely; centralised team-based governance, decentralised token-based governance and centralised token-based governancne ```{cite}`stroponiati5decentralized```.  
-1. Centralised Team-based Governance: Following the commencement of the DeFi protocol, the team often adopts a centralized governance framework to facilitate key decision-making processes..
-2. Decentralised Token-based Governance: A gradual shift occurs from team to token based governance through the allocation of tokens to protocol users to forster decentralisation in the ecosystem.
-2. Centralised Token-based Governance: 
 
-## Centralisation & Token Distrubution
+### Centralised Team-based Governance
+Following the commencement of the DeFi protocol, the team often adopts a centralized governance framework to facilitate key decision-making processes.
+
+### Decentralised Token-based Governance
+A gradual shift occurs from team to token based governance through the allocation of tokens to protocol users to forster decentralisation in the ecosystem.
+
+### Centralised Token-based Governance
+
+
+
+## Token Distrubution & Centralisation
 
 Effective token distribution strategies are of paramount importance for governance in DeFi. This is because the distribution process determines the number of individuals who can exercise control over a project, as well as the extent of their voting power. Hence, a well-planned and executed token distribution strategy is a critical aspect of the success of voting rights tokens.
 
 ## Centralisation-enabled DeFi Vunerabilities 
-1. MakerDAO Vunerbaility: An execuitve contract exists in MakerDAO which uses approval voting to alter the state of the entire system via an "executive contract". With this implementation, MakerDAO governance framework is vulnerable to attacks from malicious contracts, which could steal funds locked as collateral. An attacker could gain control of the contract with the most tokens staked (MKR) and potentially access $2 billion worth of collateral locked in Maker ```{cite}`stroponiati5decentralized```. 
+
+### MakerDAO Vunerbaility
+An execuitve contract exists in MakerDAO which uses approval voting to alter the state of the entire system via an "executive contract". With this implementation, MakerDAO governance framework is vulnerable to attacks from malicious contracts, which could steal funds locked as collateral. An attacker could gain control of the contract with the most tokens staked (MKR) and potentially access $2 billion worth of collateral locked in Maker ```{cite}`stroponiati5decentralized```
+
+## AI-enabled On-chain Governance
 
 ## Findings
 
@@ -30,5 +37,5 @@ Effective token distribution strategies are of paramount importance for governan
 
 
 
-## Learn more
+## Conclusion
 

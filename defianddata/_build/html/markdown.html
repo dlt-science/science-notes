@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Markdown Files &#8212; DeFi &amp; Data</title>
+    <title>Introduction &#8212; DeFi &amp; Data</title>
   
   
   
@@ -64,8 +64,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'markdown';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Content with notebooks" href="notebooks.html" />
-    <link rel="prev" title="Welcome to your Jupyter Book" href="intro.html" />
+    <link rel="prev" title="Governance In DeFi" href="intro.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -152,14 +151,19 @@ const thebe_selector_output = ".output, .cell_output"
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="intro.html">
-                    Welcome to your Jupyter Book
+                    Governance In DeFi
                 </a>
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Markdown Files</a></li>
-<li class="toctree-l1"><a class="reference internal" href="notebooks.html">Content with notebooks</a></li>
-<li class="toctree-l1"><a class="reference internal" href="markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Introduction</a></li>
+
+
+
+
+
+
+
 </ul>
 
     </div>
@@ -343,7 +347,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Markdown Files</h1>
+    <h1>Introduction</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -353,11 +357,24 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-myst">What is MyST?</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-roles-and-directives">Sample Roles and Directives</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#citations">Citations</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learn-more">Learn more</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Introduction</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#governance-tokens">Governance Tokens</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#evolution-of-governance-in-defi-protocols">Evolution of Governance in DeFi Protocols</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#centralised-team-based-governance">Centralised Team-based Governance</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#decentralised-token-based-governance">Decentralised Token-based Governance</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#centralised-token-based-governance">Centralised Token-based Governance</a></li>
 </ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#token-distrubution-centralisation">Token Distrubution &amp; Centralisation</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#centralisation-enabled-defi-vunerabilities">Centralisation-enabled DeFi Vunerabilities</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#makerdao-vunerbaility">MakerDAO Vunerbaility</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#ai-enabled-on-chain-governance">AI-enabled On-chain Governance</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#findings">Findings</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion">Conclusion</a></li>
+</ul>
+
             </nav>
         </div>
     </div>
@@ -368,59 +385,49 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="markdown-files">
-<h1>Markdown Files<a class="headerlink" href="#markdown-files" title="Permalink to this heading">#</a></h1>
-<p>Whether you write your book’s content in Jupyter Notebooks (<code class="docutils literal notranslate"><span class="pre">.ipynb</span></code>) or
-in regular markdown files (<code class="docutils literal notranslate"><span class="pre">.md</span></code>), you’ll write in the same flavor of markdown
-called <strong>MyST Markdown</strong>.
-This is a simple file to help you get started and show off some syntax.</p>
-<section id="what-is-myst">
-<h2>What is MyST?<a class="headerlink" href="#what-is-myst" title="Permalink to this heading">#</a></h2>
-<p>MyST stands for “Markedly Structured Text”. It
-is a slight variation on a flavor of markdown called “CommonMark” markdown,
-with small syntax extensions to allow you to write <strong>roles</strong> and <strong>directives</strong>
-in the Sphinx ecosystem.</p>
-<p>For more about MyST, see <a class="reference external" href="https://jupyterbook.org/content/myst.html">the MyST Markdown Overview</a>.</p>
+  <section id="introduction">
+<h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">#</a></h1>
+<p>With centralisation the main theme of traditional finance, DeFi’s emerged as a viable alternative to the centralised financal institution building upon the peer-to-peer transactions functionality of cryptocurrencies.</p>
 </section>
-<section id="sample-roles-and-directives">
-<h2>Sample Roles and Directives<a class="headerlink" href="#sample-roles-and-directives" title="Permalink to this heading">#</a></h2>
-<p>Roles and directives are two of the most powerful tools in Jupyter Book. They
-are kind of like functions, but written in a markup language. They both
-serve a similar purpose, but <strong>roles are written in one line</strong>, whereas
-<strong>directives span many lines</strong>. They both accept different kinds of inputs,
-and what they do with those inputs depends on the specific role or directive
-that is being called.</p>
-<p>Here is a “note” directive:</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Here is a note</p>
-</div>
-<p>It will be rendered in a special box when you build your book.</p>
-<p>Here is an inline directive to refer to a document: <a class="reference internal" href="markdown-notebooks.html"><span class="doc">Notebooks with MyST Markdown</span></a>.</p>
+<section id="governance-tokens">
+<h1>Governance Tokens<a class="headerlink" href="#governance-tokens" title="Permalink to this heading">#</a></h1>
+<p>Governance tokens are units that are interchangeable and serve to implement a voting mechanism among a group of participants. Through majority-voting schemes, holders can express their intentions for the development of the protocol <code class="docutils literal notranslate"><span class="pre">{cite}`xu2022banks`</span></code>.</p>
 </section>
-<section id="citations">
-<h2>Citations<a class="headerlink" href="#citations" title="Permalink to this heading">#</a></h2>
-<p>You can also cite references that are stored in a <code class="docutils literal notranslate"><span class="pre">bibtex</span></code> file. For example,
-the following syntax: <code class="docutils literal notranslate"><span class="pre">{cite}`holdgraf_evidence_2014`</span></code> will render like
-this: <span id="id1">[<a class="reference internal" href="#id3" title="Christopher Ramsay Holdgraf, Wendy de Heer, Brian N. Pasley, and Robert T. Knight. Evidence for Predictive Coding in Human Auditory Cortex. In International Conference on Cognitive Neuroscience. Brisbane, Australia, Australia, 2014. Frontiers in Neuroscience.">HdHPK14</a>]</span>.</p>
-<p>Moreover, you can insert a bibliography into your page with this syntax:
-The <code class="docutils literal notranslate"><span class="pre">{bibliography}</span></code> directive must be used for all the <code class="docutils literal notranslate"><span class="pre">{cite}</span></code> roles to
-render properly.
-For example, if the references for your book are stored in <code class="docutils literal notranslate"><span class="pre">references.bib</span></code>,
-then the bibliography is inserted with:</p>
-<div class="docutils container" id="id2">
-<div class="citation" id="id3" role="doc-biblioentry">
-<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">HdHPK14</a><span class="fn-bracket">]</span></span>
-<p>Christopher Ramsay Holdgraf, Wendy de Heer, Brian N. Pasley, and Robert T. Knight. Evidence for Predictive Coding in Human Auditory Cortex. In <em>International Conference on Cognitive Neuroscience</em>. Brisbane, Australia, Australia, 2014. Frontiers in Neuroscience.</p>
-</div>
-</div>
-</div>
+<section id="evolution-of-governance-in-defi-protocols">
+<h1>Evolution of Governance in DeFi Protocols<a class="headerlink" href="#evolution-of-governance-in-defi-protocols" title="Permalink to this heading">#</a></h1>
+<p>The evolution of governance in a number of DeFi protocols often follows a pattern with three major stages, namely; centralised team-based governance, decentralised token-based governance and centralised token-based governancne <code class="docutils literal notranslate"><span class="pre">{cite}`stroponiati5decentralized</span></code>.</p>
+<section id="centralised-team-based-governance">
+<h2>Centralised Team-based Governance<a class="headerlink" href="#centralised-team-based-governance" title="Permalink to this heading">#</a></h2>
+<p>Following the commencement of the DeFi protocol, the team often adopts a centralized governance framework to facilitate key decision-making processes.</p>
 </section>
-<section id="learn-more">
-<h2>Learn more<a class="headerlink" href="#learn-more" title="Permalink to this heading">#</a></h2>
-<p>This is just a simple starter to get you started.
-You can learn a lot more at <a class="reference external" href="https://jupyterbook.org">jupyterbook.org</a>.</p>
+<section id="decentralised-token-based-governance">
+<h2>Decentralised Token-based Governance<a class="headerlink" href="#decentralised-token-based-governance" title="Permalink to this heading">#</a></h2>
+<p>A gradual shift occurs from team to token based governance through the allocation of tokens to protocol users to forster decentralisation in the ecosystem.</p>
 </section>
+<section id="centralised-token-based-governance">
+<h2>Centralised Token-based Governance<a class="headerlink" href="#centralised-token-based-governance" title="Permalink to this heading">#</a></h2>
+</section>
+</section>
+<section id="token-distrubution-centralisation">
+<h1>Token Distrubution &amp; Centralisation<a class="headerlink" href="#token-distrubution-centralisation" title="Permalink to this heading">#</a></h1>
+<p>Effective token distribution strategies are of paramount importance for governance in DeFi. This is because the distribution process determines the number of individuals who can exercise control over a project, as well as the extent of their voting power. Hence, a well-planned and executed token distribution strategy is a critical aspect of the success of voting rights tokens.</p>
+</section>
+<section id="centralisation-enabled-defi-vunerabilities">
+<h1>Centralisation-enabled DeFi Vunerabilities<a class="headerlink" href="#centralisation-enabled-defi-vunerabilities" title="Permalink to this heading">#</a></h1>
+<section id="makerdao-vunerbaility">
+<h2>MakerDAO Vunerbaility<a class="headerlink" href="#makerdao-vunerbaility" title="Permalink to this heading">#</a></h2>
+<p>An execuitve contract exists in MakerDAO which uses approval voting to alter the state of the entire system via an “executive contract”. With this implementation, MakerDAO governance framework is vulnerable to attacks from malicious contracts, which could steal funds locked as collateral. An attacker could gain control of the contract with the most tokens staked (MKR) and potentially access $2 billion worth of collateral locked in Maker <code class="docutils literal notranslate"><span class="pre">{cite}`stroponiati5decentralized</span></code></p>
+</section>
+</section>
+<section id="ai-enabled-on-chain-governance">
+<h1>AI-enabled On-chain Governance<a class="headerlink" href="#ai-enabled-on-chain-governance" title="Permalink to this heading">#</a></h1>
+</section>
+<section id="findings">
+<h1>Findings<a class="headerlink" href="#findings" title="Permalink to this heading">#</a></h1>
+<p>In conducting case studies, DeFi protocols analysed demonstrated a high degree of centrality <code class="docutils literal notranslate"><span class="pre">{cite}`barbereau2022defi`</span> </code>. A combination of lending protocols, decentralised exchanges and yield aggregators were analysed to understand the governance centralisation. Another study conducted an empirical analysis of the top DeFi protocols by examining the wallet addresses and token holdings of participants and found evidence of centrality with voting power controlled by the top 5, top 100 and top 1000 addresses <code class="docutils literal notranslate"><span class="pre">{cite}`jensen2021decentralized`</span> </code>. The protocols analysed in this study included Compound, Uniswap, Compound, Balancer and Yearn Finance. Compoound showed the highest evidence of centrality and Uniswap the least with the top 5 address for both constituting 42.1% and 12.05% respectively. Another unique approach involved the survey of users of DeFi protocols through interviews <code class="docutils literal notranslate"><span class="pre">{cite}`ekal2022defi`</span> </code>. Voter collusion, low participation and voter apathy were identified as the main challenges in decentralised governance. In factoring the change in voting power over time, the centraliaiton of DeFI protocols increased with time with the majority token holders purchasing more tokens over a period of time <code class="docutils literal notranslate"><span class="pre">{cite}`barbereau2022decentralised`</span> </code>.</p>
+</section>
+<section id="conclusion">
+<h1>Conclusion<a class="headerlink" href="#conclusion" title="Permalink to this heading">#</a></h1>
 </section>
 
     <script type="text/x-thebe-config">
@@ -457,17 +464,8 @@ You can learn a lot more at <a class="reference external" href="https://jupyterb
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Welcome to your Jupyter Book</p>
+        <p class="prev-next-title">Governance In DeFi</p>
       </div>
-    </a>
-    <a class="right-next"
-       href="notebooks.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Content with notebooks</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
@@ -484,11 +482,24 @@ You can learn a lot more at <a class="reference external" href="https://jupyterb
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-myst">What is MyST?</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-roles-and-directives">Sample Roles and Directives</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#citations">Citations</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learn-more">Learn more</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Introduction</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#governance-tokens">Governance Tokens</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#evolution-of-governance-in-defi-protocols">Evolution of Governance in DeFi Protocols</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#centralised-team-based-governance">Centralised Team-based Governance</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#decentralised-token-based-governance">Decentralised Token-based Governance</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#centralised-token-based-governance">Centralised Token-based Governance</a></li>
 </ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#token-distrubution-centralisation">Token Distrubution &amp; Centralisation</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#centralisation-enabled-defi-vunerabilities">Centralisation-enabled DeFi Vunerabilities</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#makerdao-vunerbaility">MakerDAO Vunerbaility</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#ai-enabled-on-chain-governance">AI-enabled On-chain Governance</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#findings">Findings</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion">Conclusion</a></li>
+</ul>
+
   </nav></div>
 
 </div></div>
