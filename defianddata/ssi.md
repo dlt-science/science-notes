@@ -27,7 +27,3 @@ Estonia is one of the few countries in the world that have managed to make e-vot
 
 ### Conclusion
 Self-sovereign identity has the potential to revolutionize various industries, including healthcare, voting systems and many more. As research and development in SSI continue to progress, it will be crucial to address challenges related to interoperability, scalability, and usability to fully realize the potential of SSI in a global context.
-
-## References
-```{bibliography}
-```
