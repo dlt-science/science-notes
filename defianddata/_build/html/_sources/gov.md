@@ -4,24 +4,23 @@ Decentralized finance (DeFi) has emerged as a potential substitute for tradition
 
 ## Centralised Governance in DeFi Protocols
 
- Several studies have explored the extent of decentralization in DeFi protocols using different methodologies. For instance, Barbereau et al. {cite}barbereau2022defi investigated lending protocols, decentralized exchanges, and yield aggregators through case studies to comprehend their governance mechanisms. In all three categories of protocols, there was a significant degree of centrality, as evidenced by their findings. In another study, Jensen et al. {cite}jensen2021decentralized analyzed the top DeFi protocols by examining users' wallet addresses and token holdings. This study found that the top 5, top 100, and top 1000 addresses controlled the voting power, indicating evidence of centrality. The study included Compound, Uniswap, Balancer, and Yearn Finance, with Compound displaying the most evidence of centrality and Uniswap the least. Both protocols' top 5 addresses accounted for 42.1% and 12.05%, respectively.
+ Several studies have identified a significant level of centrality in the governance mechanisms of DeFi protocol. Barbereau et al., {cite}`barbereau2022defi` found that the decentrality of voting in DeFi is significantly low with a majority of the voting power concentrated among a percentage of governance token holders. As evidenced by their findings, there was a significant degree of centrality, in lending protocols, decentralisd exchanges and yield aggregators. This study used case studies to comprehend the governance mechanisms of these protocols.
 
-Additionally, other studies have approached the issue of centralized governance in DeFi from a different perspective. Barbereau et al. {cite}barbereau2022decentralised conducted a longitudinal study of protocol voting patterns, taking into account changes in voting power over time. This study found that concluded that DeFi protocols became more centralized over time. Furthermore, in analyzing the governance structures of DeFi protocols, Stroponiati et al. {cite}stroponiati5decentralized ascribed reward-based economic incentives as a significant cause behind the development of centralized structures.
+Similarly, Jensen et al. {cite}`jensen2021decentralized` results demonstrate centrality in voting power with the protcols top 5, top 100, and top 1000 wallet addresses controlling majority of the voting power in Balancer, Compound, Uniswap and Yearn Finance protocols. In this study, the token holdings and users' wallets of protocols were analysed; Compound displayed the most evidence of centrality and Uniswap the least with the top 5 wallet addresses accounting for 42.1% and 12.05%, respectively.
+
+Barbereau et al. {cite}`barbereau2022decentralised` ascertained that DeFi protocols become more centralized over time. In this longitudinal study, voting patterns demonstrated changes in the voting power dynamics over time. Furthermore, in analysing the governance structures of DeFi protocols, Stroponiati et al. {cite}`stroponiati5decentralized` ascribed reward-based economic incentives as the significant cause behind the development of centralized structures.
  
-## The Challenges & Vulnerability In DeFi Governance
+## Challenges & Vulnerability In DeFi Governance
 
-Several studies have investigated the challenges and vulnerabilities associated with the governance mechanisms of DeFi protocols. Ekal et al., {cite}`ekal2022defi` conducted an empirical investigation of challenges within decentralized governance, utilizing an interview survey approach to collect data from protocol users. The study identified voter collusion, low participation rates, and voter apathy as the most significant challenges confronting decentralized governance.
-
-On another hand, other studies have investigated the vulnerabilities of DeFi governance. Mohan et al., {cite}`mohan2022voting` peform an in-depth analysis of voting mechanisms resistant to Sybil attacks and propose a novel voting mechanisms design known as bond voting which factors in time commitment to be resistant to plutocracy. 
+In investigating governance challenges, Ekal et al., {cite}`ekal2022defi` identified voter collusion, low participation rates, and voter apathy as the most significant challenges. This empirical investigation utilised an interview survey approach to collect data from protocol users. Furthermore, to address vulnerabilities, Mohan et al. {cite}`mohan2022voting` proposed a novel voting mechanism resistant to sybil attacks called bond voting. This solution factors in time commitment to be resistant to plutocracy. 
 
 ## AI-enabled On-chain Governance
 
-In an attempt to improve on-chain governance mechanisms, Xu et al., {cite}`xu2023auto` utilized reinforcement learning to investigate automated parameter selection in a DeFi environment. Deep Q-network (DQN) reinforcement learning was used to propose semi-automated adjustment of parameters. Evaluation of results demonstrated that this AI-enabled approach is more efficient than current implementations. Although a lending protocol was employed in the study, the model's application can extend to other categories of protocols as well.
+To enhance and automate governance mechanisms, Xu et al., {cite}`xu2023auto` demonstrated an AI-enabled parameter adjustment solution which is more efficent than current current implementations. Specifically, the study employed Deep Q-network (DQN) reinforcement learning to investigate for automated parameter selection in a DeFi environment. Although a lending protocol was employed in the study, the model's application can extend to other categories of DeFi protocols as well.
 
 ## Conclusion
-To conclude, this paper has provided an overview of existing research studies on the governance of DeFi Continuous research and development in DeFi governance is necessary to ensure its long-term sustainability and success.
+To conclude, this paper has provided an overview of existing research studies on the governance of DeFi. Continuous research and development in DeFi governance is necessary to ensure its long-term sustainability and success.
 
 ## References
-<!-- ## References
-```{bibliography}
+<!-- ```{bibliography}
 ``` -->
