@@ -1,11 +1,14 @@
 # Self Sovereign Identity
 
 ## Introduction
-As per World Bank estimates, nearly 850 million people lack an official identity {cite}`world_bank_2023` and proliferation of digital devices has made it increasingly essential to possess a verifiable digital identity. This has led to a rise in the number of digital transactions and the need for a secure and reliable identity management system. Self-sovereign identity (SSI) is a decentralized identity management system that allows individuals to control their own digital identities. It is a decentralized alternative to the traditional centralised identity management system in which identities are cryptographically verifiable. This allows users to have full control over their digital identities and prevents unauthorized access to their personal information.\
-![SSI flow](https://www.idaptive.com/sites/default/files/inline-images/Rajesh%20Self%20Sovereign%20image1.png)
+As per World Bank estimates, nearly 850 million people lack an official identity {cite}`world_bank_2023` and proliferation of digital devices has made it increasingly essential to possess a verifiable digital identity. This has led to a rise in the number of digital transactions and the need for a secure and reliable identity management system. Self-sovereign identity (SSI) is a decentralized identity management system that allows individuals to control their own digital identities. It is a decentralized alternative to the traditional centralised identity management system in which identities are cryptographically verifiable. This allows users to have full control over their digital identities and prevents unauthorized access to their personal information.
+\
+\
+![SSI flow](images/SSI.drawio.png)
+\
+*SSI entities and their relations*
 
-
-## Ongoing Research in the field SSI
+## Ongoing Research in the field of SSI
 
 ### SSI and Healthcare
 Barros et. al. {cite}`de2022leveraging` explore the concepts of self-sovereign identity, blockchain technology and zero-knowledge proofs to propose a solution for presenting proof of vaccination without revealing users' identities. It allows collaboration between health organisations, governments and other stakeholders such as tourism or travel industries. Furthermore, it uses interoperable open-source tools across countries so that this system can be implemented globally at a minimal cost from each country's government.
