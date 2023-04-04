@@ -1,8 +1,8 @@
 # Book settings
 # Learn more at https://jupyterbook.org/customize/config.html
 
-title: DeFi & Data
-author: Yimika Erinle
+title: DSF Blog
+author: DLT Science Foundation
 logo: logo.png
 
 # Force re-execution of notebooks on each build.
