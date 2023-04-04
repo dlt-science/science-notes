@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Exploring the Technical Foundations of Self-Sovereign Identity: A Deep Dive into Real-World Applications and Innovations &#8212; DeFi &amp; Data</title>
+    <title>Exploring the Technical Foundations of Self-Sovereign Identity: Real World Applications and Innovations &#8212; DSF Blog</title>
   
   
   
@@ -66,7 +66,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'ssi';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="Notebooks with MyST Markdown" href="markdown-notebooks.html" />
+    <link rel="prev" title="Governance In DeFi" href="gov.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -161,7 +161,8 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="markdown.html">Markdown Files</a></li>
 <li class="toctree-l1"><a class="reference internal" href="notebooks.html">Content with notebooks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Exploring the Technical Foundations of Self-Sovereign Identity: A Deep Dive into Real-World Applications and Innovations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gov.html">Governance In DeFi</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Exploring the Technical Foundations of Self-Sovereign Identity: Real World Applications and Innovations</a></li>
 </ul>
 
     </div>
@@ -345,7 +346,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Exploring the Technical Foundations of Self-Sovereign Identity: A Deep Dive into Real-World Applications and Innovations</h1>
+    <h1>Exploring the Technical Foundations of Self-Sovereign Identity: Real World Applications and Innovations</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -360,6 +361,7 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ssi-and-healthcare">SSI and Healthcare</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#land-registry-using-ssi">Land Registry using SSI</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ssi-and-voting">SSI and Voting</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#can-ssi-work-without-blockchain">Can SSI work without Blockchain?</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion">Conclusion</a></li>
 </ul>
 </li>
@@ -374,14 +376,15 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="exploring-the-technical-foundations-of-self-sovereign-identity-a-deep-dive-into-real-world-applications-and-innovations">
-<h1>Exploring the Technical Foundations of Self-Sovereign Identity: A Deep Dive into Real-World Applications and Innovations<a class="headerlink" href="#exploring-the-technical-foundations-of-self-sovereign-identity-a-deep-dive-into-real-world-applications-and-innovations" title="Permalink to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="exploring-the-technical-foundations-of-self-sovereign-identity-real-world-applications-and-innovations">
+<h1>Exploring the Technical Foundations of Self-Sovereign Identity: Real World Applications and Innovations<a class="headerlink" href="#exploring-the-technical-foundations-of-self-sovereign-identity-real-world-applications-and-innovations" title="Permalink to this heading">#</a></h1>
 <section id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">#</a></h2>
-<p>According to World Bank estimates, nearly 850 million people lack an official identity <span id="id1">[<a class="reference internal" href="markdown.html#id9" title="CLAIRE CASHER JULIA CLARK, ANNA DIOFASI. 850 million people globally don’t have id—why this matters and what we can do about it. World Bank, 2023. URL: https://blogs.worldbank.org/digital-development/850-million-people-globally-dont-have-id-why-matters-and-what-we-can-do-about.">JC23</a>]</span>, and the proliferation of digital devices has made it increasingly essential to possess a verifiable digital identity. This has led to a rise in the number of digital transactions and the need for a secure and reliable identity management system. SSI is emerging as a decentralized alternative to traditional centralized identity management systems, in which identities are cryptographically verifiable. It allows individuals to control their own digital identities and share them with trusted parties. Each entity in the SSI system is identified by a unique DID (Decentralised Identifier) which can be resolved to reveal information such as the entity’s public key and other metadata.</p>
+<p>According to World Bank estimates, nearly 850 million people lack an official identity <span id="id1">[<a class="reference internal" href="markdown.html#id22" title="CLAIRE CASHER JULIA CLARK, ANNA DIOFASI. 850 million people globally don’t have id—why this matters and what we can do about it. World Bank, 2023. URL: https://blogs.worldbank.org/digital-development/850-million-people-globally-dont-have-id-why-matters-and-what-we-can-do-about.">JC23</a>]</span>, and the proliferation of digital devices has made it increasingly essential to possess a verifiable digital identity. This has led to a rise in the number of digital transactions and the need for a secure and reliable identity management system. SSI is emerging as a decentralized alternative to traditional centralized identity management systems, in which identities are cryptographically verifiable. It allows individuals to control their own digital identities and share them with trusted parties. Each entity in the SSI system is identified by a unique DID (Decentralised Identifier) which can be resolved to reveal information such as the entity’s public key and other metadata.</p>
+<p>While centralized identities and federated identities offer convenience, control remains with the identity provider <span id="id2">[<a class="reference internal" href="markdown.html#id30" title="Maryline Laurent and Samia Bouzefrane. Digital identity management. Elsevier, 2015.">LB15</a>]</span>. User-centric identities such as OpenID <span id="id3">[<a class="reference internal" href="markdown.html#id31" title="David Recordon and Drummond Reed. Openid 2.0: a platform for user-centric identity management. In Proceedings of the second ACM workshop on Digital identity management, 11–16. 2006.">RR06</a>]</span> and OAuth <span id="id4">[<a class="reference internal" href="markdown.html#id32" title="Daniel Fett, Ralf Küsters, and Guido Schmitz. A comprehensive formal security analysis of oauth 2.0. In Proceedings of the 2016 ACM SIGSAC Conference on Computer and Communications Security, 1204–1215. 2016.">FKustersS16</a>]</span> improve portability but do not give full control to the users. SSI is designed to provide users with full control over their digital identities, and involves guiding principles around security, controllability, and portability. In addition to providing full control, Bernabe et al. <span id="id5">[<a class="reference internal" href="markdown.html#id33" title="Jorge Bernal Bernabe, Jose Luis Canovas, Jose L Hernandez-Ramos, Rafael Torres Moreno, and Antonio Skarmeta. Privacy-preserving solutions for blockchain: review and challenges. IEEE Access, 7:164908–164940, 2019.">BCHR+19</a>]</span> presented a classification of techniques for maintaining privacy, which included Secure Multiparty Computation and Zero-Knowledge Proofs, among others. Their work explored the potential applications of these techniques in Self-Sovereign Identity (SSI) models for blockchain-based systems.</p>
 <aside class="margin sidebar">
 <p class="sidebar-title"><strong>What is SSI ?</strong></p>
-<p>Self-Sovereign Identity (SSI) is a decentralized digital identity management system which leverages blockchain technology as a data registry [<a class="reference internal" href="#ssi-fig"><span class="std std-numref">Fig. 1</span></a>], allowing individuals to create, control, and share their identities securely.</p>
+<p>Self-Sovereign Identity (SSI) is a decentralized digital identity management system which leverages blockchain technology as a data registry [<a class="reference internal" href="#ssi-fig"><span class="std std-numref">Fig. 2</span></a>], allowing individuals to create, control, and share their identities securely.</p>
 </aside>
 <div class="math notranslate nohighlight">
 \[
@@ -400,102 +403,102 @@ document.write(`
 <figure class="align-default" id="ssi-fig">
 <a class="reference internal image-reference" href="_images/SSI.drawio.png"><img alt="_images/SSI.drawio.png" src="_images/SSI.drawio.png" style="width: 550px; height: 300px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 1 </span><span class="caption-text">SSI entities and their relations</span><a class="headerlink" href="#ssi-fig" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 2 </span><span class="caption-text">SSI entities and their relations</span><a class="headerlink" href="#ssi-fig" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <details><summary><b>Click here to see how a verifiable credential actually looks like</b></summary>
-<p>This is a credential issued using the javascript library didkit-wasm.</p>
-<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
-<span class="w">      </span><span class="nt">&quot;@context&quot;</span><span class="p">:[</span>
-<span class="w">         </span><span class="s2">&quot;https://www.w3.org/2018/credentials/v1&quot;</span><span class="p">,</span>
-<span class="w">         </span><span class="p">{</span>
-<span class="w">            </span><span class="nt">&quot;alias&quot;</span><span class="p">:</span><span class="s2">&quot;https://schema.org/name&quot;</span><span class="p">,</span>
-<span class="w">            </span><span class="nt">&quot;logo&quot;</span><span class="p">:</span><span class="s2">&quot;https://schema.org/logo&quot;</span><span class="p">,</span>
-<span class="w">            </span><span class="nt">&quot;website&quot;</span><span class="p">:</span><span class="s2">&quot;https://schema.org/url&quot;</span><span class="p">,</span>
-<span class="w">            </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="s2">&quot;https://schema.org/description&quot;</span><span class="p">,</span>
-<span class="w">            </span><span class="nt">&quot;BasicProfile&quot;</span><span class="p">:</span><span class="s2">&quot;https://tzprofiles.com/BasicProfile&quot;</span>
-<span class="w">         </span><span class="p">}</span>
-<span class="w">      </span><span class="p">],</span>
-<span class="w">      </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="s2">&quot;urn:uuid:7041d211-72c9-49fe-b6d1-d8b6b94abfe3&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">&quot;type&quot;</span><span class="p">:[</span>
-<span class="w">         </span><span class="s2">&quot;VerifiableCredential&quot;</span><span class="p">,</span>
-<span class="w">         </span><span class="s2">&quot;BasicProfile&quot;</span>
-<span class="w">      </span><span class="p">],</span>
-<span class="w">      </span><span class="nt">&quot;credentialSubject&quot;</span><span class="p">:{</span>
-<span class="w">         </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="s2">&quot;did:pkh:tz:tz1N699qJqMVbMDan2r6R3QYFw42J5ydReh6&quot;</span><span class="p">,</span>
-<span class="w">         </span><span class="nt">&quot;alias&quot;</span><span class="p">:</span><span class="s2">&quot;TU Munich&quot;</span><span class="p">,</span>
-<span class="w">         </span><span class="nt">&quot;website&quot;</span><span class="p">:</span><span class="s2">&quot;Germany&quot;</span><span class="p">,</span>
-<span class="w">         </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="s2">&quot;My name&quot;</span><span class="p">,</span>
-<span class="w">         </span><span class="nt">&quot;logo&quot;</span><span class="p">:</span><span class="s2">&quot;Helene-Mayer-Ring 7B&quot;</span>
-<span class="w">      </span><span class="p">},</span>
-<span class="w">      </span><span class="nt">&quot;issuer&quot;</span><span class="p">:</span><span class="s2">&quot;did:pkh:tz:tz1QRuc9BkvsBfeSGr6kJ5GCzBsrDjMedvA7&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">&quot;issuanceDate&quot;</span><span class="p">:</span><span class="s2">&quot;2023-01-13T12:24:52.630Z&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">&quot;proof&quot;</span><span class="p">:{</span>
-<span class="w">         </span><span class="nt">&quot;@context&quot;</span><span class="p">:{</span>
-<span class="w">            </span><span class="nt">&quot;TezosMethod2021&quot;</span><span class="p">:</span><span class="s2">&quot;https://w3id.org/security#TezosMethod2021&quot;</span><span class="p">,</span>
-<span class="w">            </span><span class="nt">&quot;TezosSignature2021&quot;</span><span class="p">:{</span>
-<span class="w">               </span><span class="nt">&quot;@context&quot;</span><span class="p">:{</span>
-<span class="w">                  </span><span class="nt">&quot;@protected&quot;</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span>
-<span class="w">                  </span><span class="nt">&quot;@version&quot;</span><span class="p">:</span><span class="mf">1.1</span><span class="p">,</span>
-<span class="w">                  </span><span class="nt">&quot;challenge&quot;</span><span class="p">:</span><span class="s2">&quot;https://w3id.org/security#challenge&quot;</span><span class="p">,</span>
-<span class="w">                  </span><span class="nt">&quot;created&quot;</span><span class="p">:{</span>
-<span class="w">                     </span><span class="nt">&quot;@id&quot;</span><span class="p">:</span><span class="s2">&quot;http://purl.org/dc/terms/created&quot;</span><span class="p">,</span>
-<span class="w">                     </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="s2">&quot;http://www.w3.org/2001/XMLSchema#dateTime&quot;</span>
-<span class="w">                  </span><span class="p">},</span>
-<span class="w">                  </span><span class="nt">&quot;domain&quot;</span><span class="p">:</span><span class="s2">&quot;https://w3id.org/security#domain&quot;</span><span class="p">,</span>
-<span class="w">                  </span><span class="nt">&quot;expires&quot;</span><span class="p">:{</span>
-<span class="w">                     </span><span class="nt">&quot;@id&quot;</span><span class="p">:</span><span class="s2">&quot;https://w3id.org/security#expiration&quot;</span><span class="p">,</span>
-<span class="w">                     </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="s2">&quot;http://www.w3.org/2001/XMLSchema#dateTime&quot;</span>
-<span class="w">                  </span><span class="p">},</span>
-<span class="w">                  </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="s2">&quot;@id&quot;</span><span class="p">,</span>
-<span class="w">                  </span><span class="nt">&quot;nonce&quot;</span><span class="p">:</span><span class="s2">&quot;https://w3id.org/security#nonce&quot;</span><span class="p">,</span>
-<span class="w">                  </span><span class="nt">&quot;proofPurpose&quot;</span><span class="p">:{</span>
-<span class="w">                     </span><span class="nt">&quot;@context&quot;</span><span class="p">:{</span>
-<span class="w">                        </span><span class="nt">&quot;@protected&quot;</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span>
-<span class="w">                        </span><span class="nt">&quot;@version&quot;</span><span class="p">:</span><span class="mf">1.1</span><span class="p">,</span>
-<span class="w">                        </span><span class="nt">&quot;assertionMethod&quot;</span><span class="p">:{</span>
-<span class="w">                           </span><span class="nt">&quot;@container&quot;</span><span class="p">:</span><span class="s2">&quot;@set&quot;</span><span class="p">,</span>
-<span class="w">                           </span><span class="nt">&quot;@id&quot;</span><span class="p">:</span><span class="s2">&quot;https://w3id.org/security#assertionMethod&quot;</span><span class="p">,</span>
-<span class="w">                           </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="s2">&quot;@id&quot;</span>
-<span class="w">                        </span><span class="p">},</span>
-<span class="w">                        </span><span class="nt">&quot;authentication&quot;</span><span class="p">:{</span>
-<span class="w">                           </span><span class="nt">&quot;@container&quot;</span><span class="p">:</span><span class="s2">&quot;@set&quot;</span><span class="p">,</span>
-<span class="w">                           </span><span class="nt">&quot;@id&quot;</span><span class="p">:</span><span class="s2">&quot;https://w3id.org/security#authenticationMethod&quot;</span><span class="p">,</span>
-<span class="w">                           </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="s2">&quot;@id&quot;</span>
-<span class="w">                        </span><span class="p">},</span>
-<span class="w">                        </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="s2">&quot;@id&quot;</span><span class="p">,</span>
-<span class="w">                        </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="s2">&quot;@type&quot;</span>
-<span class="w">                     </span><span class="p">},</span>
-<span class="w">                     </span><span class="nt">&quot;@id&quot;</span><span class="p">:</span><span class="s2">&quot;https://w3id.org/security#proofPurpose&quot;</span><span class="p">,</span>
-<span class="w">                     </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="s2">&quot;@vocab&quot;</span>
-<span class="w">                  </span><span class="p">},</span>
-<span class="w">                  </span><span class="nt">&quot;proofValue&quot;</span><span class="p">:</span><span class="s2">&quot;https://w3id.org/security#proofValue&quot;</span><span class="p">,</span>
-<span class="w">                  </span><span class="nt">&quot;publicKeyJwk&quot;</span><span class="p">:{</span>
-<span class="w">                     </span><span class="nt">&quot;@id&quot;</span><span class="p">:</span><span class="s2">&quot;https://w3id.org/security#publicKeyJwk&quot;</span><span class="p">,</span>
-<span class="w">                     </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="s2">&quot;@json&quot;</span>
-<span class="w">                  </span><span class="p">},</span>
-<span class="w">                  </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="s2">&quot;@type&quot;</span><span class="p">,</span>
-<span class="w">                  </span><span class="nt">&quot;verificationMethod&quot;</span><span class="p">:{</span>
-<span class="w">                     </span><span class="nt">&quot;@id&quot;</span><span class="p">:</span><span class="s2">&quot;https://w3id.org/security#verificationMethod&quot;</span><span class="p">,</span>
-<span class="w">                     </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="s2">&quot;@id&quot;</span>
-<span class="w">                  </span><span class="p">}</span>
-<span class="w">               </span><span class="p">},</span>
-<span class="w">               </span><span class="nt">&quot;@id&quot;</span><span class="p">:</span><span class="s2">&quot;https://w3id.org/security#TezosSignature2021&quot;</span>
-<span class="w">            </span><span class="p">}</span>
-<span class="w">         </span><span class="p">},</span>
-<span class="w">         </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="s2">&quot;TezosSignature2021&quot;</span><span class="p">,</span>
-<span class="w">         </span><span class="nt">&quot;proofPurpose&quot;</span><span class="p">:</span><span class="s2">&quot;assertionMethod&quot;</span><span class="p">,</span>
-<span class="w">         </span><span class="nt">&quot;proofValue&quot;</span><span class="p">:</span><span class="s2">&quot;edsigtaEZjPNqyWT6ZfZDTPUds7vK9RrUSFbJEpy67mAfPFYviUiWrpvhvPx2xZXRDVsPoJ3UMWjC8x1oJgY6ZziWufc87kamV8&quot;</span><span class="p">,</span>
-<span class="w">         </span><span class="nt">&quot;verificationMethod&quot;</span><span class="p">:</span><span class="s2">&quot;did:pkh:tz:tz1QRuc9BkvsBfeSGr6kJ5GCzBsrDjMedvA7#TezosMethod2021&quot;</span><span class="p">,</span>
-<span class="w">         </span><span class="nt">&quot;created&quot;</span><span class="p">:</span><span class="s2">&quot;2023-01-13T12:24:52.638Z&quot;</span><span class="p">,</span>
-<span class="w">         </span><span class="nt">&quot;publicKeyJwk&quot;</span><span class="p">:{</span>
-<span class="w">            </span><span class="nt">&quot;alg&quot;</span><span class="p">:</span><span class="s2">&quot;EdBlake2b&quot;</span><span class="p">,</span>
-<span class="w">            </span><span class="nt">&quot;crv&quot;</span><span class="p">:</span><span class="s2">&quot;Ed25519&quot;</span><span class="p">,</span>
-<span class="w">            </span><span class="nt">&quot;kty&quot;</span><span class="p">:</span><span class="s2">&quot;OKP&quot;</span><span class="p">,</span>
-<span class="w">            </span><span class="nt">&quot;x&quot;</span><span class="p">:</span><span class="s2">&quot;WlWqCerXoqMAMKfDWD0m2cIpvysFFqiU7L8L_I7zbfI&quot;</span>
-<span class="w">         </span><span class="p">}</span>
-<span class="w">      </span><span class="p">}</span>
-<span class="w">   </span><span class="p">}</span>
+<p>This is a credential issued using the javascript library didkit-wasm signed by .</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;@context&quot;</span><span class="p">:[</span><span class="w"></span>
+<span class="w">         </span><span class="s2">&quot;https://www.w3.org/2018/credentials/v1&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">         </span><span class="p">{</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;alias&quot;</span><span class="p">:</span><span class="s2">&quot;https://schema.org/name&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;logo&quot;</span><span class="p">:</span><span class="s2">&quot;https://schema.org/logo&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;website&quot;</span><span class="p">:</span><span class="s2">&quot;https://schema.org/url&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="s2">&quot;https://schema.org/description&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;BasicProfile&quot;</span><span class="p">:</span><span class="s2">&quot;https://tzprofiles.com/BasicProfile&quot;</span><span class="w"></span>
+<span class="w">         </span><span class="p">}</span><span class="w"></span>
+<span class="w">      </span><span class="p">],</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="s2">&quot;urn:uuid:7041d211-72c9-49fe-b6d1-d8b6b94abfe3&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;type&quot;</span><span class="p">:[</span><span class="w"></span>
+<span class="w">         </span><span class="s2">&quot;VerifiableCredential&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">         </span><span class="s2">&quot;BasicProfile&quot;</span><span class="w"></span>
+<span class="w">      </span><span class="p">],</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;credentialSubject&quot;</span><span class="p">:{</span><span class="w"></span>
+<span class="w">         </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="s2">&quot;did:pkh:tz:tz1N699qJqMVbMDan2r6R3QYFw42J5ydReh6&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">         </span><span class="nt">&quot;alias&quot;</span><span class="p">:</span><span class="s2">&quot;TU Munich&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">         </span><span class="nt">&quot;website&quot;</span><span class="p">:</span><span class="s2">&quot;Germany&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">         </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="s2">&quot;My name&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">         </span><span class="nt">&quot;logo&quot;</span><span class="p">:</span><span class="s2">&quot;Helene-Mayer-Ring 7B&quot;</span><span class="w"></span>
+<span class="w">      </span><span class="p">},</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;issuer&quot;</span><span class="p">:</span><span class="s2">&quot;did:pkh:tz:tz1QRuc9BkvsBfeSGr6kJ5GCzBsrDjMedvA7&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;issuanceDate&quot;</span><span class="p">:</span><span class="s2">&quot;2023-01-13T12:24:52.630Z&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;proof&quot;</span><span class="p">:{</span><span class="w"></span>
+<span class="w">         </span><span class="nt">&quot;@context&quot;</span><span class="p">:{</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;TezosMethod2021&quot;</span><span class="p">:</span><span class="s2">&quot;https://w3id.org/security#TezosMethod2021&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;TezosSignature2021&quot;</span><span class="p">:{</span><span class="w"></span>
+<span class="w">               </span><span class="nt">&quot;@context&quot;</span><span class="p">:{</span><span class="w"></span>
+<span class="w">                  </span><span class="nt">&quot;@protected&quot;</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w"></span>
+<span class="w">                  </span><span class="nt">&quot;@version&quot;</span><span class="p">:</span><span class="mf">1.1</span><span class="p">,</span><span class="w"></span>
+<span class="w">                  </span><span class="nt">&quot;challenge&quot;</span><span class="p">:</span><span class="s2">&quot;https://w3id.org/security#challenge&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">                  </span><span class="nt">&quot;created&quot;</span><span class="p">:{</span><span class="w"></span>
+<span class="w">                     </span><span class="nt">&quot;@id&quot;</span><span class="p">:</span><span class="s2">&quot;http://purl.org/dc/terms/created&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">                     </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="s2">&quot;http://www.w3.org/2001/XMLSchema#dateTime&quot;</span><span class="w"></span>
+<span class="w">                  </span><span class="p">},</span><span class="w"></span>
+<span class="w">                  </span><span class="nt">&quot;domain&quot;</span><span class="p">:</span><span class="s2">&quot;https://w3id.org/security#domain&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">                  </span><span class="nt">&quot;expires&quot;</span><span class="p">:{</span><span class="w"></span>
+<span class="w">                     </span><span class="nt">&quot;@id&quot;</span><span class="p">:</span><span class="s2">&quot;https://w3id.org/security#expiration&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">                     </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="s2">&quot;http://www.w3.org/2001/XMLSchema#dateTime&quot;</span><span class="w"></span>
+<span class="w">                  </span><span class="p">},</span><span class="w"></span>
+<span class="w">                  </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="s2">&quot;@id&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">                  </span><span class="nt">&quot;nonce&quot;</span><span class="p">:</span><span class="s2">&quot;https://w3id.org/security#nonce&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">                  </span><span class="nt">&quot;proofPurpose&quot;</span><span class="p">:{</span><span class="w"></span>
+<span class="w">                     </span><span class="nt">&quot;@context&quot;</span><span class="p">:{</span><span class="w"></span>
+<span class="w">                        </span><span class="nt">&quot;@protected&quot;</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w"></span>
+<span class="w">                        </span><span class="nt">&quot;@version&quot;</span><span class="p">:</span><span class="mf">1.1</span><span class="p">,</span><span class="w"></span>
+<span class="w">                        </span><span class="nt">&quot;assertionMethod&quot;</span><span class="p">:{</span><span class="w"></span>
+<span class="w">                           </span><span class="nt">&quot;@container&quot;</span><span class="p">:</span><span class="s2">&quot;@set&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">                           </span><span class="nt">&quot;@id&quot;</span><span class="p">:</span><span class="s2">&quot;https://w3id.org/security#assertionMethod&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">                           </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="s2">&quot;@id&quot;</span><span class="w"></span>
+<span class="w">                        </span><span class="p">},</span><span class="w"></span>
+<span class="w">                        </span><span class="nt">&quot;authentication&quot;</span><span class="p">:{</span><span class="w"></span>
+<span class="w">                           </span><span class="nt">&quot;@container&quot;</span><span class="p">:</span><span class="s2">&quot;@set&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">                           </span><span class="nt">&quot;@id&quot;</span><span class="p">:</span><span class="s2">&quot;https://w3id.org/security#authenticationMethod&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">                           </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="s2">&quot;@id&quot;</span><span class="w"></span>
+<span class="w">                        </span><span class="p">},</span><span class="w"></span>
+<span class="w">                        </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="s2">&quot;@id&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">                        </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="s2">&quot;@type&quot;</span><span class="w"></span>
+<span class="w">                     </span><span class="p">},</span><span class="w"></span>
+<span class="w">                     </span><span class="nt">&quot;@id&quot;</span><span class="p">:</span><span class="s2">&quot;https://w3id.org/security#proofPurpose&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">                     </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="s2">&quot;@vocab&quot;</span><span class="w"></span>
+<span class="w">                  </span><span class="p">},</span><span class="w"></span>
+<span class="w">                  </span><span class="nt">&quot;proofValue&quot;</span><span class="p">:</span><span class="s2">&quot;https://w3id.org/security#proofValue&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">                  </span><span class="nt">&quot;publicKeyJwk&quot;</span><span class="p">:{</span><span class="w"></span>
+<span class="w">                     </span><span class="nt">&quot;@id&quot;</span><span class="p">:</span><span class="s2">&quot;https://w3id.org/security#publicKeyJwk&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">                     </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="s2">&quot;@json&quot;</span><span class="w"></span>
+<span class="w">                  </span><span class="p">},</span><span class="w"></span>
+<span class="w">                  </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="s2">&quot;@type&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">                  </span><span class="nt">&quot;verificationMethod&quot;</span><span class="p">:{</span><span class="w"></span>
+<span class="w">                     </span><span class="nt">&quot;@id&quot;</span><span class="p">:</span><span class="s2">&quot;https://w3id.org/security#verificationMethod&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">                     </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="s2">&quot;@id&quot;</span><span class="w"></span>
+<span class="w">                  </span><span class="p">}</span><span class="w"></span>
+<span class="w">               </span><span class="p">},</span><span class="w"></span>
+<span class="w">               </span><span class="nt">&quot;@id&quot;</span><span class="p">:</span><span class="s2">&quot;https://w3id.org/security#TezosSignature2021&quot;</span><span class="w"></span>
+<span class="w">            </span><span class="p">}</span><span class="w"></span>
+<span class="w">         </span><span class="p">},</span><span class="w"></span>
+<span class="w">         </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="s2">&quot;TezosSignature2021&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">         </span><span class="nt">&quot;proofPurpose&quot;</span><span class="p">:</span><span class="s2">&quot;assertionMethod&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">         </span><span class="nt">&quot;proofValue&quot;</span><span class="p">:</span><span class="s2">&quot;edsigtaEZjPNqyWT6ZfZDTPUds7vK9RrUSFbJEpy67mAfPFYviUiWrpvhvPx2xZXRDVsPoJ3UMWjC8x1oJgY6ZziWufc87kamV8&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">         </span><span class="nt">&quot;verificationMethod&quot;</span><span class="p">:</span><span class="s2">&quot;did:pkh:tz:tz1QRuc9BkvsBfeSGr6kJ5GCzBsrDjMedvA7#TezosMethod2021&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">         </span><span class="nt">&quot;created&quot;</span><span class="p">:</span><span class="s2">&quot;2023-01-13T12:24:52.638Z&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">         </span><span class="nt">&quot;publicKeyJwk&quot;</span><span class="p">:{</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;alg&quot;</span><span class="p">:</span><span class="s2">&quot;EdBlake2b&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;crv&quot;</span><span class="p">:</span><span class="s2">&quot;Ed25519&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;kty&quot;</span><span class="p">:</span><span class="s2">&quot;OKP&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;x&quot;</span><span class="p">:</span><span class="s2">&quot;WlWqCerXoqMAMKfDWD0m2cIpvysFFqiU7L8L_I7zbfI&quot;</span><span class="w"></span>
+<span class="w">         </span><span class="p">}</span><span class="w"></span>
+<span class="w">      </span><span class="p">}</span><span class="w"></span>
+<span class="w">   </span><span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 </details>
@@ -508,16 +511,20 @@ document.write(`
 <h2>Applications of SSI<a class="headerlink" href="#applications-of-ssi" title="Permalink to this heading">#</a></h2>
 <section id="ssi-and-healthcare">
 <h3>SSI and Healthcare<a class="headerlink" href="#ssi-and-healthcare" title="Permalink to this heading">#</a></h3>
-<p>Barros et al. <span id="id2">[<a class="reference internal" href="markdown.html#id7" title="Mauricio de Vasconcelos Barros, Frederico Schardong, and Ricardo Felipe Custódio. Leveraging self-sovereign identity, blockchain, and zero-knowledge proof to build a privacy-preserving vaccination pass. Blockchain, and Zero-Knowledge Proof to Build a Privacy-Preserving Vaccination Pass, 2022.">dVBSFCustodio22</a>]</span> explore the concepts of self-sovereign identity, blockchain technology, and zero-knowledge proofs to propose a solution for presenting proof of vaccination without revealing users’ identities. It allows collaboration between health organizations, governments, and other stakeholders such as the tourism or travel industries. Furthermore, it uses interoperable open-source tools across countries so that this system can be implemented globally at a minimal cost for each country’s government.
-The NHS Digital Staff Passport solution <span id="id3">[<a class="reference internal" href="markdown.html#id15" title="Mary Lacity and Erran Carmel. Implementing self-sovereign identity (ssi) for a digital staff passport at uk nhs. University of Arkansas, 2022.">LC22</a>]</span> employs the Sovrin Network as a public key infrastructure (PKI) to manage verifiable credentials for staff onboarding. Hospitals register on the network and use their private keys to sign credentials, while staff members utilize Evernym’s <a class="reference external" href="https://www.connect.me/">Connect.Me</a> SSI digital wallet app to store and share credentials. .</p>
+<p>Barros et al. <span id="id6">[<a class="reference internal" href="markdown.html#id20" title="Mauricio de Vasconcelos Barros, Frederico Schardong, and Ricardo Felipe Custódio. Leveraging self-sovereign identity, blockchain, and zero-knowledge proof to build a privacy-preserving vaccination pass. Blockchain, and Zero-Knowledge Proof to Build a Privacy-Preserving Vaccination Pass, 2022.">dVBSFCustodio22</a>]</span> explore the concepts of self-sovereign identity, blockchain technology, and zero-knowledge proofs to propose a solution for presenting proof of vaccination without revealing users’ identities. It allows collaboration between health organizations, governments, and other stakeholders such as the tourism or travel industries. Furthermore, it uses interoperable open-source tools across countries so that this system can be implemented globally at a minimal cost for each country’s government.
+The NHS Digital Staff Passport solution <span id="id7">[<a class="reference internal" href="markdown.html#id28" title="Mary Lacity and Erran Carmel. Implementing self-sovereign identity (ssi) for a digital staff passport at uk nhs. University of Arkansas, 2022.">LC22</a>]</span> employs the Sovrin Network as a public key infrastructure (PKI) to manage verifiable credentials for staff onboarding. Hospitals register on the network and use their private keys to sign credentials, while staff members utilize Evernym’s <a class="reference external" href="https://www.connect.me/">Connect.Me</a> SSI digital wallet app to store and share credentials. .</p>
 </section>
 <section id="land-registry-using-ssi">
 <h3>Land Registry using SSI<a class="headerlink" href="#land-registry-using-ssi" title="Permalink to this heading">#</a></h3>
-<p>The land registry serves as a vital foundation for a country’s economic development during nation-building. By documenting land-related information on a blockchain, this technology can enhance security and transparency within the land registry process. Shuaib et al. <span id="id4">[<a class="reference internal" href="markdown.html#id8" title="Mohammed Shuaib, Noor Hafizah Hassan, Sahnius Usman, Shadab Alam, Surbhi Bhatia, Arwa Mashat, Adarsh Kumar, and Manoj Kumar. Self-sovereign identity solution for blockchain-based land registry system: a comparison. Mobile Information Systems, 2022:1–17, 2022.">SHU+22</a>]</span> suggest that a blockchain-based land registry system can be combined with a self-sovereign identity (SSI) solution to provide a secure and efficient identity management system for landowners. They evaluate three existing self-sovereign identity solutions for blockchain-based land registry systems: Everest, Evernym, and uPort <span id="id5">[<a class="reference internal" href="markdown.html#id12" title="New America. Three self-sovereign identity platforms to watch. New America, 2022. URL: https://www.newamerica.org/future-land-housing/reports/nail-finds-hammer/three-self-sovereign-identity-platforms-to-watch/.">Ame22</a>]</span>. These solutions are analyzed based on the self-sovereign identity principles <span id="id6">[<a class="reference internal" href="markdown.html#id14" title="Christopher Allen. The path to self-sovereign identity. Life With Alacrity, 2016. URL: http://www.lifewithalacrity.com/2016/04/the-path-to-self-soverereign-identity.html.">All16</a>]</span> to determine their compliance and effectiveness in addressing identity problems in land registry systems. This can help to ensure that only authorized individuals can access and modify land registry records, thereby reducing the risk of fraud and errors.</p>
+<p>The land registry serves as a vital foundation for a country’s economic development during nation-building. By documenting land-related information on a blockchain, this technology can enhance security and transparency within the land registry process. Shuaib et al. <span id="id8">[<a class="reference internal" href="markdown.html#id21" title="Mohammed Shuaib, Noor Hafizah Hassan, Sahnius Usman, Shadab Alam, Surbhi Bhatia, Arwa Mashat, Adarsh Kumar, and Manoj Kumar. Self-sovereign identity solution for blockchain-based land registry system: a comparison. Mobile Information Systems, 2022:1–17, 2022.">SHU+22</a>]</span> suggest that a blockchain-based land registry system can be combined with a self-sovereign identity (SSI) solution to provide a secure and efficient identity management system for landowners. They evaluate three existing self-sovereign identity solutions for blockchain-based land registry systems: Everest, Evernym, and uPort <span id="id9">[<a class="reference internal" href="markdown.html#id25" title="New America. Three self-sovereign identity platforms to watch. New America, 2022. URL: https://www.newamerica.org/future-land-housing/reports/nail-finds-hammer/three-self-sovereign-identity-platforms-to-watch/.">Ame22</a>]</span>. These solutions are analyzed based on the self-sovereign identity principles <span id="id10">[<a class="reference internal" href="markdown.html#id27" title="Christopher Allen. The path to self-sovereign identity. Life With Alacrity, 2016. URL: http://www.lifewithalacrity.com/2016/04/the-path-to-self-soverereign-identity.html.">All16</a>]</span> to determine their compliance and effectiveness in addressing identity problems in land registry systems. This can help to ensure that only authorized individuals can access and modify land registry records, thereby reducing the risk of fraud and errors.</p>
 </section>
 <section id="ssi-and-voting">
 <h3>SSI and Voting<a class="headerlink" href="#ssi-and-voting" title="Permalink to this heading">#</a></h3>
-<p>Estonia is one of the few countries in the world that have managed to make e-voting a reality <span id="id7">[<a class="reference internal" href="markdown.html#id10" title="Cyber Security and Society. Estonia leads world in making digital voting a reality. Cyber Security and Society, 2022. URL: https://www.ft.com/content/b4425338-6207-49a0-bbfb-6ae5460fc1c1.">SS22</a>]</span>. Sertkaya et al. <span id="id8">[<a class="reference internal" href="markdown.html#id11" title="Isa Sertkaya, Peter Roenne, and Peter YA Ryan. Estonian internet voting with anonymous credentials. Turkish Journal of Electrical Engineering and Computer Sciences, 30(2):420–435, 2022.">SRR22</a>]</span> proposed an EIV-AC scheme that integrates the Estonian Internet voting (EIV) scheme with anonymous credentials (AC) based on self-sovereign identity (SSI). The use of SSI-based anonymous credentials enables voters to prove their eligibility to vote without revealing their identity. The zero-knowledge proof of knowledge is used to prove that the voter has the right to vote without revealing any additional information. The EIV-AC scheme enhances the security and privacy of the EIV scheme, making it more compliant with privacy-enhancing and data minimization regulations.</p>
+<p>Estonia is one of the few countries in the world that have managed to make e-voting a reality <span id="id11">[<a class="reference internal" href="markdown.html#id23" title="Cyber Security and Society. Estonia leads world in making digital voting a reality. Cyber Security and Society, 2022. URL: https://www.ft.com/content/b4425338-6207-49a0-bbfb-6ae5460fc1c1.">SS22</a>]</span>. Sertkaya et al. <span id="id12">[<a class="reference internal" href="markdown.html#id24" title="Isa Sertkaya, Peter Roenne, and Peter YA Ryan. Estonian internet voting with anonymous credentials. Turkish Journal of Electrical Engineering and Computer Sciences, 30(2):420–435, 2022.">SRR22</a>]</span> proposed an EIV-AC scheme that integrates the Estonian Internet voting (EIV) scheme with anonymous credentials (AC) based on self-sovereign identity (SSI). The use of SSI-based anonymous credentials enables voters to prove their eligibility to vote without revealing their identity. The zero-knowledge proof of knowledge is used to prove that the voter has the right to vote without revealing any additional information. The EIV-AC scheme enhances the security and privacy of the EIV scheme, making it more compliant with privacy-enhancing and data minimization regulations.</p>
+</section>
+<section id="can-ssi-work-without-blockchain">
+<h3>Can SSI work without Blockchain?<a class="headerlink" href="#can-ssi-work-without-blockchain" title="Permalink to this heading">#</a></h3>
+<p>Blockchain is not the only option when it comes to implementing Self-sovereign Identity system. Alternatives like IPFS, Public-key cryptography and even traditional Certificate Authorities can be used to implement SSI <span id="id13">[]</span>. However, the main advantage of using blockchain is that it provides a decentralized and immutable ledger that can be used to store and verify credentials.</p>
 </section>
 <section id="conclusion">
 <h3>Conclusion<a class="headerlink" href="#conclusion" title="Permalink to this heading">#</a></h3>
@@ -555,12 +562,12 @@ The NHS Digital Staff Passport solution <span id="id3">[<a class="reference inte
                   <!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="markdown-notebooks.html"
+       href="gov.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Notebooks with MyST Markdown</p>
+        <p class="prev-next-title">Governance In DeFi</p>
       </div>
     </a>
 </div>
@@ -583,6 +590,7 @@ The NHS Digital Staff Passport solution <span id="id3">[<a class="reference inte
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ssi-and-healthcare">SSI and Healthcare</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#land-registry-using-ssi">Land Registry using SSI</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ssi-and-voting">SSI and Voting</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#can-ssi-work-without-blockchain">Can SSI work without Blockchain?</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion">Conclusion</a></li>
 </ul>
 </li>
@@ -600,7 +608,7 @@ The NHS Digital Staff Passport solution <span id="id3">[<a class="reference inte
   <div class="footer-item">
     
 <p class="component-author">
-By Yimika Erinle
+By DLT Science Foundation
 </p>
 
   </div>

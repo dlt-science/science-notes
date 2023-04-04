@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Governance In DeFi &#8212; DeFi &amp; Data</title>
+    <title>Governance In DeFi &#8212; DSF Blog</title>
   
   
   
@@ -64,6 +64,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'gov';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Exploring the Technical Foundations of Self-Sovereign Identity: Real World Applications and Innovations" href="ssi.html" />
     <link rel="prev" title="Notebooks with MyST Markdown" href="markdown-notebooks.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -160,6 +161,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="notebooks.html">Content with notebooks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Governance In DeFi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ssi.html">Exploring the Technical Foundations of Self-Sovereign Identity: Real World Applications and Innovations</a></li>
 </ul>
 
     </div>
@@ -353,11 +355,11 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#centralised-governance-in-defi-protocols">Centralised Governance in DeFi Protocols</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#challenges-vulnerability-in-defi-governance">Challenges &amp; Vulnerability In DeFi Governance</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ai-enabled-on-chain-governance">AI-enabled On-chain Governance</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion">Conclusion</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
 </ul>
             </nav>
         </div>
@@ -371,28 +373,67 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="governance-in-defi">
 <h1>Governance In DeFi<a class="headerlink" href="#governance-in-defi" title="Permalink to this heading">#</a></h1>
+<div class="tip admonition">
+<p class="admonition-title">Key Insights!</p>
+<ul class="simple">
+<li><p>The voting power in DeFi protocols becomes increasingly concentrated among a percentage of token holders over time in decentralised exchanges, lending protocols and yield aggregators.</p></li>
+<li><p>The paramount wallet addresses ranking within the top 5, 100, and 1000, exercise predominant influence over the voting power in the Balancer, Compound, Uniswap, and Yearn Finance protocols, with Compound displaying the least evidence of decentrality</p></li>
+<li><p>The most significant governance challenges identified by DeFi users are voter collusion, low participation rates, and voter apathy.</p></li>
+<li><p>To address vulnerabilities in DeFi governance, a novel voting mechanism resistant to sybil attacks called bond voting has been proposed.</p></li>
+<li><p>To enhance the manual parameter section, an AI-enabled adjustment solution has been demonstrated to automate governance mechanisms.</p></li>
+</ul>
+</div>
+<section id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">#</a></h2>
 <p>Decentralized finance (DeFi) has emerged as a potential substitute for traditional financial institutions, offering peer-to-peer transactions and a diverse range of services that democratize finance by enabling users to participate in protocol governance. However, several studies have suggested that the current governance mechanisms require improvements. This article provides an overview of findings associated with DeFi governance.</p>
+</section>
 <section id="centralised-governance-in-defi-protocols">
 <h2>Centralised Governance in DeFi Protocols<a class="headerlink" href="#centralised-governance-in-defi-protocols" title="Permalink to this heading">#</a></h2>
-<p>Several studies have identified a significant level of centrality in the governance mechanisms of DeFi protocol. Barbereau et al., <span id="id1">[<a class="reference internal" href="markdown.html#id8">BSP+22a</a>]</span> found that the decentrality of voting in DeFi is significantly low with a majority of the voting power concentrated among a percentage of governance token holders. As evidenced by their findings, there was a significant degree of centrality, in lending protocols, decentralisd exchanges and yield aggregators. This study used case studies to comprehend the governance mechanisms of these protocols.</p>
-<p>Similarly, Jensen et al. <span id="id2">[<a class="reference internal" href="markdown.html#id7" title="Johannes Rude Jensen, Victor von Wachter, and Omri Ross. How decentralized is the governance of blockchain-based finance: empirical evidence from four governance token distributions. arXiv preprint arXiv:2102.10096, 2021.">JvWR21</a>]</span> results demonstrate centrality in voting power with the protcols top 5, top 100, and top 1000 wallet addresses controlling majority of the voting power in Balancer, Compound, Uniswap and Yearn Finance protocols. In this study, the token holdings and users’ wallets of protocols were analysed; Compound displayed the most evidence of centrality and Uniswap the least with the top 5 wallet addresses accounting for 42.1% and 12.05%, respectively.</p>
-<p>Barbereau et al. <span id="id3">[<a class="reference internal" href="markdown.html#id5" title="Tom Barbereau, Reilly Smethurst, Orestis Papageorgiou, Johannes Sedlmeir, and Gilbert Fridgen. Decentralised finance's unregulated governance: minority rule in the digital wild west. Available at SSRN, 2022.">BSP+22b</a>]</span> ascertained that DeFi protocols become more centralized over time. In this longitudinal study, voting patterns demonstrated changes in the voting power dynamics over time. Furthermore, in analysing the governance structures of DeFi protocols, Stroponiati et al. <span id="id4">[<a class="reference internal" href="markdown.html#id4" title="K Stroponiati and others. Decentralized governance in defi: examples and pitfalls. squarespace. retrieved december 30, 2022.">S+</a>]</span> ascribed reward-based economic incentives as the significant cause behind the development of centralized structures.</p>
+<aside class="margin sidebar">
+<p class="sidebar-title"><strong>What are Lending Protocols ?</strong></p>
+<p>Lending protocols are decentralized finance (DeFi) applications built on top of blockchain technology that allow users to lend and borrow cryptocurrency assets without the need for intermediaries such as banks or traditional financial institutions.</p>
+</aside>
+<aside class="margin sidebar">
+<p class="sidebar-title"><strong>What are Decentralised Exchanges ?</strong></p>
+<p>Decentralized exchanges (DeXs) are peer-to-peer trading platforms built on top of a blockchain that enable the direct exchange of cryptocurrency assets without the need for a central authority or intermediary.</p>
+</aside>
+<aside class="margin sidebar">
+<p class="sidebar-title"><strong>What are Yield Aggregators ?</strong></p>
+<p>Yield aggregator are a decentralized finance (DeFi) applications that automate the process of seeking out the best yield opportunities for cryptocurrency assets, and provide users with a way to optimize their returns on investment.</p>
+</aside>
+<p>Several studies have identified a significant level of centrality in the governance mechanisms of DeFi protocol. Barbereau et al., <span id="id1">[<a class="reference internal" href="markdown.html#id9">BSP+22a</a>]</span> found that the decentrality of voting in DeFi is significantly low with a majority of the voting power concentrated among a percentage of governance token holders. As evidenced by their findings, there was a significant degree of centrality, in lending protocols, decentralisd exchanges and yield aggregators. This study used case studies to comprehend the governance mechanisms of these protocols.</p>
+<p>Similarly, Jensen et al. <span id="id2">[<a class="reference internal" href="markdown.html#id8" title="Johannes Rude Jensen, Victor von Wachter, and Omri Ross. How decentralized is the governance of blockchain-based finance: empirical evidence from four governance token distributions. arXiv preprint arXiv:2102.10096, 2021.">JvWR21</a>]</span> results demonstrate centrality in voting power with the protcols top 5, top 100, and top 1000 wallet addresses controlling majority of the voting power in Balancer, Compound, Uniswap and Yearn Finance protocols. In this study, the token holdings and users’ wallets of protocols were analysed; Compound displayed the most evidence of centrality and Uniswap the least with the top 5 wallet addresses accounting for 42.1% and 12.05%, respectively.</p>
+<p>Barbereau et al. <span id="id3">[<a class="reference internal" href="markdown.html#id6" title="Tom Barbereau, Reilly Smethurst, Orestis Papageorgiou, Johannes Sedlmeir, and Gilbert Fridgen. Decentralised finance's unregulated governance: minority rule in the digital wild west. Available at SSRN, 2022.">BSP+22b</a>]</span> ascertained that DeFi protocols become more centralized over time. In this longitudinal study, voting patterns demonstrated changes in the voting power dynamics over time. Furthermore, in analysing the governance structures of DeFi protocols, Stroponiati et al. <span id="id4">[<a class="reference internal" href="markdown.html#id5" title="K Stroponiati and others. Decentralized governance in defi: examples and pitfalls. squarespace. retrieved december 30, 2022.">S+</a>]</span> ascribed reward-based economic incentives as the significant cause behind the development of centralized structures.</p>
+<figure class="align-default" id="gov-evolution">
+<a class="reference internal image-reference" href="_images/Govern.drawio.png"><img alt="_images/Govern.drawio.png" src="_images/Govern.drawio.png" style="width: 750px; height: 260px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 1 </span><span class="caption-text">The Evolution of DeFi Governance.</span><a class="headerlink" href="#gov-evolution" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 </section>
 <section id="challenges-vulnerability-in-defi-governance">
 <h2>Challenges &amp; Vulnerability In DeFi Governance<a class="headerlink" href="#challenges-vulnerability-in-defi-governance" title="Permalink to this heading">#</a></h2>
-<p>In investigating governance challenges, Ekal et al., <span id="id5">[<a class="reference internal" href="markdown.html#id6" title="Hassan Hamid Ekal and Shams N Abdul-wahab. Defi governance and decision-making on blockchain. Mesopotamian Journal of Computer Science, 2022:9–16, 2022.">EAw22</a>]</span> identified voter collusion, low participation rates, and voter apathy as the most significant challenges. This empirical investigation utilised an interview survey approach to collect data from protocol users. Furthermore, to address vulnerabilities, Mohan et al. <span id="id6">[<a class="reference internal" href="markdown.html#id3" title="Vijay Mohan, Peyman Khezr, and Chris Berg. Voting with time commitment for decentralized governance: bond voting as a sybil-resistant mechanism. Available at SSRN, 2022.">MKB22</a>]</span> proposed a novel voting mechanism resistant to sybil attacks called bond voting. This solution factors in time commitment to be resistant to plutocracy.</p>
+<aside class="margin sidebar">
+<p class="sidebar-title"><strong>What is Voter Collusion ?</strong></p>
+<p>Voter collusion refers to a situation where a group of voters collude together to manipulate the outcome of a voting process in their favor, typically by coordinating their votes to create a supermajority.</p>
+</aside>
+<aside class="margin sidebar">
+<p class="sidebar-title"><strong>What is Voter Apathy ?</strong></p>
+<p>Voter apathy refers to a situation where token holders or members of the organization do not actively participate in the voting process due to a lack of interest</p>
+</aside>
+<p>In investigating governance challenges, Ekal et al., <span id="id5">[<a class="reference internal" href="markdown.html#id7" title="Hassan Hamid Ekal and Shams N Abdul-wahab. Defi governance and decision-making on blockchain. Mesopotamian Journal of Computer Science, 2022:9–16, 2022.">EAw22</a>]</span> identified voter collusion, low participation rates, and voter apathy as the most significant challenges. This empirical investigation utilised an interview survey approach to collect data from protocol users. Furthermore, to address vulnerabilities, Mohan et al. <span id="id6">[<a class="reference internal" href="markdown.html#id4" title="Vijay Mohan, Peyman Khezr, and Chris Berg. Voting with time commitment for decentralized governance: bond voting as a sybil-resistant mechanism. Available at SSRN, 2022.">MKB22</a>]</span> proposed a novel voting mechanism resistant to sybil attacks called bond voting. This solution factors in time commitment to be resistant to plutocracy.</p>
 </section>
 <section id="ai-enabled-on-chain-governance">
 <h2>AI-enabled On-chain Governance<a class="headerlink" href="#ai-enabled-on-chain-governance" title="Permalink to this heading">#</a></h2>
-<p>To enhance and automate governance mechanisms, Xu et al., <span id="id7">[<a class="reference internal" href="markdown.html#id14" title="Jiahua Xu, Daniel Perez, Yebo Feng, and Benjamin Livshits. Auto. gov: learning-based on-chain governance for decentralized finance (defi). arXiv preprint arXiv:2302.09551, 2023.">XPFL23</a>]</span> demonstrated an AI-enabled parameter adjustment solution which is more efficent than current current implementations. Specifically, the study employed Deep Q-network (DQN) reinforcement learning to investigate for automated parameter selection in a DeFi environment. Although a lending protocol was employed in the study, the model’s application can extend to other categories of DeFi protocols as well.</p>
+<p>To enhance and automate governance mechanisms, Xu et al., <span id="id7">[<a class="reference internal" href="markdown.html#id15" title="Jiahua Xu, Daniel Perez, Yebo Feng, and Benjamin Livshits. Auto. gov: learning-based on-chain governance for decentralized finance (defi). arXiv preprint arXiv:2302.09551, 2023.">XPFL23</a>]</span> demonstrated an AI-enabled parameter adjustment solution which is more efficent than current current implementations. Specifically, the study employed Deep Q-network (DQN) reinforcement learning to investigate for automated parameter selection in a DeFi environment. Although a lending protocol was employed in the study, the model’s application can extend to other categories of DeFi protocols as well. In investigating DAOs, Nabben <span id="id8">[<a class="reference internal" href="markdown.html#id3" title="Kelsie Nabben. Governance by algorithms, governance of algorithms: human-machine politics in decentralised autonomous organisations (daos). puntOorg International Journal, 8(1):36–54, 2023.">Nab23</a>]</span> observes that GitcoinDAO also employs algorithmic governance in various organizational components such as monitoring the compliance with organizsational rules.</p>
+<p>observation is that GitcoinDAO employs algorithmic governance in various organizational components and at the same time necessitates the regulation of the algorithmic processes initiated by the community in an open and decentralized manner</p>
 </section>
 <section id="conclusion">
 <h2>Conclusion<a class="headerlink" href="#conclusion" title="Permalink to this heading">#</a></h2>
-<p>To conclude, this paper has provided an overview of existing research studies on the governance of DeFi. Continuous research and development in DeFi governance is necessary to ensure its long-term sustainability and success.</p>
-</section>
-<section id="references">
-<h2>References<a class="headerlink" href="#references" title="Permalink to this heading">#</a></h2>
-<!-- ```{bibliography}
+<p>The vision of DeFi is to forster a democratic process of governance and sustain high levels of decentrality  finance in the process. However, recent studies have highlighted significant centrality in DeFi governance mechanisms, indicating the need for improvements in the existing governance models. The studies analysed in this article have revealed that the majority of the voting power in several protocols is concentrated among the top token holders, with evidence of increasing centralization over time. Moreover, DeFi governance has been found to face challenges the voting and governance process. In view of these challenges, researchers have proposed novel solutions such as a bond voting and a AI-enabled parameter selection solution to improve the current mechanisms. In conclusion, continued research and development in DeFi governance are crucial for ensuring its long-term sustainability and success.</p>
+<!-- ## References
+```
+{bibliography}
 ``` --></section>
 </section>
 
@@ -433,6 +474,15 @@ document.write(`
         <p class="prev-next-title">Notebooks with MyST Markdown</p>
       </div>
     </a>
+    <a class="right-next"
+       href="ssi.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Exploring the Technical Foundations of Self-Sovereign Identity: Real World Applications and Innovations</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               
@@ -448,11 +498,11 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#centralised-governance-in-defi-protocols">Centralised Governance in DeFi Protocols</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#challenges-vulnerability-in-defi-governance">Challenges &amp; Vulnerability In DeFi Governance</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ai-enabled-on-chain-governance">AI-enabled On-chain Governance</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion">Conclusion</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
 </ul>
   </nav></div>
 
@@ -467,7 +517,7 @@ document.write(`
   <div class="footer-item">
     
 <p class="component-author">
-By Yimika Erinle
+By DLT Science Foundation
 </p>
 
   </div>

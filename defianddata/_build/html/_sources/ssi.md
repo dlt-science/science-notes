@@ -1,7 +1,15 @@
-# Exploring the Technical Foundations of Self-Sovereign Identity: A Deep Dive into Real-World Applications and Innovations
+---
+title: "SSI"
+date: 2023-04-04 07:00:00
+author: "Parshant Singh"
+---
+
+# Exploring the Technical Foundations of Self-Sovereign Identity: Real World Applications and Innovations
 
 ## Introduction
 According to World Bank estimates, nearly 850 million people lack an official identity {cite}`world_bank_2023`, and the proliferation of digital devices has made it increasingly essential to possess a verifiable digital identity. This has led to a rise in the number of digital transactions and the need for a secure and reliable identity management system. SSI is emerging as a decentralized alternative to traditional centralized identity management systems, in which identities are cryptographically verifiable. It allows individuals to control their own digital identities and share them with trusted parties. Each entity in the SSI system is identified by a unique DID (Decentralised Identifier) which can be resolved to reveal information such as the entity's public key and other metadata.
+
+While centralized identities and federated identities offer convenience, control remains with the identity provider {cite}`laurent2015digital`. User-centric identities such as OpenID {cite}`recordon2006openid` and OAuth {cite}`fett2016comprehensive` improve portability but do not give full control to the users. SSI is designed to provide users with full control over their digital identities, and involves guiding principles around security, controllability, and portability. In addition to providing full control, Bernabe et al. {cite}`bernabe2019privacy` presented a classification of techniques for maintaining privacy, which included Secure Multiparty Computation and Zero-Knowledge Proofs, among others. Their work explored the potential applications of these techniques in Self-Sovereign Identity (SSI) models for blockchain-based systems.
 
 `````{margin} **What is SSI ?**
   Self-Sovereign Identity (SSI) is a decentralized digital identity management system which leverages blockchain technology as a data registry [{numref}`ssi-fig`], allowing individuals to create, control, and share their identities securely.
@@ -29,7 +37,7 @@ SSI entities and their relations
 ```
 <details><summary><b>Click here to see how a verifiable credential actually looks like</b></summary>
 
-This is a credential issued using the javascript library didkit-wasm.
+This is a credential issued using the javascript library didkit-wasm signed by .
 ```json
 {
       "@context":[
@@ -141,6 +149,9 @@ The land registry serves as a vital foundation for a country's economic developm
 
 ### SSI and Voting
 Estonia is one of the few countries in the world that have managed to make e-voting a reality {cite}`estonia2022estonia`. Sertkaya et al. {cite}`sertkaya2022estonian` proposed an EIV-AC scheme that integrates the Estonian Internet voting (EIV) scheme with anonymous credentials (AC) based on self-sovereign identity (SSI). The use of SSI-based anonymous credentials enables voters to prove their eligibility to vote without revealing their identity. The zero-knowledge proof of knowledge is used to prove that the voter has the right to vote without revealing any additional information. The EIV-AC scheme enhances the security and privacy of the EIV scheme, making it more compliant with privacy-enhancing and data minimization regulations.
+
+### Can SSI work without Blockchain?
+Blockchain is not the only option when it comes to implementing Self-sovereign Identity system. Alternatives like IPFS, Public-key cryptography and even traditional Certificate Authorities can be used to implement SSI {cite}`doyouneedblockchain`. However, the main advantage of using blockchain is that it provides a decentralized and immutable ledger that can be used to store and verify credentials.
 
 ### Conclusion
 Self-sovereign identity has the potential to revolutionize various industries, including healthcare, voting systems and many more. As research and development in SSI continue to progress, it will be crucial to address challenges related to interoperability, scalability, and usability to fully realize the potential of SSI in a global context.
