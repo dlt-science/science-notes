@@ -8,7 +8,7 @@ According to World Bank estimates, nearly 850 million people lack an official id
 `````
 
 $$
-\underbrace{DID}_{Scheme}: \overbrace{example}^{DID \, Method}:\underbrace{BzCbsNYhMrjHiqZDTUASHg}_{Method \, Specific \, Identifier}
+{\tt \underbrace{DID}_{Scheme}: \overbrace{example}^{DID \, Method}:\underbrace{BzCbsNYhMrjHiqZDTUASHg}_{Method \, Specific \, Identifier}}
 $$
 <p align="center"><em>DID breakdown</em></p>
 
@@ -27,6 +27,103 @@ name: ssi-fig
 ---
 SSI entities and their relations
 ```
+<details><summary><b>Click here to see how a verifiable credential actually looks like</b></summary>
+
+This is a credential issued using the javascript library didkit-wasm.
+```json
+{
+      "@context":[
+         "https://www.w3.org/2018/credentials/v1",
+         {
+            "alias":"https://schema.org/name",
+            "logo":"https://schema.org/logo",
+            "website":"https://schema.org/url",
+            "description":"https://schema.org/description",
+            "BasicProfile":"https://tzprofiles.com/BasicProfile"
+         }
+      ],
+      "id":"urn:uuid:7041d211-72c9-49fe-b6d1-d8b6b94abfe3",
+      "type":[
+         "VerifiableCredential",
+         "BasicProfile"
+      ],
+      "credentialSubject":{
+         "id":"did:pkh:tz:tz1N699qJqMVbMDan2r6R3QYFw42J5ydReh6",
+         "alias":"TU Munich",
+         "website":"Germany",
+         "description":"My name",
+         "logo":"Helene-Mayer-Ring 7B"
+      },
+      "issuer":"did:pkh:tz:tz1QRuc9BkvsBfeSGr6kJ5GCzBsrDjMedvA7",
+      "issuanceDate":"2023-01-13T12:24:52.630Z",
+      "proof":{
+         "@context":{
+            "TezosMethod2021":"https://w3id.org/security#TezosMethod2021",
+            "TezosSignature2021":{
+               "@context":{
+                  "@protected":true,
+                  "@version":1.1,
+                  "challenge":"https://w3id.org/security#challenge",
+                  "created":{
+                     "@id":"http://purl.org/dc/terms/created",
+                     "@type":"http://www.w3.org/2001/XMLSchema#dateTime"
+                  },
+                  "domain":"https://w3id.org/security#domain",
+                  "expires":{
+                     "@id":"https://w3id.org/security#expiration",
+                     "@type":"http://www.w3.org/2001/XMLSchema#dateTime"
+                  },
+                  "id":"@id",
+                  "nonce":"https://w3id.org/security#nonce",
+                  "proofPurpose":{
+                     "@context":{
+                        "@protected":true,
+                        "@version":1.1,
+                        "assertionMethod":{
+                           "@container":"@set",
+                           "@id":"https://w3id.org/security#assertionMethod",
+                           "@type":"@id"
+                        },
+                        "authentication":{
+                           "@container":"@set",
+                           "@id":"https://w3id.org/security#authenticationMethod",
+                           "@type":"@id"
+                        },
+                        "id":"@id",
+                        "type":"@type"
+                     },
+                     "@id":"https://w3id.org/security#proofPurpose",
+                     "@type":"@vocab"
+                  },
+                  "proofValue":"https://w3id.org/security#proofValue",
+                  "publicKeyJwk":{
+                     "@id":"https://w3id.org/security#publicKeyJwk",
+                     "@type":"@json"
+                  },
+                  "type":"@type",
+                  "verificationMethod":{
+                     "@id":"https://w3id.org/security#verificationMethod",
+                     "@type":"@id"
+                  }
+               },
+               "@id":"https://w3id.org/security#TezosSignature2021"
+            }
+         },
+         "type":"TezosSignature2021",
+         "proofPurpose":"assertionMethod",
+         "proofValue":"edsigtaEZjPNqyWT6ZfZDTPUds7vK9RrUSFbJEpy67mAfPFYviUiWrpvhvPx2xZXRDVsPoJ3UMWjC8x1oJgY6ZziWufc87kamV8",
+         "verificationMethod":"did:pkh:tz:tz1QRuc9BkvsBfeSGr6kJ5GCzBsrDjMedvA7#TezosMethod2021",
+         "created":"2023-01-13T12:24:52.638Z",
+         "publicKeyJwk":{
+            "alg":"EdBlake2b",
+            "crv":"Ed25519",
+            "kty":"OKP",
+            "x":"WlWqCerXoqMAMKfDWD0m2cIpvysFFqiU7L8L_I7zbfI"
+         }
+      }
+   }
+```
+</details>
 
 :::{note}
 Verifiable Credentials (VC) are different from Verifiable Presentations (VP). Credentials are issued by trusted authorities and contain claims, while verifiable presentations are created by holders to share selected credentials with verifiers in specific contexts. Verifiable credentials are stored in a wallet, while verifiable presentations are created on the fly.

@@ -153,7 +153,7 @@ const thebe_selector_output = ".output, .cell_output"
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="intro.html">
-                    <no title>
+                    Welcome to your Jupyter Book
                 </a>
             </li>
         </ul>
@@ -385,7 +385,7 @@ document.write(`
 </aside>
 <div class="math notranslate nohighlight">
 \[
-\underbrace{DID}_{Scheme}: \overbrace{example}^{DID \, Method}:\underbrace{BzCbsNYhMrjHiqZDTUASHg}_{Method \, Specific \, Identifier}
+{\tt \underbrace{DID}_{Scheme}: \overbrace{example}^{DID \, Method}:\underbrace{BzCbsNYhMrjHiqZDTUASHg}_{Method \, Specific \, Identifier}}
 \]</div>
 <p align="center"><em>DID breakdown</em></p>
 <div class="admonition seealso">
@@ -403,6 +403,102 @@ document.write(`
 <p><span class="caption-number">Fig. 1 </span><span class="caption-text">SSI entities and their relations</span><a class="headerlink" href="#ssi-fig" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
+<details><summary><b>Click here to see how a verifiable credential actually looks like</b></summary>
+<p>This is a credential issued using the javascript library didkit-wasm.</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;@context&quot;</span><span class="p">:[</span>
+<span class="w">         </span><span class="s2">&quot;https://www.w3.org/2018/credentials/v1&quot;</span><span class="p">,</span>
+<span class="w">         </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;alias&quot;</span><span class="p">:</span><span class="s2">&quot;https://schema.org/name&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;logo&quot;</span><span class="p">:</span><span class="s2">&quot;https://schema.org/logo&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;website&quot;</span><span class="p">:</span><span class="s2">&quot;https://schema.org/url&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="s2">&quot;https://schema.org/description&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;BasicProfile&quot;</span><span class="p">:</span><span class="s2">&quot;https://tzprofiles.com/BasicProfile&quot;</span>
+<span class="w">         </span><span class="p">}</span>
+<span class="w">      </span><span class="p">],</span>
+<span class="w">      </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="s2">&quot;urn:uuid:7041d211-72c9-49fe-b6d1-d8b6b94abfe3&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;type&quot;</span><span class="p">:[</span>
+<span class="w">         </span><span class="s2">&quot;VerifiableCredential&quot;</span><span class="p">,</span>
+<span class="w">         </span><span class="s2">&quot;BasicProfile&quot;</span>
+<span class="w">      </span><span class="p">],</span>
+<span class="w">      </span><span class="nt">&quot;credentialSubject&quot;</span><span class="p">:{</span>
+<span class="w">         </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="s2">&quot;did:pkh:tz:tz1N699qJqMVbMDan2r6R3QYFw42J5ydReh6&quot;</span><span class="p">,</span>
+<span class="w">         </span><span class="nt">&quot;alias&quot;</span><span class="p">:</span><span class="s2">&quot;TU Munich&quot;</span><span class="p">,</span>
+<span class="w">         </span><span class="nt">&quot;website&quot;</span><span class="p">:</span><span class="s2">&quot;Germany&quot;</span><span class="p">,</span>
+<span class="w">         </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="s2">&quot;My name&quot;</span><span class="p">,</span>
+<span class="w">         </span><span class="nt">&quot;logo&quot;</span><span class="p">:</span><span class="s2">&quot;Helene-Mayer-Ring 7B&quot;</span>
+<span class="w">      </span><span class="p">},</span>
+<span class="w">      </span><span class="nt">&quot;issuer&quot;</span><span class="p">:</span><span class="s2">&quot;did:pkh:tz:tz1QRuc9BkvsBfeSGr6kJ5GCzBsrDjMedvA7&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;issuanceDate&quot;</span><span class="p">:</span><span class="s2">&quot;2023-01-13T12:24:52.630Z&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;proof&quot;</span><span class="p">:{</span>
+<span class="w">         </span><span class="nt">&quot;@context&quot;</span><span class="p">:{</span>
+<span class="w">            </span><span class="nt">&quot;TezosMethod2021&quot;</span><span class="p">:</span><span class="s2">&quot;https://w3id.org/security#TezosMethod2021&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;TezosSignature2021&quot;</span><span class="p">:{</span>
+<span class="w">               </span><span class="nt">&quot;@context&quot;</span><span class="p">:{</span>
+<span class="w">                  </span><span class="nt">&quot;@protected&quot;</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span>
+<span class="w">                  </span><span class="nt">&quot;@version&quot;</span><span class="p">:</span><span class="mf">1.1</span><span class="p">,</span>
+<span class="w">                  </span><span class="nt">&quot;challenge&quot;</span><span class="p">:</span><span class="s2">&quot;https://w3id.org/security#challenge&quot;</span><span class="p">,</span>
+<span class="w">                  </span><span class="nt">&quot;created&quot;</span><span class="p">:{</span>
+<span class="w">                     </span><span class="nt">&quot;@id&quot;</span><span class="p">:</span><span class="s2">&quot;http://purl.org/dc/terms/created&quot;</span><span class="p">,</span>
+<span class="w">                     </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="s2">&quot;http://www.w3.org/2001/XMLSchema#dateTime&quot;</span>
+<span class="w">                  </span><span class="p">},</span>
+<span class="w">                  </span><span class="nt">&quot;domain&quot;</span><span class="p">:</span><span class="s2">&quot;https://w3id.org/security#domain&quot;</span><span class="p">,</span>
+<span class="w">                  </span><span class="nt">&quot;expires&quot;</span><span class="p">:{</span>
+<span class="w">                     </span><span class="nt">&quot;@id&quot;</span><span class="p">:</span><span class="s2">&quot;https://w3id.org/security#expiration&quot;</span><span class="p">,</span>
+<span class="w">                     </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="s2">&quot;http://www.w3.org/2001/XMLSchema#dateTime&quot;</span>
+<span class="w">                  </span><span class="p">},</span>
+<span class="w">                  </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="s2">&quot;@id&quot;</span><span class="p">,</span>
+<span class="w">                  </span><span class="nt">&quot;nonce&quot;</span><span class="p">:</span><span class="s2">&quot;https://w3id.org/security#nonce&quot;</span><span class="p">,</span>
+<span class="w">                  </span><span class="nt">&quot;proofPurpose&quot;</span><span class="p">:{</span>
+<span class="w">                     </span><span class="nt">&quot;@context&quot;</span><span class="p">:{</span>
+<span class="w">                        </span><span class="nt">&quot;@protected&quot;</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span>
+<span class="w">                        </span><span class="nt">&quot;@version&quot;</span><span class="p">:</span><span class="mf">1.1</span><span class="p">,</span>
+<span class="w">                        </span><span class="nt">&quot;assertionMethod&quot;</span><span class="p">:{</span>
+<span class="w">                           </span><span class="nt">&quot;@container&quot;</span><span class="p">:</span><span class="s2">&quot;@set&quot;</span><span class="p">,</span>
+<span class="w">                           </span><span class="nt">&quot;@id&quot;</span><span class="p">:</span><span class="s2">&quot;https://w3id.org/security#assertionMethod&quot;</span><span class="p">,</span>
+<span class="w">                           </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="s2">&quot;@id&quot;</span>
+<span class="w">                        </span><span class="p">},</span>
+<span class="w">                        </span><span class="nt">&quot;authentication&quot;</span><span class="p">:{</span>
+<span class="w">                           </span><span class="nt">&quot;@container&quot;</span><span class="p">:</span><span class="s2">&quot;@set&quot;</span><span class="p">,</span>
+<span class="w">                           </span><span class="nt">&quot;@id&quot;</span><span class="p">:</span><span class="s2">&quot;https://w3id.org/security#authenticationMethod&quot;</span><span class="p">,</span>
+<span class="w">                           </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="s2">&quot;@id&quot;</span>
+<span class="w">                        </span><span class="p">},</span>
+<span class="w">                        </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="s2">&quot;@id&quot;</span><span class="p">,</span>
+<span class="w">                        </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="s2">&quot;@type&quot;</span>
+<span class="w">                     </span><span class="p">},</span>
+<span class="w">                     </span><span class="nt">&quot;@id&quot;</span><span class="p">:</span><span class="s2">&quot;https://w3id.org/security#proofPurpose&quot;</span><span class="p">,</span>
+<span class="w">                     </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="s2">&quot;@vocab&quot;</span>
+<span class="w">                  </span><span class="p">},</span>
+<span class="w">                  </span><span class="nt">&quot;proofValue&quot;</span><span class="p">:</span><span class="s2">&quot;https://w3id.org/security#proofValue&quot;</span><span class="p">,</span>
+<span class="w">                  </span><span class="nt">&quot;publicKeyJwk&quot;</span><span class="p">:{</span>
+<span class="w">                     </span><span class="nt">&quot;@id&quot;</span><span class="p">:</span><span class="s2">&quot;https://w3id.org/security#publicKeyJwk&quot;</span><span class="p">,</span>
+<span class="w">                     </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="s2">&quot;@json&quot;</span>
+<span class="w">                  </span><span class="p">},</span>
+<span class="w">                  </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="s2">&quot;@type&quot;</span><span class="p">,</span>
+<span class="w">                  </span><span class="nt">&quot;verificationMethod&quot;</span><span class="p">:{</span>
+<span class="w">                     </span><span class="nt">&quot;@id&quot;</span><span class="p">:</span><span class="s2">&quot;https://w3id.org/security#verificationMethod&quot;</span><span class="p">,</span>
+<span class="w">                     </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="s2">&quot;@id&quot;</span>
+<span class="w">                  </span><span class="p">}</span>
+<span class="w">               </span><span class="p">},</span>
+<span class="w">               </span><span class="nt">&quot;@id&quot;</span><span class="p">:</span><span class="s2">&quot;https://w3id.org/security#TezosSignature2021&quot;</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">         </span><span class="p">},</span>
+<span class="w">         </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="s2">&quot;TezosSignature2021&quot;</span><span class="p">,</span>
+<span class="w">         </span><span class="nt">&quot;proofPurpose&quot;</span><span class="p">:</span><span class="s2">&quot;assertionMethod&quot;</span><span class="p">,</span>
+<span class="w">         </span><span class="nt">&quot;proofValue&quot;</span><span class="p">:</span><span class="s2">&quot;edsigtaEZjPNqyWT6ZfZDTPUds7vK9RrUSFbJEpy67mAfPFYviUiWrpvhvPx2xZXRDVsPoJ3UMWjC8x1oJgY6ZziWufc87kamV8&quot;</span><span class="p">,</span>
+<span class="w">         </span><span class="nt">&quot;verificationMethod&quot;</span><span class="p">:</span><span class="s2">&quot;did:pkh:tz:tz1QRuc9BkvsBfeSGr6kJ5GCzBsrDjMedvA7#TezosMethod2021&quot;</span><span class="p">,</span>
+<span class="w">         </span><span class="nt">&quot;created&quot;</span><span class="p">:</span><span class="s2">&quot;2023-01-13T12:24:52.638Z&quot;</span><span class="p">,</span>
+<span class="w">         </span><span class="nt">&quot;publicKeyJwk&quot;</span><span class="p">:{</span>
+<span class="w">            </span><span class="nt">&quot;alg&quot;</span><span class="p">:</span><span class="s2">&quot;EdBlake2b&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;crv&quot;</span><span class="p">:</span><span class="s2">&quot;Ed25519&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;kty&quot;</span><span class="p">:</span><span class="s2">&quot;OKP&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;x&quot;</span><span class="p">:</span><span class="s2">&quot;WlWqCerXoqMAMKfDWD0m2cIpvysFFqiU7L8L_I7zbfI&quot;</span>
+<span class="w">         </span><span class="p">}</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">   </span><span class="p">}</span>
+</pre></div>
+</div>
+</details>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Verifiable Credentials (VC) are different from Verifiable Presentations (VP). Credentials are issued by trusted authorities and contain claims, while verifiable presentations are created by holders to share selected credentials with verifiers in specific contexts. Verifiable credentials are stored in a wallet, while verifiable presentations are created on the fly.</p>
