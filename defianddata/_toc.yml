@@ -6,6 +6,7 @@ root: intro
 chapters:
 - file: markdown
 <<<<<<< HEAD
+<<<<<<< HEAD
 - file: notebooks
 - file: markdown-notebooks
 - file: ssi
@@ -13,3 +14,7 @@ chapters:
 # - file: notebooks
 # - file: markdown-notebooks
 >>>>>>> 7f69439 (Content Updated)
+=======
+# - file: notebooks
+# - file: markdown-notebooks
+>>>>>>> main
