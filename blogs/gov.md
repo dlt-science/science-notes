@@ -7,7 +7,7 @@
 - The most significant governance challenges identified by DeFi users are voter collusion, low participation rates, and voter apathy.
 - To address vulnerabilities in DeFi governance, a novel voting mechanism resistant to sybil attacks called bond voting has been proposed.
 - To enhance the manual parameter section, an AI-enabled adjustment solution has been demonstrated to automate governance mechanisms.
-```
+``` 
 
 ## Introduction
 
