@@ -8,10 +8,10 @@ author: "Parshant Singh"
 
 ```{admonition} Key Insights!
 :class: tip
-- SSI solutions are designed to be blockchain-agnostic and adhere to [W3C's specifications](https://www.w3.org/TR/did-core/).
-- The identity wallets (e.g., uPort, Trinsic, Connect.Me) are different from the digital wallets (e.g., Coinbase, Ledger, Trezor) that store cryptocurrencies in the sense that they store and manage DIDs and VCs instead of cryptocurrencies.
-- To protect privacy, SSI solutions (e.g. - [Hyperledger Indy](https://medium.com/stm-blockchain/how-zero-knowledge-proofs-work-on-indy-network-241d6da112bc) and Aries) are increasingly using Zero-Knowledge Proofs (ZKPs) to prove the authenticity of credentials without revealing the actual data.
-- To facilitate secure communication between different SSI components (issuer-holder-verifier), [DIDComm](https://medium.com/decentralized-identity/understanding-didcomm-14da547ca36b) and [CHAPI](https://iiw.idcommons.net/101_Session:_Verifiable_Credential_Handler_(CHAPI)_and_DIDComm) protocols have been developed and heavily used.
+- SSI systems use DIDs as unique, resolvable identifiers for each entity, allowing the secure management of digital identities without relying on a centralized authority.
+- VCs provide cryptographically verifiable proof of an individual's attributes or personal information, enabling secure and trustworthy data sharing between issuers, holders, and verifiers.
+- SSI incorporates privacy-preserving mechanisms such as zero-knowledge proofs and selective disclosure, allowing users to prove their credentials without revealing their actual identity or unnecessary information.
+- While not mandatory, using blockchain as a decentralized data registry in SSI systems enables secure, tamper-evident, and verifiable storage of credentials, enhancing the trustworthiness and reliability of the identity management process.
 ```
 
 ## Introduction
@@ -34,11 +34,11 @@ While centralized identities and federated identities offer convenience, control
 
 The three main parties involved in SSI systems are issuer, holder and verifier as shown in [{numref}`ssi-fig`]. The issuer issues a cryptographically signed credential to the holder, and the verifier is the entity that that confirm the authenticity of the credential using a decentralized data registry such as Blockchain. Holders store their credentials in secure digital wallets and can share them with other parties as needed. The holder can also create a presentation request and share it with the verifier.
 
-`````{margin} **What is SSI ?**
+`````{margin} **SSI**
   Self-Sovereign Identity (SSI) is a decentralized digital identity management system which leverages blockchain technology as a data registry, allowing individuals to create, control, and share their identities securely.
 `````
 
-`````{margin} **What is a Verifiable Credential (VC) ?**
+`````{margin} **Verifiable Credential**
   A verifiable credential is a digital artifact that provides a tamper-evident, cryptographically verifiable proof of an individual's personal information or attributes.
 `````
 
@@ -147,14 +147,19 @@ This is a credential issued using the javascript library <code>didkit-wasm</code
    }
 ```
 
-
+```{admonition} Nitty Gritties of SSI
+:class: info
+- SSI solutions are designed to be blockchain-agnostic and adhere to [W3C's specifications](https://www.w3.org/TR/did-core/).
+- The identity wallets (e.g., uPort, Trinsic, Connect.Me) are different from the digital wallets (e.g., Coinbase, Ledger, Trezor) that store cryptocurrencies in the sense that they store and manage DIDs and VCs instead of cryptocurrencies.
+- To protect privacy, SSI solutions (e.g. - [Hyperledger Indy](https://medium.com/stm-blockchain/how-zero-knowledge-proofs-work-on-indy-network-241d6da112bc) and Aries) are increasingly using Zero-Knowledge Proofs (ZKPs) to prove the authenticity of credential```s without revealing the actual data.
+- To facilitate secure communication between different SSI components (issuer-holder-verifier), [DIDComm](https://medium.com/decentralized-identity/understanding-didcomm-14da547ca36b) and [CHAPI](https://iiw.idcommons.net/101_Session:_Verifiable_Credential_Handler_(CHAPI)_and_DIDComm) protocols have been developed and heavily used.
+```
 
 ## Applications for SSI
 
-Schlatt et al. {cite}`schlatt2022designing` demonstrates how a customer can leverage a Zero-knowledge Proof concept called 'blinded link secret' to disclose information selectively.
-Similarly, Barros et al. {cite}`de2022leveraging` implemented a prototype of an application for presenting proof of vaccination without revealing users' identities. It allows collaboration between health organizations, governments, and other stakeholders, such as the tourism or travel industries. Furthermore, it uses interoperable open-source tools across countries to implement this system globally at a minimal cost for each country's government. The NHS Digital Staff Passport solution {cite}`lacity2022implementing` employs the Sovrin Network as a public key infrastructure (PKI) to manage verifiable credentials for staff onboarding. Hospitals register on the network and use their private keys to sign credentials, while staff members utilize Evernym's [Connect.Me](https://www.connect.me/) SSI digital wallet app to store and share credentials.
+Recent studies have demonstrated the feasibility of using zero-knowledge proofs to disclose information selectively, such as proof of vaccination status, without revealing users' identities. These studies have employed interoperable open-source tools to implement these systems globally at a minimal cost. Schlatt et al. {cite}`schlatt2022designing` illustrates how a customer can leverage a Zero-knowledge Proof concept called 'blinded link secret' to disclose information selectively. Similarly, Barros et al. {cite}`de2022leveraging` implemented a prototype of an application for presenting proof of vaccination without revealing users' identities. Furthermore, it uses interoperable open-source tools across countries to implement this system globally at a minimal cost for each country's government. The NHS Digital Staff Passport solution {cite}`lacity2022implementing` employs the Sovrin Network as a public key infrastructure (PKI) to manage verifiable credentials for staff onboarding. Hospitals register on the network and use their private keys to sign credentials, while staff members utilize Evernym's [Connect.Me](https://www.connect.me/) SSI digital wallet app to store and share credentials.
 
-Shuaib et al. {cite}`shuaib2022self` suggest that a blockchain-based land registry system can be combined with a self-sovereign identity (SSI) solution to provide a secure and efficient identity management system for landowners. Three existing SSI solutions: Everest, Evernym, and uPort {cite}`ssiplatforms`, were evaluated based on SSI principles {cite}`ssiprinciples` to determine their compliance and effectiveness in addressing identity problems in land registry systems. The Everest platform was most compliant with the SSI principles, whereas Evernym and uPort had some limitations in terms of interoperability and user control.
+Shuaib et al. {cite}`shuaib2022self` suggest that a blockchain-based land registry system can be combined with a self-sovereign identity (SSI) solution to provide a secure and efficient identity management system for landowners. Three existing SSI solutions: Everest, Evernym, and uPort {cite}`ssiplatforms`, were evaluated based on SSI principles {cite}`ssiprinciples` to determine their compliance and effectiveness in addressing identity problems in land registry systems. The Everest platform was found out to be the most compliant with the SSI principles, whereas Evernym and uPort had some limitations in terms of interoperability and user control.
 
 Estonia is one of the few countries in the world that have managed to make e-voting a reality {cite}`estonia2022estonia`. Sertkaya et al. {cite}`sertkaya2022estonian` proposed an EIV-AC scheme that integrates the Estonian Internet voting (EIV) scheme with anonymous credentials (AC) based on self-sovereign identity (SSI). The use of SSI-based anonymous credentials enables voters to prove their eligibility to vote without revealing their identity. The zero-knowledge proof of knowledge is used to prove that the voter has the right to vote without revealing any additional information. The EIV-AC scheme enhances the security and privacy of the EIV scheme, making it more compliant with privacy-enhancing and data minimization regulations.
 
