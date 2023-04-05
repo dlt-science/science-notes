@@ -15,7 +15,7 @@ cd dsfblog
 
 ### Create a python virtual environment
 
-- iOS
+- MacOS / Linux
 
 ```zsh
 python3 -m venv venv
@@ -55,7 +55,7 @@ pip install -e ".[dev]"
 Use `--all` to force rebuild all
 
 ```zsh
-jupyter-book build --all defianddata/
+jupyter-book build --all blogs/
 ```
 
 View the book in browser
@@ -63,13 +63,13 @@ View the book in browser
 - iOS
 
 ```zsh
-open defianddata/_build/html/index.html
+open blogs/_build/html/index.html
 ```
 
 - Windows
 
 ```zsh
-start defianddata/_build/html/index.html
+start blogs/_build/html/index.html
 ```
 
 ### Build pdf
