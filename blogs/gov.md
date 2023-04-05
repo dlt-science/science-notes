@@ -3,7 +3,8 @@
 ```{admonition} Key Insights
 :class: tip
 - The voting power in DeFi protocols becomes increasingly concentrated among a percentage of token holders over time in decentralised exchanges, lending protocols and yield aggregators.
-- The paramount wallet addresses ranking within the top 5, 100, and 1000, exercise predominant influence over the voting power in the Balancer, Compound, Uniswap, and Yearn Finance protocols, with Compound displaying the least evidence of decentrality
+<!-- TODO: check whether decentrality is a word -->
+- The paramount wallet addresses ranking within the top 5, 100, and 1000, exercise predominant influence over the voting power in the Balancer, Compound, Uniswap, and Yearn Finance protocols, with Compound displaying the least evidence of decentrality.
 - The most significant governance challenges identified by DeFi users are voter collusion, low participation rates, and voter apathy.
 - To address vulnerabilities in DeFi governance, a novel voting mechanism resistant to sybil attacks called bond voting has been proposed.
 - To enhance the manual parameter section, an AI-enabled adjustment solution has been demonstrated to automate governance mechanisms.
@@ -54,10 +55,11 @@ In investigating governance challenges, Ekal et al., {cite}`ekal2022defi` identi
 
 ## AI-enabled On-chain Governance
 
-To enhance and automate governance mechanisms, Xu et al., {cite}`xu2023auto` demonstrated an AI-enabled parameter adjustment solution which is more efficent than current implementations. Specifically, the study employed Deep Q-network (DQN) reinforcement learning to investigate for automated parameter selection in a DeFi environment. Although a lending protocol was employed in the study, the model's application can extend to other categories of DeFi protocols as well. In investigating DAOs, Nabben {cite}`nabben2023governance` observes that GitcoinDAO also employs algorithmic governance in various organizational components such as monitoring the compliance with organizsational rules.
+To enhance and automate governance mechanisms, Xu et al., {cite}`xu2023auto` demonstrated an AI-enabled parameter adjustment solution which is more efficient than current implementations. Specifically, the study employed Deep Q-network (DQN) reinforcement learning to investigate for automated parameter selection in a DeFi environment. Although a lending protocol was employed in the study, the model's application can extend to other categories of DeFi protocols as well. In investigating DAOs, Nabben {cite}`nabben2023governance` observes that GitcoinDAO also employs algorithmic governance in various organizational components such as monitoring the compliance with organizsational rules.
 
 ## Conclusion
 
+<!-- TODO: make sure of british spelling -->
 The vision of DeFi is to forster a democratic process of governance and sustain high levels of decentrality. However, recent studies have highlighted significant centrality in DeFi governance mechanisms, indicating the need for improvements in the existing governance models. The studies analysed in this article have revealed that the majority of the voting power in several protocols is concentrated among the top token holders, with evidence of increasing centralization over time. Moreover, DeFi has been found to face challenges in the voting and governance process. In view of some of these challenges, researchers have proposed novel solutions such as a bond voting and a AI-enabled parameter-selection solution to improve the current mechanisms. Given the importance of decentralization in the underlying philosophy of DeFi, proposing more solutions to governance challenges is crucial for creating a more inclusive and democratic financial ecosystem. Therefore, continued research and development will ensure be required.
 
 
