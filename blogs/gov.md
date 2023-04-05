@@ -18,11 +18,11 @@ Decentralised finance (DeFi) has emerged as a potential substitute for tradition
  `````{margin} **Lending Protocols**
   Lending Protocols are DeFi applications built on top of blockchain technology that allow users to lend and borrow cryptocurrency assets without the need for intermediaries such as banks or traditional financial institutions.
 `````
-`````{margin} **Decentralised Exchanges**
-  Decentralised Exchanges (DeXs) are peer-to-peer trading platforms built on top of a blockchain that enable the direct exchange of cryptocurrency assets without the need for a central authority or intermediary.
+`````{margin} **Decentralized Exchanges**
+  Decentralized Exchanges (DeXs) are peer-to-peer trading platforms built on top of a blockchain that enable the direct exchange of cryptocurrency assets without the need for a central authority or intermediary.
 `````
 `````{margin} **Yield Aggregator**
-  Yield Aggregator are DeFi applications that automate the process of seeking out the best yield opportunities for cryptocurrency assets, and provide users with a way to optimise their returns on investment.
+  Yield Aggregator are DeFi applications that automate the process of seeking out the best yield opportunities for cryptocurrency assets, and provide users with a way to optimize their returns on investment.
 `````
 
  Centralisation in DeFi has become a growing concern among researchers with several studies identifying a significant level of centrality in the governance mechanisms of DeFi protocol. Barbereau et al., {cite}`barbereau2022defi` found that the decentralisation of voting is significantly low with a majority of the voting power concentrated among a percentage of governance token holders. As evidenced by their findings, there was a significant degree of centrality, in lending protocols, decentralisd exchanges and yield aggregators. This research work employed case studies to comprehend the governance mechanisms of these protocols.
