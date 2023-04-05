@@ -6,7 +6,7 @@ author: "Parshant Singh"
 
 # Self-Sovereign Identity: Technical Foundations and Applications
 
-```{admonition} Key Insights!
+```{admonition} Key Insights
 :class: tip
 - SSI systems use DIDs as unique, resolvable identifiers for each entity, allowing the secure management of digital identities without relying on a centralized authority.
 - VCs provide cryptographically verifiable proof of an individual's attributes or personal information, enabling secure and trustworthy data sharing between issuers, holders, and verifiers.
