@@ -3,7 +3,7 @@
 
 title: DSF Blog
 author: DLT Science Foundation
-logo: logo.png
+logo: dsf.png
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
