@@ -27,7 +27,7 @@ Decentralised finance (DeFi) has emerged as a potential substitute for tradition
 
  Centralisation in DeFi has become a growing concern among researchers with several studies identifying a significant level of centrality in the governance mechanisms of DeFi protocol. Barbereau et al., {cite}`barbereau2022defi` found that the decentralisation of voting is significantly low with a majority of the voting power concentrated among a percentage of governance token holders. As evidenced by their findings, there was a significant degree of centrality, in lending protocols, decentralisd exchanges and yield aggregators. This research work employed case studies to comprehend the governance mechanisms of these protocols.
 
-Similarly, result by Jensen et al. {cite}`jensen2021decentralized` demonstrate centrality in voting power with the protcols top 5, top 100, and top 1000 wallet addresses controlling majority of the voting power in Balancer, Compound, Uniswap and Yearn Finance protocols. In this study, the token holdings and users' wallets of protocols were analysed; Compound displayed the most evidence of centrality and Uniswap the least with the top 5 wallet addresses accounting for 42.1% and 12.05%, respectively.
+Similarly, result by Jensen et al. {cite}`jensen2021decentralized` demonstrate centrality in voting power with the protocols top 5, top 100, and top 1000 wallet addresses controlling majority of the voting power in Balancer, Compound, Uniswap and Yearn Finance protocols. In this study, the token holdings and users' wallets of protocols were analysed; Compound displayed the most evidence of centrality and Uniswap the least with the top 5 wallet addresses accounting for 42.1% and 12.05%, respectively.
 
 Barbereau et al. {cite}`barbereau2022decentralised` ascertained that DeFi protocols become more centralised over time. In this longitudinal study, voting patterns demonstrated changes in the power dynamics as time progressed. The tendency for this centralisation of DeFi protocols is shown in [{numref}`gov_evolution`]. Furthermore, in analysing the governance structures of DeFi protocols, Stroponiati et al. {cite}`stroponiati5decentralized` ascribed reward-based economic incentives as the significant cause behind the development of centralised structures. 
 
@@ -43,7 +43,7 @@ The Tendency for Centralisation in DeFi Governance.
 ## Challenges & Vulnerability In DeFi Governance
 
 `````{margin} **Voter Collusion**
-  Voter Collusion refers to a situation where a group of voters collude together to manipulate the outcome of a voting process in their favor, typically by coordinating their votes to create a supermajority.
+  Voter Collusion refers to a situation where a group of voters collude together to manipulate the outcome of a voting process in their favor, typically by coordinating their votes to create a super majority.
 `````
 
 `````{margin} **Voter Apathy**
@@ -54,7 +54,7 @@ In investigating governance challenges, Ekal et al., {cite}`ekal2022defi` identi
 
 ## AI-enabled On-chain Governance
 
-To enhance and automate governance mechanisms, Xu et al., {cite}`xu2023auto` demonstrated an AI-enabled parameter adjustment solution which is more efficent than current implementations. Specifically, the study employed Deep Q-network (DQN) reinforcement learning to investigate for automated parameter selection in a DeFi environment. Although a lending protocol was employed in the study, the model's application can extend to other categories of DeFi protocols as well. In investigating DAOs, Nabben {cite}`nabben2023governance` observes that GitcoinDAO also employs algorithmic governance in various organisational components such as monitoring the compliance with rules of the organisation.
+To enhance and automate governance mechanisms, Xu et al., {cite}`xu2023auto` demonstrated an AI-enabled parameter adjustment solution which is more efficient than current implementations. Specifically, the study employed Deep Q-network (DQN) reinforcement learning to investigate for automated parameter selection in a DeFi environment. Although a lending protocol was employed in the study, the model's application can extend to other categories of DeFi protocols as well. In investigating DAOs, Nabben {cite}`nabben2023governance` observes that GitcoinDAO also employs algorithmic governance in various organisational components such as monitoring the compliance with rules of the organisation.
 
 ## Conclusion
 
