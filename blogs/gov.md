@@ -1,6 +1,6 @@
 # Governance In DeFi
 
-```{admonition} Key Insights!
+```{admonition} Key Insights
 :class: tip
 - The voting power in DeFi protocols becomes increasingly concentrated among a percentage of token holders over time in decentralised exchanges, lending protocols and yield aggregators.
 - The paramount wallet addresses ranking within the top 5, 100, and 1000, exercise predominant influence over the voting power in the Balancer, Compound, Uniswap, and Yearn Finance protocols, with Compound displaying the least evidence of decentrality
