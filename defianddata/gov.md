@@ -13,23 +13,23 @@
 
 Decentralized finance (DeFi) has emerged as a potential substitute for traditional financial institutions, offering peer-to-peer transactions and a diverse range of services that democratize finance by enabling users to participate in protocol governance. However, several studies have suggested that the current governance mechanisms require improvements. This article provides an overview of findings associated with DeFi governance.
 
-## Centralised Governance in DeFi Protocols
+## Centralisation of Governance in DeFi Protocols
 
- `````{margin} **What are Lending Protocols ?**
+ `````{margin} 
   Lending protocols are decentralized finance (DeFi) applications built on top of blockchain technology that allow users to lend and borrow cryptocurrency assets without the need for intermediaries such as banks or traditional financial institutions.
 `````
-`````{margin} **What are Decentralised Exchanges ?**
+`````{margin}
   Decentralized exchanges (DeXs) are peer-to-peer trading platforms built on top of a blockchain that enable the direct exchange of cryptocurrency assets without the need for a central authority or intermediary.
 `````
-`````{margin} **What are Yield Aggregators ?**
-  Yield aggregator are a decentralized finance (DeFi) applications that automate the process of seeking out the best yield opportunities for cryptocurrency assets, and provide users with a way to optimize their returns on investment.
+`````{margin}
+  Yield aggregator are decentralized finance (DeFi) applications that automate the process of seeking out the best yield opportunities for cryptocurrency assets, and provide users with a way to optimize their returns on investment.
 `````
 
- Centralisation in DeFi has become a growing concern among researchers with several studies identifying a significant level of centrality in the governance mechanisms of DeFi protocol. Barbereau et al., {cite}`barbereau2022defi` found that the decentrality of voting in DeFi is significantly low with a majority of the voting power concentrated among a percentage of governance token holders. As evidenced by their findings, there was a significant degree of centrality, in lending protocols, decentralisd exchanges and yield aggregators. This research work employed case studies to comprehend the governance mechanisms of these protocols.
+ Centralisation in DeFi has become a growing concern among researchers with several studies identifying a significant level of centrality in the governance mechanisms of DeFi protocol. Barbereau et al., {cite}`barbereau2022defi` found that the decentrality of voting is significantly low with a majority of the voting power concentrated among a percentage of governance token holders. As evidenced by their findings, there was a significant degree of centrality, in lending protocols, decentralisd exchanges and yield aggregators. This research work employed case studies to comprehend the governance mechanisms of these protocols.
 
-Similarly, Jensen et al. {cite}`jensen2021decentralized` results demonstrate centrality in voting power with the protcols top 5, top 100, and top 1000 wallet addresses controlling majority of the voting power in Balancer, Compound, Uniswap and Yearn Finance protocols. In this study, the token holdings and users' wallets of protocols were analysed; Compound displayed the most evidence of centrality and Uniswap the least with the top 5 wallet addresses accounting for 42.1% and 12.05%, respectively.
+Similarly, result by Jensen et al. {cite}`jensen2021decentralized` demonstrate centrality in voting power with the protcols top 5, top 100, and top 1000 wallet addresses controlling majority of the voting power in Balancer, Compound, Uniswap and Yearn Finance protocols. In this study, the token holdings and users' wallets of protocols were analysed; Compound displayed the most evidence of centrality and Uniswap the least with the top 5 wallet addresses accounting for 42.1% and 12.05%, respectively.
 
-Barbereau et al. {cite}`barbereau2022decentralised` ascertained that DeFi protocols become more centralized over time. In this longitudinal study, voting patterns demonstrated changes in the power dynamics as time progressed. Furthermore, in analysing the governance structures of DeFi protocols, Stroponiati et al. {cite}`stroponiati5decentralized` ascribed reward-based economic incentives as the significant cause behind the development of centralized structures. 
+Barbereau et al. {cite}`barbereau2022decentralised` ascertained that DeFi protocols become more centralized over time. In this longitudinal study, voting patterns demonstrated changes in the power dynamics as time progressed. The tendency for this centralisation of DeFi protocols is shown in [{numref}`gov_evolution`]. Furthermore, in analysing the governance structures of DeFi protocols, Stroponiati et al. {cite}`stroponiati5decentralized` ascribed reward-based economic incentives as the significant cause behind the development of centralized structures. 
 
 ```{figure} images/Govern.drawio.png
 ---
@@ -37,7 +37,7 @@ width: 750px
 height: 260px
 name: gov_evolution
 ---
-The Evolution of DeFi Governance.
+The Tendency for Centralisation in DeFi Governance.
 ```
  
 ## Challenges & Vulnerability In DeFi Governance
