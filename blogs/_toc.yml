@@ -6,3 +6,4 @@ root: intro
 chapters:
 - file: gov
 - file: ssi
+- file: citations
