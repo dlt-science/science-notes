@@ -151,7 +151,7 @@ This is a credential issued using the javascript library <code>didkit-wasm</code
 :class: info
 - SSI solutions are designed to be blockchain-agnostic and adhere to [W3C's specifications](https://www.w3.org/TR/did-core/).
 - The identity wallets (e.g., uPort, Trinsic, Connect.Me) are different from the digital wallets (e.g., Coinbase, Ledger, Trezor) that store cryptocurrencies in the sense that they store and manage DIDs and VCs instead of cryptocurrencies.
-- To protect privacy, SSI solutions (e.g. - [Hyperledger Indy](https://medium.com/stm-blockchain/how-zero-knowledge-proofs-work-on-indy-network-241d6da112bc) and Aries) are increasingly using Zero-Knowledge Proofs (ZKPs) to prove the authenticity of credential```s without revealing the actual data.
+- To protect privacy, SSI solutions (e.g. - [Hyperledger Indy](https://medium.com/stm-blockchain/how-zero-knowledge-proofs-work-on-indy-network-241d6da112bc) and Aries) are increasingly using Zero-Knowledge Proofs (ZKPs) to prove the authenticity of credentials without revealing the actual data.
 - To facilitate secure communication between different SSI components (issuer-holder-verifier), [DIDComm](https://medium.com/decentralized-identity/understanding-didcomm-14da547ca36b) and [CHAPI](https://iiw.idcommons.net/101_Session:_Verifiable_Credential_Handler_(CHAPI)_and_DIDComm) protocols have been developed and heavily used.
 ```
 
@@ -164,11 +164,7 @@ Shuaib et al. {cite}`shuaib2022self` suggest that a blockchain-based land regist
 Estonia is one of the few countries in the world that have managed to make e-voting a reality {cite}`estonia2022estonia`. Sertkaya et al. {cite}`sertkaya2022estonian` proposed an EIV-AC scheme that integrates the Estonian Internet voting (EIV) scheme with anonymous credentials (AC) based on self-sovereign identity (SSI). The use of SSI-based anonymous credentials enables voters to prove their eligibility to vote without revealing their identity. The zero-knowledge proof of knowledge is used to prove that the voter has the right to vote without revealing any additional information. The EIV-AC scheme enhances the security and privacy of the EIV scheme, making it more compliant with privacy-enhancing and data minimization regulations.
 
 ## Can SSI work without Blockchain?
-Blockchain is one of many options when implementing the Self-sovereign Identity system. Alternatives like IPFS, Public-key cryptography and even traditional Certificate Authorities can be used to implement SSI {cite}`doyouneedblockchain`. However, the main advantage of using Blockchain is that it provides a decentralized and immutable ledger that can be used to store and verify credentials.
+Blockchain is one of many options when implementing the Self-sovereign Identity system. Alternatives like IPFS, Public-key cryptography and even traditional Certificate Authorities can be used to implement SSI. However, the main advantage of using Blockchain is that it provides a decentralized and immutable ledger that can be used to store and verify credentials.
 
 ### Conclusion
 Self-sovereign identity can potentially revolutionize various industries, including healthcare, voting systems and many more. However, as research and development in SSI progress, it will be crucial to address interoperability, scalability, and usability challenges to realize SSI's potential in a global context fully.
-
-
-```{bibliography}
-```
