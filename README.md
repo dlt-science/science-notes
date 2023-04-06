@@ -85,7 +85,7 @@ Build pdfhtml:
 jupyter-book build blogs/ --builder pdfhtml
 ```
 
-The generated pdf can be found [here](defianddata/_build/pdf/book.pdf).
+The generated pdf can be found [here](blogs/_build/pdf/book.pdf).
 
 Or build pdf through latex
 
