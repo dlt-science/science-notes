@@ -46,145 +46,16 @@ The mobile application is designed to constantly monitor the state of the mobile
 
 When a mobile phone is marked as stolen on the blockchain through the smart contract and later found. The owner of the phone wishes to reactivate the phone, they can connect it to a computer via USB and use USB mode to provide data to the phone. This can allow the owner to activate the phone again by providing the data through the USB based hotspot.
 
-The below code is a smart contract written in Solidity and JavaScript that can be deployed on a blockchain network. It is designed to prevent mobile theft by using a mapping function to keep track of mobile devices using their IMEI numbers and phone numbers.
-
-### Smart Contract - Solidity
-```c
-// SPDX-License-Identifier: MIT
-pragma solidity 0.8.7;
-
-contract MobileTheftPrevention{
-    mapping(bytes32=>bool) private isIMEIexist;
-    mapping(bytes32=>bool) private isPhoneNumberexist;
-    mapping(address=>mapping(bytes32=>bytes32)) private mapAPI;
-    mapping(bytes32=>bool) private isIMEIlost;
-
-    function hash(uint _value) private pure returns(bytes32){
-        return keccak256(abi.encodePacked(_value));
-    }
-
-    function addIMEI(uint _IMEI, uint _phoneNumber) public{
-        require(isIMEIexist[hash(_IMEI)] == false);
-        require(isPhoneNumberexist[hash(_phoneNumber)] == false);
-        isIMEIexist[hash(_IMEI)] = true;
-        isPhoneNumberexist[hash(_phoneNumber)] = true;
-        mapAPI[msg.sender][hash(_phoneNumber)] = hash(_IMEI);
-    }
-
-    function activateLost(uint _phoneNumber) public{
-        require(isIMEIexist[mapAPI[msg.sender][hash(_phoneNumber)]] == true);
-        isIMEIlost[mapAPI[msg.sender][hash(_phoneNumber)]] = true;
-    }
-
-    function deactivateLost(uint _phoneNumber) public{
-        require(isIMEIexist[mapAPI[msg.sender][hash(_phoneNumber)]] == true);
-        isIMEIlost[mapAPI[msg.sender][hash(_phoneNumber)]] = false;
-    }
-
-    function changeIMEI(uint _IMEI, uint _phoneNumber, uint _newIMEI) public{
-        require(isIMEIexist[hash(_IMEI)] == true);
-        require(isPhoneNumberexist[hash(_phoneNumber)] == true);
-        require(mapAPI[msg.sender][hash(_phoneNumber)] == hash(_IMEI));
-        mapAPI[msg.sender][hash(_phoneNumber)] = hash(_newIMEI);
-        isIMEIexist[hash(_IMEI)] = false;
-        if(isIMEIexist[hash(_newIMEI)] == false){
-            isIMEIexist[hash(_IMEI)] = true;
-        }
-    }
-
-    function changePhoneNumber(uint _IMEI, uint _phoneNumber, uint _newPhoneNumber) public{
-        require(isIMEIexist[hash(_IMEI)] == true);
-        require(isPhoneNumberexist[hash(_phoneNumber)] == true);
-        require(mapAPI[msg.sender][hash(_phoneNumber)] == hash(_IMEI));
-        mapAPI[msg.sender][hash(_phoneNumber)] = hash(uint(0));
-        mapAPI[msg.sender][hash(_newPhoneNumber)] = hash(_IMEI);
-        isPhoneNumberexist[hash(_phoneNumber)] = false;
-    }
-
-    function checkIMEI(uint _IMEI) public view returns(bool){
-        return isIMEIlost[hash(_IMEI)];
-    }
-
-}
+```{figure} images/mtp.png
+---
+width: 500px
+height: 281px
+name: mtp
+---
+Working Mechanism of Mobile Theft Prevention using Blockchain
 ```
 
-### Smart Contract - JavaScript
-```js
-const Web3 = require('web3');
-const web3 = new Web3('http://localhost:8545'); // your Blockchain client endpoint
-
-const contractAddress = '0x123456789...'; // your contract address
-const abi = [/* Smart Contract ABI */]; // your contract ABI
-
-const contract = new web3.eth.Contract(abi, contractAddress);
-
-const isIMEIexist = {};
-const isPhoneNumberexist = {};
-const mapAPI = {};
-const isIMEIlost = {};
-
-function hash(value) {
-  return web3.utils.keccak256(web3.eth.abi.encodeParameter('uint256', value));
-}
-
-async function addIMEI(IMEI, phoneNumber) {
-  if (!isIMEIexist[hash(IMEI)] && !isPhoneNumberexist[hash(phoneNumber)]) {
-    isIMEIexist[hash(IMEI)] = true;
-    isPhoneNumberexist[hash(phoneNumber)] = true;
-    mapAPI[web3.eth.defaultAccount][hash(phoneNumber)] = hash(IMEI);
-    await contract.methods.addIMEI(IMEI, phoneNumber).send({ from: web3.eth.defaultAccount });
-  }
-}
-
-async function activateLost(phoneNumber) {
-  const IMEI = mapAPI[web3.eth.defaultAccount][hash(phoneNumber)];
-  if (isIMEIexist[IMEI]) {
-    isIMEIlost[IMEI] = true;
-    await contract.methods.activateLost(phoneNumber).send({ from: web3.eth.defaultAccount });
-  }
-}
-
-async function deactivateLost(phoneNumber) {
-  const IMEI = mapAPI[web3.eth.defaultAccount][hash(phoneNumber)];
-  if (isIMEIexist[IMEI]) {
-    isIMEIlost[IMEI] = false;
-    await contract.methods.deactivateLost(phoneNumber).send({ from: web3.eth.defaultAccount });
-  }
-}
-
-async function changeIMEI(IMEI, phoneNumber, newIMEI) {
-  if (isIMEIexist[hash(IMEI)] && isPhoneNumberexist[hash(phoneNumber)] && mapAPI[web3.eth.defaultAccount][hash(phoneNumber)] === hash(IMEI)) {
-    mapAPI[web3.eth.defaultAccount][hash(phoneNumber)] = hash(newIMEI);
-    isIMEIexist[hash(IMEI)] = false;
-    if (!isIMEIexist[hash(newIMEI)]) {
-      isIMEIexist[hash(newIMEI)] = true;
-    }
-    await contract.methods.changeIMEI(IMEI, phoneNumber, newIMEI).send({ from: web3.eth.defaultAccount });
-  }
-}
-
-async function changePhoneNumber(IMEI, phoneNumber, newPhoneNumber) {
-  if (isIMEIexist[hash(IMEI)] && isPhoneNumberexist[hash(phoneNumber)] && mapAPI[web3.eth.defaultAccount][hash(phoneNumber)] === hash(IMEI)) {
-    mapAPI[web3.eth.defaultAccount][hash(phoneNumber)] = hash(0);
-    mapAPI[web3.eth.defaultAccount][hash(newPhoneNumber)] = hash(IMEI);
-    isPhoneNumberexist[hash(phoneNumber)] = false;
-    await contract.methods.changePhoneNumber(IMEI, phoneNumber, newPhoneNumber).send({ from: web3.eth.defaultAccount });
-  }
-}
-
-async function checkIMEI(IMEI) {
-  return isIMEIlost[hash(IMEI)];
-}
-
-module.exports = {
-  addIMEI,
-  activateLost,
-  deactivateLost,
-  changeIMEI,
-  changePhoneNumber,
-  checkIMEI
-};
-```
+The [smart contract](https://gist.github.com/yathin017/ec50576dcd706e5868f4d96edcd5a00c) is written in both Solidity and JavaScript programming languages that can be deployed on a blockchain network. It is designed to prevent mobile theft by using a mapping function to keep track of mobile devices using their IMEI numbers and phone numbers.
 
 The smart contract consists of six functions that can be called by authorized users.
 - `addIMEI()`  allows users to add their mobile devices to the blockchain by passing in their IMEI and phone numbers. The function first checks if the IMEI and phone numbers already exist on the blockchain, and if not, it adds the device to the mapping function.
@@ -194,15 +65,14 @@ The smart contract consists of six functions that can be called by authorized us
 - `changePhoneNumber()` allows users to change the phone number associated with their device. The function checks if the old IMEI and phone number exists on the blockchain and if it does, it replaces the old phone number with the new one.
 - `checkIMEI()` is a view function that allows anyone to check if a particular device is lost by passing in the IMEI number of the device. The function returns true if the device is lost, and false if it is not.
 
-## Potential Impact
+## Impact on Users and Mobile Manufacturers
 As the world continues to advance technologically, mobile phone theft has become a common issue that affects many people. However, with the implementation of a blockchain-based mobile theft prevention solution, it is possible to mitigate this problem.
 
-## Potential Impact on Users and Mobile Manufacturers
 For users, this solution provides an added layer of security, ensuring that their mobile devices cannot be easily used if they are lost or stolen. With the mobile application continuously reading the state of the mobile through API calls to the blockchain, it is possible to detect if the mobile is stolen, and take appropriate actions to disable the mobile network, Wi-Fi, and force activate airplane mode, preventing the thief from using any of the phone’s functionalities.
 
 For mobile manufacturers, implementing blockchain-based mobile theft prevention solution will increase customer satisfaction and retention as users are likely to be attracted to the added security feature. This, in turn, will lead to an increase in sales and profits.
 
-## Potential Economic and Social Benefits
+## Economic and Social Benefits
 The implementation of blockchain-based mobile theft prevention solutions will lead to a reduction in mobile phone theft and related crimes. This will result in a decrease in the costs of replacing stolen or lost mobile phones, and a corresponding increase in the amount of money available for investment in other areas of the economy. Additionally, it can also help to reduce insurance premiums for mobile phone owners, leading to savings for consumers.
 
 On a social level, it can help to reduce the fear of being robbed or mugged and reduce the potential for violent confrontations between victims and thieves. This can lead to an overall improvement in public safety and security.
