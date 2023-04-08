@@ -1,17 +1,13 @@
----
-title: "SSI"
-date: 2023-04-04 07:00:00
-author: "Parshant Singh"
----
+**Author:** Your Name
 
 # Self-Sovereign Identity: Technical Foundations and Applications
 
 ```{admonition} Key Insights
 :class: tip
-- SSI systems use DIDs as unique, resolvable identifiers for each entity, allowing the secure management of digital identities without relying on a centralised authority.
-- VCs provide cryptographically verifiable proof of an individual's attributes or personal information, enabling secure and trustworthy data sharing between issuers, holders, and verifiers.
-- SSI incorporates privacy-preserving mechanisms such as zero-knowledge proofs and selective disclosure, allowing users to prove their credentials without revealing their actual identity or unnecessary information.
-- While not mandatory, using Blockchain as a decentralised data registry in SSI systems enables secure, tamper-evident, and verifiable storage of credentials, enhancing the trustworthiness and reliability of the identity management process.
+- SSI systems leverage Decentralised Identifiers (DIDs) and Verifiable Credentials (VCs) to enable secure and trustworthy data sharing between issuers, holders, and verifiers, without relying on a centralised authority.
+- Privacy-preserving techniques, such as zero-knowledge proofs and selective disclosure, allow SSI users to maintain control over their digital identities and securely share credentials without exposing unnecessary information.
+- The implementation of SSI in various industries, including healthcare, land registration, and e-voting, demonstrates the potential for SSI to revolutionise identity management and enhance security, privacy, and trust in these systems.
+- While blockchain is not mandatory for SSI systems, its use as a decentralised data registry ensures secure, tamper-evident, and verifiable storage of credentials, contributing to the trustworthiness and reliability of identity management processes.
 ```
 
 ## Introduction
@@ -51,7 +47,7 @@ name: ssi-fig
 SSI entities and their relations
 ```
 
-```{dropdown} Click here to see how a verifiable credential actually looks like
+```{dropdown} Click here to see how a verifiable credential looks like
 This is a credential issued using the javascript library <code>didkit-wasm</code>
 ```json
 {
@@ -147,7 +143,7 @@ This is a credential issued using the javascript library <code>didkit-wasm</code
    }
 ```
 
-```{admonition} Nitty Gritties of SSI
+```{admonition} Nitty Gritty of SSI
 :class: info
 - SSI solutions are designed to be blockchain-agnostic and adhere to [W3C's specifications](https://www.w3.org/TR/did-core/).
 - The identity wallets (e.g., uPort, Trinsic, Connect.Me) are different from the digital wallets (e.g., Coinbase, Ledger, Trezor) that store cryptocurrencies in the sense that they store and manage DIDs and VCs instead of cryptocurrencies.
@@ -157,13 +153,20 @@ This is a credential issued using the javascript library <code>didkit-wasm</code
 
 ## Applications for SSI
 
+
+### SSI in healthcare
 Recent studies have demonstrated the feasibility of using zero-knowledge proofs to disclose information selectively, such as proof of vaccination status, without revealing users' identities. These studies have employed interoperable open-source tools to implement these systems globally at a minimal cost. Schlatt et al. {cite}`schlatt2022designing` illustrates how a customer can leverage a Zero-knowledge Proof concept called 'blinded link secret' to disclose information selectively. Similarly, Barros et al. {cite}`de2022leveraging` implemented a prototype of an application for presenting proof of vaccination without revealing users' identities. Furthermore, it uses interoperable open-source tools across countries to implement this system globally at a minimal cost for each country's government. The NHS Digital Staff Passport solution {cite}`lacity2022implementing` employs the Sovrin Network as a public key infrastructure (PKI) to manage verifiable credentials for staff onboarding. Hospitals register on the network and use their private keys to sign credentials, while staff members utilise Evernym's [Connect.Me](https://www.connect.me/) SSI digital wallet app to store and share credentials.
 
+### SSI in land registration
 Shuaib et al. {cite}`shuaib2022self` suggest that a blockchain-based land registry system can be combined with a self-sovereign identity (SSI) solution to provide a secure and efficient identity management system for landowners. Three existing SSI solutions: Everest, Evernym, and uPort {cite}`ssiplatforms`, were evaluated based on SSI principles {cite}`ssiprinciples` to determine their compliance and effectiveness in addressing identity problems in land registry systems. The Everest platform was found to be the most compliant with the SSI principles, whereas Evernym and uPort had some limitations in terms of interoperability and user control.
 
+### SSI in e-voting
 Estonia is one of the few countries in the world that have managed to make e-voting a reality {cite}`estonia2022estonia`. Sertkaya et al. {cite}`sertkaya2022estonian` proposed an EIV-AC scheme that integrates the Estonian Internet voting (EIV) scheme with anonymous credentials (AC) based on self-sovereign identity (SSI). The use of SSI-based anonymous credentials enables voters to prove their eligibility to vote without revealing their identity. The zero-knowledge proof of knowledge is used to prove that the voter has the right to vote without revealing any additional information. The EIV-AC scheme enhances the security and privacy of the EIV scheme, making it more compliant with privacy-enhancing and data minimisation regulations.
 
-Innovative proposals surrounding digital identity management systems, such as [Kiva's architecture](http://www.kiva.org/protocol/), suggest the development of an insurance marketplace for consequential damages related to identity claims. This marketplace could offer a market mechanism for evaluating the accuracy, trustworthiness, and usefulness of various identity claims, subsequently allowing lenders to confidently underwrite loans, even to individuals lacking formal credit history. By leveraging blockchain technology in a semi-decentralized identity management system, banks and microfinance lenders could underwrite the risk associated with issuing identity credentials, facilitating de-risking for subsequent lenders.
+### SSI in finance and identity management
+Innovative proposals surrounding digital identity management systems, such as [Kiva's architecture](http://www.kiva.org/protocol/), suggest the development of an insurance marketplace for consequential damages related to identity claims. This marketplace could offer a market mechanism for evaluating the accuracy, trustworthiness, and usefulness of various identity claims, subsequently allowing lenders to confidently underwrite loans, even to individuals lacking formal credit history. Furthermore, by leveraging blockchain technology in a semi-decentralised identity management system, banks and microfinance lenders could underwrite the risk associated with issuing identity credentials, facilitating de-risking for subsequent lenders.
+
+Ferdous et al. {cite}`ferdous2023ssi4web` introduce a <em>SSI4Web</em> framework and demonstrate how an SSI-based framework can be designed for web services and offer a secure and passwordless user authentication mechanism, which eliminates the need for users to remember passwords and reduces the risk of password breaches.
 
 ## Can SSI work without Blockchain?
 Blockchain is one of many options when implementing the Self-sovereign Identity system. Alternatives like IPFS, Public-key cryptography and even traditional Certificate Authorities can be used to implement SSI. However, the main advantage of using Blockchain is that it provides a decentralised and immutable ledger that can be used to store and verify credentials.
