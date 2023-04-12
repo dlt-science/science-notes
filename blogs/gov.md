@@ -50,6 +50,8 @@ The Tendency for Centralisation in DeFi Governance.
   Voter Apathy refers to a situation where token holders or members of the organisation do not actively participate in the voting process due to a lack of interest
 `````
 
+<!-- #TODO: This section should be expanded. Add more detail about what are Sybil attacks, describe the bond voting mechanism, cite reputation mechanisms as an alternative Sybil-resistance mechanism, and also cite pros and cons of solutions to voting concentration such as quadratic voting. Relevant reference is here https://arxiv.org/pdf/2201.07188.pdf -->
+
 In investigating governance challenges, Ekal et al., {cite}`ekal2022defi` identified voter collusion, low participation rates, and voter apathy as the most significant challenges. This empirical investigation utilised an interview survey approach to collect data from protocol users. Furthermore, to address vulnerabilities, Mohan et al. {cite}`mohan2022voting` proposed a novel voting mechanism resistant to sybil attacks called bond voting. This solution factors in time commitment to be resistant to plutocracy. 
 
 ## AI-enabled On-chain Governance
