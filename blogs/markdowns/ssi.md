@@ -1,3 +1,6 @@
+**Parshant Singh**
+\
+**2023-04-06**
 # Self-Sovereign Identity: Technical Foundations and Applications
 
 ```{admonition} Key Insights
@@ -175,3 +178,9 @@ Blockchain is one of many options when implementing a Self-sovereign Identity sy
 ## Conclusion
 Self-sovereign identity can potentially revolutionise various industries, including healthcare, voting systems and many more. However, as research and development in SSI progress, it will be
  crucial to address interoperability, scalability, and usability challenges to realise SSI's potential in a global context fully.
+
+## References
+
+```{bibliography}
+:filter: docname in docnames
+```

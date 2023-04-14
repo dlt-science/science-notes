@@ -2,9 +2,8 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 
 format: jb-book
-root: intro
+root: markdowns/intro
 chapters:
-- file: gov
-- file: ssi
-- file: mtp
-- file: citations
+- file: markdowns/gov
+- file: markdowns/ssi
+- file: markdowns/mtp

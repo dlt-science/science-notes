@@ -1,3 +1,7 @@
+**Yimika**
+\
+**2023-04-06**
+
 # Governance In DeFi
 
 ```{admonition} Key Insights
@@ -7,7 +11,7 @@
 - The most significant governance challenges identified by DeFi users are voter collusion, low participation rates, and voter apathy.
 - To address vulnerabilities in DeFi governance, a novel voting mechanism resistant to sybil attacks called bond voting has been proposed.
 - To enhance the manual parameter section, an AI-enabled adjustment solution has been demonstrated to automate governance mechanisms.
-``` 
+```
 
 ## Introduction
 
@@ -29,7 +33,7 @@ Decentralised finance (DeFi) has emerged as a potential substitute for tradition
 
 Similarly, result by Jensen et al. {cite}`jensen2021decentralized` demonstrate centrality in voting power with the protocols top 5, top 100, and top 1000 wallet addresses controlling majority of the voting power in Balancer, Compound, Uniswap and Yearn Finance protocols. In this study, the token holdings and users' wallets of protocols were analysed; Compound displayed the most evidence of centrality and Uniswap the least with the top 5 wallet addresses accounting for 42.1% and 12.05%, respectively.
 
-Barbereau et al. {cite}`barbereau2022decentralised` ascertained that DeFi protocols become more centralised over time. In this longitudinal study, voting patterns demonstrated changes in the power dynamics as time progressed. The tendency for this centralisation of DeFi protocols is shown in [{numref}`gov_evolution`]. Furthermore, in analysing the governance structures of DeFi protocols, Stroponiati et al. {cite}`stroponiati5decentralized` ascribed reward-based economic incentives as the significant cause behind the development of centralised structures. 
+Barbereau et al. {cite}`barbereau2022decentralised` ascertained that DeFi protocols become more centralised over time. In this longitudinal study, voting patterns demonstrated changes in the power dynamics as time progressed. The tendency for this centralisation of DeFi protocols is shown in [{numref}`gov_evolution`]. Furthermore, in analysing the governance structures of DeFi protocols, Stroponiati et al. {cite}`stroponiati5decentralized` ascribed reward-based economic incentives as the significant cause behind the development of centralised structures.
 
 ```{figure} images/Govern.drawio.png
 ---
@@ -39,7 +43,7 @@ name: gov_evolution
 ---
 The Tendency for Centralisation in DeFi Governance.
 ```
- 
+
 ## Challenges & Vulnerability In DeFi Governance
 
 `````{margin} **Voter Collusion**
@@ -52,7 +56,7 @@ The Tendency for Centralisation in DeFi Governance.
 
 <!-- #TODO: This section should be expanded. Add more detail about what are Sybil attacks, describe the bond voting mechanism, cite reputation mechanisms as an alternative Sybil-resistance mechanism, and also cite pros and cons of solutions to voting concentration such as quadratic voting. Relevant reference is here https://arxiv.org/pdf/2201.07188.pdf -->
 
-In investigating governance challenges, Ekal et al., {cite}`ekal2022defi` identified voter collusion, low participation rates, and voter apathy as the most significant challenges. This empirical investigation utilised an interview survey approach to collect data from protocol users. Furthermore, to address vulnerabilities, Mohan et al. {cite}`mohan2022voting` proposed a novel voting mechanism resistant to sybil attacks called bond voting. This solution factors in time commitment to be resistant to plutocracy. 
+In investigating governance challenges, Ekal et al., {cite}`ekal2022defi` identified voter collusion, low participation rates, and voter apathy as the most significant challenges. This empirical investigation utilised an interview survey approach to collect data from protocol users. Furthermore, to address vulnerabilities, Mohan et al. {cite}`mohan2022voting` proposed a novel voting mechanism resistant to sybil attacks called bond voting. This solution factors in time commitment to be resistant to plutocracy.
 
 ## AI-enabled On-chain Governance
 
@@ -63,10 +67,8 @@ To enhance and automate governance mechanisms, Xu et al., {cite}`xu2023auto` dem
 The vision of DeFi is to foster a democratic process of governance and sustain high levels of decentralisation. However, recent studies have highlighted significant centrality in DeFi governance mechanisms, indicating the need for improvements in the existing governance models. The studies analysed in this article have revealed that the majority of the voting power in several protocols is concentrated among the top token holders, with evidence of increasing centralisation over time. Moreover, DeFi has been found to face challenges in the voting and governance process. In view of some of these challenges, researchers have proposed novel solutions such as a bond voting and an AI-enabled parameter-selection solution to improve the current mechanisms. Given the importance of decentralisation in the underlying philosophy of DeFi, proposing more solutions to governance challenges is crucial for creating a more inclusive and democratic financial ecosystem. Therefore, continued research and development will certainly be required.
 
 
-<!-- ## References
-```
-{bibliography}
-``` -->
+## References
 
-<!-- ```{bibliography}
-``` -->
+```{bibliography}
+:filter: docname in docnames
+```

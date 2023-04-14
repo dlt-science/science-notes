@@ -45,7 +45,7 @@ venv\Scripts\activate.bat
 ### Install the project in editable mode
 
 ```zsh
-pip install -e ".[dev]"
+pip install -r requirements.txt
 ```
 
 ## Build the book
@@ -84,6 +84,11 @@ Build pdfhtml:
 ```zsh
 jupyter-book build blogs/ --builder pdfhtml
 ```
+
+This command times out, so you'll need to override the timeout manually in the
+file : `venv/lib/python3.11/site-packages/pyppeteer/page.py` by changing the line 134 to:
+`self._defaultNavigationTimeout = 3000000  # milliseconds`
+
 
 The generated pdf can be found [here](blogs/_build/pdf/book.pdf).
 
