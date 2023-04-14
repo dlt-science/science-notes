@@ -1,5 +1,3 @@
-**Author:** Your Name
-
 # Self-Sovereign Identity: Technical Foundations and Applications
 
 ```{admonition} Key Insights
@@ -28,7 +26,7 @@ Find out more about some of the most commonly used DID methods:
 While centralised identities and federated identities offer convenience, control remains with the identity provider {cite}`laurent2015digital`. User-centric identities such as OpenID {cite}`recordon2006openid` and OAuth {cite}`fett2016comprehensive` improve portability but do not give complete control to the users. SSI is designed to give users full control over their digital identities, and involves guiding principles around security, controllability, and portability. In addition to providing total control, Bernabe et al. {cite}`bernabe2019privacy` presented a classification of techniques for maintaining privacy in SSI, which included Secure Multiparty Computation and Zero-Knowledge Proofs, among others.
 
 
-The three main parties involved in SSI systems are the issuer, holder and verifier, as shown in [{numref}`ssi-fig`]. The issuer issues a cryptographically signed credential to the holder, and the verifier is the entity that confirms the credential's authenticity using a decentralised data registry such as a Blockchain. Holders store their credentials in secure digital wallets and can share them with other parties as needed. The holder can also create a presentation request and share it with the verifier. <-- #TODO: I guess the presentation request should come from a verifier? -->
+The three main parties involved in SSI systems are the issuer, holder and verifier, as shown in [{numref}`ssi-fig`]. The issuer issues a cryptographically signed credential to the holder, and the verifier is the entity that confirms the credential's authenticity using a decentralised data registry such as a Blockchain. Holders store their credentials in secure digital wallets and can share them with other parties as needed. The holder can also create a presentation and share it with the verifier on request.
 
 `````{margin} **SSI**
   Self-Sovereign Identity (SSI) is a decentralised digital identity management system which leverages blockchain technology as a data registry, allowing individuals to create, control, and share their identities securely.
@@ -153,11 +151,12 @@ This is a credential issued using the javascript library <code>didkit-wasm</code
 
 ## Applications for SSI
 
+`````{margin} **Zero-Knowledge Proofs**
+A zero-knowledge proof (ZKP) is a cryptographic technique that enables one party, the prover, to convince another party, the verifier, of the validity of a statement or the possession of a secret without revealing any additional information about the underlying secret or data.
+`````
 
 ### SSI in healthcare
 Recent studies have demonstrated the feasibility of using zero-knowledge proofs to disclose information selectively, such as proof of vaccination status, without revealing users' identities. These studies have employed interoperable open-source tools to implement these systems globally at a minimal cost. Schlatt et al. {cite}`schlatt2022designing` illustrates how a customer can leverage a Zero-knowledge Proof concept called 'blinded link secret' to disclose information selectively. Similarly, Barros et al. {cite}`de2022leveraging` implemented a prototype of an application for presenting proof of vaccination without revealing users' identities. Furthermore, it uses interoperable open-source tools across countries to implement this system globally at a minimal cost for each country's government. The NHS Digital Staff Passport solution {cite}`lacity2022implementing` employs the Sovrin Network as a public key infrastructure (PKI) to manage verifiable credentials for staff onboarding. Hospitals register on the network and use their private keys to sign credentials, while staff members utilise Evernym's [Connect.Me](https://www.connect.me/) SSI digital wallet app to store and share credentials.
-
-<-- #TODO: add a margin explainer about ZKPs -->
 
 ### SSI in land registration
 Shuaib et al. {cite}`shuaib2022self` suggest that a blockchain-based land registry system can be combined with a self-sovereign identity (SSI) solution to provide a secure and efficient identity management system for landowners. Three existing SSI solutions, Everest, Evernym, and uPort {cite}`ssiplatforms`, were evaluated based on SSI principles {cite}`ssiprinciples` to determine their compliance and effectiveness in addressing identity problems in land registry systems. The Everest platform was found to be the most compliant with the SSI principles, whereas Evernym and uPort had some limitations in terms of interoperability and user control.
@@ -174,4 +173,5 @@ Ferdous et al. {cite}`ferdous2023ssi4web` introduce a <em>SSI4Web</em> framework
 Blockchain is one of many options when implementing a Self-sovereign Identity system. Alternatives like IPFS, Public-key cryptography and even traditional Certificate Authorities can be used to implement SSI. However, the main advantage of using Blockchain is that it provides a decentralised and immutable ledger that can be used to store and verify credentials.
 
 ## Conclusion
-Self-sovereign identity can potentially revolutionise various industries, including healthcare, voting systems and many more. However, as research and development in SSI progress, it will be crucial to address interoperability, scalability, and usability challenges to realise SSI's potential in a global context fully.
+Self-sovereign identity can potentially revolutionise various industries, including healthcare, voting systems and many more. However, as research and development in SSI progress, it will be
+ crucial to address interoperability, scalability, and usability challenges to realise SSI's potential in a global context fully.
