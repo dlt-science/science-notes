@@ -1,7 +1,6 @@
-**Yathin Prakash Kethepalli**
-\
-**2023-04-06**
 # Mobile Theft Prevention using Blockchain
+
+![Industry Perspective](images/IP.svg)
 
 ```{admonition} Key Insights
 :class: tip
@@ -78,6 +77,9 @@ On a social level, it can help to reduce the fear of being robbed or mugged and 
 The implementation of this blockchain-based mobile theft prevention solution has future possibilities and extensions. It can be extended to other mobile devices like laptops, tablets, and smartwatches, further increasing the level of security for users. Additionally, it can be integrated with existing law enforcement agencies to enhance the tracking of lost or stolen mobile devices. This will make it easier for law enforcement to recover stolen mobile devices and increase the likelihood of criminals being brought to justice.
 
 In conclusion, the implementation of blockchain-based mobile theft prevention solutions provides an added layer of security that can greatly benefit mobile phone users, manufacturers, and society at large. The potential for future extensions and possibilities only adds to its value, making it an ideal solution for improving the safety and security of mobile devices.
+
+<div style="text-align: right;font-weight: bold;">Yathin Prakash Kethepalli</div>
+<div style="text-align: right;font-style: italic;">April 2023</div>
 
 ## References
 

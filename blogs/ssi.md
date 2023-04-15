@@ -1,7 +1,6 @@
-**Parshant Singh**
-\
-**2023-04-06**
 # Self-Sovereign Identity: Technical Foundations and Applications
+
+![Industry Perspective](images/II.svg)
 
 ```{admonition} Key Insights
 :class: tip
@@ -48,100 +47,8 @@ name: ssi-fig
 SSI entities and their relations
 ```
 
-```{dropdown} Click here to see how a verifiable credential looks like
-This is a credential issued using the javascript library <code>didkit-wasm</code>
-```json
-{
-      "@context":[
-         "https://www.w3.org/2018/credentials/v1",
-         {
-            "alias":"https://schema.org/name",
-            "logo":"https://schema.org/logo",
-            "website":"https://schema.org/url",
-            "description":"https://schema.org/description",
-            "BasicProfile":"https://tzprofiles.com/BasicProfile"
-         }
-      ],
-      "id":"urn:uuid:7041d211-72c9-49fe-b6d1-d8b6b94abfe3",
-      "type":[
-         "VerifiableCredential",
-         "BasicProfile"
-      ],
-      "credentialSubject":{
-         "id":"did:pkh:tz:tz1N699qJqMVbMDan2r6R3QYFw42J5ydReh6",
-         "alias":"TU Munich",
-         "website":"Germany",
-         "description":"My name",
-         "logo":"Helene-Mayer-Ring 7B"
-      },
-      "issuer":"did:pkh:tz:tz1QRuc9BkvsBfeSGr6kJ5GCzBsrDjMedvA7",
-      "issuanceDate":"2023-01-13T12:24:52.630Z",
-      "proof":{
-         "@context":{
-            "TezosMethod2021":"https://w3id.org/security#TezosMethod2021",
-            "TezosSignature2021":{
-               "@context":{
-                  "@protected":true,
-                  "@version":1.1,
-                  "challenge":"https://w3id.org/security#challenge",
-                  "created":{
-                     "@id":"http://purl.org/dc/terms/created",
-                     "@type":"http://www.w3.org/2001/XMLSchema#dateTime"
-                  },
-                  "domain":"https://w3id.org/security#domain",
-                  "expires":{
-                     "@id":"https://w3id.org/security#expiration",
-                     "@type":"http://www.w3.org/2001/XMLSchema#dateTime"
-                  },
-                  "id":"@id",
-                  "nonce":"https://w3id.org/security#nonce",
-                  "proofPurpose":{
-                     "@context":{
-                        "@protected":true,
-                        "@version":1.1,
-                        "assertionMethod":{
-                           "@container":"@set",
-                           "@id":"https://w3id.org/security#assertionMethod",
-                           "@type":"@id"
-                        },
-                        "authentication":{
-                           "@container":"@set",
-                           "@id":"https://w3id.org/security#authenticationMethod",
-                           "@type":"@id"
-                        },
-                        "id":"@id",
-                        "type":"@type"
-                     },
-                     "@id":"https://w3id.org/security#proofPurpose",
-                     "@type":"@vocab"
-                  },
-                  "proofValue":"https://w3id.org/security#proofValue",
-                  "publicKeyJwk":{
-                     "@id":"https://w3id.org/security#publicKeyJwk",
-                     "@type":"@json"
-                  },
-                  "type":"@type",
-                  "verificationMethod":{
-                     "@id":"https://w3id.org/security#verificationMethod",
-                     "@type":"@id"
-                  }
-               },
-               "@id":"https://w3id.org/security#TezosSignature2021"
-            }
-         },
-         "type":"TezosSignature2021",
-         "proofPurpose":"assertionMethod",
-         "proofValue":"edsigtaEZjPNqyWT6ZfZDTPUds7vK9RrUSFbJEpy67mAfPFYviUiWrpvhvPx2xZXRDVsPoJ3UMWjC8x1oJgY6ZziWufc87kamV8",
-         "verificationMethod":"did:pkh:tz:tz1QRuc9BkvsBfeSGr6kJ5GCzBsrDjMedvA7#TezosMethod2021",
-         "created":"2023-01-13T12:24:52.638Z",
-         "publicKeyJwk":{
-            "alg":"EdBlake2b",
-            "crv":"Ed25519",
-            "kty":"OKP",
-            "x":"WlWqCerXoqMAMKfDWD0m2cIpvysFFqiU7L8L_I7zbfI"
-         }
-      }
-   }
+```{seealso}
+[This is a verifiable credential issued using the javascript didkit-wasm library](https://gist.github.com/singhparshant/d2157ad4b48555c155d0f807d37ec3f1)
 ```
 
 ```{admonition} Nitty Gritty of SSI
@@ -178,6 +85,9 @@ Blockchain is one of many options when implementing a Self-sovereign Identity sy
 ## Conclusion
 Self-sovereign identity can potentially revolutionise various industries, including healthcare, voting systems and many more. However, as research and development in SSI progress, it will be
  crucial to address interoperability, scalability, and usability challenges to realise SSI's potential in a global context fully.
+
+<div style="text-align: right;font-weight: bold;">Parshant Singh</div>
+<div style="text-align: right;font-style: italic;">April 2023</div>
 
 ## References
 

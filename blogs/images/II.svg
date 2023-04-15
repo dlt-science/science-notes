@@ -1,0 +1,11 @@
+<svg width="132" height="30" xmlns="http://www.w3.org/2000/svg">
+
+ <g>
+  <title>Layer 1</title>
+  <path id="svg_3" d="m62,225.5" opacity="NaN" stroke="#000" fill="#fff"/>
+  <path id="svg_4" d="m88,615.5" opacity="NaN" stroke="#000" fill="#fff"/>
+  <path id="svg_6" d="m139,509.5" opacity="NaN" stroke="#000" fill="#fff"/>
+  <rect stroke="#f2e8e8" rx="5" id="svg_8" height="23" width="127" y="3.5" x="2" fill="#FFAC8D"/>
+  <text transform="matrix(1.01247 0 0 1 -2.85375 0)" stroke="#000" xml:space="preserve" text-anchor="start" font-family="'Red Hat Text'" font-size="13" id="svg_10" y="19.5" x="9.73388" stroke-width="0" fill="#000000">Innovation &amp; Ideation</text>
+ </g>
+</svg>
