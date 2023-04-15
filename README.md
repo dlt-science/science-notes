@@ -91,6 +91,7 @@ file : `venv/lib/python3.11/site-packages/pyppeteer/page.py` by changing the lin
 
 
 The generated pdf can be found [here](blogs/_build/pdf/book.pdf).
+The latex generated pdf can be found [here](blogs/_build/latex/pdf/book.pdf).
 
 Or build pdf through latex
 
