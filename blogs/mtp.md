@@ -1,6 +1,7 @@
 # Mobile Theft Prevention using Blockchain
 
-![Industry Perspective](images/IP.svg)
+<!-- ![Industry Perspective](images/IP.svg) -->
+<ins>**Industry Perspective**</ins>
 
 ```{admonition} Key Insights
 :class: tip
