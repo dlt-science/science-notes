@@ -49,7 +49,28 @@ SSI entities and their relations
 ```
 
 ```{seealso}
-[This is a verifiable credential issued using the javascript didkit-wasm library](https://gist.github.com/singhparshant/d2157ad4b48555c155d0f807d37ec3f1)
+This is a verifiable credential issued using the javascript didkit-wasm library.
+\
+[Click here for full credential](https://gist.github.com/singhparshant/d2157ad4b48555c155d0f807d37ec3f1)
+```javascript
+{
+....
+ "id":"urn:uuid:7041d211-72c9-49fe-b6d1-d8b6b94abfe3",
+      "type":[
+         "VerifiableCredential",
+         "BasicProfile"
+      ],
+      "credentialSubject":{
+         "id":"did:pkh:tz:tz1N699qJqMVbMDan2r6R3QYFw42J5ydReh6",
+         "alias":"TU Munich",
+         "website":"Germany",
+         "description":"My name",
+         "logo":"Helene-Mayer-Ring 7B"
+      },
+      "issuer":"did:pkh:tz:tz1QRuc9BkvsBfeSGr6kJ5GCzBsrDjMedvA7",
+      "issuanceDate":"2023-01-13T12:24:52.630Z",
+....
+}
 ```
 
 ```{admonition} Nitty Gritty of SSI
