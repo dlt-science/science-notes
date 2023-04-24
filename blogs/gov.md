@@ -57,11 +57,7 @@ The Tendency for Centralisation in DeFi Governance.
   Sybil attacks occur when an attacker generates multiple false identities to gain significant network control, thereby allocating more votes than expected.
 `````
 
-<<<<<<< HEAD
 In investigating governance challenges, Ekal et al., {cite}`ekal2022defi` identified voter collusion, low participation rates, and voter apathy as the most significant challenges. This empirical investigation utilised an interview survey approach to collect data from protocol users. Furthermore, to address voter concentration vulnerabilities, Mohan et al. {cite}`mohan2022voting` proposed a novel voting mechanism called bond voting which is resistant to sybil attacks. The bond voting mechanism issues 'voting bonds' to voters, which essentially requires a commitment to stake an amount of tokens, for a time period to gain voting power. Therefore, by combining this time commitment with weighed voting with a time commitment, sybil attacks are more difficult. Quadratic voting, another solution to voting concentration, allows participants to convey both their preferences and the intensity of those preferences, however, the drawback of this mechanism is its vulnerability to sybil attacks, voter collusion and voter fraud {cite}`kiayias2022sok`.
-=======
-In investigating governance challenges, Ekal et al., {cite}`ekal2022defi` identified voter collusion, low participation rates, and voter apathy as the most significant challenges. This empirical investigation utilised an interview survey approach to collect data from protocol users. Furthermore, to address vulnerabilities, Mohan et al. {cite}`mohan2022voting` proposed a novel voting mechanism resistant to sybil attacks called bond voting. This solution factors in time commitment to be resistant to plutocracy.
->>>>>>> 1409b25448eab69283b78f1f68159f8c79c05024
 
 ## AI-enabled On-chain Governance
 
