@@ -135,5 +135,5 @@ dmypy.json
 */_build/
 
 # Only upload the pdf
-!blogs/_build/pdf/book.pdf
-!blogs/_build/latex/book.pdf
+!*/_build/pdf/book.pdf
+!*/_build/latex/book.pdf
