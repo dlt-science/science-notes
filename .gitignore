@@ -134,6 +134,7 @@ dmypy.json
 
 */_build/
 
-# Only upload the pdf
+# Only upload the pdf, latex and html
 !*/_build/pdf/book.pdf
 !*/_build/latex/book.pdf
+!*/_build/html/
