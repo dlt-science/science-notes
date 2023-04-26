@@ -67,7 +67,7 @@ To enhance and automate governance mechanisms, Xu et al., {cite}`xu2023auto` dem
 
 The vision of DeFi is to foster a democratic process of governance and sustain high levels of decentralisation. However, recent studies have highlighted significant centrality in DeFi governance mechanisms, indicating the need for improvements in the existing governance models. The studies analysed in this article have revealed that the majority of the voting power in several protocols is concentrated among the top token holders, with evidence of increasing centralisation over time. Moreover, DeFi has been found to face challenges in the voting and governance process. In view of some of these challenges, researchers have proposed novel solutions such as a bond voting and an AI-enabled parameter-selection solution to improve the current mechanisms. Given the importance of decentralisation in the underlying philosophy of DeFi, proposing more solutions to governance challenges is crucial for creating a more inclusive and democratic financial ecosystem. Therefore, continued research and development will certainly be required.
 
-<div style="text-align: right;font-weight: bold;">Yimika</div>
+<div style="text-align: right;font-weight: bold;">Yimika Erinle</div>
 <div style="text-align: right;font-style: italic;">April 2023</div>
 
 ## References

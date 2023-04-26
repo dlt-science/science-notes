@@ -4,7 +4,7 @@
 ### Clone this repository
 
 ```zsh
-git clone https://github.com/xujiahuayz/dsfblog.git
+git clone https://github.com/dlt-science/science-notes.git
 ```
 
 Navigate to the directory of the cloned repo
@@ -97,4 +97,9 @@ Or build pdf through latex
 
 ```zsh
 jupyter-book build blogs/ --builder pdflatex
+```
+
+### Update the data github pages link
+```zsh
+ghp-import -n -p -f blogs/_build/html
 ```
