@@ -1,7 +1,7 @@
 # Book settings
 # Learn more at https://jupyterbook.org/customize/config.html
 
-title: DSF Blog
+title: DSF Science Notes
 author: DLT Science Foundation
 logo: dsf.png
 copyright: "2023"
@@ -22,7 +22,7 @@ bibtex_bibfiles:
 
 # Information about where the book exists on the web
 repository:
-  url: https://github.com/xujiahuayz/dsfblog # Online location of your book
+  url: https://github.com/dlt-science/science-notes # Online location of your book
   path_to_book: blogs # Optional path to your book, relative to the repository root
   branch: main  # Which branch of the repository should be used when creating links (optional)
 
