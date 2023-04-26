@@ -1,6 +1,6 @@
 # Welcome to the DSF Science Notes
 
-DSF Science Notes comprises of high-quality technical research content focused on blockchain technology. The topics covered fall in these three major categories, namely;
+DSF Science Notes consists of high-quality technical research content focused on blockchain technology. The topics covered fall in these three major categories, namely;
 
 1. **Academic Insights**: This category will feature science notes that highlight academic research findings related to blockchain technology, cryptography, distributed ledger technology (DLT), and other relevant topics. Science notes in this category with include a comprehensive overview of recent research papers in a subject-area. and will be findings-focused.
 2. **Industry Perspectives**: This category will include science notes that provide findings and insights focused on the industry applications of blockchain-related subject matters.
