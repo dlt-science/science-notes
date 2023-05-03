@@ -48,17 +48,19 @@ The main issue with sharding is that it is extremely complicated to implement as
 
 ### Security
 ### Cross-Shard Communication
-This is one of the
+As the network gets divided up into multiple shards, it is important to ensure that the shards can communicate with each other to maintain consistency and interoperability. As seen in [{numref}`cross-sharding`], this can be problematic if there is forking within the shards and the block issuing the transaction is not included in the canonical chain. Both Near and Ethereum overcome this challenge by exchanging receipts between the shards. The receipts are used to prove that a transaction has been executed on a shard {cite}`nearruntimespec` and the corresponding transaction can be executed on the other shard.
+
+
 ```{figure} images/cross-shard.png
 ---
 width: 350px
 height: 230px
-name: sharding
+name: cross-sharding
 ---
 Cross-Shard Communication
 ```
 
-### Smart Contract
+### Smart Contracts
 
 ## Conclusion
 Whether sharding will be able to
