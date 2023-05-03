@@ -7,40 +7,22 @@ ZK-Rollups in Ethereum are a Layer 2 scaling solution that uses zero-knowledge p
 `````
 
 ## What is Sharding?
-Sharding, originally a database design principle, is now being considered a promising solution to overcome the scalability challenges of blockchain systems. Sharding is a scaling technique that divides the blockchain network into smaller partitions called shards. Each shard is responsible for processing a subset of transactions. This allows the blockchain to process more transactions in parallel, thereby increasing the throughput of the system.
+Sharding, originally a database design principle, is now being considered a promising solution to overcome the scalability challenges of blockchain systems. It is a scaling technique that divides the blockchain network into smaller partitions called shards. Each shard is responsible for processing a subset of transactions. This allows the blockchain to process more transactions in parallel, thereby increasing the throughput of the system.
 
 There are 2 common techniques blockchains implement to improve throughput:
 - Delegate all the computation to a small set of powerful nodes. (eg - Algorand, Solana)
-- Each node in the network only do a subset of the total amount of work. This is called Sharding (eg - Ethereum, Near, Ziliqa).
+- Each node in the network only do a subset of the total amount of work (Sharding). Ethereum, Near, Ziliqa use this technique.
 
-Traditional
-databases assume the crash-failure model, in which a faulty
-node simply stops sending and responding to requests. On
-the other hand, blockchain systems operate in a more hostile
-environment, therefore they assume a stronger failure model,
-namely Byzantine failure, to account for malicious attackers
+```{note} **Sharding in Blockchains vs Traditional Databases**
 
-First, high-performance consensus protocols used in distributed databases [29, 41], cannot be applied to blockchains.
-Instead, blockchains rely on Byzantine Fault Tolerance (BFT)
-consensus protocols which have been shown to be a scalability bottleneck [21].
-Thus, the first challenge is to scale BFT
-consensus protocols. Second, in a distributed database any
-node can belong to any shard, but a blockchain must assign
-nodes to shards in a secure manner to ensure that no shard
-can be compromised by the attacker. The second challenge,
-therefore, is to achieve secure and efficient shard formation.
-Third, the distributed database relies on highly available
-transaction coordinators to ensure atomicity and isolation,
-but coordinators in the blockchain may be malicious. Consequently, the third challenge is to enable secure distributed
-transactions even when the coordinator is malicious
+The sharding techniques used in traditional databases cannot be directly applied to blockchains because of following reasons:
+- Blockchains rely on Byzantine Fault Tolerance (BFT) consensus protocols which have been shown to be a scalability bottleneck.
+- Distributed databases depend on highly available transaction coordinators for atomicity and isolation assurance; however, blockchain coordinators could potentially exhibit malicious behavior.
+- In a distributed database, any node can belong to any shard, but a blockchain must assign nodes to shards in a secure manner to ensure that no shard can be compromised by the attacker.
+```
 
-Examples of
-sharded blockchains include Elastico [33], OmniLedger [27]
-and RapidChain [47]. These systems, however, are limited to
-cryptocurrency applications in an open (or permissionless)
-setting. Since they focus on a simple data model, namely the
-unspent transaction output (UTXO) model, these approaches
-do not generalize to applications beyond Bitcoin.
+
+There have been a few proposed sharded blockchains such as Elastico {cite}`luu2016secure`, OmniLedger {cite}`kokoris2018omniledger` and RapidChain {cite}`zamani2018rapidchain`. Nonetheless, such systems are predominantly constrained to cryptocurrency use cases in open (or permissionless) environments. Owing to their reliance on the unspent transaction output (UTXO) model—a simplistic data structure—these methods lack generalizability for applications beyond Bitcoin {cite}`dang2019towards`. So we will focus on more general purpose blockchains such as Ethereum and Near Blockchain.
 
 
 ## Different Sharding Approaches
@@ -50,20 +32,23 @@ We will discuss two different approaches to sharding by comparing the techniques
 ---
 width: 720px
 height: 330px
-name: sharding
+name: sharding-eth-near
 ---
 Sharding in Ethereum vs Near Blockchain
 ```
 
 ### Sharding in Ethereum
+ In ethereum, data is distributed among several shard chains ([{numref}`sharding-eth-near`]) and each of these shard chains submit a record of transactions to the beacon chain or coordinating layer which coordinates and manages the shards by maintaining synchronization and ensuring a common ledger. The shards receive sets of transactions from the mining pool. Under the Ethereum 2.0 proposal, these TX are split based on their transaction types. Miners then use an EVM to process shards' data into a block and update the Merkle tree’s state on the beacon chain {cite}`kudzin2022scaling`.
 
 ### Sharding in Near Blockchain
-
+Near's sharding technique is called "Nightshade" {cite}`near2020nightshade`. Although the full implementation is still in progress, the idea is instead having multiple subchains with a single beacon chain, data is divided into smaller partitions called chunks. Each chunk is processed by a different set of validators. The validators are randomly assigned to chunks and the assignment is done in a way that the same validator is not assigned to multiple chunks as shown in [{numref}`sharding-eth-near`]. At present the Near blockchain has 4 shards and the eventual plan is to have 100 shards {cite}`nearroadmap`.
 
 ## Sharding Challenges
+The main issue with sharding is that it is extremely complicated to implement as it opens up possibilities of new attack vectors and security challenges. The following are some of the challenges that need to be addressed before sharding can be implemented in a blockchain system.
 
 ### Security
 ### Cross-Shard Communication
+This is one of the
 ```{figure} images/cross-shard.png
 ---
 width: 350px
@@ -73,5 +58,13 @@ name: sharding
 Cross-Shard Communication
 ```
 
+### Smart Contract
+
 ## Conclusion
 Whether sharding will be able to
+
+## References
+
+```{bibliography}
+:filter: docname in docnames
+```
