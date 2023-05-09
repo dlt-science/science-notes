@@ -10,7 +10,7 @@ git clone https://github.com/dlt-science/science-notes.git
 Navigate to the directory of the cloned repo
 
 ```zsh
-cd dsfblog
+cd science-notes
 ```
 
 ### Create a python virtual environment
