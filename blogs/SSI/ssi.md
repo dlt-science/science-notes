@@ -1,6 +1,5 @@
 # Self-Sovereign Identity: Technical Foundations and Applications
 
-<!-- ![Industry Perspective](images/II.svg) -->
 <ins>**Innovation & Ideation**</ins>
 
 ```{admonition} Key Insights

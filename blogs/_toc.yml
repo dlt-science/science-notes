@@ -4,6 +4,7 @@
 format: jb-book
 root: intro
 chapters:
-- file: gov
-- file: ssi
-- file: mtp
+- file: GOV/gov
+- file: SSI/ssi
+- file: MTP/mtp
+- file: Sharding/sharding
