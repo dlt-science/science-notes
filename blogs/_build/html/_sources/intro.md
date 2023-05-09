@@ -6,5 +6,11 @@ DSF Science Notes consists of high-quality technical research content focused on
 2. **Industry Perspectives**: This category will include science notes that provide findings and insights focused on the industry applications of blockchain-related subject matters.
 3. **Innovation & Ideation**: This category will focus on highlighting innovative ideas, concepts, and use cases related to blockchain technology. It will feature blog posts that explore potential applications of blockchain in various industries, such as finance, supply chain, healthcare, and more.
 
+#### Table of Contents
+
 ```{tableofcontents}
 ```
+
+The DSF Science Notes are edited by:<br />
+**Dr Jiahua Xu**, DSF Head of Science<br />
+**Dr Carlo Campajola**, DSF Senior Research Fellow 
