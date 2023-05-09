@@ -11,6 +11,8 @@ DSF Science Notes consists of high-quality technical research content focused on
 ```{tableofcontents}
 ```
 
-The DSF Science Notes are edited by:<br />
+```{admonition} DSF Science Notes Editorial Board
+:class: note
 **Dr Jiahua Xu**, DSF Head of Science<br />
 **Dr Carlo Campajola**, DSF Senior Research Fellow 
+```
