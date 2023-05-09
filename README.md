@@ -1,4 +1,4 @@
-# dsfblog
+# Science Notes
 
 
 ### Clone this repository
