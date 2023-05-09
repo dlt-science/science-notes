@@ -11,6 +11,8 @@ DSF Science Notes consists of high-quality technical research content focused on
 ```{tableofcontents}
 ```
 
+[Download Science-Notes as a pdf](_build/pdf/book.pdf)
+
 ```{admonition} DSF Science Notes Editorial Board
 :class: note
 **Dr Jiahua Xu**, DSF Head of Science<br />
