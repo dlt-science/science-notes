@@ -1,0 +1,670 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Sharding: A Panacea for Blockchain Scalability Challenges? &#8212; DSF Science Notes</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'sharding';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Mobile Theft Prevention using Blockchain" href="mtp.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/dsf.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="_static/dsf.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="gov.html">Governance In DeFi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ssi.html">Self-Sovereign Identity: Technical Foundations and Applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mtp.html">Mobile Theft Prevention using Blockchain</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Sharding: A Panacea for Blockchain Scalability Challenges?</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/dlt-science/science-notes" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/dlt-science/science-notes/edit/main/blogs/sharding.md" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/dlt-science/science-notes/issues/new?title=Issue%20on%20page%20%2Fsharding.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/sharding.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Sharding: A Panacea for Blockchain Scalability Challenges?</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-sharding">What is Sharding?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#different-sharding-approaches">Different Sharding Approaches</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sharding-in-ethereum">Sharding in Ethereum</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sharding-in-near-blockchain">Sharding in Near Blockchain</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sharding-challenges">Sharding Challenges</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#security">Security</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cross-shard-communication">Cross-Shard Communication</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-availability">Data Availability</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion">Conclusion</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="sharding-a-panacea-for-blockchain-scalability-challenges">
+<h1>Sharding: A Panacea for Blockchain Scalability Challenges?<a class="headerlink" href="#sharding-a-panacea-for-blockchain-scalability-challenges" title="Permalink to this heading">#</a></h1>
+<p><ins><strong>Innovation &amp; Ideation</strong></ins></p>
+<div class="tip admonition">
+<p class="admonition-title">Key Insights</p>
+<ul class="simple">
+<li><p>Sharding is a promising scaling technique for blockchains, dividing the network into smaller partitions called shards to process transactions in parallel, thus increasing throughput.</p></li>
+<li><p>Sharding approaches in blockchain systems vary, with solutions like Ethereum 2.0 using multiple shard chains coordinated by a beacon chain, and others, such as Near Protocol’s Nightshade, opting for processing data chunks in a single blockchain with different validator sets.</p></li>
+<li><p>Sharding implementation faces challenges such as security, cross-shard communication, and data availability, which require solutions like random validator assignment, transaction receipts, and erasure coding.</p></li>
+<li><p>While sharding offers potential scalability improvements, layer 2 solutions like ZK-Rollups and Optimistic Rollups remain the preferred short-term scaling methods until sharding proves its ability to handle high transaction volumes.</p></li>
+</ul>
+</div>
+<p>As the adoption of blockhain technology increases, scalability remains the central challenge and a major obstacle for blockchain to be adopted by mainstream industries. Bitcoin can only process 7 transactions per second (TPS), while the Ethereum blockchain can only process 15 TPS . Although, after the merger of Ethereum 1.0 and Ethereum 2.0, the TPS of Ethereum 2.0 is expected to reach 100,000 TPS, gas fees still remains a major issue. Ethereum has been relying on ZK-rollups to scale the network, but rollups are not a long-term solution. Therefore, the blockchain community is actively looking for a solution to the scalability problem.</p>
+<aside class="margin sidebar">
+<p class="sidebar-title"><strong>ZK-Rollups</strong></p>
+<p>ZK-Rollups in Ethereum are a Layer 2 scaling solution that uses zero-knowledge proofs to bundle multiple transactions into a single proof on the main chain. This reduces on-chain data storage and gas costs while maintaining security. ZK-Rollups enable higher throughput, lower fees, and faster confirmations for Ethereum transactions, while preserving privacy and decentralization.</p>
+</aside>
+<section id="what-is-sharding">
+<h2>What is Sharding?<a class="headerlink" href="#what-is-sharding" title="Permalink to this heading">#</a></h2>
+<p>Sharding, originally a database design principle, is now being considered a promising solution to overcome the scalability challenges of blockchain systems. It is a scaling technique that divides the blockchain network into smaller partitions called shards. Each shard is responsible for processing a subset of transactions. This allows the blockchain to process more transactions in parallel, thereby increasing the throughput of the system.</p>
+<p>There are 2 common techniques blockchains implement to improve throughput:</p>
+<ul class="simple">
+<li><p>Delegate all the computation to a small set of powerful nodes. (eg - Algorand, Solana)</p></li>
+<li><p>Each node in the network only do a subset of the total amount of work (Sharding). Ethereum, <a class="reference external" href="https://near.org/">Near</a>, <a class="reference external" href="https://hedera.com/">Hedera</a> use this technique.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Sharding in Blockchains vs Traditional Databases</strong></p>
+<p>The sharding techniques used in traditional databases cannot be directly applied to blockchains because of following reasons:</p>
+<ul class="simple">
+<li><p>Blockchains rely on Byzantine Fault Tolerance (BFT) consensus protocols which have been shown to be a scalability bottleneck.</p></li>
+<li><p>Distributed databases depend on highly available transaction coordinators for atomicity and isolation assurance; however, blockchain coordinators could potentially exhibit malicious behavior.</p></li>
+<li><p>In a distributed database, any node can belong to any shard, but a blockchain must assign nodes to shards in a secure manner to ensure that no shard can be compromised by the attacker.</p></li>
+</ul>
+</div>
+</section>
+<section id="different-sharding-approaches">
+<h2>Different Sharding Approaches<a class="headerlink" href="#different-sharding-approaches" title="Permalink to this heading">#</a></h2>
+<p>Huang et. al. <span id="id1">[<a class="reference internal" href="#id71" title="Huawei Huang, Xiaowen Peng, Jianzhou Zhan, Shenyang Zhang, Yue Lin, Zibin Zheng, and Song Guo. Brokerchain: a cross-shard blockchain protocol for account/balance-based state sharding. In IEEE INFOCOM 2022-IEEE Conference on Computer Communications, 1968–1977. IEEE, 2022.">HPZ+22</a>]</span> proposed a new cross-shard blockchain protocol called BrokerChain that aims to address the issue of hot shards and reduce the number of cross-shard transactions and outperforms other state-of-the-art sharding methods in terms of transaction throughput, confirmation latency, queue size of transaction pool.
+Tennakoon et. al. <span id="id2">[<a class="reference internal" href="#id72" title="Deepal Tennakoon and Vincent Gramoli. Dynamic blockchain sharding. In 5th International Symposium on Foundations and Applications of Blockchain 2022 (FAB 2022). Schloss Dagstuhl-Leibniz-Zentrum für Informatik, 2022.">TG22</a>]</span> propose a blockchain sharding protocl with dynamic sharding where
+smart contract invocations stored in blocks reconfigure the sharding. This protocol is effective in the sense that it improves the efficiency of blockchain by preventing resource wastage by closing the shard that are not processig as many transactions or are idle.
+There have been a few proposed sharded blockchains such as Elastico <span id="id3">[<a class="reference internal" href="#id64" title="Loi Luu, Viswesh Narayanan, Chaodong Zheng, Kunal Baweja, Seth Gilbert, and Prateek Saxena. A secure sharding protocol for open blockchains. In Proceedings of the 2016 ACM SIGSAC conference on computer and communications security, 17–30. 2016.">LNZ+16</a>]</span>, OmniLedger <span id="id4">[<a class="reference internal" href="#id62" title="Eleftherios Kokoris-Kogias, Philipp Jovanovic, Linus Gasser, Nicolas Gailly, Ewa Syta, and Bryan Ford. Omniledger: a secure, scale-out, decentralized ledger via sharding. In 2018 IEEE Symposium on Security and Privacy (SP), 583–598. IEEE, 2018.">KKJG+18</a>]</span> and RapidChain <span id="id5">[<a class="reference internal" href="#id63" title="Mahdi Zamani, Mahnush Movahedi, and Mariana Raykova. Rapidchain: scaling blockchain via full sharding. In Proceedings of the 2018 ACM SIGSAC conference on computer and communications security, 931–948. 2018.">ZMR18</a>]</span>. Nonetheless, such systems are predominantly constrained to cryptocurrency use cases in open (or permissionless) environments. Due to their reliance on the unspent transaction output (UTXO) model—a simplistic data structure—these methods lack generalizability for applications beyond Bitcoin <span id="id6">[<a class="reference internal" href="#id61" title="Hung Dang, Tien Tuan Anh Dinh, Dumitrel Loghin, Ee-Chien Chang, Qian Lin, and Beng Chin Ooi. Towards scaling blockchain systems via sharding. In Proceedings of the 2019 international conference on management of data, 123–140. 2019.">DDL+19</a>]</span>. So we will focus on more general purpose blockchains such as Ethereum and Near Blockchain.</p>
+<aside class="margin sidebar">
+<p class="sidebar-title"><strong>Hot Shards</strong></p>
+<p>Hot shards are shards that are experiencing a high volume of transactions, which can negatively impact the performance and security of the blockchain system.</p>
+</aside>
+<figure class="align-default" id="sharding-eth-near">
+<a class="reference internal image-reference" href="_images/sharding.png"><img alt="_images/sharding.png" src="_images/sharding.png" style="width: 720px; height: 330px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 4 </span><span class="caption-text">Sharding in Ethereum vs Near Blockchain</span><a class="headerlink" href="#sharding-eth-near" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<section id="sharding-in-ethereum">
+<h3>Sharding in Ethereum<a class="headerlink" href="#sharding-in-ethereum" title="Permalink to this heading">#</a></h3>
+<p>In ethereum, data is distributed among several shard chains ([<a class="reference internal" href="#sharding-eth-near"><span class="std std-numref">Fig. 4</span></a>]) and each of these shard chains submit a record of transactions to the beacon chain or coordinating layer which coordinates and manages the shards by maintaining synchronization and ensuring a common ledger. The shards receive sets of transactions from the mining pool. Under the Ethereum 2.0 proposal, these TX are split based on their transaction types. Miners then use an EVM to process shards’ data into a block and update the Merkle tree’s state on the beacon chain <span id="id7">[<a class="reference internal" href="#id67" title="Alexander Kudzin, Kentaroh Toyoda, Satoshi Takayama, and Atsushi Ishigame. Scaling ethereum 2.0 s cross-shard transactions with refined data structures. Cryptography, 6(4):57, 2022.">KTTI22</a>]</span>.</p>
+</section>
+<section id="sharding-in-near-blockchain">
+<h3>Sharding in Near Blockchain<a class="headerlink" href="#sharding-in-near-blockchain" title="Permalink to this heading">#</a></h3>
+<p>Near’s sharding technique is called “Nightshade” <span id="id8">[<a class="reference internal" href="#id65" title="Near. Near nightshade whitepaper. Near, 2020. URL: https://near.org/papers/nightshade/.">Nea20a</a>]</span>. Although the full implementation is still in progress, the idea is instead having multiple subchains with a single beacon chain, data is divided into smaller partitions called chunks. Each chunk is processed by a different set of validators. The validators are randomly assigned to chunks and the assignment is done in a way that the same validator is not assigned to multiple chunks as shown in [<a class="reference internal" href="#sharding-eth-near"><span class="std std-numref">Fig. 4</span></a>]. At present the Near blockchain has 4 shards and the eventual plan is to have 100 shards <span id="id9">[<a class="reference internal" href="#id66" title="CornerstoneDAO. Nightshade sharding phase 1 launches— the next alpha is near. NearDAO, 2022. URL: https://medium.com/nearprotocol/near-launches-nightshade-sharding-phase-1-the-next-alpha-is-near-eafa108bc28c.">Cor22</a>]</span>.</p>
+</section>
+</section>
+<section id="sharding-challenges">
+<h2>Sharding Challenges<a class="headerlink" href="#sharding-challenges" title="Permalink to this heading">#</a></h2>
+<p>The main issue with sharding is that it is extremely complicated to implement as it opens up possibilities of new attack vectors and security challenges. The following are some of the challenges that need to be addressed before sharding can be implemented in a blockchain system.</p>
+<section id="security">
+<h3>Security<a class="headerlink" href="#security" title="Permalink to this heading">#</a></h3>
+<p>In a 10-shard system, each shard’s security is reduced by a factor of 10 due to separate validator sets. Upon hard-forking a non-sharded chain with X validators into a sharded chain, each shard has X/10 validators. Consequently, compromising one shard necessitates corrupting only 5.1% (51% / 10) of the total validators. This is a significant reduction in security. To overcome this challenge, Ethereum uses a random beacon chain to assign validators to shards. Blockchains like Near and Algorand use Verifiable Random Functions (VRFs) to assign validators to shards. This ensures that the validators are randomly assigned to shards and the same validator is not assigned to multiple shards.</p>
+<p>Hafid et. al. <span id="id10">[<a class="reference internal" href="#id70" title="Abdelatif Hafid, Abdelhakim Senhaji Hafid, and Mustapha Samih. A tractable probabilistic approach to analyze sybil attacks in sharding-based blockchain protocols. IEEE Transactions on Emerging Topics in Computing, 2022.">HHS22</a>]</span> propose a Probabilistic Generating Function Analysis (PGFA) approach as an effective and tractable method to analyze the security of sharding-based blockchain protocols. They conclude that an increase in the number of Sybil IDs, network size, and ID Selection Pool(comprising of honest IDs and sybil IDs) size results in a higher failure probability, compromises network security which can lead to shard takeover atacks.</p>
+<aside class="margin sidebar">
+<p class="sidebar-title"><strong>VRF</strong></p>
+<p>Verifiable Random Functions (VRFs) are a cryptographic primitive that allows a user to generate a random number that can be verified by anyone.</p>
+</aside>
+</section>
+<section id="cross-shard-communication">
+<h3>Cross-Shard Communication<a class="headerlink" href="#cross-shard-communication" title="Permalink to this heading">#</a></h3>
+<p>As the network gets divided up into multiple shards, it is important to ensure that the shards can communicate with each other to maintain consistency and interoperability. As seen in [<a class="reference internal" href="#cross-sharding"><span class="std std-numref">Fig. 5</span></a>], this can be problematic if there is forking within the shards and the block issuing the transaction is not included in the canonical chain. Both Near and Ethereum overcome this challenge by exchanging receipts between the shards. The receipts are used to prove that a transaction has been executed on a shard <span id="id11">[<a class="reference internal" href="#id68" title="Near. Near runtime spec. Near, 2020. URL: https://nomicon.io/RuntimeSpec/Receipts.">Nea20b</a>]</span> and the corresponding transaction can be executed on the other shard. In Hedera Blockchain which uses a gossip protocol to exchange information between shards, each shard maintains a queue of outgoing messages for other shards. Messages are sent from one shard to another through nodes randomly contacting each other, along with proof of consensus. The process continues until the receiving shard confirms message processing with an updated sequence number in its shared state <span id="id12">[<a class="reference internal" href="#id69" title="Hedera. Hedera hashgraph whitepaper. Hedera, 2020. URL: https://hedera.com/hh_whitepaper_v2.1-20200815.pdf.">Hed20</a>]</span>. Instead of receipts, Hedera uses sequence number which is maintained by a shard for each other shard as a proof of latest execution message.</p>
+<figure class="align-default" id="cross-sharding">
+<a class="reference internal image-reference" href="_images/cross-shard.png"><img alt="_images/cross-shard.png" src="_images/cross-shard.png" style="width: 350px; height: 230px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 5 </span><span class="caption-text">Cross-Shard Communication</span><a class="headerlink" href="#cross-sharding" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="data-availability">
+<h3>Data Availability<a class="headerlink" href="#data-availability" title="Permalink to this heading">#</a></h3>
+<p>The data availability problem relates to the difficulty of ensuring that all necessary data for verifying a block’s validity is accessible to all participants in the network. For instance, a light client does not have access to full block data, and thus cannot
+verify the validaity of data. To overcome this problem, erasure coding is used to verify the validity of data. If the light client is able to retrieve a sufficient number of chunks of data, it can reconstruct the original data and verify the validity of the block. This approach is being currently used by Ethereum and Near.</p>
+<aside class="margin sidebar">
+<p class="sidebar-title"><strong>Erasure Codes</strong></p>
+<p>Erasure codes allow a piece of data M chunks long to be expanded into a piece of data N chunks long (“chunks” can be of arbitrary size), such that any M of the N chunks can be used to recover the original data.</p>
+</aside>
+</section>
+</section>
+<section id="conclusion">
+<h2>Conclusion<a class="headerlink" href="#conclusion" title="Permalink to this heading">#</a></h2>
+<p>Sharding seems to be the most promising solution to overcome the scalability challenges of blockchain systems. Although Ethereum and Near have made significant progress in implementing sharding, it is still not time-tested and it remains to be seen whether these blockchains will be able to bear the load of transactions volume when scenarios such as <a class="reference external" href="https://www.forbes.com/sites/tatianakoffman/2020/08/31/defi-the-hot-new-crypto-trend-of-2020/?sh=5576a8a05bce">DeFi boom</a> or <a class="reference external" href="https://qz.com/1145833/cryptokitties-is-causing-ethereum-network-congestion">NFT craze</a> happen again. Until then, layer 2 solutions such as ZK-Rollups and Optimistic Rollups will continue to be the preferred scaling solutions for blockchain systems.</p>
+<div style="text-align: right;font-weight: bold;">Parshant Singh</div>
+<div style="text-align: right;font-style: italic;">May 2023</div>
+</section>
+<section id="references">
+<h2>References<a class="headerlink" href="#references" title="Permalink to this heading">#</a></h2>
+<div class="docutils container" id="id13">
+<div class="citation" id="id66" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id9">Cor22</a><span class="fn-bracket">]</span></span>
+<p>CornerstoneDAO. Nightshade sharding phase 1 launches— the next alpha is near. <em>NearDAO</em>, 2022. URL: <a class="reference external" href="https://medium.com/nearprotocol/near-launches-nightshade-sharding-phase-1-the-next-alpha-is-near-eafa108bc28c">https://medium.com/nearprotocol/near-launches-nightshade-sharding-phase-1-the-next-alpha-is-near-eafa108bc28c</a>.</p>
+</div>
+<div class="citation" id="id61" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id6">DDL+19</a><span class="fn-bracket">]</span></span>
+<p>Hung Dang, Tien Tuan Anh Dinh, Dumitrel Loghin, Ee-Chien Chang, Qian Lin, and Beng Chin Ooi. Towards scaling blockchain systems via sharding. In <em>Proceedings of the 2019 international conference on management of data</em>, 123–140. 2019.</p>
+</div>
+<div class="citation" id="id70" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id10">HHS22</a><span class="fn-bracket">]</span></span>
+<p>Abdelatif Hafid, Abdelhakim Senhaji Hafid, and Mustapha Samih. A tractable probabilistic approach to analyze sybil attacks in sharding-based blockchain protocols. <em>IEEE Transactions on Emerging Topics in Computing</em>, 2022.</p>
+</div>
+<div class="citation" id="id69" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id12">Hed20</a><span class="fn-bracket">]</span></span>
+<p>Hedera. Hedera hashgraph whitepaper. <em>Hedera</em>, 2020. URL: <a class="reference external" href="https://hedera.com/hh_whitepaper_v2.1-20200815.pdf">https://hedera.com/hh_whitepaper_v2.1-20200815.pdf</a>.</p>
+</div>
+<div class="citation" id="id71" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">HPZ+22</a><span class="fn-bracket">]</span></span>
+<p>Huawei Huang, Xiaowen Peng, Jianzhou Zhan, Shenyang Zhang, Yue Lin, Zibin Zheng, and Song Guo. Brokerchain: a cross-shard blockchain protocol for account/balance-based state sharding. In <em>IEEE INFOCOM 2022-IEEE Conference on Computer Communications</em>, 1968–1977. IEEE, 2022.</p>
+</div>
+<div class="citation" id="id62" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id4">KKJG+18</a><span class="fn-bracket">]</span></span>
+<p>Eleftherios Kokoris-Kogias, Philipp Jovanovic, Linus Gasser, Nicolas Gailly, Ewa Syta, and Bryan Ford. Omniledger: a secure, scale-out, decentralized ledger via sharding. In <em>2018 IEEE Symposium on Security and Privacy (SP)</em>, 583–598. IEEE, 2018.</p>
+</div>
+<div class="citation" id="id67" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id7">KTTI22</a><span class="fn-bracket">]</span></span>
+<p>Alexander Kudzin, Kentaroh Toyoda, Satoshi Takayama, and Atsushi Ishigame. Scaling ethereum 2.0 s cross-shard transactions with refined data structures. <em>Cryptography</em>, 6(4):57, 2022.</p>
+</div>
+<div class="citation" id="id64" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id3">LNZ+16</a><span class="fn-bracket">]</span></span>
+<p>Loi Luu, Viswesh Narayanan, Chaodong Zheng, Kunal Baweja, Seth Gilbert, and Prateek Saxena. A secure sharding protocol for open blockchains. In <em>Proceedings of the 2016 ACM SIGSAC conference on computer and communications security</em>, 17–30. 2016.</p>
+</div>
+<div class="citation" id="id65" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id8">Nea20a</a><span class="fn-bracket">]</span></span>
+<p>Near. Near nightshade whitepaper. <em>Near</em>, 2020. URL: <a class="reference external" href="https://near.org/papers/nightshade/">https://near.org/papers/nightshade/</a>.</p>
+</div>
+<div class="citation" id="id68" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id11">Nea20b</a><span class="fn-bracket">]</span></span>
+<p>Near. Near runtime spec. <em>Near</em>, 2020. URL: <a class="reference external" href="https://nomicon.io/RuntimeSpec/Receipts">https://nomicon.io/RuntimeSpec/Receipts</a>.</p>
+</div>
+<div class="citation" id="id72" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">TG22</a><span class="fn-bracket">]</span></span>
+<p>Deepal Tennakoon and Vincent Gramoli. Dynamic blockchain sharding. In <em>5th International Symposium on Foundations and Applications of Blockchain 2022 (FAB 2022)</em>. Schloss Dagstuhl-Leibniz-Zentrum für Informatik, 2022.</p>
+</div>
+<div class="citation" id="id63" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id5">ZMR18</a><span class="fn-bracket">]</span></span>
+<p>Mahdi Zamani, Mahnush Movahedi, and Mariana Raykova. Rapidchain: scaling blockchain via full sharding. In <em>Proceedings of the 2018 ACM SIGSAC conference on computer and communications security</em>, 931–948. 2018.</p>
+</div>
+</div>
+</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="mtp.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Mobile Theft Prevention using Blockchain</p>
+      </div>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-sharding">What is Sharding?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#different-sharding-approaches">Different Sharding Approaches</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sharding-in-ethereum">Sharding in Ethereum</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sharding-in-near-blockchain">Sharding in Near Blockchain</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sharding-challenges">Sharding Challenges</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#security">Security</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cross-shard-communication">Cross-Shard Communication</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-availability">Data Availability</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion">Conclusion</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By DLT Science Foundation
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
