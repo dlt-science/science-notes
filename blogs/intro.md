@@ -11,7 +11,7 @@ DSF Science Notes consists of high-quality technical research content focused on
 ```{tableofcontents}
 ``` -->
 
-[Download Science-Notes as a pdf](_build/pdf/book.pdf)
+[Download Science-Notes as a pdf](_build/latex/book.pdf)
 
 ```{admonition} DSF Science Notes Editorial Board
 :class: note
