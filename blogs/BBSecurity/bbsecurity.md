@@ -49,6 +49,12 @@ Blockchain bridges represent an important evolution in blockchain technology, fa
 
 ## References
 
+Kiayias, A. et al. (2017) ‘Ouroboros: A provably secure proof-of-stake Blockchain Protocol’, Advances in Cryptology – CRYPTO 2017, pp. 357–388. doi:10.1007/978-3-319-63688-7_12. 
+Li, T. et al. (2023) Metaopera: A cross-metaverse interoperability protocol, arXiv.org. Available at: https://arxiv.org/abs/2302.01600 (Accessed: 18 May 2023). 
+Wang, X. et al. (2022) TrustBoost: Boosting Trust among interoperable blockchains, arXiv.org. Available at: https://arxiv.org/abs/2210.11571 (Accessed: 18 May 2023). 
+Xie, T. et al. (2022) ‘ZkBridge’, Proceedings of the 2022 ACM SIGSAC Conference on Computer and Communications Security [Preprint]. doi:10.1145/3548606.3560652. 
+Zamyatin, A. et al. (2019) ‘Xclaim: Trustless, interoperable, cryptocurrency-backed assets’, 2019 IEEE Symposium on Security and Privacy (SP) [Preprint]. doi:10.1109/sp.2019.00085. 
+
 ```{bibliography}
 :filter: docname in docnames
 ```
