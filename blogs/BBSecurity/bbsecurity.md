@@ -17,12 +17,11 @@ Blockchain technology has been lauded for its potential to disrupt various indus
 
 ## Interoperability and Security Challenges
 
- Interoperability in blockchain environments brings forth a series of unique security challenges. As highlighted by Zamyatin et al. trustless, interoperable, cryptocurrency-backed assets can be subjected to various threats. Most existing solutions rely on trust assumptions of committees, this lowers the security significantly. In April 2022, attackers were able to obtain five of the nine validator keys, through which they stole 624 million USD by exploiting Ronin bridge, making it the largest attack in the history of DeFi.  
+ Interoperability in blockchain environments brings forth a series of unique security challenges. Trustless, interoperable, cryptocurrency-backed assets can be subjected to various threats. Most existing solutions rely on trust assumptions of committees, this lowers the security significantly. In April 2022, attackers were able to obtain five of the nine validator keys, through which they stole 624 million USD by exploiting Ronin bridge, making it the largest attack in the history of DeFi.  
 
-Xie et al. proposed a solution by introducing “zkBridge” an efficient cross-chain bridge that guarantees strong security without external trust assumptions. The main idea is to leverage zk-SNARK, which are succinct non-interactive proofs (arguments) of knowledge as a result security is ensured without relying on a committee. zkBridges uses zk-SNARK protocol to achieve both reasonable proof generation time and on-chain verification cost. zkBridge is “trustless” as it does not require extra assumptions other than those of blockchains and underlying cryptographic protocols. 
+Xie et al. proposed a solution by introducing “zkBridge” an efficient cross-chain bridge that guarantees strong security without external trust assumptions. The main idea is to leverage zk-SNARK, which are succinct non-interactive proofs (arguments) of knowledge as a result security is ensured without relying on a committee. zkBridges uses zk-SNARK protocol to achieve both reasonable proof generation time and on-chain verification cost. zkBridge is “trustless” as it does not require extra assumptions other than those of blockchains and underlying cryptographic protocols. It is the first to use ZKP to enable a decentralized trustless bridge.
 
-According to Xie et al.’S findings, recurring attacks against bridges have cost users more than 1.5 billion USD.  This calls for novel security models and protocols that can protect against possible attack vectors introduced by cross-chain communication. This is particularly true for blockchain bridges that need to uphold the integrity and security of transactions across disparate networks.
-
+According to several reports, recurring attacks against bridges have cost users more than 1.5 billion USD.  This calls for novel security models and protocols that can protect against possible attack vectors introduced by cross-chain communication. This is particularly true for blockchain bridges that need to uphold the integrity and security of transactions across disparate networks.
 
 ## The Role of Cryptography in Blockchain Bridge Security
 
@@ -38,7 +37,7 @@ Existing solutions to boost the trust using a stronger blockchain, e.g., via che
 
 ## Scalability and Security
 
-As important as security is for blockchain bridges, it should not compromise the scalability of the systems. Zamyatin et al. touched upon the scalability-security trade-off in their study on interoperable assets. They discussed the need for a balance that allows for scalability without jeopardizing security. Future research in blockchain bridge security needs to address this delicate balance, ensuring the development of robust and efficient interoperable systems.
+As important as security is for blockchain bridges, it should not compromise the scalability of the systems. Zamyatin et al. discussed the scalability-security trade-off in their study on interoperable assets. There is need for a balance that allows for scalability without jeopardizing security. Future research in blockchain bridge security needs to address this delicate balance, ensuring the development of robust and efficient interoperable systems.
 
 ## Conclusion
 
