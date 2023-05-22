@@ -29,6 +29,8 @@ Securing blockchain bridges is greatly dependent on the strength of the cryptogr
 
 To overcome the external trust assumption, Li et al. in their paper proposed a Hash time-lock scheme, which utilizes a hash function and time-lock features to achieve cross-chain interoperability. The security of the Hash time-lock scheme is based on cryptographic hardness assumptions. The asset receiver is forced to determine the collection and produce proof of collection to the payer within the cut-off time, or the asset will be returned via hash locks and blockchain “time” locks. The proof of receipt can be used by the payer to acquire assets of equal value on the recipient’s blockchain or trigger other events. However, this scheme only supports monetary exchange and thus has low scalability.
 
+According to Li et al., a high security and highly scalability option is sidechains/relay scheme which supports the interoperability of multiple objects such as assets and other data, thus having high scalability. Sidechain is a blockchain that communicates with other blockchains via a two-way peg. In particular, the two-way peg is a mechanism that allows bidirectional communication between blockchains. An example of a two-way peg is simplified payment verification (SPV) in Bitcoin. 
+
 Such cryptographic protocols can serve as a guiding light for the development of security measures in the context of blockchain bridges.
 
 ## Maintaining Sovereignty of blockchains
