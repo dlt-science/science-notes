@@ -5,10 +5,11 @@
 
 ```{admonition} Key Insights
 :class: tip
-- Interoperability in blockchains introduces unique security challenges.
-- Cryptographic techniques remain central to ensuring security in blockchain bridges.
-- Standardized protocols for blockchain bridge security are a subject of active research.
-- A balance between scalability and security is crucial for the future of blockchain bridges.
+- A cross-chain bridge leveraging zk-SNARK technology to provide a secure, trustless cross-chain bridge, marking the first implementation of Zero-Knowledge Proofs (ZKP) in a decentralized trustless bridge system has been proposed.
+- A Hash time-lock scheme to facilitate secure cross-chain interoperability without relying on external trust ensuring transaction security is introduced.
+- High security and highly scalability option which supports the interoperability of multiple objects is sidechains/relay scheme.
+- A series of protocols "TrustBoost" using smart contracts to achieve a 'consensus on top of consensus' mechanism, bolstering trust across multiple blockchains and mitigating token transfer risks, with promising prospects for future applications is proposed.
+- Cryptographic techniques remain central to ensuring security in blockchain bridges. A balance between scalability and security is crucial for the future of blockchain bridges.
 ```
 
 ## Introduction
@@ -17,19 +18,29 @@ Blockchain technology has been lauded for its potential to disrupt various indus
 
 ## Interoperability and Security Challenges
 
- Interoperability in blockchain environments brings forth a series of unique security challenges. Trustless, interoperable, cryptocurrency-backed assets can be subjected to various threats. Most existing solutions rely on trust assumptions of committees, this lowers the security significantly. In April 2022, attackers were able to obtain five of the nine validator keys, through which they stole 624 million USD by exploiting Ronin bridge, making it the largest attack in the history of DeFi.  
+ `````{margin} **Zero-Knowledge Proofs**
+A zero-knowledge proof (ZKP) is a cryptographic technique that enables one party, the prover, to convince another party, the verifier, of the validity of a statement or the possession of a secret without revealing any additional information about the underlying secret or data.
+`````
+ `````{margin} **zk-SNARK**
+  Zk-SNARK is an acronym that stands for “Zero-Knowledge Succinct Non-Interactive Argument of Knowledge.” A zk-SNARK is a cryptographic proof that allows one party to prove it possesses certain information without revealing that information.
+`````
+ Interoperability in blockchain environments brings forth a series of unique security challenges. Trustless, interoperable, cryptocurrency-backed assets can be subjected to various threats. In April 2022, attackers were able to obtain five of the nine validator keys, through which they stole 624 million USD by exploiting Ronin bridge, making it the largest attack in the history of DeFi (Sam Kessler and Sage D. Young, 2022). According to blockchain analytics firm Chainalysis, until August 2022 recurring attacks against bridges have cost users around 1.4 billion USD (Ryan Browne, 2022). In 2022 attacks on bridges accounted for 69% of total funds stolen (Chainanalysis, 2022). This calls for novel security models and protocols that can protect against possible attack vectors introduced by cross-chain communication. This is particularly true for blockchain bridges that need to uphold the integrity and security of transactions across disparate networks. Most existing solutions rely on trust assumptions of committees, this lowers the security significantly.
 
-Xie et al. proposed a solution by introducing “zkBridge” an efficient cross-chain bridge that guarantees strong security without external trust assumptions. The main idea is to leverage zk-SNARK, which are succinct non-interactive proofs (arguments) of knowledge as a result security is ensured without relying on a committee. zkBridges uses zk-SNARK protocol to achieve both reasonable proof generation time and on-chain verification cost. zkBridge is “trustless” as it does not require extra assumptions other than those of blockchains and underlying cryptographic protocols. It is the first to use ZKP to enable a decentralized trustless bridge.
-
-According to several reports, recurring attacks against bridges have cost users more than 1.5 billion USD.  This calls for novel security models and protocols that can protect against possible attack vectors introduced by cross-chain communication. This is particularly true for blockchain bridges that need to uphold the integrity and security of transactions across disparate networks.
+Xie et al. proposed a solution by introducing “zkBridge” an efficient cross-chain bridge that guarantees strong security without external trust assumptions. The main idea is to leverage zk-SNARK, which are succinct non-interactive proofs (arguments) of knowledge as a result security is ensured without relying on a committee. zkBridges uses zk-SNARK protocol to achieve both reasonable proof generation time and on-chain verification cost. zkBridge is “trustless” as it does not require extra assumptions other than those of blockchains and underlying cryptographic protocols. It is the first to use Zero-Knowledge Proofs (ZKP) to enable a decentralized trustless bridge.
 
 ## The Role of Cryptography in Blockchain Bridge Security
 
+`````{margin} **Sidechain**
+  Sidechain is a blockchain that communicates with other blockchains via a two-way peg.It stems from the main blockchain and runs in parallel to it.
+`````
+`````{margin} **Cryptographic Protocol**
+  A cryptographic protocol is an abstract or concrete protocol that performs a security-related function and applies cryptographic methods, often as sequences of cryptographic primitives. A protocol describes how the algorithms should be used and includes details about data structures and representations, at which point it can be used to implement multiple, interoperable versions of a program.
+`````
 Securing blockchain bridges is greatly dependent on the strength of the cryptographic techniques deployed. The fundamental study by Kiayias et al. on proof-of-stake blockchain protocols is of significant relevance. They outlined a novel cryptographic mechanism that provides transactional security while ensuring transparency.
 
 To overcome the external trust assumption, Li et al. in their paper proposed a Hash time-lock scheme, which utilizes a hash function and time-lock features to achieve cross-chain interoperability. The security of the Hash time-lock scheme is based on cryptographic hardness assumptions. The asset receiver is forced to determine the collection and produce proof of collection to the payer within the cut-off time, or the asset will be returned via hash locks and blockchain “time” locks. The proof of receipt can be used by the payer to acquire assets of equal value on the recipient’s blockchain or trigger other events. However, this scheme only supports monetary exchange and thus has low scalability.
 
-Li et al. identified a high security and highly scalability option is sidechains/relay scheme which supports the interoperability of multiple objects such as assets and other data, thus having high scalability. Sidechain is a blockchain that communicates with other blockchains via a two-way peg. In particular, the two-way peg is a mechanism that allows bidirectional communication between blockchains. An example of a two-way peg is simplified payment verification (SPV) in Bitcoin. 
+Li et al., identified a high security and highly scalability option is sidechains/relay scheme which supports the interoperability of multiple objects such as assets and other data, thus having high scalability. In particular, the two-way peg is a mechanism that allows bidirectional communication between blockchains. An example of a two-way peg is simplified payment verification (SPV) in Bitcoin. 
 
 Such cryptographic protocols can serve as a guiding light for the development of security measures in the context of blockchain bridges.
 
@@ -59,9 +70,15 @@ Blockchain bridges represent an important evolution in blockchain technology, fa
 
 ## References
 
+Chainanalysis (2022) Cross-chain bridge hacks emerge as top security risk, Chainalysis. Available at: https://blog.chainalysis.com/reports/cross-chain-bridge-hacks-2022/ (Accessed: 22 May 2023). 
+
 Kiayias, A. et al. (2017) ‘Ouroboros: A provably secure proof-of-stake Blockchain Protocol’, Advances in Cryptology – CRYPTO 2017, pp. 357–388. doi:10.1007/978-3-319-63688-7_12. 
 
 Li, T. et al. (2023) Metaopera: A cross-metaverse interoperability protocol, arXiv.org. Available at: https://arxiv.org/abs/2302.01600 (Accessed: 18 May 2023). 
+
+Ryan Browne, M.S. (2022) Hackers have stolen $1.4 billion this year using crypto bridges. here’s why it’s happening, CNBC. Available at: https://www.cnbc.com/2022/08/10/hackers-have-stolen-1point4-billion-this-year-using-crypto-bridges.html (Accessed: 22 May 2023). 
+
+Sam Kessler and Sage D. Young (2022) Ronin attack shows cross-chain crypto is a ‘bridge’ too far, CoinDesk Latest Headlines RSS. Available at: https://www.coindesk.com/layer2/2022/04/05/ronin-attack-shows-cross-chain-crypto-is-a-bridge-too-far/ (Accessed: 22 May 2023). 
 
 Wang, X. et al. (2022) TrustBoost: Boosting Trust among interoperable blockchains, arXiv.org. Available at: https://arxiv.org/abs/2210.11571 (Accessed: 18 May 2023). 
 
