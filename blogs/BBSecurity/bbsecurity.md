@@ -33,6 +33,15 @@ Li et al. identified a high security and highly scalability option is sidechains
 
 Such cryptographic protocols can serve as a guiding light for the development of security measures in the context of blockchain bridges.
 
+```{figure} images/BBS.drawio.png
+---
+width: 750px
+height: 260px
+name: bridge_security
+---
+Security and Scalability of Cross-Chain Technologies.
+```
+
 ## Scalability and Security
 
 As important as security is for blockchain bridges, it should not compromise the scalability of the systems. Zamyatin et al. discussed the scalability-security trade-off in their study on interoperable assets. There is need for a balance that allows for scalability without jeopardizing security. Future research in blockchain bridge security needs to address this delicate balance, ensuring the development of robust and efficient interoperable systems.
