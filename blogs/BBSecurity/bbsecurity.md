@@ -27,7 +27,7 @@ According to several reports, recurring attacks against bridges have cost users 
 
 Securing blockchain bridges is greatly dependent on the strength of the cryptographic techniques deployed. The fundamental study by Kiayias et al. on proof-of-stake blockchain protocols is of significant relevance. They outlined a novel cryptographic mechanism that provides transactional security while ensuring transparency.
 
-To overcome the external trust assumption, Li et al. in their paper proposed a Hash time-lock scheme, which utilizes a hash function and time-lock features to achieve cross-chain interoperability. The security of the Hash time-lock scheme is based on cryptographic hardness assumptions. However, this scheme only supports monetary exchange and thus has low scalability. 
+To overcome the external trust assumption, Li et al. in their paper proposed a Hash time-lock scheme, which utilizes a hash function and time-lock features to achieve cross-chain interoperability. The security of the Hash time-lock scheme is based on cryptographic hardness assumptions. The asset receiver is forced to determine the collection and produce proof of collection to the payer within the cut-off time, or the asset will be returned via hash locks and blockchain “time” locks. The proof of receipt can be used by the payer to acquire assets of equal value on the recipient’s blockchain or trigger other events. However, this scheme only supports monetary exchange and thus has low scalability.
 
 Such cryptographic protocols can serve as a guiding light for the development of security measures in the context of blockchain bridges.
 
