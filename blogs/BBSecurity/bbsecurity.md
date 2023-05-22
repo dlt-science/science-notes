@@ -29,17 +29,17 @@ Securing blockchain bridges is greatly dependent on the strength of the cryptogr
 
 To overcome the external trust assumption, Li et al. in their paper proposed a Hash time-lock scheme, which utilizes a hash function and time-lock features to achieve cross-chain interoperability. The security of the Hash time-lock scheme is based on cryptographic hardness assumptions. The asset receiver is forced to determine the collection and produce proof of collection to the payer within the cut-off time, or the asset will be returned via hash locks and blockchain “time” locks. The proof of receipt can be used by the payer to acquire assets of equal value on the recipient’s blockchain or trigger other events. However, this scheme only supports monetary exchange and thus has low scalability.
 
-According to Li et al., a high security and highly scalability option is sidechains/relay scheme which supports the interoperability of multiple objects such as assets and other data, thus having high scalability. Sidechain is a blockchain that communicates with other blockchains via a two-way peg. In particular, the two-way peg is a mechanism that allows bidirectional communication between blockchains. An example of a two-way peg is simplified payment verification (SPV) in Bitcoin. 
+Li et al. identified a high security and highly scalability option is sidechains/relay scheme which supports the interoperability of multiple objects such as assets and other data, thus having high scalability. Sidechain is a blockchain that communicates with other blockchains via a two-way peg. In particular, the two-way peg is a mechanism that allows bidirectional communication between blockchains. An example of a two-way peg is simplified payment verification (SPV) in Bitcoin. 
 
 Such cryptographic protocols can serve as a guiding light for the development of security measures in the context of blockchain bridges.
-
-## Maintaining Sovereignty of blockchains
-
-Existing solutions to boost the trust using a stronger blockchain, e.g., via checkpointing, requires the weaker blockchain to give up sovereignty. Wang et al. in their paper present a series of protocols known as "TrustBoost" designed to bolster trust across multiple blockchains without compromising their sovereignty. These protocols function through smart contracts, achieving a "consensus on top of consensus" that avoids changes to the blockchains' consensus layers. TrustBoost operates by allowing cross-chain communication via bridges, facilitating the sharing of information across smart contracts on different blockchains. This system maintains its security as long as two-thirds of the participating blockchains are secure. Furthermore, TrustBoost shows potential in mitigating risks associated with cross-chain token transfers and exhibits promising prospects for future applications, especially as heterogeneous blockchain networks continue to mature.
 
 ## Scalability and Security
 
 As important as security is for blockchain bridges, it should not compromise the scalability of the systems. Zamyatin et al. discussed the scalability-security trade-off in their study on interoperable assets. There is need for a balance that allows for scalability without jeopardizing security. Future research in blockchain bridge security needs to address this delicate balance, ensuring the development of robust and efficient interoperable systems.
+
+## Maintaining Sovereignty of blockchains
+
+Existing solutions to boost the trust using a stronger blockchain, e.g., via checkpointing, requires the weaker blockchain to give up sovereignty. Wang et al. in their paper present a series of protocols known as "TrustBoost" designed to bolster trust across multiple blockchains without compromising their sovereignty. These protocols function through smart contracts, achieving a "consensus on top of consensus" that avoids changes to the blockchains' consensus layers. TrustBoost operates by allowing cross-chain communication via bridges, facilitating the sharing of information across smart contracts on different blockchains. This system maintains its security as long as two-thirds of the participating blockchains are secure. Furthermore, TrustBoost shows potential in mitigating risks associated with cross-chain token transfers and exhibits promising prospects for future applications, especially as heterogeneous blockchain networks continue to mature.
 
 ## Conclusion
 
