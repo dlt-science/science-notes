@@ -33,7 +33,7 @@ Xie et al. proposed a solution by introducing “zkBridge” an efficient cross-
 ## The Role of Cryptography in Blockchain Bridge Security
 
 `````{margin} **Sidechain**
-  Sidechain is a blockchain that communicates with other blockchains via a two-way peg.It stems from the main blockchain and runs in parallel to it.
+  Sidechain is a blockchain that communicates with other blockchains via a two-way peg. It stems from the main blockchain and runs in parallel to it.
 `````
 `````{margin} **Cryptographic Protocol**
   A cryptographic protocol is an abstract or concrete protocol that performs a security-related function and applies cryptographic methods, often as sequences of cryptographic primitives. A protocol describes how the algorithms should be used and includes details about data structures and representations, at which point it can be used to implement multiple, interoperable versions of a program.
@@ -52,7 +52,7 @@ width: 750px
 height: 260px
 name: bridge_security
 ---
-Security and Scalability of Cross-Chain Technologies.
+Communication through a Blockchain Bridge.
 ```
 
 ## Scalability and Security
