@@ -46,7 +46,7 @@ Li et al., identified a high security and highly scalability option is sidechain
 
 Such cryptographic protocols can serve as a guiding light for the development of security measures in the context of blockchain bridges.
 
-```{figure} images/BBS.drawio.png
+```{figure} images/BBBS.drawio.png
 ---
 width: 750px
 height: 260px
