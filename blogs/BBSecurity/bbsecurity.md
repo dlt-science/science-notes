@@ -5,16 +5,26 @@
 
 ```{admonition} Key Insights
 :class: tip
-- A cross-chain bridge leveraging zk-SNARK technology to provide a secure, trustless cross-chain bridge, marking the first implementation of Zero-Knowledge Proofs (ZKP) in a decentralized trustless bridge system has been proposed.
-- A Hash time-lock scheme to facilitate secure cross-chain interoperability without relying on external trust ensuring transaction security is introduced.
+- To mitigate security risks, a cross-chain bridge leveraging zk-SNARK technology to provide a secure, trustless cross-chain bridge, marking the first implementation of Zero-Knowledge Proofs (ZKP) in a decentralized trustless bridge system has been proposed.
+- To facilitate secure cross-chain interoperability, a Hash time-lock scheme which does not rely on external trust ensuring transaction security is introduced.
 - High security and highly scalability option which supports the interoperability of multiple objects is sidechains/relay scheme.
-- A series of protocols "TrustBoost" using smart contracts to achieve a 'consensus on top of consensus' mechanism, bolstering trust across multiple blockchains and mitigating token transfer risks, with promising prospects for future applications is proposed.
+- To mitigate token transfer risks, a series of protocols "TrustBoost" using smart contracts to achieve a 'consensus on top of consensus' mechanism, bolstering trust across multiple blockchains and with promising prospects for future applications is proposed.
+- To enhance interoperability, a novel framework mitigating security risks in cross-blockchain technology is proposed. It facilitates the identification of key assumptions and characteristics. It improves decision-making, minimizes design errors, and aids in integrating various blockchain applications, thus promoting effective interoperability.
 - Cryptographic techniques remain central to ensuring security in blockchain bridges. A balance between scalability and security is crucial for the future of blockchain bridges.
 ```
 
 ## Introduction
 
 Blockchain technology has been lauded for its potential to disrupt various industries, given its unique properties such as decentralization, transparency, and security. One recent advancement in this area is the development of blockchain bridges, which enable interoperability among different blockchains. Bridges facilitate communication between two blockchain ecosystems through the transfer of assets and information. However, as with any innovative technology, these bridges pose new security challenges. In this science note, we delve into the current academic landscape surrounding the security of blockchain bridges and summarize the recent research findings.
+
+```{figure} images/BBBS.drawio.png
+---
+width: 750px
+height: 260px
+name: bridge_security
+---
+Communication through a Blockchain Bridge.
+```
 
 ## Interoperability and Security Challenges
 
@@ -30,6 +40,8 @@ A zero-knowledge proof (ZKP) is a cryptographic technique that enables one party
 
 Xie et al. proposed a solution by introducing “zkBridge” an efficient cross-chain bridge that guarantees strong security without external trust assumptions. The main idea is to leverage zk-SNARK, which are succinct non-interactive proofs (arguments) of knowledge as a result security is ensured without relying on a committee. zkBridges uses zk-SNARK protocol to achieve both reasonable proof generation time and on-chain verification cost. zkBridge is “trustless” as it does not require extra assumptions other than those of blockchains and underlying cryptographic protocols. It is the first to use Zero-Knowledge Proofs (ZKP) to enable a decentralized trustless bridge.
 
+Pillai et al. proposed a novel cross-blockchain integration framework designed to guide the integration of cross-blockchain technology. The framework aids in identifying crucial assumptions and characteristics, mitigating security risks, enhancing the decision-making process, minimizing design mistakes and performance issues. It recognizes the integration system as the fundamental unit of cross-blockchain technology, providing comprehensive analysis and addressing security concerns. Moreover, the framework supports businesses in designing and integrating various blockchain applications, while enabling a more accurate evaluation of security assumptions. Thus, it paves the way for effective interoperability among multiple blockchains.
+
 ## The Role of Cryptography in Blockchain Bridge Security
 
 `````{margin} **Sidechain**
@@ -42,22 +54,19 @@ Securing blockchain bridges is greatly dependent on the strength of the cryptogr
 
 To overcome the external trust assumption, Li et al. in their paper proposed a Hash time-lock scheme, which utilizes a hash function and time-lock features to achieve cross-chain interoperability. The security of the Hash time-lock scheme is based on cryptographic hardness assumptions. The asset receiver is forced to determine the collection and produce proof of collection to the payer within the cut-off time, or the asset will be returned via hash locks and blockchain “time” locks. The proof of receipt can be used by the payer to acquire assets of equal value on the recipient’s blockchain or trigger other events. However, this scheme only supports monetary exchange and thus has low scalability.
 
-Li et al., identified a high security and highly scalability option is sidechains/relay scheme which supports the interoperability of multiple objects such as assets and other data, thus having high scalability. In particular, the two-way peg is a mechanism that allows bidirectional communication between blockchains. An example of a two-way peg is simplified payment verification (SPV) in Bitcoin. 
+Li et al., identified a high security and highly scalability option is sidechains/relay scheme which supports the interoperability of multiple objects such as assets and other data, thus having high scalability. In particular, the two-way peg is a mechanism that allows bidirectional communication between blockchains. An example of a two-way peg is simplified payment verification (SPV) in Bitcoin. Relays represent a mechanism that enables a blockchain network to authenticate data from other blockchain networks, eliminating the need for external third-party sources. Operating as a light client on a network, a relay system incorporates a smart contract and records block header information from different networks (Frauenthaler et al., 2020). A trade-off of the sidechain implementation is that the vulnerability might increase in the main chain or other sidechains if there is a compromised sidechain in the network (P. Sztorc, 2019).
+
+Ding et al., proposed a framework for connecting multiple blockchain networks via an intermediary structure known as the InterChain. The InterChain possesses its own validation nodes, while SubChain networks are linked to this InterChain via gateway nodes.
+
+Hardjono et al., discussed blockchain interoperability by drawing parallels with the design principles of Internet architecture. Just as the internet uses routers to guide message packets across its network at a mechanical level, they propose the use of gateways to direct messages between different blockchain networks.
 
 Such cryptographic protocols can serve as a guiding light for the development of security measures in the context of blockchain bridges.
-
-```{figure} images/BBBS.drawio.png
----
-width: 750px
-height: 260px
-name: bridge_security
----
-Communication through a Blockchain Bridge.
-```
 
 ## Scalability and Security
 
 As important as security is for blockchain bridges, it should not compromise the scalability of the systems. Zamyatin et al. discussed the scalability-security trade-off in their study on interoperable assets. There is need for a balance that allows for scalability without jeopardizing security. Future research in blockchain bridge security needs to address this delicate balance, ensuring the development of robust and efficient interoperable systems.
+
+Zhang et al. introduced a method that facilitates asset exchange between inter-firm alliance chains and private chains. Users from both the sending and receiving chains authenticate their identities and secure a certificate by interacting with the alliance chain. When a cross-blockchain transfer request is initiated, the alliance chain validates the ownership of the users over the assets, then proceeds with the asset transfer through a cross-blockchain interaction process.
 
 ## Maintaining Sovereignty of blockchains
 
@@ -74,13 +83,25 @@ Blockchain bridges represent an important evolution in blockchain technology, fa
 
 Chainanalysis (2022) Cross-chain bridge hacks emerge as top security risk, Chainalysis. Available at: https://blog.chainalysis.com/reports/cross-chain-bridge-hacks-2022/ (Accessed: 22 May 2023). 
 
+D. Ding, T. Duan, L. Jia, K. Li, Z. Li and Y. Sun, "Interchain: A framework to support blockchain interoperability", Proc. 2nd Asia–Pacific Work. Netw., pp. 1-2, 2018.
+
+J. Zhang, Y. Liu and Z. Zhang, "Research on cross-chain technology architecture system based on blockchain", Proc. Int. Conf. Commun. Signal Process. Syst., pp. 2609-2617, 2019, [online] Available: https://link.springer.com/chapter/10.1007/978-981-13-9409-6_318.
+
 Kiayias, A. et al. (2017) ‘Ouroboros: A provably secure proof-of-stake Blockchain Protocol’, Advances in Cryptology – CRYPTO 2017, pp. 357–388. doi:10.1007/978-3-319-63688-7_12. 
 
 Li, T. et al. (2023) Metaopera: A cross-metaverse interoperability protocol, arXiv.org. Available at: https://arxiv.org/abs/2302.01600 (Accessed: 18 May 2023). 
 
+Pillai, B. et al. (2022) ‘Cross-blockchain technology: Integration Framework and security assumptions’, IEEE Access, 10, pp. 41239–41259. doi:10.1109/access.2022.3167172. 
+
+P. Frauenthaler, M. Sigwart, C. Spanring and S. Schulte, "Leveraging blockchain relays for cross-chain token transfers", Gas, vol. 300, pp. 6, Mar. 2020.
+
+P. Sztorc, Drivechain—The Simple Two Way PEG, Jun. 2019, [online] Available: http://www.truthcoin.info/blog/drivechain/.
+
 Ryan Browne, M.S. (2022) Hackers have stolen $1.4 billion this year using crypto bridges. here’s why it’s happening, CNBC. Available at: https://www.cnbc.com/2022/08/10/hackers-have-stolen-1point4-billion-this-year-using-crypto-bridges.html (Accessed: 22 May 2023). 
 
 Sam Kessler and Sage D. Young (2022) Ronin attack shows cross-chain crypto is a ‘bridge’ too far, CoinDesk Latest Headlines RSS. Available at: https://www.coindesk.com/layer2/2022/04/05/ronin-attack-shows-cross-chain-crypto-is-a-bridge-too-far/ (Accessed: 22 May 2023). 
+
+T. Hardjono, A. Lipton and A. Pentland, "Toward an interoperability architecture for blockchain autonomous systems", IEEE Trans. Eng. Manag., vol. 67, no. 4, pp. 1298-1309, Nov. 2020.
 
 Wang, X. et al. (2022) TrustBoost: Boosting Trust among interoperable blockchains, arXiv.org. Available at: https://arxiv.org/abs/2210.11571 (Accessed: 18 May 2023). 
 
