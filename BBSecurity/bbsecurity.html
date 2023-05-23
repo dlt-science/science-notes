@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Governance In DeFi &#8212; DSF Science Notes</title>
+    <title>Blockchain Bridge Security &#8212; DSF Science Notes</title>
   
   
   
@@ -57,11 +57,11 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'GOV/gov';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'BBSecurity/bbsecurity';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Blockchain Bridge Security" href="../BBSecurity/bbsecurity.html" />
-    <link rel="prev" title="Welcome to the DSF Science Notes" href="../intro.html" />
+    <link rel="next" title="Mobile Theft Prevention using Blockchain" href="../MTP/mtp.html" />
+    <link rel="prev" title="Governance In DeFi" href="../GOV/gov.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="docsearch:language" content="None">
   </head>
@@ -135,15 +135,15 @@ const thebe_selector_output = ".output, .cell_output"
     </p>
     <ul id="navbar-main-elements" class="navbar-nav">
         
-                    <li class="nav-item current active">
-                      <a class="nav-link nav-internal" href="#">
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../GOV/gov.html">
                         Governance In DeFi
                       </a>
                     </li>
                 
 
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../BBSecurity/bbsecurity.html">
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="#">
                         Blockchain Bridge Security
                       </a>
                     </li>
@@ -239,15 +239,15 @@ const thebe_selector_output = ".output, .cell_output"
     </p>
     <ul id="navbar-main-elements" class="navbar-nav">
         
-                    <li class="nav-item current active">
-                      <a class="nav-link nav-internal" href="#">
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../GOV/gov.html">
                         Governance In DeFi
                       </a>
                     </li>
                 
 
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../BBSecurity/bbsecurity.html">
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="#">
                         Blockchain Bridge Security
                       </a>
                     </li>
@@ -335,8 +335,8 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="bd-toc-item navbar-nav active">
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Academic Insights</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Governance In DeFi</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../BBSecurity/bbsecurity.html">Blockchain Bridge Security</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GOV/gov.html">Governance In DeFi</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Blockchain Bridge Security</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Industry Perspectives</span></p>
 <ul class="nav bd-sidenav">
@@ -421,7 +421,7 @@ title="Source repository"
 </a>
 </a>
       
-      <li><a href="https://github.com/dlt-science/science-notes/issues/new?title=Issue%20on%20page%20%2FGOV/gov.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/dlt-science/science-notes/issues/new?title=Issue%20on%20page%20%2FBBSecurity/bbsecurity.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm dropdown-item"
    data-toggle="tooltip"
 data-placement="left"
@@ -436,7 +436,7 @@ title="Open an issue"
 </a>
 </a>
       
-      <li><a href="https://github.com/dlt-science/science-notes/edit/main/blogs/GOV/gov.md" target="_blank"
+      <li><a href="https://github.com/dlt-science/science-notes/edit/main/blogs/BBSecurity/bbsecurity.md" target="_blank"
    class="btn btn-sm dropdown-item"
    data-toggle="tooltip"
 data-placement="left"
@@ -461,7 +461,7 @@ title="Edit this page"
     <i class="fas fa-download"></i>
   </button>
   <ul class="dropdown-menu">
-      <li><a href="../_sources/GOV/gov.md" target="_blank"
+      <li><a href="../_sources/BBSecurity/bbsecurity.md" target="_blank"
    class="btn btn-sm dropdown-item"
    data-toggle="tooltip"
 data-placement="left"
@@ -504,7 +504,7 @@ title="Print to PDF"
             
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Governance In DeFi</h1>
+    <h1>Blockchain Bridge Security</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -520,18 +520,23 @@ title="Print to PDF"
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#centralisation-of-governance-in-defi-protocols">
-   Centralisation of Governance in DeFi Protocols
+  <a class="reference internal nav-link" href="#interoperability-and-security-challenges">
+   Interoperability and Security Challenges
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#challenges-vulnerability-in-defi-governance">
-   Challenges &amp; Vulnerability In DeFi Governance
+  <a class="reference internal nav-link" href="#the-role-of-cryptography-in-blockchain-bridge-security">
+   The Role of Cryptography in Blockchain Bridge Security
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#ai-enabled-on-chain-governance">
-   AI-enabled On-chain Governance
+  <a class="reference internal nav-link" href="#scalability-and-security">
+   Scalability and Security
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#maintaining-sovereignty-of-blockchains">
+   Maintaining Sovereignty of blockchains
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -553,108 +558,95 @@ title="Print to PDF"
 
             <article class="bd-article" role="main">
               
-  <section class="tex2jax_ignore mathjax_ignore" id="governance-in-defi">
-<h1>Governance In DeFi<a class="headerlink" href="#governance-in-defi" title="Permalink to this headline">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="blockchain-bridge-security">
+<h1>Blockchain Bridge Security<a class="headerlink" href="#blockchain-bridge-security" title="Permalink to this headline">#</a></h1>
 <!-- ![Academic Insight](images/AI.svg) -->
 <p><ins><strong>Academic insight</strong></ins></p>
 <div class="tip admonition">
 <p class="admonition-title">Key Insights</p>
 <ul class="simple">
-<li><p>The voting power in DeFi protocols becomes increasingly concentrated among a percentage of token holders over time in decentralised exchanges, lending protocols and yield aggregators.</p></li>
-<li><p>The paramount wallet addresses ranking within the top 5, 100, and 1000, exercise predominant influence over the voting power in the Balancer, Compound, Uniswap, and Yearn Finance protocols, with Compound displaying the least evidence of decentralisation.</p></li>
-<li><p>The most significant governance challenges identified by DeFi users are voter collusion, low participation rates, and voter apathy.</p></li>
-<li><p>To address vulnerabilities in DeFi governance, a novel voting mechanism resistant to sybil attacks called bond voting has been proposed.</p></li>
-<li><p>To enhance the manual parameter section, an AI-enabled adjustment solution has been demonstrated to automate governance mechanisms.</p></li>
+<li><p>To mitigate security risks, a cross-chain bridge leveraging zk-SNARK technology to provide a secure, trustless cross-chain bridge, marking the first implementation of Zero-Knowledge Proofs (ZKP) in a decentralized trustless bridge system has been proposed.</p></li>
+<li><p>To facilitate secure cross-chain interoperability, a Hash time-lock scheme which does not rely on external trust ensuring transaction security is introduced.</p></li>
+<li><p>High security and highly scalability option which supports the interoperability of multiple objects is sidechains/relay scheme.</p></li>
+<li><p>To mitigate token transfer risks, a series of protocols “TrustBoost” using smart contracts to achieve a ‘consensus on top of consensus’ mechanism, bolstering trust across multiple blockchains and with promising prospects for future applications is proposed.</p></li>
+<li><p>To enhance interoperability, a novel framework mitigating security risks in cross-blockchain technology is proposed. It facilitates the identification of key assumptions and characteristics. It improves decision-making, minimizes design errors, and aids in integrating various blockchain applications, thus promoting effective interoperability.</p></li>
+<li><p>Cryptographic techniques remain central to ensuring security in blockchain bridges. A balance between scalability and security is crucial for the future of blockchain bridges.</p></li>
 </ul>
 </div>
 <section id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">#</a></h2>
-<p>Decentralised finance (DeFi) has emerged as a potential substitute for traditional financial institutions, offering peer-to-peer transactions and a diverse range of services that democratise finance by enabling users to participate in protocol governance. However, several studies have suggested that the current governance mechanisms require improvements. This article provides an overview of findings associated with DeFi governance.</p>
-</section>
-<section id="centralisation-of-governance-in-defi-protocols">
-<h2>Centralisation of Governance in DeFi Protocols<a class="headerlink" href="#centralisation-of-governance-in-defi-protocols" title="Permalink to this headline">#</a></h2>
-<aside class="margin sidebar">
-<p class="sidebar-title"><strong>Lending Protocols</strong></p>
-<p>Lending Protocols are DeFi applications built on top of blockchain technology that allow users to lend and borrow cryptocurrency assets without the need for intermediaries such as banks or traditional financial institutions.</p>
-</aside>
-<aside class="margin sidebar">
-<p class="sidebar-title"><strong>Decentralized Exchanges</strong></p>
-<p>Decentralized Exchanges (DeXs) are peer-to-peer trading platforms built on top of a blockchain that enable the direct exchange of cryptocurrency assets without the need for a central authority or intermediary.</p>
-</aside>
-<aside class="margin sidebar">
-<p class="sidebar-title"><strong>Yield Aggregator</strong></p>
-<p>Yield Aggregator are DeFi applications that automate the process of seeking out the best yield opportunities for cryptocurrency assets, and provide users with a way to optimize their returns on investment.</p>
-</aside>
-<p>Centralisation in DeFi has become a growing concern among researchers with several studies identifying a significant level of centrality in the governance mechanisms of DeFi protocol. Barbereau et al., <span id="id1">[<a class="reference internal" href="#id31" title="Tom Barbereau, Reilly Smethurst, Orestis Papageorgiou, Alexander Rieger, and Gilbert Fridgen. Defi, not so decentralized: the measured distribution of voting rights. Hawaii International Conference on System Sciences (HICSS), 2022.">BSP+22a</a>]</span> found that the decentralisation of voting is significantly low with a majority of the voting power concentrated among a percentage of governance token holders. As evidenced by their findings, there was a significant degree of centrality, in lending protocols, decentralisd exchanges and yield aggregators. This research work employed case studies to comprehend the governance mechanisms of these protocols.</p>
-<p>Similarly, result by Jensen et al. <span id="id2">[<a class="reference internal" href="#id30" title="Johannes Rude Jensen, Victor von Wachter, and Omri Ross. How decentralized is the governance of blockchain-based finance: empirical evidence from four governance token distributions. arXiv preprint arXiv:2102.10096, 2021.">JvWR21</a>]</span> demonstrate centrality in voting power with the protocols top 5, top 100, and top 1000 wallet addresses controlling majority of the voting power in Balancer, Compound, Uniswap and Yearn Finance protocols. In this study, the token holdings and users’ wallets of protocols were analysed; Compound displayed the most evidence of centrality and Uniswap the least with the top 5 wallet addresses accounting for 42.1% and 12.05%, respectively.</p>
-<p>Barbereau et al. <span id="id3">[<a class="reference internal" href="#id28" title="Tom Barbereau, Reilly Smethurst, Orestis Papageorgiou, Johannes Sedlmeir, and Gilbert Fridgen. Decentralised finance's unregulated governance: minority rule in the digital wild west. Available at SSRN, 2022.">BSP+22b</a>]</span> ascertained that DeFi protocols become more centralised over time. In this longitudinal study, voting patterns demonstrated changes in the power dynamics as time progressed. The tendency for this centralisation of DeFi protocols is shown in [<a class="reference internal" href="#gov-evolution"><span class="std std-numref">Fig. 1</span></a>]. Furthermore, in analysing the governance structures of DeFi protocols, Stroponiati et al. <span id="id4">[<a class="reference internal" href="#id27" title="K Stroponiati and others. Decentralized governance in defi: examples and pitfalls. squarespace. retrieved december 30, 2022.">S+</a>]</span> ascribed reward-based economic incentives as the significant cause behind the development of centralised structures.</p>
-<figure class="align-default" id="gov-evolution">
-<a class="reference internal image-reference" href="../_images/Govern.drawio.png"><img alt="../_images/Govern.drawio.png" src="../_images/Govern.drawio.png" style="width: 750px; height: 260px;" /></a>
+<p>Blockchain technology has been lauded for its potential to disrupt various industries, given its unique properties such as decentralization, transparency, and security. One recent advancement in this area is the development of blockchain bridges, which enable interoperability among different blockchains. Bridges facilitate communication between two blockchain ecosystems through the transfer of assets and information. However, as with any innovative technology, these bridges pose new security challenges. In this science note, we delve into the current academic landscape surrounding the security of blockchain bridges and summarize the recent research findings.</p>
+<figure class="align-default" id="bridge-security">
+<a class="reference internal image-reference" href="../_images/bridge.drawio.png"><img alt="../_images/bridge.drawio.png" src="../_images/bridge.drawio.png" style="width: 780px; height: 456px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 1 </span><span class="caption-text">The Tendency for Centralisation in DeFi Governance.</span><a class="headerlink" href="#gov-evolution" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 2 </span><span class="caption-text">Communication through a Blockchain Bridge.</span><a class="headerlink" href="#bridge-security" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="challenges-vulnerability-in-defi-governance">
-<h2>Challenges &amp; Vulnerability In DeFi Governance<a class="headerlink" href="#challenges-vulnerability-in-defi-governance" title="Permalink to this headline">#</a></h2>
+<section id="interoperability-and-security-challenges">
+<h2>Interoperability and Security Challenges<a class="headerlink" href="#interoperability-and-security-challenges" title="Permalink to this headline">#</a></h2>
 <aside class="margin sidebar">
-<p class="sidebar-title"><strong>Voter Collusion</strong></p>
-<p>Voter Collusion refers to a situation where a group of voters collude together to manipulate the outcome of a voting process in their favor, typically by coordinating their votes to create a super majority.</p>
+<p class="sidebar-title"><strong>Zero-Knowledge Proofs</strong></p>
+<p>A zero-knowledge proof (ZKP) is a cryptographic technique that enables one party, the prover, to convince another party, the verifier, of the validity of a statement or the possession of a secret without revealing any additional information about the underlying secret or data.</p>
 </aside>
 <aside class="margin sidebar">
-<p class="sidebar-title"><strong>Voter Apathy</strong></p>
-<p>Voter Apathy refers to a situation where token holders or members of the organisation do not actively participate in the voting process due to a lack of interest</p>
+<p class="sidebar-title"><strong>zk-SNARK</strong></p>
+<p>Zk-SNARK is an acronym that stands for “Zero-Knowledge Succinct Non-Interactive Argument of Knowledge.” A zk-SNARK is a cryptographic proof that allows one party to prove it possesses certain information without revealing that information.</p>
 </aside>
-<aside class="margin sidebar">
-<p class="sidebar-title"><strong>Sybil Attack</strong></p>
-<p>Sybil attacks occur when an attacker generates multiple false identities to gain significant network control, thereby allocating more votes than expected.</p>
-</aside>
-<p>In investigating governance challenges, Ekal et al., <span id="id5">[<a class="reference internal" href="#id29" title="Hassan Hamid Ekal and Shams N Abdul-wahab. Defi governance and decision-making on blockchain. Mesopotamian Journal of Computer Science, 2022:9–16, 2022.">EAw22</a>]</span> identified voter collusion, low participation rates, and voter apathy as the most significant challenges. This empirical investigation utilised an interview survey approach to collect data from protocol users. Furthermore, to address voter concentration vulnerabilities, Mohan et al. <span id="id6">[<a class="reference internal" href="#id26" title="Vijay Mohan, Peyman Khezr, and Chris Berg. Voting with time commitment for decentralized governance: bond voting as a sybil-resistant mechanism. Available at SSRN, 2022.">MKB22</a>]</span> proposed a novel voting mechanism called bond voting which is resistant to sybil attacks. The bond voting mechanism issues ‘voting bonds’ to voters, which essentially requires a commitment to stake an amount of tokens, for a time period to gain voting power. Therefore, by combining this time commitment with weighed voting with a time commitment, sybil attacks are more difficult. Quadratic voting, another solution to voting concentration, allows participants to convey both their preferences and the intensity of those preferences, however, the drawback of this mechanism is its vulnerability to sybil attacks, voter collusion and voter fraud <span id="id7">[<a class="reference internal" href="#id36" title="Aggelos Kiayias and Philip Lazos. Sok: blockchain governance. arXiv preprint arXiv:2201.07188, 2022.">KL22</a>]</span>.</p>
+<p>Interoperability in blockchain environments brings forth a series of unique security challenges. Trustless, interoperable, cryptocurrency-backed assets can be subjected to various threats. In April 2022, attackers were able to obtain five of the nine validator keys, through which they stole 624 million USD by exploiting Ronin bridge, making it the largest attack in the history of DeFi (Sam Kessler and Sage D. Young, 2022). According to blockchain analytics firm Chainalysis, until August 2022 recurring attacks against bridges have cost users around 1.4 billion USD (Ryan Browne, 2022). In 2022 attacks on bridges accounted for 69% of total funds stolen (Chainanalysis, 2022).</p>
+<p>This calls for novel security models and protocols that can protect against possible attack vectors introduced by cross-chain communication. This is particularly true for blockchain bridges that need to uphold the integrity and security of transactions across disparate networks. Most existing solutions rely on trust assumptions of committees, this lowers the security significantly.</p>
+<p>Xie et al. proposed a solution by introducing “zkBridge” an efficient cross-chain bridge that guarantees strong security without external trust assumptions. The main idea is to leverage zk-SNARK, which are succinct non-interactive proofs (arguments) of knowledge as a result security is ensured without relying on a committee. zkBridges uses zk-SNARK protocol to achieve both reasonable proof generation time and on-chain verification cost. zkBridge is “trustless” as it does not require extra assumptions other than those of blockchains and underlying cryptographic protocols. It is the first to use Zero-Knowledge Proofs (ZKP) to enable a decentralized trustless bridge.</p>
+<p>Pillai et al. proposed a novel cross-blockchain integration framework designed to guide the integration of cross-blockchain technology. The framework aids in identifying crucial assumptions and characteristics, mitigating security risks, enhancing the decision-making process, minimizing design mistakes and performance issues. It recognizes the integration system as the fundamental unit of cross-blockchain technology, providing comprehensive analysis and addressing security concerns. Moreover, the framework supports businesses in designing and integrating various blockchain applications, while enabling a more accurate evaluation of security assumptions. Thus, it paves the way for effective interoperability among multiple blockchains.</p>
 </section>
-<section id="ai-enabled-on-chain-governance">
-<h2>AI-enabled On-chain Governance<a class="headerlink" href="#ai-enabled-on-chain-governance" title="Permalink to this headline">#</a></h2>
-<p>To enhance and automate governance mechanisms, Xu et al., <span id="id8">[<a class="reference internal" href="#id38" title="Jiahua Xu, Daniel Perez, Yebo Feng, and Benjamin Livshits. Auto. gov: learning-based on-chain governance for decentralized finance (defi). arXiv preprint arXiv:2302.09551, 2023.">XPFL23</a>]</span> demonstrated an AI-enabled parameter adjustment solution which is more efficient than current implementations. Specifically, the study employed Deep Q-network (DQN) reinforcement learning to investigate for automated parameter selection in a DeFi environment. Although a lending protocol was employed in the study, the model’s application can extend to other categories of DeFi protocols as well. In investigating DAOs, Nabben <span id="id9">[<a class="reference internal" href="#id25" title="Kelsie Nabben. Governance by algorithms, governance of algorithms: human-machine politics in decentralised autonomous organisations (daos). puntOorg International Journal, 8(1):36–54, 2023.">Nab23</a>]</span> observes that GitcoinDAO also employs algorithmic governance in various organisational components such as monitoring the compliance with rules of the organisation.</p>
+<section id="the-role-of-cryptography-in-blockchain-bridge-security">
+<h2>The Role of Cryptography in Blockchain Bridge Security<a class="headerlink" href="#the-role-of-cryptography-in-blockchain-bridge-security" title="Permalink to this headline">#</a></h2>
+<aside class="margin sidebar">
+<p class="sidebar-title"><strong>Sidechain</strong></p>
+<p>Sidechain is a blockchain that communicates with other blockchains via a two-way peg. It stems from the main blockchain and runs in parallel to it.</p>
+</aside>
+<aside class="margin sidebar">
+<p class="sidebar-title"><strong>Cryptographic Protocol</strong></p>
+<p>A cryptographic protocol is an abstract or concrete protocol that performs a security-related function and applies cryptographic methods, often as sequences of cryptographic primitives. A protocol describes how the algorithms should be used and includes details about data structures and representations, at which point it can be used to implement multiple, interoperable versions of a program.</p>
+</aside>
+<p>Securing blockchain bridges is greatly dependent on the strength of the cryptographic techniques deployed. The fundamental study by Kiayias et al. on proof-of-stake blockchain protocols is of significant relevance. They outlined a novel cryptographic mechanism that provides transactional security while ensuring transparency.</p>
+<p>To overcome the external trust assumption, Li et al. in their paper proposed a Hash time-lock scheme, which utilizes a hash function and time-lock features to achieve cross-chain interoperability. The security of the Hash time-lock scheme is based on cryptographic hardness assumptions. The asset receiver is forced to determine the collection and produce proof of collection to the payer within the cut-off time, or the asset will be returned via hash locks and blockchain “time” locks. The proof of receipt can be used by the payer to acquire assets of equal value on the recipient’s blockchain or trigger other events. However, this scheme only supports monetary exchange and thus has low scalability.</p>
+<p>Li et al., identified a high security and highly scalability option is sidechains/relay scheme which supports the interoperability of multiple objects such as assets and other data, thus having high scalability. In particular, the two-way peg is a mechanism that allows bidirectional communication between blockchains. An example of a two-way peg is simplified payment verification (SPV) in Bitcoin. Relays represent a mechanism that enables a blockchain network to authenticate data from other blockchain networks, eliminating the need for external third-party sources. Operating as a light client on a network, a relay system incorporates a smart contract and records block header information from different networks (Frauenthaler et al., 2020). A trade-off of the sidechain implementation is that the vulnerability might increase in the main chain or other sidechains if there is a compromised sidechain in the network (P. Sztorc, 2019).</p>
+<p>Ding et al., proposed a framework for connecting multiple blockchain networks via an intermediary structure known as the InterChain. The InterChain possesses its own validation nodes, while SubChain networks are linked to this InterChain via gateway nodes.</p>
+<p>Hardjono et al., discussed blockchain interoperability by drawing parallels with the design principles of Internet architecture. Just as the internet uses routers to guide message packets across its network at a mechanical level, they propose the use of gateways to direct messages between different blockchain networks.</p>
+<p>Such cryptographic protocols can serve as a guiding light for the development of security measures in the context of blockchain bridges.</p>
+</section>
+<section id="scalability-and-security">
+<h2>Scalability and Security<a class="headerlink" href="#scalability-and-security" title="Permalink to this headline">#</a></h2>
+<p>As important as security is for blockchain bridges, it should not compromise the scalability of the systems. Zamyatin et al. discussed the scalability-security trade-off in their study on interoperable assets. There is need for a balance that allows for scalability without jeopardizing security. Future research in blockchain bridge security needs to address this delicate balance, ensuring the development of robust and efficient interoperable systems.</p>
+<p>Zhang et al. introduced a method that facilitates asset exchange between inter-firm alliance chains and private chains. Users from both the sending and receiving chains authenticate their identities and secure a certificate by interacting with the alliance chain. When a cross-blockchain transfer request is initiated, the alliance chain validates the ownership of the users over the assets, then proceeds with the asset transfer through a cross-blockchain interaction process.</p>
+</section>
+<section id="maintaining-sovereignty-of-blockchains">
+<h2>Maintaining Sovereignty of blockchains<a class="headerlink" href="#maintaining-sovereignty-of-blockchains" title="Permalink to this headline">#</a></h2>
+<p>Existing solutions to boost the trust using a stronger blockchain, e.g., via checkpointing, requires the weaker blockchain to give up sovereignty. Wang et al. in their paper present a series of protocols known as “TrustBoost” designed to bolster trust across multiple blockchains without compromising their sovereignty. These protocols function through smart contracts, achieving a “consensus on top of consensus” that avoids changes to the blockchains’ consensus layers. TrustBoost operates by allowing cross-chain communication via bridges, facilitating the sharing of information across smart contracts on different blockchains. This system maintains its security as long as two-thirds of the participating blockchains are secure. Furthermore, TrustBoost shows potential in mitigating risks associated with cross-chain token transfers and exhibits promising prospects for future applications, especially as heterogeneous blockchain networks continue to mature.</p>
 </section>
 <section id="conclusion">
 <h2>Conclusion<a class="headerlink" href="#conclusion" title="Permalink to this headline">#</a></h2>
-<p>The vision of DeFi is to foster a democratic process of governance and sustain high levels of decentralisation. However, recent studies have highlighted significant centrality in DeFi governance mechanisms, indicating the need for improvements in the existing governance models. The studies analysed in this article have revealed that the majority of the voting power in several protocols is concentrated among the top token holders, with evidence of increasing centralisation over time. Moreover, DeFi has been found to face challenges in the voting and governance process. In view of some of these challenges, researchers have proposed novel solutions such as a bond voting and an AI-enabled parameter-selection solution to improve the current mechanisms. Given the importance of decentralisation in the underlying philosophy of DeFi, proposing more solutions to governance challenges is crucial for creating a more inclusive and democratic financial ecosystem. Therefore, continued research and development will certainly be required.</p>
-<div style="text-align: right;font-weight: bold;">Yimika Erinle</div>
-<div style="text-align: right;font-style: italic;">April 2023</div>
+<p>Blockchain bridges represent an important evolution in blockchain technology, facilitating crucial interoperability. However, the security aspects of these bridges are complex and multifaceted, requiring rigorous academic and industry attention. The body of research surrounding blockchain security provides critical insights that can help guide the development of secure and efficient blockchain bridges. As this field continues to evolve, a focus on understanding and mitigating security risks while maintaining scalability will be paramount.</p>
+<div style="text-align: right;font-weight: bold;">Ali Kathia</div>
+<div style="text-align: right;font-style: italic;">May 2023</div>
 </section>
 <section id="references">
 <h2>References<a class="headerlink" href="#references" title="Permalink to this headline">#</a></h2>
-<div class="docutils container" id="id10">
-<dl class="citation">
-<dt class="label" id="id31"><span class="brackets"><a class="fn-backref" href="#id1">BSP+22a</a></span></dt>
-<dd><p>Tom Barbereau, Reilly Smethurst, Orestis Papageorgiou, Alexander Rieger, and Gilbert Fridgen. Defi, not so decentralized: the measured distribution of voting rights. <em>Hawaii International Conference on System Sciences (HICSS)</em>, 2022.</p>
-</dd>
-<dt class="label" id="id28"><span class="brackets"><a class="fn-backref" href="#id3">BSP+22b</a></span></dt>
-<dd><p>Tom Barbereau, Reilly Smethurst, Orestis Papageorgiou, Johannes Sedlmeir, and Gilbert Fridgen. Decentralised finance's unregulated governance: minority rule in the digital wild west. <em>Available at SSRN</em>, 2022.</p>
-</dd>
-<dt class="label" id="id29"><span class="brackets"><a class="fn-backref" href="#id5">EAw22</a></span></dt>
-<dd><p>Hassan Hamid Ekal and Shams N Abdul-wahab. Defi governance and decision-making on blockchain. <em>Mesopotamian Journal of Computer Science</em>, 2022:9–16, 2022.</p>
-</dd>
-<dt class="label" id="id30"><span class="brackets"><a class="fn-backref" href="#id2">JvWR21</a></span></dt>
-<dd><p>Johannes Rude Jensen, Victor von Wachter, and Omri Ross. How decentralized is the governance of blockchain-based finance: empirical evidence from four governance token distributions. <em>arXiv preprint arXiv:2102.10096</em>, 2021.</p>
-</dd>
-<dt class="label" id="id36"><span class="brackets"><a class="fn-backref" href="#id7">KL22</a></span></dt>
-<dd><p>Aggelos Kiayias and Philip Lazos. Sok: blockchain governance. <em>arXiv preprint arXiv:2201.07188</em>, 2022.</p>
-</dd>
-<dt class="label" id="id26"><span class="brackets"><a class="fn-backref" href="#id6">MKB22</a></span></dt>
-<dd><p>Vijay Mohan, Peyman Khezr, and Chris Berg. Voting with time commitment for decentralized governance: bond voting as a sybil-resistant mechanism. <em>Available at SSRN</em>, 2022.</p>
-</dd>
-<dt class="label" id="id25"><span class="brackets"><a class="fn-backref" href="#id9">Nab23</a></span></dt>
-<dd><p>Kelsie Nabben. Governance by algorithms, governance of algorithms: human-machine politics in decentralised autonomous organisations (daos). <em>puntOorg International Journal</em>, 8(1):36–54, 2023.</p>
-</dd>
-<dt class="label" id="id27"><span class="brackets"><a class="fn-backref" href="#id4">S+</a></span></dt>
-<dd><p>K Stroponiati and others. Decentralized governance in defi: examples and pitfalls. squarespace. retrieved december 30, 2022.</p>
-</dd>
-<dt class="label" id="id38"><span class="brackets"><a class="fn-backref" href="#id8">XPFL23</a></span></dt>
-<dd><p>Jiahua Xu, Daniel Perez, Yebo Feng, and Benjamin Livshits. Auto. gov: learning-based on-chain governance for decentralized finance (defi). <em>arXiv preprint arXiv:2302.09551</em>, 2023.</p>
-</dd>
-</dl>
-</div>
-</section>
+<p>Chainanalysis (2022) Cross-chain bridge hacks emerge as top security risk, Chainalysis. Available at: <a class="reference external" href="https://blog.chainalysis.com/reports/cross-chain-bridge-hacks-2022/">https://blog.chainalysis.com/reports/cross-chain-bridge-hacks-2022/</a> (Accessed: 22 May 2023).</p>
+<p>D. Ding, T. Duan, L. Jia, K. Li, Z. Li and Y. Sun, “Interchain: A framework to support blockchain interoperability”, Proc. 2nd Asia–Pacific Work. Netw., pp. 1-2, 2018.</p>
+<p>J. Zhang, Y. Liu and Z. Zhang, “Research on cross-chain technology architecture system based on blockchain”, Proc. Int. Conf. Commun. Signal Process. Syst., pp. 2609-2617, 2019, [online] Available: <a class="reference external" href="https://link.springer.com/chapter/10.1007/978-981-13-9409-6_318">https://link.springer.com/chapter/10.1007/978-981-13-9409-6_318</a>.</p>
+<p>Kiayias, A. et al. (2017) ‘Ouroboros: A provably secure proof-of-stake Blockchain Protocol’, Advances in Cryptology – CRYPTO 2017, pp. 357–388. doi:10.1007/978-3-319-63688-7_12.</p>
+<p>Li, T. et al. (2023) Metaopera: A cross-metaverse interoperability protocol, <a class="reference external" href="http://arXiv.org">arXiv.org</a>. Available at: <a class="reference external" href="https://arxiv.org/abs/2302.01600">https://arxiv.org/abs/2302.01600</a> (Accessed: 18 May 2023).</p>
+<p>Pillai, B. et al. (2022) ‘Cross-blockchain technology: Integration Framework and security assumptions’, IEEE Access, 10, pp. 41239–41259. doi:10.1109/access.2022.3167172.</p>
+<p>P. Frauenthaler, M. Sigwart, C. Spanring and S. Schulte, “Leveraging blockchain relays for cross-chain token transfers”, Gas, vol. 300, pp. 6, Mar. 2020.</p>
+<p>P. Sztorc, Drivechain—The Simple Two Way PEG, Jun. 2019, [online] Available: <a class="reference external" href="http://www.truthcoin.info/blog/drivechain/">http://www.truthcoin.info/blog/drivechain/</a>.</p>
+<p>Ryan Browne, M.S. (2022) Hackers have stolen $1.4 billion this year using crypto bridges. here’s why it’s happening, CNBC. Available at: <a class="reference external" href="https://www.cnbc.com/2022/08/10/hackers-have-stolen-1point4-billion-this-year-using-crypto-bridges.html">https://www.cnbc.com/2022/08/10/hackers-have-stolen-1point4-billion-this-year-using-crypto-bridges.html</a> (Accessed: 22 May 2023).</p>
+<p>Sam Kessler and Sage D. Young (2022) Ronin attack shows cross-chain crypto is a ‘bridge’ too far, CoinDesk Latest Headlines RSS. Available at: <a class="reference external" href="https://www.coindesk.com/layer2/2022/04/05/ronin-attack-shows-cross-chain-crypto-is-a-bridge-too-far/">https://www.coindesk.com/layer2/2022/04/05/ronin-attack-shows-cross-chain-crypto-is-a-bridge-too-far/</a> (Accessed: 22 May 2023).</p>
+<p>T. Hardjono, A. Lipton and A. Pentland, “Toward an interoperability architecture for blockchain autonomous systems”, IEEE Trans. Eng. Manag., vol. 67, no. 4, pp. 1298-1309, Nov. 2020.</p>
+<p>Wang, X. et al. (2022) TrustBoost: Boosting Trust among interoperable blockchains, <a class="reference external" href="http://arXiv.org">arXiv.org</a>. Available at: <a class="reference external" href="https://arxiv.org/abs/2210.11571">https://arxiv.org/abs/2210.11571</a> (Accessed: 18 May 2023).</p>
+<p>Xie, T. et al. (2022) ‘ZkBridge’, Proceedings of the 2022 ACM SIGSAC Conference on Computer and Communications Security [Preprint]. doi:10.1145/3548606.3560652.</p>
+<p>Zamyatin, A. et al. (2019) ‘Xclaim: Trustless, interoperable, cryptocurrency-backed assets’, 2019 IEEE Symposium on Security and Privacy (SP) [Preprint]. doi:10.1109/sp.2019.00085.</p>
+<span class="target" id="id1"></span></section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -670,7 +662,7 @@ title="Print to PDF"
         },
         kernelOptions: {
             name: "python3",
-            path: "./GOV"
+            path: "./BBSecurity"
         },
         predefinedOutput: true
     }
@@ -685,17 +677,17 @@ title="Print to PDF"
             <footer class="bd-footer-article">
                 <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-  <a class='left-prev' id="prev-link" href="../intro.html" title="previous page">
+  <a class='left-prev' id="prev-link" href="../GOV/gov.html" title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
           <p class="prev-next-subtitle">previous</p>
-          <p class="prev-next-title">Welcome to the DSF Science Notes</p>
+          <p class="prev-next-title">Governance In DeFi</p>
       </div>
   </a>
-  <a class='right-next' id="next-link" href="../BBSecurity/bbsecurity.html" title="next page">
+  <a class='right-next' id="next-link" href="../MTP/mtp.html" title="next page">
   <div class="prev-next-info">
       <p class="prev-next-subtitle">next</p>
-      <p class="prev-next-title">Blockchain Bridge Security</p>
+      <p class="prev-next-title">Mobile Theft Prevention using Blockchain</p>
   </div>
   <i class="fa-solid fa-angle-right"></i>
   </a>
@@ -721,18 +713,23 @@ title="Print to PDF"
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#centralisation-of-governance-in-defi-protocols">
-   Centralisation of Governance in DeFi Protocols
+  <a class="reference internal nav-link" href="#interoperability-and-security-challenges">
+   Interoperability and Security Challenges
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#challenges-vulnerability-in-defi-governance">
-   Challenges &amp; Vulnerability In DeFi Governance
+  <a class="reference internal nav-link" href="#the-role-of-cryptography-in-blockchain-bridge-security">
+   The Role of Cryptography in Blockchain Bridge Security
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#ai-enabled-on-chain-governance">
-   AI-enabled On-chain Governance
+  <a class="reference internal nav-link" href="#scalability-and-security">
+   Scalability and Security
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#maintaining-sovereignty-of-blockchains">
+   Maintaining Sovereignty of blockchains
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
