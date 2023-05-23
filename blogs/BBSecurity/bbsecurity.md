@@ -17,10 +17,10 @@
 
 Blockchain technology has been lauded for its potential to disrupt various industries, given its unique properties such as decentralization, transparency, and security. One recent advancement in this area is the development of blockchain bridges, which enable interoperability among different blockchains. Bridges facilitate communication between two blockchain ecosystems through the transfer of assets and information. However, as with any innovative technology, these bridges pose new security challenges. In this science note, we delve into the current academic landscape surrounding the security of blockchain bridges and summarize the recent research findings.
 
-```{figure} images/BBSS.drawio.png
+```{figure} images/bridge.drawio.png
 ---
-width: 750px
-height: 260px
+width: 780px
+height: 456px
 name: bridge_security
 ---
 Communication through a Blockchain Bridge.
