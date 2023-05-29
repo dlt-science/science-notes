@@ -16,11 +16,15 @@ on:
 jobs:
   deploy-book:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      packages: write
+
     steps:
     - uses: actions/checkout@v2
-      with:
-        persist-credentials: false
-        fetch-depth: 0
+      # with:
+      #   persist-credentials: false
+      #   fetch-depth: 0
 
     # Install dependencies
     - name: Set up Python 3.8
