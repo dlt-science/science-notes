@@ -34,7 +34,7 @@ jobs:
       run: |
         jupyter-book build blogs/
 
-    # Push the book's HTML to github-pages
+    # Push the book's HTML to gh-pages
     - name: GitHub Pages action
       uses: peaceiris/actions-gh-pages@v3.6.1
       with:
