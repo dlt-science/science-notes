@@ -135,7 +135,7 @@ dmypy.json
 blogs/_build/*
 !blogs/_build/pdf/
 !blogs/_build/latex/
-!blogs/_build/html/
+# !blogs/_build/html/
 blogs/_build/pdf/*
 blogs/_build/latex/*
 !blogs/_build/pdf/book.pdf
