@@ -88,8 +88,6 @@ Must first install the right version of `urllib3` if haven't
 pip install -U "urllib3<1.25"
 ```
 
-## Build pdfhtml:
-
 ```zsh
 jupyter-book build blogs/ --builder pdfhtml
 ```
