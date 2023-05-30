@@ -3,8 +3,17 @@
 
 format: jb-book
 root: intro
-chapters:
-- file: GOV/gov
-- file: SSI/ssi
-- file: MTP/mtp
-- file: Sharding/sharding
+parts:
+  - caption: Academic Insights
+    numbered: False
+    chapters:
+    - file: GOV/gov
+  - caption: Industry Perspectives
+    numbered: False
+    chapters:
+    - file: MTP/mtp
+  - caption: Innovation & Ideation
+    numbered: False
+    chapters:
+    - file: SSI/ssi
+    - file: Sharding/sharding
