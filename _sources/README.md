@@ -10,7 +10,7 @@ Guidelines for science notes published emphasizing structure, formatting, repres
 
 ## Tone
 
-Our science notes hVE an informative and objective tone. We want to be clear and concise and focus on presenting information and data in an unbiased manner. We want writers to use a professional tone that demonstrates a strong understanding of the subject matter and an ability to present complex information in a way that is easy to understand for a technical audience.
+Our science notes have an informative and objective tone. We want to be clear and concise and focus on presenting information and data in an unbiased manner. We want writers to use a professional tone that demonstrates a strong understanding of the subject matter and an ability to present complex information in a way that is easy to understand for a technical audience.
 
 ## Structure
 
@@ -25,7 +25,7 @@ Use title headings in H1 and subheadings in H2 to break up your content into sec
 
 ## Diagrams
 
-Screenshots of diagrams or figures in papers should not be used. Diagrams should be drawn using technical software such as [draw.io](http://draw.io). Furthermore, diagrams should not stretch beyond 750px. 
+Screenshots of diagrams or figures in papers should not be used. Diagrams should be drawn using technical software such as [draw.io](http://draw.io). Furthermore, diagrams should not stretch beyond 750px.
 
 ## Feedback
 
