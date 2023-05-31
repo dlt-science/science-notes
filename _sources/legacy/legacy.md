@@ -1,6 +1,5 @@
 # **Managing Crypto Customers in Legacy Financial Institutions: Overcoming Constraints and Expanding Opportunities**
 
-```markdown
 ```{admonition} Key Insights
 :class: tip
 1. Legacy banks and financial institutions face internal and external challenges in integrating cryptocurrencies into their existing business framework for generating new revenue streams.
@@ -12,7 +11,6 @@
 7. Talent acquisition and skill development are crucial to improve crypto risk management within legacy banks.
 8. Additional expertise is required in advanced programming languages, an end-to-end vision of innovation, and product design.
 9. By addressing these challenges, legacy financial institutions can embrace the potential of cryptocurrencies and stay ahead in the evolving financial landscape.
-```
 ```
 
 ## **A Background Story**
