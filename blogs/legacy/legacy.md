@@ -21,9 +21,7 @@ The miner contacted my friend to inquire about insurance protection against such
 
 ## **Introduction**:
 
-Cryptocurrencies present unique challenges for legacy financial institutions from both internal and external viewpoints.
-
-Internally, these institutions must explore how to integrate cryptocurrencies and distributed ledger technologies into their existing systems, leveraging the technology to embrace a new era of financial management. This internal perspective significantly impacts processes and IT infrastructure and also has implications for costs and IT investments, from a financial statement standpoint.
+Cryptocurrencies present unique challenges for legacy financial institutions from both internal and external viewpoints. Internally, these institutions must explore how to integrate cryptocurrencies and distributed ledger technologies into their existing systems, leveraging the technology to embrace a new era of financial management. This internal perspective significantly impacts processes and IT infrastructure and also has implications for costs and IT investments, from a financial statement standpoint.
 
 Externally, the presence of institutional and retail cryptocurrency customers (e.g., cryptocurrency platforms or cryptocurrency holders) creates a conundrum. This demands meticulous attention to regulatory compliance, risk management, and product offerings within the existing framework, which aim to discover innovative revenue streams beyond traditional avenues. Indeed, from a financial statement perspective, this external view could have a significant impact on revenues, allowing a diversification strategy.
 
@@ -42,22 +40,22 @@ By addressing both internal and external challenges, legacy financial institutio
 
 ## **Assessing Regulatory and Compliance Considerations**
 
-Engaging with crypto customers entails navigating through stringent regulatory obligations, such as AML and KYC regulations. Relationship managers and salespersons must ensure effective compliance with these regulations while also addressing concerns regarding environmental sustainability, given the energy-intensive nature of certain cryptocurrencies. Furthermore, commercial employees do not receive assistance from other organizational structures within the bank or financial institution, as they are solely responsible for these tasks.
+Engaging with crypto customers entails navigating through stringent regulatory obligations, such as AML and KYC regulations. Relationship managers and salespersons must ensure effective compliance with these regulations while also addressing concerns regarding environmental sustainability, given the energy-intensive nature of certain cryptocurrencies. 
 
-Indeed, the list of activities is extensive. To provide a brief overview, from an operational standpoint, they must personally analyze legal constraints. This is because legal professionals in legacy banks usually have limited experience with crypto regulations. Additionally, they must establish a profitable pricing strategy that convinces management, involving numerous meetings, analyses, and simulations. Moreover, they must fulfill climate, anti-money laundering, and privacy assessments, which are lengthy, complex, and mandatory in the credit process. All these activities are required to be performed simultaneously and swiftly to maintain a positive commercial relationship with customers, and analyze competitors' actions. A chaotic, complex, and overwhelming task without help!
+Given that these professionals receive no support from other organizational structures within their banking or financial institution, the burden of responsibility rests squarely on their shoulders. The breadth of their tasks is considerable, presenting a complex landscape that must be navigated independently.
+
+To illustrate this from an operational standpoint, these individuals must personally interpret and apply relevant legal constraints due to a lack of cryptocurrency regulatory knowledge amongst legal professionals in traditional banks. Beyond this, they must design and implement a profitable pricing strategy that gains management approval, a task often involving numerous meetings, complex analyses, and financial simulations.
+
+Moreover, they must fulfill climate, anti-money laundering, and privacy assessments, which are lengthy, complex, and mandatory in the credit process. All these activities are required to be performed simultaneously and swiftly to maintain a positive commercial relationship with customers, and analyze competitors' actions. A chaotic, complex, and overwhelming task without help!
 
 A more constructive approach has been lacking mainly due to the two major reasons:
-
 - banks employees’ biases and negative approach towards cryptos
 - unclear regulation about cryptos.
 
 On the latter, the EU has been working on regulating cryptocurrencies to address potential risks and ensure consumer protection. While there is no specific comprehensive regulation for crypto management in banks, the following regulations may be relevant:
-
-o   MiCAR (Market in Crypto-Assets Regulation)
-
-o   Anti-Money Laundering Directive (AMLD):
-
-o   Markets in Financial Instruments Directive (MiFID II)
+- MiCAR (Market in Crypto-Assets Regulation)
+- Anti-Money Laundering Directive (AMLD):
+- Markets in Financial Instruments Directive (MiFID II)
 
 From the perspective of a middle-aged EU bank employee, these regulations fail to provide a clear and straightforward framework. Instead, they offer only basic principles and contribute to the overwhelming amount of documentation that banks must manage within the European Union. **Essentially, this situation becomes a burden, leading to additional costs without generating any significant increase in revenues**. We will explore some potential solutions to these problems next.
 
