@@ -12,6 +12,7 @@ parts:
     numbered: False
     chapters:
     - file: MTP/mtp
+    - file: legacy/legacy
   - caption: Innovation & Ideation
     numbered: False
     chapters:
