@@ -25,7 +25,7 @@ Web3, short for Web 3.0, is the third generation of internet services for websit
 
 Web3 has largely been anonymous for its users, due to its founding principles, which are deeply rooted in privacy and decentralization. However, the lack of ability to confirm individual identities, their properties, and affiliations has posed a challenge for blockchain adoption in some industries. Soulbound tokens (SBTs) are set to bridge this identity gap inherent in web3, facilitating the formation of trusted relationships. Soulbound tokens can be issued by any entity, be it DAOs, academic institutions, DeFi firms, or employers to denote membership, authentication or certification, or event participation. Moreover, soulbound tokens can utilize these links between individuals and various entities to provide a more comprehensive picture of distinct user identities and their roots. The reputation of the issuing entity is transferred via SBTs to the wallets or individuals who hold them. The more prestigious the issuing body, the higher the standing of the individual in possession of a soulbound token.
 
-As an individual's connections with different entities grow, so does their unique identity and reputation. Soulbound tokens capitalize on this network of connections to construct verifiable identities for souls. NFTs will serve as proof of ownership, and SBTs as proof of character (Chaffer & Goldston, 2022).
+As an individual's connections with different entities grow, so does their unique identity and reputation. Soulbound tokens capitalize on this network of connections to construct verifiable identities for souls. NFTs will serve as proof of ownership, and SBTs as proof of character {cite}`chaffer2022existential`.
 
 ```{figure} images/SBTDiagram.drawio.png
 ---
@@ -50,7 +50,7 @@ A Sybil attack is a type of security threat in decentralized networks where a si
 Hyper-financialization refers to the dominance of financial markets, institutions, and elites in the economy.
 `````
 
-Web3 aims to revolutionize society beyond just financial systems, but its current lack of mechanisms to represent human identities and relationships in virtual worlds leads to issues like sybil attacks, collusion, and an inclination towards hyper-financialization (Weyl et al., 2022). To counter this, Weyl et al. proposed the concept of a Decentralized Society (DeSoc), an approach fostering complex and diverse relationships across digital and physical realities. It is built on trust and cooperation while also correcting for biases and tendencies to over-coordinate.
+Web3 aims to revolutionize society beyond just financial systems, but its current lack of mechanisms to represent human identities and relationships in virtual worlds leads to issues like sybil attacks, collusion, and an inclination towards hyper-financialization {cite}`weyl2022decentralized`. To counter this, Weyl et al. {cite}`weyl2022decentralized` proposed the concept of a Decentralized Society (DeSoc), an approach fostering complex and diverse relationships across digital and physical realities. It is built on trust and cooperation while also correcting for biases and tendencies to over-coordinate.
 
 `````{margin} **Vampire Attack**
 In the context of decentralized finance (DeFi) and blockchain, a vampire attack is a strategy where a new protocol aims to drain liquidity and users from an existing one. This is often done by offering higher rewards or better incentives on the new platform, incentivizing users of the old platform to migrate their assets.
@@ -71,16 +71,17 @@ The strength of DeSoc lies in fostering broader cooperation by encouraging the c
 
 In traditional societal structures, identity, image, and reputation are crucial components that reflect an individual's social contribution and unique attributes, forming the basis of their societal status and value in peer-to-peer interactions. This practice of using reputation and identity to evaluate an individual or a group has deep historical roots and has evolved over time.
 
-Soulbound Tokens (SBTs), are not the first to assign value based on reputation through identity ratios. Reputation has long been used as proof of authenticity and a verifiable score to represent individual authenticity and identity, even before the advent of blockchain. For example, in traditional finance, credit scores serve as a metric to assess an individual's financial status, economic viability, and credit history. These scores provide a rating system that gauges a person's financial stability and serves as a mechanism for uncollateralized lending (Titus, Decentralized Society's next stage: The soulbound token).
+Soulbound Tokens (SBTs), are not the first to assign value based on reputation through identity ratios. Reputation has long been used as proof of authenticity and a verifiable score to represent individual authenticity and identity, even before the advent of blockchain. For example, in traditional finance, credit scores serve as a metric to assess an individual's financial status, economic viability, and credit history. These scores provide a rating system that gauges a person's financial stability and serves as a mechanism for uncollateralized lending.
 ```
+({cite}`titus2022decentralized`)
 
 ## Functionality
 
-A distinct and pivotal characteristic of Soulbound tokens (SBTs) is their inherent non-transferability. Unlike existing NFTs and token standards like the fungible ERC-20 or non-fungible ERC-721, which are built to hold market value and can be sold or transferred between wallets, SBTs are uniquely tied to Souls and therefore are not designed for selling or transferring (Takyar, 2023).
+A distinct and pivotal characteristic of Soulbound tokens (SBTs) is their inherent non-transferability. Unlike existing NFTs and token standards like the fungible ERC-20 or non-fungible ERC-721, which are built to hold market value and can be sold or transferred between wallets, SBTs are uniquely tied to Souls and therefore are not designed for selling or transferring {cite}`takyar2023what`.
 
-SBTs are issued and held within unique accounts known as Souls, which serve as a vessel for these tokens and play a crucial role in establishing provenance and reputation. Souls can denote various entities, ranging from individuals to organizations, companies, and more. It's noteworthy that in a decentralized society (DeSoc), Souls are not required to have a direct human equivalence, meaning a single person can be associated with multiple Souls. Unlike regular NFTs, soulbound tokens (SBTs) are a concept of non-transferable assets. Once issued, they belong to a specific identity (Hildebrandt, The future of soulbound tokens and their blockchain accounts).
+SBTs are issued and held within unique accounts known as Souls, which serve as a vessel for these tokens and play a crucial role in establishing provenance and reputation. Souls can denote various entities, ranging from individuals to organizations, companies, and more. It's noteworthy that in a decentralized society (DeSoc), Souls are not required to have a direct human equivalence, meaning a single person can be associated with multiple Souls. Unlike regular NFTs, soulbound tokens (SBTs) are a concept of non-transferable assets. Once issued, they belong to a specific identity {cite}`hildebrandt2022future`.
 
-This flexibility can manifest in a multitude of ways. For instance, an individual might have a variety of Souls representing different aspects of their identity - their credentials, medical records, and so on (Takyar, 2023).
+This flexibility can manifest in a multitude of ways. For instance, an individual might have a variety of Souls representing different aspects of their identity - their credentials, medical records, and so on {cite}`takyar2023what`.
 
 ## Potential applications of SBTs
 
@@ -88,43 +89,43 @@ Soulbound Tokens (SBTs) are a revolutionary concept in the realm of blockchain t
 
 ### Verifying Authenticity of Factual Records
 
-Soulbound Tokens can be used to confirm the authenticity of supposed factual records, such as photos and videos. As deep fake technology continues to advance, it's becoming increasingly difficult for both humans and algorithms to determine the truth through direct examination. While blockchain inclusion enables us to trace the time a particular work was made, SBTs would enable us to trace the social provenance, giving us rich social context to the Soul that issued the work—their constellation of memberships, a liations, credentials—and their social distance to the subject (Weyl et al., 2022).
+Soulbound Tokens can be used to confirm the authenticity of supposed factual records, such as photos and videos. As deep fake technology continues to advance, it's becoming increasingly difficult for both humans and algorithms to determine the truth through direct examination. While blockchain inclusion enables us to trace the time a particular work was made, SBTs would enable us to trace the social provenance, giving us rich social context to the Soul that issued the work—their constellation of memberships, a liations, credentials—and their social distance to the subject {cite}`weyl2022decentralized`.
 
 ### Digital Inheritance Planning
 
-Soulbound Tokens (SBTs) can be employed as a mechanism to confirm a user's existence. Considering SBT use cases, a digital inheritance plan could be created where the testator generates SBTs for executors, guardians, and beneficiaries, transferring these tokens to their respective wallets. This process not only verifies the existence of all involved parties but also bolsters the security of the testator's digital assets (Goldston et al., 2023).
+Soulbound Tokens (SBTs) can be employed as a mechanism to confirm a user's existence. Considering SBT use cases, a digital inheritance plan could be created where the testator generates SBTs for executors, guardians, and beneficiaries, transferring these tokens to their respective wallets. This process not only verifies the existence of all involved parties but also bolsters the security of the testator's digital assets {cite}`goldston2023digital`.
 
 ### Alternative Credit Systems
 
-An ecosystem of Soulbound Tokens (SBTs) could provide an alternative to traditional credit systems, using education credentials, work history, and rental contracts to build a credit history. Non-transferable SBTs representing loans could be used as non-seizable reputation-based collateral. The system would prevent loan evasion and promote transparency in lending markets, reducing reliance on centralized credit-scoring. Ultimately, this could enhance lending algorithms and facilitate lending within social networks (Weyl et al., 2022).
+An ecosystem of Soulbound Tokens (SBTs) could provide an alternative to traditional credit systems, using education credentials, work history, and rental contracts to build a credit history. Non-transferable SBTs representing loans could be used as non-seizable reputation-based collateral. The system would prevent loan evasion and promote transparency in lending markets, reducing reliance on centralized credit-scoring. Ultimately, this could enhance lending algorithms and facilitate lending within social networks {cite}`weyl2022decentralized`.
 
 ### Preventing Sybil Attacks in DAOs
 
-Soulbound Tokens (SBTs) can also be used to prevent sybil attacks in Decentralized Autonomous Organizations (DAOs) by differentiating between unique users and potential bots based on their SBTs. More reputable SBT holders can be given more voting power. Specific "proof-of-personhood" SBTs can be issued to assist other DAOs in sybil resistance. Additionally, vote weight can be adjusted based on correlations among SBTs held by voting participants (Weyl et al., 2022).
+Soulbound Tokens (SBTs) can also be used to prevent sybil attacks in Decentralized Autonomous Organizations (DAOs) by differentiating between unique users and potential bots based on their SBTs. More reputable SBT holders can be given more voting power. Specific "proof-of-personhood" SBTs can be issued to assist other DAOs in sybil resistance. Additionally, vote weight can be adjusted based on correlations among SBTs held by voting participants {cite}`weyl2022decentralized`.
 
 ### Enhancing Trust in Online Property Rental
 
-The economic growth potential of the real estate sector is significant, encompassing diverse industries from retail to housing services. The digitization of real estate, however, has invited several challenges, notably in the form of scams targeting landlords and tenants. To address this issue, a blockchain-based property rental platform is proposed. This platform will utilize Soulbound Tokens (SBTs) to verify the credibility and reputation of users, providing security against online rental fraud. A non-transferable non-fungible token is provided to the new user that records their reputation across their time on the website. Property listings will be structured as smart contracts on the platform, ensuring secure and immutable transaction terms between landlords and tenants. This could drastically reduce fraud, enhance trust, and potentially transform the online rental industry (Sharma et al.).
+The economic growth potential of the real estate sector is significant, encompassing diverse industries from retail to housing services. The digitization of real estate, however, has invited several challenges, notably in the form of scams targeting landlords and tenants. To address this issue, a blockchain-based property rental platform is proposed. This platform will utilize Soulbound Tokens (SBTs) to verify the credibility and reputation of users, providing security against online rental fraud. A non-transferable non-fungible token is provided to the new user that records their reputation across their time on the website. Property listings will be structured as smart contracts on the platform, ensuring secure and immutable transaction terms between landlords and tenants. This could drastically reduce fraud, enhance trust, and potentially transform the online rental industry {cite}`sharma2023implementation`.
 
 ### Decentralized Dispute Resolution
 
-Decentralized dispute resolution platforms could use soulbound tokens, tied to an arbitrator's real identity, as a mechanism to enhance system integrity. These tokens, earned through completing tasks, safeguard against system manipulation such as whitewashing or Sybil attacks. Additionally, the tokens represent an arbitrator's decision-making accuracy, not their financial capacity. Arbitrators may need to provide credentials like licenses or certificates, along with proof of identity. This data would be presented to a decentralized committee which, upon verification, associates a long-term secret key with the arbitrator's identity and the soulbound token, ensuring transparency and confidentiality (Ustun & Yuce, 2022).
+Decentralized dispute resolution platforms could use soulbound tokens, tied to an arbitrator's real identity, as a mechanism to enhance system integrity. These tokens, earned through completing tasks, safeguard against system manipulation such as whitewashing or Sybil attacks. Additionally, the tokens represent an arbitrator's decision-making accuracy, not their financial capacity. Arbitrators may need to provide credentials like licenses or certificates, along with proof of identity. This data would be presented to a decentralized committee which, upon verification, associates a long-term secret key with the arbitrator's identity and the soulbound token, ensuring transparency and confidentiality {cite}`ustun2022smart`.
 
 ### Recording Employment History and Professional Qualifications
 
-Soulbound Tokens (SBTs) can be utilized to record employment history and professional qualifications. Employers can distribute these tokens to reflect an employee's work experience, project involvement, accomplishments, and other pertinent details. When seeking new employment opportunities or during job interviews, employees can present these SBTs. Thus, SBTs function as tangible evidence of professional skills and achievements (Takyar, 2023).
+Soulbound Tokens (SBTs) can be utilized to record employment history and professional qualifications. Employers can distribute these tokens to reflect an employee's work experience, project involvement, accomplishments, and other pertinent details. When seeking new employment opportunities or during job interviews, employees can present these SBTs. Thus, SBTs function as tangible evidence of professional skills and achievements {cite}`takyar2023what`.
 
 ### Authenticating Academic Credentials
 
-Linking Soulbound Tokens (SBTs) to detailed resumes, university degrees, certificates, and transcripts could be another practical use of this technology. Considering that such credentials are non-transferable in the traditional Web2 world, employers and educational institutions could utilize SBTs to authenticate the details provided by an applicant in their resume. Moreover, for reference verification, the addresses of the references could be incorporated into the SBT, facilitating on-chain attestations, and thus further streamlining the verification process (Goldston et al., 2023).
+Linking Soulbound Tokens (SBTs) to detailed resumes, university degrees, certificates, and transcripts could be another practical use of this technology. Considering that such credentials are non-transferable in the traditional Web2 world, employers and educational institutions could utilize SBTs to authenticate the details provided by an applicant in their resume. Moreover, for reference verification, the addresses of the references could be incorporated into the SBT, facilitating on-chain attestations, and thus further streamlining the verification process {cite}`goldston2023digital`.
 
 ### Secure Management of Healthcare Records
 
-In a patient-centric soulbound NFT framework for electronic health record (EHR) to prevent the unauthorized trading of important medical documents, Soulbound Tokens (SBTs) can be employed. These tokens can't be bought or transferred; once assigned, they remain tethered to your private wallet and identity. As such, they're ideal for digitizing non-transferable aspects like qualifications, reputation, and healthcare records. The ownership of the token bestows the right to control access to the information it contains, including the ability to revoke that access when required. Instead of being stored in a centralized database, personal information is managed in a blockchain-enabled format, providing enhanced access and control to the token's owner. (Tanwar & Thakur, Patient-centric soulbound NFT framework for Electronic Health Record (EHR) 2023). The ability to manage personal information in the blockchain-enabled form rather than having it stored in a central database makes SBTs an option for people who want the most access to their information (Moreland, 2023). 
+In a patient-centric soulbound NFT framework for electronic health record (EHR) to prevent the unauthorized trading of important medical documents, Soulbound Tokens (SBTs) can be employed. These tokens can't be bought or transferred; once assigned, they remain tethered to your private wallet and identity. As such, they're ideal for digitizing non-transferable aspects like qualifications, reputation, and healthcare records. The ownership of the token bestows the right to control access to the information it contains, including the ability to revoke that access when required. Instead of being stored in a centralized database, personal information is managed in a blockchain-enabled format, providing enhanced access and control to the token's owner {cite}`tanwar2023patient`. The ability to manage personal information in the blockchain-enabled form rather than having it stored in a central database makes SBTs an option for people who want the most access to their information {cite}`moreland2023what`. 
 
 ## Challenges and concerns
 
-Soulbound Tokens (SBTs), as an emerging concept, come with several challenges. Some of the notable concerns include (Leal, The Ultimate Guide to Soulbound tokens 2023):
+Soulbound Tokens (SBTs), as an emerging concept, come with several challenges. Some of the notable concerns include {cite}`leal2022what`:
 
 - **Privacy:** As SBTs are linked to a specific individual, they could potentially be used for tracking and monitoring that individual's online activities. Technological advancements like zero-knowledge proofs on the blockchain could help address these privacy concerns by providing improved anonymity.
 
@@ -134,7 +135,7 @@ Soulbound Tokens (SBTs), as an emerging concept, come with several challenges. S
 
 - **Non-transferability:** The non-transferable nature of SBTs, while offering numerous benefits, can also pose challenges. If a token is unwillingly assigned to someone, it may lead to issues. This can be resolved by developing more robust permissioned interfaces on top of the blockchain, allowing users to enjoy the benefits of SBTs while also having the option to conceal or remove SBTs from their profile.
 
-To ensure wider adoption and success, these issues associated with SBTs need to be ironed out. Although souls can choose to hide what SBTs reveal, in a way, they could also foster discrimination by revealing too many details in specific situations or contexts. This is particularly true for marginalized social groups who are more likely to experience disfavor (HackerNoon, CBDCs and soulbound token explained 2022). With the right solutions, non-transferable NFTs like SBTs have the potential to contribute to a more equitable and privacy-focused digital society.
+To ensure wider adoption and success, these issues associated with SBTs need to be ironed out. Although souls can choose to hide what SBTs reveal, in a way, they could also foster discrimination by revealing too many details in specific situations or contexts. This is particularly true for marginalized social groups who are more likely to experience disfavor {cite}`shrishti2022cbdcs`(HackerNoon, CBDCs and soulbound token explained 2022). With the right solutions, non-transferable NFTs like SBTs have the potential to contribute to a more equitable and privacy-focused digital society.
 
 ## Conclusion
 
@@ -146,30 +147,6 @@ Soulbound tokens, in their diverse and wide-ranging applications, span the spect
 <div style="text-align: right;font-style: italic;">May 2023</div>
 
 ## References
-
-CBDCs and soulbound token explained (2022) HackerNoon. Available at: https://hackernoon.com/cbdcs-and-soulbound-token-explained (Accessed: 30 May 2023). 
-
-Chaffer, T.J. and Goldston, J. (2022) ‘On the existential basis of self-sovereign identity and Soulbound Tokens: An examination of the “self” in the age of Web3’, Journal of Strategic Innovation and Sustainability, 17(3). doi:10.33423/jsis.v17i3.5637. 
-
-Goldston, J. et al. (2023) Digital inheritance in WEB3: A case study of Soulbound tokens and the Social Recovery Pallet within the Polkadot and Kusama Ecosystems, arXiv.org. Available at: https://arxiv.org/abs/2301.11074 (Accessed: 27 May 2023).
-
-Hildebrandt, F. (1970) The future of soulbound tokens and their blockchain accounts, MOnAMi. Available at: https://monami.hs-mittweida.de/frontdoor/index/index/docId/13450 (Accessed: 26 May 2023). 
-
-Leal, J. (2023) The Ultimate Guide to Soulbound tokens, thirdweb. Available at: https://blog.thirdweb.com/soulbound-tokens/#:~:text=Limitations%20of%20soulbound%20tokens%2C%20or%20non%2Dtransferable%20NFTs&text=Currently%2C%20soulbound%20tokens%20lack%20the,monitor%20that%20person%27s%20online%20activities. (Accessed: 30 May 2023). 
-
-Moreland, K. (2023) What is a soulbound token?, Ledger. Available at: https://www.ledger.com/academy/topics/blockchain/what-is-a-soulbound-token (Accessed: 27 May 2023). 
-
-Sharma, S. et al. (no date) Implementation of property rental website using blockchain with Soulbound Tokens for Reputation and Review System. Available at: https://ceur-ws.org/Vol-3390/Paper3.pdf (Accessed: 26 May 2023). 
-
-Takyar, A. (2023) What are Soulbound tokens, and how do they work?, LeewayHertz. Available at: https://www.leewayhertz.com/soulbound-tokens/ (Accessed: 26 May 2023). 
-
-Tanwar, N. and Thakur, J. (2023) ‘Patient-centric soulbound NFT framework for Electronic Health Record (EHR)’, Journal of Engineering and Applied Science, 70(1). doi:10.1186/s44147-023-00205-9. 
-
-Titus, O.J. (no date) Decentralized Society’s next stage: The soulbound token, HackerNoon. Available at: https://hackernoon.com/decentralized-societys-next-stage-the-soulbound-token (Accessed: 30 May 2023).
-
-Ustun, E.S. and Yuce, M. (2022) ‘Smart Legal Contracts & Smarter Dispute resolution’, 2022 IEEE 24th Conference on Business Informatics (CBI) [Preprint]. doi:10.1109/cbi54897.2022.10056. 
-
-Weyl, E.G., Ohlhaver, P. and Buterin, V. (2022) ‘Decentralized society: Finding web3’s soul’, SSRN Electronic Journal[Preprint]. doi:10.2139/ssrn.4105763. 
  
 ```{bibliography}
 :filter: docname in docnames
