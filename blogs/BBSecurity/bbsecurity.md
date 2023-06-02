@@ -45,7 +45,7 @@ Pillai et al. {cite}`pillai2022cross` proposed a novel cross-blockchain integrat
 ## The Role of Cryptography in Blockchain Bridge Security
 
 `````{margin} **Sidechain**
-  Sidechain is a blockchain that communicates with other blockchains via a two-way peg. It stems from the main blockchain and runs in parallel to it.
+  A sidechain is a blockchain that communicates with other blockchains via a two-way peg. It stems from the main blockchain and runs in parallel to it.
 `````
 `````{margin} **Cryptographic Protocol**
   A cryptographic protocol is an abstract or concrete protocol that performs a security-related function and applies cryptographic methods, often as sequences of cryptographic primitives. A protocol describes how the algorithms should be used and includes details about data structures and representations, at which point it can be used to implement multiple, interoperable versions of a programme.
