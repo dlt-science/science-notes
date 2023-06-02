@@ -19,7 +19,7 @@ Some months ago, a friend of mine working in the sales department of a major Eur
 
 The miner contacted my friend to inquire about insurance protection against such weather events. **My friend saw the opportunity and approached the relevant departments in his bank, including bank assurance and product design. That's where the story ended**. My friend spent countless meetings and days explaining the basics to our colleagues: what a miner does, their work, and their business. Even escalations to top management were in vain. In the meantime, the miner found an alternative financial solution provided by a cutting-edge fintech, and as a result, both he and his bank lost an outstanding prospective customer. **Preventing such business misses from happening again in legacy banks is the subject of this article**.
 
-## **Introduction**:
+## **Introduction**
 
 Cryptocurrencies present unique challenges for legacy financial institutions from both internal and external viewpoints. Internally, these institutions must explore how to integrate cryptocurrencies and distributed ledger technologies into their existing systems, leveraging the technology to embrace a new era of financial management. This internal perspective significantly impacts processes and IT infrastructure and also has implications for costs and IT investments, from a financial statement standpoint.
 
@@ -83,6 +83,6 @@ In the general context, and simplifying it to the utmost, within legacy banks th
 2. An **eclectic and end-to-end vision of innovation** (currently, innovation departments in legacy banks only focus on processes and costs rather than revenues and products)
 3. Proficiency in designing new products that are completely different from the traditional ones.
 
-## **Conclusion**:
+## **Conclusion**
 
 Legacy financial institutions must proactively address the challenges associated with managing crypto customers. By navigating regulatory considerations, expanding business opportunities, establishing central organizations, and attracting specialized talent, these institutions can unlock the potential of cryptocurrencies within their existing frameworks. Embracing this transformation will not only help overcome the constraints imposed by regulation and biases but will also position the institutions at the forefront of the evolving financial landscape.
