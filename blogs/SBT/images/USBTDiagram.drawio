@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-06-02T09:54:02.437Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.1.2 Safari/605.1.15" etag="sEzKcn10g8t5KORRhO5c" version="21.3.4" type="device">
+<mxfile host="app.diagrams.net" modified="2023-06-02T13:55:11.058Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.1.2 Safari/605.1.15" etag="LYNI0arDfgyV2m8Dea4s" version="21.3.4" type="device">
   <diagram name="Page-1" id="BWtOYKvqadNID8XywzxB">
     <mxGraphModel dx="1781" dy="647" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#FFFFFF" math="0" shadow="0">
       <root>
@@ -67,7 +67,7 @@
           </mxCell>
         </object>
         <mxCell id="T60vjv0ezz5xIvzw-vnt-12" value="Soulbound Token Issuance in a Decentralised Society (DeSoc)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#76608a;strokeColor=#432D57;fontStyle=1;fontSize=16;fontColor=#ffffff;" parent="1" vertex="1">
-          <mxGeometry x="-45.36" y="660" width="900" height="40" as="geometry" />
+          <mxGeometry x="-36" y="660" width="900" height="40" as="geometry" />
         </mxCell>
         <mxCell id="T60vjv0ezz5xIvzw-vnt-14" value="DAO" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=15;" parent="1" vertex="1">
           <mxGeometry x="40.00000000000006" y="163.41" width="60" height="30" as="geometry" />
@@ -113,20 +113,20 @@
         <mxCell id="T60vjv0ezz5xIvzw-vnt-24" value="Soul/Individual" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="384" y="377.63" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="T60vjv0ezz5xIvzw-vnt-25" value="Certification SBT" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;" parent="1" vertex="1">
-          <mxGeometry x="565.12" y="263.53" width="110" height="36.47" as="geometry" />
+        <mxCell id="T60vjv0ezz5xIvzw-vnt-25" value="Certification soulbound token issued" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;" parent="1" vertex="1">
+          <mxGeometry x="565.12" y="280" width="110" height="36.47" as="geometry" />
         </mxCell>
-        <mxCell id="T60vjv0ezz5xIvzw-vnt-26" value="EHR SBT" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;" parent="1" vertex="1">
-          <mxGeometry x="550" y="430" width="60" height="30" as="geometry" />
+        <mxCell id="T60vjv0ezz5xIvzw-vnt-26" value="Electronic Health Record (EHR) soulbound token issued" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;" parent="1" vertex="1">
+          <mxGeometry x="441.34000000000003" y="439.13" width="192.44" height="57.25" as="geometry" />
         </mxCell>
-        <mxCell id="T60vjv0ezz5xIvzw-vnt-27" value="Membership SBT" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;rotation=0;fontSize=13;" parent="1" vertex="1">
-          <mxGeometry x="209.75" y="439.13" width="70" height="37.25" as="geometry" />
+        <mxCell id="T60vjv0ezz5xIvzw-vnt-27" value="Membership soulbound token issued" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;rotation=0;fontSize=13;" parent="1" vertex="1">
+          <mxGeometry x="190" y="452.75" width="190" height="37.25" as="geometry" />
         </mxCell>
-        <mxCell id="T60vjv0ezz5xIvzw-vnt-28" value="SBT" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;" parent="1" vertex="1">
-          <mxGeometry x="210" y="280" width="60" height="30" as="geometry" />
+        <mxCell id="T60vjv0ezz5xIvzw-vnt-28" value="Soulbound token issued" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;" parent="1" vertex="1">
+          <mxGeometry x="165" y="276.47" width="90" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="T60vjv0ezz5xIvzw-vnt-29" value="SBT" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;" parent="1" vertex="1">
-          <mxGeometry x="360" y="210" width="60" height="30" as="geometry" />
+        <mxCell id="i6yfru-MiQJrwYtKZfTI-1" value="Soulbound token issued" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="324" y="194.88000000000002" width="90" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

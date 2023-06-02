@@ -27,7 +27,7 @@ Web3 has largely been anonymous for its users, due to its founding principles, w
 
 As an individual's connections with different entities grow, so does their unique identity and reputation. Soulbound tokens capitalise on this network of connections to construct verifiable identities for souls. NFTs will serve as proof of ownership, and SBTs as proof of character {cite}`chaffer2022existential`.
 
-```{figure} images/UpdSBTDiagram.drawio.png
+```{figure} images/USBTDiagram.drawio.png
 ---
 width: 1055px
 height: 785px
