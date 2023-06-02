@@ -1,6 +1,18 @@
 # Science Notes
 
+## Steps to add a new blog post
+- Create a new folder in `blogs/` with the name of the blog post
+- Add your markdown file in the new folder and images in in the `<folder-name>/images/` folder.
+- Add the markdown in _toc.yml under relevant category
+- Build the book as mentioned in [section](#build-the-book)
+- Verify the changes in the browser as mentioned in [section](#local-testing-of-the-website)
+- Build the regular pdf as mentioned in [section](#build-pdf)
+- Build the latex pdf as mentioned in [section](#build-pdf-through-latex)
+- Push the changes to the repo and get the merge request approved.
+- After the merge request is approved to be merged with main, the changes will be reflected in the website after workflow is completed in github actions.
 
+
+## Setup
 ### Clone this repository
 
 ```zsh
@@ -49,10 +61,7 @@ pip install -r requirements.txt
 ```
 
 ## Build the book
-
-### Build html
-
-Use `--all` to force rebuild all
+Run the below command. Use `--all` to force rebuild all
 
 ```zsh
 jupyter-book build --all blogs/
@@ -72,14 +81,12 @@ open blogs/_build/html/index.html
 start blogs/_build/html/index.html
 ```
 
-### Build pdf
+## Build pdf
 
-<!-- Must first install the right version of `urllib3` if haven't
+Must first install the right version of `urllib3` if haven't
 ```zsh
 pip install -U "urllib3<1.25"
-``` -->
-
-Build pdfhtml:
+```
 
 ```zsh
 jupyter-book build blogs/ --builder pdfhtml
@@ -93,13 +100,19 @@ file : `venv/lib/python3.11/site-packages/pyppeteer/page.py` by changing the lin
 The generated pdf can be found [here](blogs/_build/pdf/book.pdf).
 The latex generated pdf can be found [here](blogs/_build/latex/pdf/book.pdf).
 
-Or build pdf through latex
+## Build pdf through latex
 
 ```zsh
 jupyter-book build blogs/ --builder pdflatex
 ```
 
-### Update the data github pages link
+## Update the data github pages link
+*Can only be run by admins/maintainers of the repo.*
 ```zsh
 ghp-import -n -p -f blogs/_build/html
 ```
+
+## Local testing of the website
+- Install VSCode extension `Live Server`
+- Right-click `blogs/_build/html/index.html` in VSCode and select `Open with Live Server`.
+- You can now see the changes in the browser everytime you rebuild the book (`jupyter-book build --all blogs/`).

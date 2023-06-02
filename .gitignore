@@ -131,10 +131,12 @@ dmypy.json
 
 /**/*.DS_Store
 
-
-*/_build/
-
-# Only upload the pdf, latex and html
-!*/_build/pdf/book.pdf
-!*/_build/latex/book.pdf
-!*/_build/html/
+# Ignore build files except html and pdf
+blogs/_build/*
+!blogs/_build/pdf/
+!blogs/_build/latex/
+# !blogs/_build/html/
+blogs/_build/pdf/*
+blogs/_build/latex/*
+!blogs/_build/pdf/book.pdf
+!blogs/_build/latex/book.pdf
