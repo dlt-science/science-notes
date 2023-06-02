@@ -66,20 +66,13 @@ The strength of DeSoc lies in fostering broader cooperation by encouraging the c
 - Both SBTs and NFTs can serve as a means to authenticate and identify products or records.
 - SBTs stand out in their ability to serve as a form of permission, authorisation, and access to legal documents, binding the token to a specific identity.
 - Conversely, NFTs can be utilised as tickets granting access to exclusive events, without requiring identity verification, as they can be freely transferred between parties.
-
-(Titus, Decentralized Society's next stage: The soulbound token)
-
-In traditional societal structures, identity, image, and reputation are crucial components that reflect an individual's social contribution and unique attributes, forming the basis of their societal status and value in peer-to-peer interactions. This practice of using reputation and identity to evaluate an individual or a group has deep historical roots and has evolved over time.
-
-Soulbound Tokens (SBTs), are not the first to assign value based on reputation through identity ratios. Reputation has long been used as a proof of authenticity and a verifiable score to represent individual authenticity and identity, even before the advent of blockchain. For example, in traditional finance, credit scores serve as a metric to assess an individual's financial status, economic viability, and credit history. These scores provide a rating system that gauges a person's financial stability and serves as a mechanism for uncollateralized lending.
 ```
-({cite}`titus2022decentralized`)
 
 ## Functionality
 
 A distinct and pivotal characteristic of Soulbound tokens (SBTs) is their inherent non-transferability. Unlike existing NFTs and token standards like the fungible ERC-20 or non-fungible ERC-721, which are built to hold market value and can be sold or transferred between wallets, SBTs are uniquely tied to Souls and therefore are not designed for selling or transferring {cite}`takyar2023what`.
 
-SBTs are issued and held within unique accounts known as Souls, which serve as a vessel for these tokens and play a crucial role in establishing provenance and reputation. Souls can denote various entities, ranging from individuals to organisations, companies, and more. It's noteworthy that in a decentralised society (DeSoc), Souls are not required to have a direct human equivalence, meaning a single person can be associated with multiple Souls. Unlike regular NFTs, soulbound tokens (SBTs) are a concept of non-transferable assets. Once issued, they belong to a specific identity {cite}`hildebrandt2022future`.
+SBTs are issued and held within unique accounts known as Souls, which serve as a vessel for these tokens and play a crucial role in establishing provenance and reputation. Souls can denote various entities, ranging from individuals to organisations, companies, and more. It's noteworthy that in a decentralised society (DeSoc), Souls are not required to have a direct human equivalence, meaning a single person can be associated with multiple Souls. Unlike regular NFTs, soulbound tokens (SBTs) are a concept of non-transferable assets {cite}`titus2022decentralized`. Once issued, they belong to a specific identity {cite}`hildebrandt2022future`.
 
 This flexibility can manifest in a multitude of ways. For instance, an individual might have a variety of Souls representing different aspects of their identity - their credentials, medical records, and so on {cite}`takyar2023what`.
 
