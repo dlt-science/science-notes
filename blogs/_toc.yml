@@ -19,3 +19,4 @@ parts:
     chapters:
     - file: SSI/ssi
     - file: Sharding/sharding
+    - file: SBT/SBT
