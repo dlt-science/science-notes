@@ -8,7 +8,6 @@ parts:
     numbered: False
     chapters:
     - file: GOV/gov
-    - file: BBSecurity/bbsecurity
   - caption: Industry Perspectives
     numbered: False
     chapters:
