@@ -4,13 +4,11 @@
 
 ```{admonition} Key Insights
 :class: tip
-- Soulbound tokens (SBTs) can play a significant role in resolving identity challenges in Web3 by acting as reliable indicators of affiliations, certifications, and offering a detailed depiction of user identities.
 - Decentralised Society (DeSoc) serves as an innovative solution that encourages a trust-based, cooperative, bottom-up strategy in constructing resilient networks, thereby enhancing the potential of Web3.
-- SBTs, as non-transferable assets, improve the provenance and reputation in the Decentralised Society (DeSoc) and provide a versatile representation of digital identities.
+- Soulbound tokens (SBTs), as non-transferable assets, improve the provenance and reputation in the Decentralised Society (DeSoc) and provide a versatile representation of digital identities.
 - SBTs have the potential to redefine digital identity verification due to their non-transferable nature, allowing them to authenticate factual records, establish digital inheritance plans, and prevent Sybil attacks in Decentralised Autonomous Organisations.
-- Soulbound Tokens offer functional solutions in various sectors such as finance, real estate, and healthcare, promoting transparency, security, and innovation across these industries.
+- SBTs offer functional solutions in various sectors such as finance, real estate, and healthcare, promoting transparency, security, and innovation across these industries.
 - Despite the significant advancements that SBTs bring to digital identity systems, they also face obstacles concerning privacy, security, and interoperability.
-- SBTs are redefining NFTs in the decentralised society (DeSoc), their diverse applications are expected to revolutionise everyday life and significantly impact the web3 ecosystem.
 ```
 
 ## Introduction
