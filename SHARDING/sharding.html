@@ -60,6 +60,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'SHARDING/sharding';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Soulbound Tokens (SBTs)" href="../SBT/SBT.html" />
+    <link rel="prev" title="Self-Sovereign Identity: Technical Foundations and Applications" href="../SSI/ssi.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="docsearch:language" content="None">
   </head>
@@ -161,12 +163,27 @@ const thebe_selector_output = ".output, .cell_output"
                     </li>
                 
 
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="#">
+                        Sharding: A Panacea for Blockchain Scalability Challenges?
+                      </a>
+                    </li>
+                
+            <div class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </button>
+                <div class="dropdown-menu">
+                    
                     <li class="nav-item">
                       <a class="nav-link nav-internal" href="../SBT/SBT.html">
                         Soulbound Tokens (SBTs)
                       </a>
                     </li>
                 
+                </div>
+            </div>
+            
     </ul>
 </nav>
       </div>
@@ -265,12 +282,27 @@ const thebe_selector_output = ".output, .cell_output"
                     </li>
                 
 
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="#">
+                        Sharding: A Panacea for Blockchain Scalability Challenges?
+                      </a>
+                    </li>
+                
+            <div class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </button>
+                <div class="dropdown-menu">
+                    
                     <li class="nav-item">
                       <a class="nav-link nav-internal" href="../SBT/SBT.html">
                         Soulbound Tokens (SBTs)
                       </a>
                     </li>
                 
+                </div>
+            </div>
+            
     </ul>
 </nav>
       </div>
@@ -341,8 +373,9 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../MTP/mtp.html">Mobile Theft Prevention using Blockchain</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Innovation &amp; Ideation</span></p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../SSI/ssi.html">Self-Sovereign Identity: Technical Foundations and Applications</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Sharding: A Panacea for Blockchain Scalability Challenges?</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../SBT/SBT.html">Soulbound Tokens (SBTs)</a></li>
 </ul>
 
@@ -629,16 +662,16 @@ There have been a few proposed sharded blockchains such as Elastico <span id="id
 <figure class="align-default" id="sharding-eth-near">
 <a class="reference internal image-reference" href="../_images/sharding.png"><img alt="../_images/sharding.png" src="../_images/sharding.png" style="width: 720px; height: 330px;" /></a>
 <figcaption>
-<p><span class="caption-text">Sharding in Ethereum vs Near Blockchain</span><a class="headerlink" href="#sharding-eth-near" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 5 </span><span class="caption-text">Sharding in Ethereum vs Near Blockchain</span><a class="headerlink" href="#sharding-eth-near" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <section id="sharding-in-ethereum">
 <h3>Sharding in Ethereum<a class="headerlink" href="#sharding-in-ethereum" title="Permalink to this headline">#</a></h3>
-<p>In Ethereum, data is distributed among several “shard chains” ([<code class="xref std std-numref docutils literal notranslate"><span class="pre">sharding-eth-near</span></code>]). Each of these shard chains submits a record of transactions to the “beacon chain” or “coordinating layer”, which coordinates and manages the shards by maintaining synchronization and ensuring a common ledger. The shards receive sets of transactions from the mempool. Under the Ethereum 2.0 proposal, these TX are split based on their transaction types: Token transfers and Smart contract interactions. Validators then use an EVM to process shards’ data into a block and update the Merkle tree’s state on the beacon chain <span id="id7">[<a class="reference internal" href="#id67" title="Alexander Kudzin, Kentaroh Toyoda, Satoshi Takayama, and Atsushi Ishigame. Scaling ethereum 2.0 s cross-shard transactions with refined data structures. Cryptography, 6(4):57, 2022.">KTTI22</a>]</span>.</p>
+<p>In Ethereum, data is distributed among several “shard chains” ([<a class="reference internal" href="#sharding-eth-near"><span class="std std-numref">Fig. 5</span></a>]). Each of these shard chains submits a record of transactions to the “beacon chain” or “coordinating layer”, which coordinates and manages the shards by maintaining synchronization and ensuring a common ledger. The shards receive sets of transactions from the mempool. Under the Ethereum 2.0 proposal, these TX are split based on their transaction types: Token transfers and Smart contract interactions. Validators then use an EVM to process shards’ data into a block and update the Merkle tree’s state on the beacon chain <span id="id7">[<a class="reference internal" href="#id67" title="Alexander Kudzin, Kentaroh Toyoda, Satoshi Takayama, and Atsushi Ishigame. Scaling ethereum 2.0 s cross-shard transactions with refined data structures. Cryptography, 6(4):57, 2022.">KTTI22</a>]</span>.</p>
 </section>
 <section id="sharding-in-near-blockchain">
 <h3>Sharding in Near Blockchain<a class="headerlink" href="#sharding-in-near-blockchain" title="Permalink to this headline">#</a></h3>
-<p>Near’s sharding technique is called “Nightshade” <span id="id8">[<a class="reference internal" href="#id65" title="Near. Near nightshade whitepaper. Near, 2020. URL: https://near.org/papers/nightshade/.">Nea20a</a>]</span>. Although the full implementation is still in progress, the idea is that instead of having multiple subchains with a single beacon chain, the data is divided into smaller partitions called chunks. Each chunk is processed by a different set of validators. The validators are randomly assigned to chunks, and the assignment is done in a way that the same validator is not assigned to multiple chunks, as shown in [<code class="xref std std-numref docutils literal notranslate"><span class="pre">sharding-eth-near</span></code>]. At present, the Near blockchain has 4 shards, and the eventual plan is to have 100 shards {cite}`near roadmap.</p>
+<p>Near’s sharding technique is called “Nightshade” <span id="id8">[<a class="reference internal" href="#id65" title="Near. Near nightshade whitepaper. Near, 2020. URL: https://near.org/papers/nightshade/.">Nea20a</a>]</span>. Although the full implementation is still in progress, the idea is that instead of having multiple subchains with a single beacon chain, the data is divided into smaller partitions called chunks. Each chunk is processed by a different set of validators. The validators are randomly assigned to chunks, and the assignment is done in a way that the same validator is not assigned to multiple chunks, as shown in [<a class="reference internal" href="#sharding-eth-near"><span class="std std-numref">Fig. 5</span></a>]. At present, the Near blockchain has 4 shards, and the eventual plan is to have 100 shards {cite}`near roadmap.</p>
 <!--TODO: I think we need a section about Hedera here, even if it's a bit of a stretch-->
 </section>
 </section>
@@ -656,7 +689,7 @@ There have been a few proposed sharded blockchains such as Elastico <span id="id
 </section>
 <section id="cross-shard-communication">
 <h3>Cross-Shard Communication<a class="headerlink" href="#cross-shard-communication" title="Permalink to this headline">#</a></h3>
-<p>As the network gets divided into multiple shards, it is important to ensure that the shards can communicate with each other to maintain consistency and interoperability. As seen in [<code class="xref std std-numref docutils literal notranslate"><span class="pre">cross-sharding</span></code>], this can be problematic if there is forking within the shards and the block issuing the transaction is not included in the canonical chain. Both Near and Ethereum overcome this challenge by exchanging receipts between the shards. The receipts are used to prove that a transaction has been executed on a shard <span id="id10">[<a class="reference internal" href="#id68" title="Near. Near runtime spec. Near, 2020. URL: https://nomicon.io/RuntimeSpec/Receipts.">Nea20b</a>]</span> and the corresponding transaction can be executed on the other shard. In Hedera Hashgraph, which uses a gossip protocol to exchange information between shards, each shard maintains a queue of outgoing messages for other shards. Messages are sent from one shard to another through nodes randomly contacting each other, along with proof of consensus. The process continues until the receiving shard confirms message processing with an updated sequence number in its shared state <span id="id11">[<a class="reference internal" href="#id69" title="Hedera. Hedera hashgraph whitepaper. Hedera, 2020. URL: https://hedera.com/hh_whitepaper_v2.1-20200815.pdf.">Hed20</a>]</span>. Instead of receipts, Hedera uses sequence numbers which are maintained by a shard for each other shard as a proof of latest execution message.</p>
+<p>As the network gets divided into multiple shards, it is important to ensure that the shards can communicate with each other to maintain consistency and interoperability. As seen in [<a class="reference internal" href="#cross-sharding"><span class="std std-numref">Fig. 6</span></a>], this can be problematic if there is forking within the shards and the block issuing the transaction is not included in the canonical chain. Both Near and Ethereum overcome this challenge by exchanging receipts between the shards. The receipts are used to prove that a transaction has been executed on a shard <span id="id10">[<a class="reference internal" href="#id68" title="Near. Near runtime spec. Near, 2020. URL: https://nomicon.io/RuntimeSpec/Receipts.">Nea20b</a>]</span> and the corresponding transaction can be executed on the other shard. In Hedera Hashgraph, which uses a gossip protocol to exchange information between shards, each shard maintains a queue of outgoing messages for other shards. Messages are sent from one shard to another through nodes randomly contacting each other, along with proof of consensus. The process continues until the receiving shard confirms message processing with an updated sequence number in its shared state <span id="id11">[<a class="reference internal" href="#id69" title="Hedera. Hedera hashgraph whitepaper. Hedera, 2020. URL: https://hedera.com/hh_whitepaper_v2.1-20200815.pdf.">Hed20</a>]</span>. Instead of receipts, Hedera uses sequence numbers which are maintained by a shard for each other shard as a proof of latest execution message.</p>
 <aside class="margin sidebar">
 <p class="sidebar-title"><strong>Sequence Numbers</strong></p>
 <p>In the context of Hedera’s multi-shard system, sequence numbers are 64-bit identifiers assigned to inter-shard messages to keep track of their order. When a transaction involves resources from different shards, it triggers inter-shard messages. Each shard maintains a queue of outgoing messages to be sent to other shards, and each message within a specific queue is assigned a unique sequence number.</p>
@@ -664,7 +697,7 @@ There have been a few proposed sharded blockchains such as Elastico <span id="id
 <figure class="align-default" id="cross-sharding">
 <a class="reference internal image-reference" href="../_images/cross-shard.png"><img alt="../_images/cross-shard.png" src="../_images/cross-shard.png" style="width: 350px; height: 230px;" /></a>
 <figcaption>
-<p><span class="caption-text">Cross-Shard Communication</span><a class="headerlink" href="#cross-sharding" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 6 </span><span class="caption-text">Cross-Shard Communication</span><a class="headerlink" href="#cross-sharding" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -758,6 +791,20 @@ verify the validity of data. To overcome this problem, erasure coding is used. I
             <footer class="bd-footer-article">
                 <!-- Previous / next buttons -->
 <div class='prev-next-area'>
+  <a class='left-prev' id="prev-link" href="../SSI/ssi.html" title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+          <p class="prev-next-subtitle">previous</p>
+          <p class="prev-next-title">Self-Sovereign Identity: Technical Foundations and Applications</p>
+      </div>
+  </a>
+  <a class='right-next' id="next-link" href="../SBT/SBT.html" title="next page">
+  <div class="prev-next-info">
+      <p class="prev-next-subtitle">next</p>
+      <p class="prev-next-title">Soulbound Tokens (SBTs)</p>
+  </div>
+  <i class="fa-solid fa-angle-right"></i>
+  </a>
 </div>
             </footer>
             
