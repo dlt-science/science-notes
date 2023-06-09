@@ -18,5 +18,5 @@ parts:
     numbered: False
     chapters:
     - file: SSI/ssi
-    - file: Sharding/sharding
+    - file: SHARDING/sharding
     - file: SBT/SBT
