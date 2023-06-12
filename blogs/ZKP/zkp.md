@@ -11,6 +11,15 @@
 
 Blockchain technology, while acclaimed for its decentralization and transparency, often wrestles with the need for confidentiality and privacy. This is where Zero-Knowledge Proofs come into play. They are a groundbreaking solution that reconciles the dichotomy between transparency and privacy in blockchain platforms. In the context of blockchain transactions, ZKPs can verify the validity of transactions without disclosing any of the transaction details, thereby maintaining privacy while still ensuring security (Kosba et al., 2016). With the use of ZKPs in blockchain, it is possible to maintain the immutability and transparency of the blockchain while ensuring the confidentiality of the information (Miers et al., 2013).
 
+```{figure} images/zkp.drawio.png
+---
+width: 1055px
+height: 398px
+name: zkp_diagram
+---
+Zero-Knowledge Proof Protocol Flow.
+```
+
 ## Deep Dive: What Are Zero-Knowledge Proofs?
 
 The theoretical concept of Zero-Knowledge Proofs was initially introduced by Goldwasser et al. in their 1985 ground-breaking paper. A ZKP is a cryptographic method that enable one party (the prover) to prove to another party (the verifier) that they know a specific piece of information without revealing the information itself apart from the truth of the statement. Their introduction revolutionized the world of cryptography and they are now an integral part of many privacy-enhancing technologies (Goldwasser et al., 1985). As an innovative concept, ZKPs have the potential to significantly enhance confidentiality in blockchain technology with broad applications ranging from digital identity verification to decentralized finance (DeFi) and private voting systems.
