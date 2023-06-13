@@ -1,0 +1,63 @@
+<mxfile host="app.diagrams.net" modified="2023-06-13T12:49:13.230Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.1.2 Safari/605.1.15" etag="fGy271UcRdTbKgM1iyxd" version="21.3.4" type="device">
+  <diagram name="Page-1" id="2kg5-HkzBw4idW8L5xDF">
+    <mxGraphModel dx="954" dy="647" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Xj_rjUO3NUVVxdjrDqMI-4" value="1. Initial Statement sent by Prover" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;fontStyle=1;fontSize=13;strokeWidth=3;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="200" y="257.5" as="sourcePoint" />
+            <mxPoint x="630" y="257.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Xj_rjUO3NUVVxdjrDqMI-5" value="4. Challenge issued by Verifier" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.011;exitY=0.596;exitDx=0;exitDy=0;exitPerimeter=0;fontStyle=1;fontSize=13;strokeWidth=3;" edge="1" parent="1">
+          <mxGeometry x="-0.0029" relative="1" as="geometry">
+            <mxPoint x="632.0899999999999" y="337.0799999999999" as="sourcePoint" />
+            <mxPoint x="210" y="337" as="targetPoint" />
+            <mxPoint y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Xj_rjUO3NUVVxdjrDqMI-13" value="5. Prover responds to Challenge" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;fontStyle=1;fontSize=13;strokeWidth=3;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="200" y="372.5" as="sourcePoint" />
+            <mxPoint x="630" y="372.5" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Xj_rjUO3NUVVxdjrDqMI-14" value="3. Random Secret/Statement sent by Prover&amp;nbsp;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1.005;exitY=0.448;exitDx=0;exitDy=0;entryX=0.005;entryY=0.452;entryDx=0;entryDy=0;entryPerimeter=0;exitPerimeter=0;fontStyle=1;fontSize=13;strokeWidth=3;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="200.95000000000005" y="303.03999999999996" as="sourcePoint" />
+            <mxPoint x="630.95" y="303.96000000000004" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Xj_rjUO3NUVVxdjrDqMI-21" value="Zero-Knowledge Proof Protocol Flow" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#e51400;strokeColor=#B20000;fontStyle=1;fontSize=16;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry y="470" width="830" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Xj_rjUO3NUVVxdjrDqMI-26" value="2. Makes Proof" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontStyle=1;fontSize=13;" edge="1" parent="1" source="Xj_rjUO3NUVVxdjrDqMI-22" target="Xj_rjUO3NUVVxdjrDqMI-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Xj_rjUO3NUVVxdjrDqMI-22" value="Prover" style="shape=actor;whiteSpace=wrap;html=1;fillColor=#a20025;strokeColor=#6F0000;strokeWidth=3;fontStyle=1;fontSize=15;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="30" y="170" width="150" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="Xj_rjUO3NUVVxdjrDqMI-27" value="6. Checks Prover&#39;s response" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontStyle=1;fontSize=13;" edge="1" parent="1" source="Xj_rjUO3NUVVxdjrDqMI-23" target="Xj_rjUO3NUVVxdjrDqMI-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Xj_rjUO3NUVVxdjrDqMI-23" value="Verifier" style="shape=actor;whiteSpace=wrap;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;strokeWidth=3;fontStyle=1;fontSize=15;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="650" y="170" width="150" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="Xj_rjUO3NUVVxdjrDqMI-15" value="7. Accept/Reject based on checks" style="ellipse;whiteSpace=wrap;html=1;fontStyle=1;fontSize=13;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="670" y="290" width="96" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Xj_rjUO3NUVVxdjrDqMI-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;strokeWidth=3;" edge="1" parent="1" source="Xj_rjUO3NUVVxdjrDqMI-15" target="Xj_rjUO3NUVVxdjrDqMI-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Xj_rjUO3NUVVxdjrDqMI-24" value="Proof Generation" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#b1ddf0;strokeColor=#10739e;strokeWidth=2;fontSize=12;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="45" y="30" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Xj_rjUO3NUVVxdjrDqMI-25" value="Checks Proof" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#b1ddf0;strokeColor=#10739e;strokeWidth=2;fontSize=12;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="665" y="30" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
