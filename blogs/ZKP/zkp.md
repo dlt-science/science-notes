@@ -13,7 +13,7 @@
 
 ## Introduction
 
-Blockchain technology, while acclaimed for its decentralization and transparency, often wrestles with the need for confidentiality and privacy. This is where Zero-Knowledge Proofs come into play. They are a groundbreaking solution that reconciles the dichotomy between transparency and privacy in blockchain platforms. In the context of blockchain transactions, ZKPs can verify the validity of transactions without disclosing any of the transaction details, thereby maintaining privacy while still ensuring security {cite}`kosba2016hawk`. With the use of ZKPs in blockchain, it is possible to maintain the immutability and transparency of the blockchain while ensuring the confidentiality of the information {cite}`miers2013zerocoin`.
+Blockchain technology, while acclaimed for its decentralisation and transparency, often wrestles with the need for confidentiality and privacy. This is where Zero-Knowledge Proofs come into play. They are a groundbreaking solution that reconciles the dichotomy between transparency and privacy on blockchain platforms. In the context of blockchain transactions, ZKPs can verify the validity of transactions without disclosing any of the transaction details, thereby maintaining privacy while still ensuring security {cite}`kosba2016hawk`. With the use of ZKPs in the blockchain, it is possible to maintain the immutability and transparency of the blockchain while ensuring the confidentiality of the information {cite}`miers2013zerocoin`.
 
 ```{figure} images/zkpdiagram.drawio.png
 ---
@@ -26,7 +26,7 @@ Zero-Knowledge Proof Protocol Flow.
 
 ## Deep Dive: What Are Zero-Knowledge Proofs?
 
-The theoretical concept of Zero-Knowledge Proofs was initially introduced by Goldwasser et al. {cite}`goldwasser2019knowledge` in their 1985 ground-breaking paper. A ZKP is a cryptographic method that enables one party (the prover) to prove to another party (the verifier) that they possess a specific piece of information, without disclosing the information itself, apart from asserting its truth. Their introduction revolutionized the world of cryptography and they are now an integral part of many privacy-enhancing technologies. As an innovative concept, ZKPs have the potential to significantly enhance confidentiality in blockchain technology with broad applications ranging from digital identity verification to decentralized finance (DeFi) and private voting systems.
+The theoretical concept of Zero-Knowledge Proofs was initially introduced by Goldwasser et al. {cite}`goldwasser2019knowledge` in their 1985 ground-breaking paper. A ZKP is a cryptographic method that enables one party (the prover) to prove to another party (the verifier) that they possess a specific piece of information, without disclosing the information itself, apart from asserting its truth. Their introduction revolutionised the world of cryptography, and they are now an integral part of many privacy-enhancing technologies. As an innovative concept, ZKPs have the potential to significantly enhance confidentiality in blockchain technology, with broad applications ranging from digital identity verification to decentralised finance (DeFi) and private voting systems.
 
 A study by Kosba et al. {cite}`kosba2016hawk` illustrated the effective implementation of ZKPs in blockchain technology, using the Zerocash protocol. This innovative protocol allows blockchain users to conduct transactions without disclosing the sender, receiver, or transaction value, thereby ensuring optimal confidentiality.
 
@@ -38,7 +38,7 @@ The introduction of ZKPs in blockchain technologies has enabled a new layer of c
 
 ### Digital Identity Management Systems
 
-Traditional centralized Digital Identity Management Systems (DIMS) are vulnerable to various threats, such as fragmented identity, single point of failure, internal attacks, and privacy leaks. However, the introduction of blockchain technology can mitigate these issues by eliminating the need for a centralized third party. Yet, the inherent transparency of the blockchain also poses privacy challenges due to its open nature.
+Traditional centralised Digital Identity Management Systems (DIMS) are vulnerable to various threats, such as fragmented identity, single point of failure, internal attacks, and privacy leaks. However, the introduction of blockchain technology can mitigate these issues by eliminating the need for a centralised third party. Yet, the inherent transparency of the blockchain also poses privacy challenges due to its open nature.
 
 To address these issues, smart contracts and zero-knowledge proof (ZKP) algorithms can be used to refine the current identity claim model on the blockchain. This enhances the unlinkability of identities and prevents the exposure of attribute ownership, thereby improving user privacy.
 
@@ -48,19 +48,19 @@ The solution also introduces a challenge-response protocol that allows users to 
 
 Modern traffic systems use a wealth of vehicular data for real-time decision-making, but integrating real-time data from connected vehicles poses data security and privacy challenges. While blockchain has offered innovative solutions, its transparency can compromise privacy.
 
-The non-interactive zero-knowledge range proof (ZKRP) protocol can be used to address the privacy concerns in traffic management systems, where sensitive data is often exposed due to blockchain's transparency. This protocol verifies the correctness of a piece of information without revealing any extra details beyond the verification itself. It is a critical component of the proposed decentralized, location-aware architecture designed for maintaining data integrity and privacy in blockchain-based traffic management systems. By leveraging the capabilities of the Hyperledger Fabric platform and the Hyperledger Ursa cryptographic library, this innovative approach has demonstrated its effectiveness and feasibility for real-time traffic management, all while fulfilling necessary data privacy requirements {cite}`li2020privacy`.
+The non-interactive zero-knowledge range proof (ZKRP) protocol can be used to address privacy concerns in traffic management systems, where sensitive data is often exposed due to blockchain's transparency. This protocol verifies the correctness of a piece of information without revealing any extra details beyond the verification itself. It is a critical component of the proposed decentralised, location-aware architecture designed for maintaining data integrity and privacy in blockchain-based traffic management systems. By leveraging the capabilities of the Hyperledger Fabric platform and the Hyperledger Ursa cryptographic library, this innovative approach has demonstrated its effectiveness and feasibility for real-time traffic management, all while fulfilling necessary data privacy requirements {cite}`li2020privacy`.
 
 ### Privacy in Mobile Health Systems
 
 The surge of compact mobile devices with wireless connectivity and integrated biosensors has transformed healthcare systems. These wearable devices, part of mobile health (mHealth), regularly collect health data, enabling remote patient monitoring and healthcare services. However, mHealth introduces substantial privacy risks, primarily due to its smartphone-based management system. Specifically, the communication between the monitoring devices and the smartphone, typically via Bluetooth, presents security challenges. Devices are usually paired with a smartphone but aren't necessarily linked exclusively to a specific mHealth app, leaving room for potential data breaches or illegitimate data injection.
 
-To mitigate these risks, Non-Interactive Zero-Knowledge Proof can be used as part of a lightweight authentication scheme. This protocol is specifically designed to operate efficiently even on mHealth devices that have limited resources. By implementing this approach, we can ensure that only authorized devices have the ability to interact with the official mHealth application, which significantly strengthens the security and privacy protections of mHealth systems {cite}`tomaz2020preserving`.
+To mitigate these risks, Non-Interactive Zero-Knowledge Proof can be used as part of a lightweight authentication scheme. This protocol is specifically designed to operate efficiently even on mHealth devices that have limited resources. By implementing this approach, we can ensure that only authorised devices have the ability to interact with the official mHealth application, which significantly strengthens the security and privacy protections of mHealth systems {cite}`tomaz2020preserving`.
 
 ### Identity Verification for Safe Ridesharing
 
-Ridesharing offers several advantages like reducing traffic congestion and environmental impact. However, the safety and privacy of both riders and drivers is a crucial concern, highlighting the need for a system that can verify identities while preserving privacy among untrusted parties.
+Ridesharing offers several advantages, like reducing traffic congestion and environmental impact. However, the safety and privacy of both riders and drivers is a crucial concern, highlighting the need for a system that can verify identities while preserving privacy among untrusted parties.
 
-In response to this need, a novel system is proposed, integrating zero-knowledge proof (ZKP) and blockchain technology for use in ridesharing applications. This system employs a permissioned blockchain network to verify a driver's identity using ZKP, while also acting as a secure ledger to record ride logs and ZKP records. A protocol is developed to allow user verification without the need for sharing any private information. The system has been prototyped on the Hyperledger Fabric platform, utilizing the Hyperledger Ursa cryptography library, ensuring the secure and private verification of identities in ridesharing applications {cite}`li2020blockchain`.
+In response to this need, a novel system is proposed, integrating zero-knowledge proof (ZKP) and blockchain technology for use in ridesharing applications. This system employs a permissioned blockchain network to verify a driver's identity using ZKP, while also acting as a secure ledger to record ride logs and ZKP records. A protocol is developed to allow user verification without the need to share any private information. The system has been prototyped on the Hyperledger Fabric platform, utilising the Hyperledger Ursa cryptography library, ensuring the secure and private verification of identities in ridesharing applications {cite}`li2020blockchain`.
 
 ### Real Estate Contracts
 
@@ -82,7 +82,7 @@ ZKP doesn't offer a user-friendly experience, particularly for developers. For i
 
 ## Conclusion
 
-As blockchain technologies continue to evolve, the role of Zero-Knowledge Proofs in shaping the future of blockchain applications is undeniably significant. By enabling verification without compromising confidentiality, ZKPs open the door to a vast array of innovative applications in various industries. From digital identity and cybersecurity to decentralized finance and voting systems, the potential for ZKPs in promoting a more private, secure, and decentralized future is promising.
+As blockchain technologies continue to evolve, the role of Zero-Knowledge Proofs in shaping the future of blockchain applications is undeniably significant. By enabling verification without compromising confidentiality, ZKPs open the door to a vast array of innovative applications in various industries. From digital identity and cybersecurity to decentralised finance and voting systems, the potential for ZKPs to promote a more private, secure, and decentralised future is promising.
 
 <div style="text-align: right;font-weight: bold;">Ali Kathia</div>
 <div style="text-align: right;font-style: italic;">June 2023</div>
