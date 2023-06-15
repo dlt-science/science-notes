@@ -27,7 +27,8 @@ Externally, the presence of institutional and retail cryptocurrency customers (e
 
 
 `````{margin} **Internal Perspective**
-  Legacy banks face the challenge of integrating cryptocurrencies into their traditional banking systems, which involves exploring ways to leverage blockchain technology, decentralization, and secure transactions. By effectively integrating these digital assets, legacy banks can tap into the potential of cryptocurrencies and offer innovative financial services to their customers.`````
+  Legacy banks face the challenge of integrating cryptocurrencies into their traditional banking systems, which involves exploring ways to leverage blockchain technology, decentralization, and secure transactions. By effectively integrating these digital assets, legacy banks can tap into the potential of cryptocurrencies and offer innovative financial services to their customers.
+`````
 
 
 ## Managing Crypto Customers
