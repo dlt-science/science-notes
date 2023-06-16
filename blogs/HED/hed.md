@@ -19,8 +19,8 @@ Hedera Hashgraph is a distributed ledger technology designed to offer a secure, 
 
 ```{figure} images/hashgraph.png
 ---
-width: 550px
-height: 300px
+width: 733px
+height: 400px
 name: hed_diagram
 ---
 Transaction recording process using Hedera Hashgraph.
