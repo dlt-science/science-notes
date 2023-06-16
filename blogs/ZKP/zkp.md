@@ -25,11 +25,21 @@ Zero-Knowledge Proof Protocol Flow.
 ```
 
 ## Deep Dive: What Are Zero-Knowledge Proofs?
+`````{margin} **Zero-Knowledge Proof**
+A ZKP is a cryptographic method that enables one party (the prover) to prove to another party (the verifier) that they possess a specific piece of information, without disclosing the information itself, apart from asserting its truth.
+`````
 
-The theoretical concept of Zero-Knowledge Proofs was initially introduced by Goldwasser et al. {cite}`goldwasser2019knowledge` in their 1985 ground-breaking paper. A ZKP is a cryptographic method that enables one party (the prover) to prove to another party (the verifier) that they possess a specific piece of information, without disclosing the information itself, apart from asserting its truth. Their introduction revolutionised the world of cryptography, and they are now an integral part of many privacy-enhancing technologies. As an innovative concept, ZKPs have the potential to significantly enhance confidentiality in blockchain technology, with broad applications ranging from digital identity verification to decentralised finance (DeFi) and private voting systems.
+The theoretical concept of Zero-Knowledge Proofs was initially introduced by Goldwasser et al. {cite}`goldwasser2019knowledge` in their 1985 ground-breaking paper. Their introduction revolutionised the world of cryptography, and they are now an integral part of many privacy-enhancing technologies. As an innovative concept, ZKPs have the potential to significantly enhance confidentiality in blockchain technology, with broad applications ranging from digital identity verification to decentralised finance (DeFi) and private voting systems.
 
 A study by Kosba et al. {cite}`kosba2016hawk` illustrated the effective implementation of ZKPs in blockchain technology, using the Zerocash protocol. This innovative protocol allows blockchain users to conduct transactions without disclosing the sender, receiver, or transaction value, thereby ensuring optimal confidentiality.
 
+`````{margin} **ZK-SNARKs (Zero-Knowledge Succinct Non-Interactive Argument of Knowledge)**
+These are compact, quick to verify cryptographic proofs that allow one party to prove they know specific information without revealing that information. The downside is they require a "trusted setup," where a secret parameter must be generated and then destroyed.
+`````
+
+`````{margin} **ZK-STARKs (Zero-Knowledge Scalable Transparent Arguments of Knowledge)**
+These are similar to ZK-SNARKs, but they don't require a trusted setup, making them more secure. They also remain efficient even as the amount of information being proved increases, and they're resistant to quantum computing attacks. However, they generate larger proof sizes compared to ZK-SNARKs.
+`````
 The development and refinement of ZKPs have led to advanced cryptographic protocols like zk-SNARKs and zk-STARKs. Ben-Sasson et al. {cite}`ben2014succinct` introduced zk-SNARKs, an upgraded version of ZKPs, which offer shorter proofs and reduced computational requirements. To overcome the limitations of zk-SNARKs, particularly the 'trusted setup' condition, zk-STARKs were proposed, which offer similar benefits without the need for a trusted setup.
 
 ## The Innovative Role of ZKPs in Blockchain
