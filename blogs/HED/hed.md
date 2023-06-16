@@ -14,37 +14,37 @@
 ## Introduction
 
 <!-- = Briefly introduce Hedera Hashgraph, its mission, and its unique features. -->
-Hedera Hashgraph is a distributed ledger technology designed to offer a secure, fair, and fast platform for a new generation of real-time applications and services cite{`decentralization2023`}. In the Hedera network, a user initiates a transaction, which is then quickly disseminated among nodes through an efficient "gossip" protocol. Nodes gossip messages to each other about transactions randomly. Consensus on transactions is achieved independently by nodes using a "virtual voting" algorithm, which calculates a consensus timestamp based on the median timestamp when the majority of nodes received the transaction. This mechanism ensures transaction fairness and security, as no single node can significantly manipulate the order, thereby providing resilience against malicious activities.
+Hedera Hashgraph is a distributed ledger technology designed to offer a secure, fair, and fast platform for a new generation of real-time applications and services cite{`decentralization2023`}. In the Hedera network, a user initiates a transaction, which is then quickly disseminated among nodes through an efficient "gossip" protocol. Nodes gossip messages to each other about transactions randomly. Consensus on transactions is achieved independently by nodes using a virtual voting algorithm, which calculates a consensus timestamp based on the median timestamp when the majority of nodes received the transaction. This mechanism ensures transaction fairness and security, as no single node can significantly manipulate the order, thereby providing resilience against malicious activities.
 <!-- = Highlight the focus of the blog: Hedera's transactional capabilities, specifically the Hedera Consensus Service and Hedera Token Service. -->
 
 ```{figure} images/hashgraph.png
 ---
-width: 861px
-height: 1762px
+width: 550px
+height: 300px
 name: hed_diagram
 ---
 Transaction recording process using Hedera Hashgraph.
 ```
 
-Since Hedera Hashgraph launched in August 2018, it offers unique transactional capabilities through its native hbar cryptocurrency, used both for network security and as "fuel" for network services. As a proof-of-stake network, hbars help safeguard the network by representing voting power; thus, wider distribution of hbars prevents potential attacks by making it prohibitively expensive for a malicious entity to control one-third of the coins. In addition, hbars serve as "fuel" for network services, compensating nodes for providing computing resources, and ensuring low, stable transaction fees. For example, a cryptocurrency transfer currently costs USD $0.0001 (paid in hbars) cite{`consensus2019`}.
+Since Hedera Hashgraph launched in August 2018, it offers unique transactional capabilities through its native HBAR cryptocurrency, used both for network security and as fuel for network services. As a proof-of-stake network, HBARs help safeguard the network by representing voting power; thus, wider distribution of HBARs prevents potential attacks by making it prohibitively expensive for a malicious entity to control one-third of the coins. In addition, HBARs serve as fuel for network services, compensating nodes for providing computing resources, and ensuring low, stable transaction fees. For example, a cryptocurrency transfer currently costs USD $0.0001 (paid in HBARs) cite{`consensus2019`}.
 
 ## Hedera Consensus Service
 
 <!-- = Explain what the Hedera Consensus Service is and its role in the Hedera ecosystem. -->
 The Hedera Consensus Service (HCS) is one of the core services offered by the Hedera public network. Its role is to offer a trust layer for any application or permissioned network that needs a decentralized and verifiable log of events. In simpler terms, HCS allows a group of participants to agree on the order and the exact time (to the second) that a series of transactions happened. This can be important in many different scenarios, such as tracking provenance across supply chains, logging asset transfers between blockchain networks, counting votes in a Decentralized Autonomous Organization (DAO), monitoring Internet of Things (IoT) devices, verifying the sequence of financial transactions, or ensuring fair gameplay in a multiplayer game cite{`consensus2019`}. HCS is a crucial part of the Hedera ecosystem as it enables decentralized applications and other systems to enjoy the benefits of decentralization, security, and fairness without having to handle the complexities of consensus on their own.
 <!-- = Discuss the architecture of the Consensus Service, including how it's exposed via SDKs and the Hedera API (HAPI), and how applications can access the network services. -->
-
+### Hedera Consensus Service Architecture
 As the fourth core service offered by Hedera, HCS provides an essential underpinning for the platform's architecture. This service is exposed through a multitude of software development kits (SDKs) in popular programming languages, as well as the Hedera API (HAPI), which employs protobufs. Such design enables applications to interact with the network services using both high-level SDK abstractions and low-level APIs.
 
-Conceptually, the HCS operates by allowing a client application to submit a byte string message tied to a specific topic (identified by an ID number). This message, encapsulating transactional information like a financial asset bid or a data hash, is processed upon payment of a transaction fee in hbars, Hedera's native currency. Upon successful processing, the Hedera ledger delivers a record affirming consensus attainment, timestamp, sequence number for the event corresponding to the given topic, and a running hash reflecting all preceding messages related to that topic. Sequence numbers and running hashes are integral for applications to determine message order and verify message integrity, respectively.
+Conceptually, the HCS operates by allowing a client application to submit a byte string message tied to a specific topic (identified by an ID number). This message, encapsulating transactional information like a financial asset bid or a data hash, is processed upon payment of a transaction fee in HBARs, Hedera's native currency. Upon successful processing, the Hedera ledger delivers a record affirming consensus attainment, timestamp, sequence number for the event corresponding to the given topic, and a running hash reflecting all preceding messages related to that topic. Sequence numbers and running hashes are integral for applications to determine message order and verify message integrity, respectively.
 
 The process of creating 'Topics' is simplified by a specific type of transaction made through the Hedera API, or HAPI. This transaction defines who owns the topic and who has permission to add or remove information from it, and it also provides a unique identification number for the topic. As expected, the Hedera Consensus Service is particularly useful for operators of mirror nodes and applications that deal with confidential information. These users need the advantages of a public ordering service, such as fast processing times, trust derived from decentralisation, and a permanent record of transactions.
-
+### Configuration of Hedera Consensus Service
 To configure this system, organisations need to create mirror nodes, program applications, and define unique keys that let authorised users monitor their activities. They also need to generate a unique 'topic' to identify relevant transactions. Each transaction created includes a message and topic, facilitated by the Hedera SDK. These transactions, which require a fee, can be sent to one or many mainnet nodes. The nodes then verify the transaction, confirm the payment of the transaction fee, and distribute its information across the network, thereby determining a consensus timestamp. Mirror nodes receive all data from the mainnet, including transaction details, consensus order, and timestamps. They can also create 'state proofs', providing a verifiable record of messages received for a topic, their order, and timestamps. These nodes run software that further processes transactions according to the application's business logic, producing application-specific results.
 
 The system provides robust distribution via both the mirror and Hedera public networks. Users can obtain records from multiple mirror nodes and verify state proofs, ensuring mainnet agreement on transaction order and timestamp. Consequently, this architecture allows real-time auditing of mirror nodes and immediate validation of ordering and correct conclusions for any user running a mirror node.
 <!-- = Discuss the benefits of the Consensus Service, such as fast, fair, secure, and decentralized consensus, reduced cost of operating private networks, improved trust model, and the potential for a network of interconnected applications. -->
-
+### Benefits
 Hedera's Consensus Service (HCS) offers a transformative solution to blockchain-based networks. It provides quick, fair, secure, and decentralized consensus, greatly enhancing the operational efficiency and trust model of private networks. By leveraging the hashgraph consensus algorithm, HCS settles transactions in seconds, ensuring fairness with its transparent, time-stamped process. It's a cost-effective solution, eliminating the high expenses of maintaining private networks while bolstering trust through its decentralized nature. The service also fosters a collaborative ecosystem, enabling interconnected applications. With HCS, Hedera sets the foundation for the next generation of decentralized applications (dApps), significantly bolstering the promise of distributed ledger technology.
 
 
@@ -55,9 +55,11 @@ Hedera Hashgraph has revolutionized the process of tokenization, the method of c
 
 On the other hand, the Hedera Consensus Service (HCS) allows for token creation on a permissioned network that benefits from public trust. In this model, storage occurs on a permissioned blockchain or database, and privacy levels can be public or encrypted. While this approach allows for custom governance and significantly more customization, including logic and roles, its distinguishing characteristic lies in its ability to combine the security and transparency of a public network with the control and flexibility of a private network.
 
-<!-- = Discuss the potential applications and benefits of tokenization on Hedera. -->
+### Benefits of Hedera Token Service
 
 HTS offers a myriad of advantages for developers and businesses. With HTS, token deployment is uncomplicated and doesn't require any additional infrastructure. The service is cost-effective, facilitating token transfers at less than $0.01, making it ideal for various high-throughput use cases. In terms of performance, HTS enables thousands of transactions per second, with finality achieved within 3-5 second. It also ensures interoperability, allowing tokens to function seamlessly within the Hedera ecosystem and other distributed ledger networks. HTS tokens inherit the decentralized trust model of the Hedera network, ensuring transparent, verifiable transactions. Furthermore, the ease of integration with third-party services promotes adoption and liquidity for tokens issued on Hedera.
+
+### Use Cases of Hedera's Tokenization Model
 
 With these benefits, Hedera's tokenization model is capable of supporting a wide array of token use cases. Utility tokens offer the holder access to some product or service, while security tokens represent trading of value and must comply with relevant securities and other financial laws. Here's some key uses:
 
