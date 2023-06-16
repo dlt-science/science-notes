@@ -19,11 +19,11 @@ Hedera Hashgraph is a distributed ledger technology designed to offer a secure, 
 
 ```{figure} images/hashgraph.png
 ---
-width: 1762px
-height: 861px
+width: 861px
+height: 1762px
 name: hed_diagram
 ---
-Transaction recording using Hedera Hashgraph.
+Transaction recording process using Hedera Hashgraph.
 ```
 
 Since Hedera Hashgraph launched in August 2018, it offers unique transactional capabilities through its native hbar cryptocurrency, used both for network security and as "fuel" for network services. As a proof-of-stake network, hbars help safeguard the network by representing voting power; thus, wider distribution of hbars prevents potential attacks by making it prohibitively expensive for a malicious entity to control one-third of the coins. In addition, hbars serve as "fuel" for network services, compensating nodes for providing computing resources, and ensuring low, stable transaction fees. For example, a cryptocurrency transfer currently costs USD $0.0001 (paid in hbars) cite{`consensus2019`}.
