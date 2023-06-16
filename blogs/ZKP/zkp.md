@@ -18,7 +18,7 @@ Blockchain technology, while acclaimed for its decentralisation and transparency
 ```{figure} images/zkpdiagram.drawio.png
 ---
 width: 1055px
-height: 503px
+height: 403px
 name: zkp_diagram
 ---
 Zero-Knowledge Proof Protocol Flow.
