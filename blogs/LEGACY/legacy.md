@@ -17,9 +17,11 @@
 
 Some months ago, a friend of mine working in the sales department of a major European bank told me about a chaotic experience he had with a potential client. The client was a cryptocurrency miner who had invested in a warehouse in Switzerland and filled it with state-of-the-art computers for mining. The business was thriving, and with the cryptocurrency boom, it was yielding good profits. However, some weather events, like a hailstorm, had caused heavy damage to his equipment.
 
-The miner contacted my friend to inquire about insurance protection against such weather events. My friend saw the opportunity and approached the relevant departments in his bank, including bank assurance and product design. That's where the story ended. My friend spent countless meetings and days explaining the basics to our colleagues: what a miner does, their work, and their business. Even escalations to top management were in vain. In the meantime, the miner found an alternative financial solution provided by a cutting-edge FinTech, and as a result, both he and his bank lost an outstanding prospective customer. Preventing this missed business opportunities from happening again in legacy banks is the subject of this article.
+The miner contacted my friend to inquire about insurance protection against such weather events. My friend saw the opportunity and approached the relevant departments in his bank, including bank insurance and product design. That's where the story ended. My friend spent countless meetings and days explaining the basics to our colleagues: what a miner does, their work, and their business. Even escalations to top management were in vain. In the meantime, the miner found an alternative financial solution provided by a cutting-edge FinTech, and as a result, both he and his bank lost an outstanding prospective customer. Preventing this missed business opportunities from happening again in legacy banks is the subject of this article.
 
-```{figure} images/legacy.png
+<---!TODO: fix figure label numbering (it currently starts at 4) --->
+
+```{figure} images/legacy.png 
 ---
 width: 750px
 height: 400px
