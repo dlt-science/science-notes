@@ -28,6 +28,38 @@ Transaction recording process using Hedera Hashgraph.
 
 Since Hedera Hashgraph launched in August 2018, it offers unique transactional capabilities through its native HBAR cryptocurrency, used both for network security and as fuel for network services. As a proof-of-stake network, HBARs help safeguard the network by representing voting power; thus, wider distribution of HBARs prevents potential attacks by making it prohibitively expensive for a malicious entity to control one-third of the coins. In addition, HBARs serve as fuel for network services, compensating nodes for providing computing resources, and ensuring low, stable transaction fees. For example, a cryptocurrency transfer currently costs USD $0.0001 (paid in HBARs) cite{`consensus2019`}.
 
+## Hedera Cryptocurrency Service
+
+Hedera hashgraph provides two distincet services related to digital assets: the Hedera cryptocurrency service and token service. The Cryptocurrency Service pertains specifically to the use of HBAR for transactions and fees on the network, while the Token Service provides a platform for users to create and manage their own custom tokens. Hedera's cryptocurrency is engineered for speed, resulting in minimal network fees and enabling feasible microtransactions. When Hedera is fully operational, every user will have the capability to manage a network node and receive cryptocurrency payments for this contribution. Creating an account simply requires generating a key pair, without any necessity for a linked name or address. However, users have the option to connect hashes of identity certificates from any third-party certificate or identity authority of their choice. This feature is designed to facilitate compliance with regulatory requirements in jurisdictions with Know Your Customer (KYC) or Anti-Money Laundering (AML) laws. Additional information is available in the section on Regulatory Compliance cite{`Baird2020`}.
+
+## Fees Associated with Hedera Transactions
+
+Hedera's network fees are designed for specific network operations. The fees are payable in HBAR, but are also fixed in USD for stability.
+
+```{note} **HBAR Denominations and Abbreviations**
+
+Hedera denominates HBAR into various units:
+
+    1 gigabar (Gℏ) = 1 billion HBAR
+    1 megabar (Mℏ) = 1 million HBAR 
+    1 kilobar (Kℏ) = 1,000 HBAR 
+    1 hbar (ℏ) = 1 HBAR 
+    1 millibar (mℏ) = 0.001 HBAR 
+    1 microbar (μℏ) = 0.000001 HBAR
+    1 tinybar (tℏ) = 0.00000001 HBAR.
+
+```
+
+Fee structures for various operations are as follows:
+
+- Cryptocurrency Service: The cost for creating a crypto account is $0.05, for auto-renewing an account is $0.00022, and for transferring cryptocurrency is $0.0001, amongst others.
+- Consensus Service: Fees for creating a topic on the Consensus Service is $0.01, for updating a topic is $0.00022, and for submitting a message is $0.0001, etc.
+- Token Service: The cost to create a token is $1.00, to update a token is $0.001, and to associate a token with an account is $0.05, amongst others.
+- File Service: The fee for creating a file is $0.05, updating a file is $0.05, and deleting a file is $0.007, etc.
+- Smart Contract Service: Fees for creating a contract is $1.0, updating a contract is $0.026, and making a contract call is $0.05, etc.
+
+Exact service fees will be visible once finalized through the [pricing calculator](https://docs.hedera.com/hedera/networks/mainnet/fees). 
+
 ## Hedera Consensus Service
 
 <!-- = Explain what the Hedera Consensus Service is and its role in the Hedera ecosystem. -->
@@ -72,33 +104,59 @@ With these benefits, Hedera's tokenization model is capable of supporting a wide
 7. Loyalty Programs: Businesses can tokenize loyalty rewards, making them more flexible, transferable, and potentially tradable.
 8. Identity Verification: Personal identities can be tokenized to simplify and secure digital interactions, reducing fraud and enhancing user privacy.
 
-## Fees Associated with Hedera Transactions
 
-Hedera's network fees are designed for specific network operations. The fees are payable in HBAR, but are also fixed in USD for stability.
+## Hedera Smart Contract Service
 
-```{note} **HBAR Denominations and Abbreviations**
+Hedera's Smart Contract service revolutionizes the world of blockchain programming by introducing exceptional features that enhance performance, reduce costs, ensure security and fairness, and promote interoperability with Ethereum. The service allows the development of smart contracts using Solidity, a common language in Ethereum, simplifying the transition for developers familiar with Ethereum's ecosystem cite{`Clarke2022`}. The Besu EVM, tailored for the Hedera network and hashgraph consensus, enables high-speed transactions, predictable low fees, a negative carbon footprint, and exceptional performance with 15 million gas per second cite{`Hedera`}. By leveraging the hashgraph consensus algorithm, the service offers rapid transaction finality and optimizes contract execution, surpassing the capabilities of traditional block-based systems. It is designed to maintain low and predictable costs, significantly benefiting developers compared to Ethereum's fluctuating fees. The platform's robust security features and the governance of an esteemed council of industry leaders assure platform stability and continuous improvements. Furthermore, the service supports easy migration of existing Ethereum contracts to Hedera, showcasing its adaptability and convenience for developers.
 
-Hedera denominates HBAR into various units:
+```{seealso}
+\
+The full documentation for the Smart Contract service and a "Deploy Your First Smart Contract" tutorial [here](https://docs.hedera.com/hedera/tutorials/smart-contracts/deploy-a-contract-using-the-hedera-token-service).
+Additionally, there's a code example below for creating a very first smart contract transaction on Hedera.
+```javascript
+{
+....
+//Create the transaction
 
-    1 gigabar (Gℏ) = 1 billion HBAR
-    1 megabar (Mℏ) = 1 million HBAR 
-    1 kilobar (Kℏ) = 1,000 HBAR 
-    1 hbar (ℏ) = 1 HBAR 
-    1 millibar (mℏ) = 0.001 HBAR 
-    1 microbar (μℏ) = 0.000001 HBAR
-    1 tinybar (tℏ) = 0.00000001 HBAR.
+const transaction = new ContractCreateTransaction()
 
+    .setGas(100_000_000)
+    .setBytecodeFileId(bytecodeFileId)
+    .setAdminKey(adminKey);
+
+//Modify the default max transaction fee (default: 1 hbar)
+
+const modifyTransactionFee = transaction.setMaxTransactionFee(new Hbar(16));
+
+//Sign the transaction with the client operator key and submit to a Hedera network
+
+const txResponse = await modifyTransactionFee.execute(client);
+
+//Get the receipt of the transaction
+
+const receipt = await txResponse.getReceipt(client);
+
+//Get the new contract ID
+
+const newContractId = receipt.contractId;
+
+console.log("The new contract ID is " +newContractId);
+....
+}
 ```
 
-Fee structures for various operations are as follows:
+## Hedera File Service
 
-- Cryptocurrency Service: The cost for creating a crypto account is $0.05, for auto-renewing an account is $0.00022, and for transferring cryptocurrency is $0.0001, amongst others.
-- Consensus Service: Fees for creating a topic on the Consensus Service is $0.01, for updating a topic is $0.00022, and for submitting a message is $0.0001, etc.
-- Token Service: The cost to create a token is $1.00, to update a token is $0.001, and to associate a token with an account is $0.05, amongst others.
-- File Service: The fee for creating a file is $0.05, updating a file is $0.05, and deleting a file is $0.007, etc.
-- Smart Contract Service: Fees for creating a contract is $1.0, updating a contract is $0.026, and making a contract call is $0.05, etc.
+Hedera Hashgraph's File Service provides a resilient, secure, and efficient system for data storage in a decentralized environment. It functions like a transaction graph, processing data in parallel and storing files across all network nodes in Merkle Trees and Merkle Directed Acyclic Graphs, ensuring tamper-proof, regionally accessible, and 100% available data. A unique feature is the provision of 'proof-of-deletion,' allowing businesses to comply with General Data Protection Regulations (GDPR) requirements. Files in the system have a set expiration date and are deleted automatically, while the storage service costs are based on the file size and the desired storage duration. Furthermore, Hedera offers controlled mutability via wACL keys, providing flexible data management and ensuring consensus for any changes. Transactions on Hedera are limited to 4KB, ensuring efficiency, although larger files can be accommodated through the appending of additional data. The service supports various transactions including creating, appending, deleting, and updating files, offering comprehensive and flexible options for developers and users. In essence, Hedera's File Service is a robust, secure, and efficient solution for decentralized data storage, embodying the low-cost and high-performative advantages of the platform cite[`Wong2019`].
 
-Exact service fees will be visible once finalized through the [pricing calculator](https://docs.hedera.com/hedera/networks/mainnet/fees). 
+```{figure} images/servicesarchitecture.png
+---
+width: 1309px
+height: 885px
+name: hed_service_diagram
+---
+Architecture of Hedera's core service
+```
 
 ## Conclusion
 
