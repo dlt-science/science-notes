@@ -31,8 +31,6 @@ There are marked variations in energy consumption among PoS systems. Factors suc
 
 In their study {cite}`platt2021energy`, the authors developed a fundamental energy consumption model specific to PoS blockchains. This model primarily considered energy consumption on a per transaction basis rather than the overall system's consumption. The authors assumed that the validating nodes would run on comparable server hardware types, regardless of network load. Thus, the overall energy requirement of a protocol was attributed exclusively to the number and the specific hardware configuration of the validator nodes. Three different hardware configurations were considered to cover the potential hardware variation and expected hardware usage: a single-board computer, a rackmount server for midsize and large enterprises, and a high-performance server. This holistic approach allowed for a nuanced analysis of energy consumption across PoS blockchains.
 
-## Examination of PoS DLT Systems
-
 ```{figure} images/ETH2.0.png
 ---
 width: 801px
@@ -42,14 +40,8 @@ name: eth_diagram
 Ethereum 2.0's Consensus Mechanism.
 ```
 
-```{figure} images/Hedera.png
----
-width: 541px
-height: 492px
-name: hedera_diagram
----
-Hedera's Consensus Mechanism.
-```
+
+## Examination of PoS DLT Systems
 
 The study {cite}`platt2021energy` examined several high market capitalization DLT systems employing a PoS consensus algorithm, including Ethereum 2.0 with 183,753 validators, Algorand with 1,126 validators, Cardano with 2,958 validators, Polkadot with 297 validators, Tezos with 399 validators, and Hedera with 21 validators. These systems, despite their shared usage of PoS, vary in numerous aspects, such as minimum thresholds for validation and delegation, the need to lock-up stakes, and rewards for validators. These findings provide a comprehensive view of the energy consumption landscape on PoS-based blockchains.
 
@@ -64,6 +56,15 @@ The study {cite}`platt2021energy` examined several high market capitalization DL
 - **Polkadot and Tezos:** These PoS-based systems have lower energy consumption than Bitcoin and Ethereum 2.0. However, their energy consumption is higher than that of Algorand and lower than that of Cardano.
 
 - **Hedera:** Hedera, a permissioned system, has the lowest energy consumption per transaction among the systems analysed. This is due to its high throughput and small number of validators. Transactions don't aggregate into blocks. Instead, they disseminate through a "gossip about gossip" protocol, where any new information acquired by a node is propagated exponentially quickly throughout the network {cite}`hedera2021gossip`.
+
+```{figure} images/Hedera.png
+---
+width: 541px
+height: 492px
+name: hedera_diagram
+---
+Hedera's Consensus Mechanism.
+```
 
 ## Results and Analysis Summary
 

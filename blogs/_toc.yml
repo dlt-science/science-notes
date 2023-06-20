@@ -9,6 +9,7 @@ parts:
     chapters:
     - file: GOV/gov
     - file: BBSecurity/bbsecurity
+    - file: POS/pos
   - caption: Industry Perspectives
     numbered: False
     chapters:
