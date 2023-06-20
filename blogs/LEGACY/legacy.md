@@ -19,8 +19,6 @@ Some months ago, a friend of mine working in the sales department of a major Eur
 
 The miner contacted my friend to inquire about insurance protection against such weather events. My friend saw the opportunity and approached the relevant departments in his bank, including bank insurance and product design. That's where the story ended. My friend spent countless meetings and days explaining the basics to our colleagues: what a miner does, their work, and their business. Even escalations to top management were in vain. In the meantime, the miner found an alternative financial solution provided by a cutting-edge FinTech, and as a result, both he and his bank lost an outstanding prospective customer. Preventing this missed business opportunities from happening again in legacy banks is the subject of this article.
 
-<---!TODO: fix figure label numbering (it currently starts at 4) --->
-
 ```{figure} images/legacy.png 
 ---
 width: 750px
