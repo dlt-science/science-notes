@@ -1,4 +1,7 @@
 # Managing Crypto Customers in Legacy Financial Institutions.
+<ins>**Industry Perspective**</ins>
+
+**Disclaimer:** The views and opinions expressed in this article are solely those of the author
 
 ```{admonition} Key Insights
 :class: tip
@@ -108,7 +111,6 @@ In the general context, and simplifying it to the utmost, within legacy banks th
 Legacy financial institutions must proactively address the challenges associated with managing crypto customers. By navigating regulatory considerations, expanding business opportunities, establishing central organizations, and attracting specialized talent, these institutions can unlock the potential of cryptocurrencies within their existing frameworks. Embracing this transformation will not only help overcome the constraints imposed by regulation and biases but will also position the institutions at the forefront of the evolving financial landscape.
 
 <div style="text-align: right;font-weight: bold;">Alessio Pezzotta</div>
-<div style="text-align: right;font-style: italic;">UniCredit</div>
 <div style="text-align: right;font-style: italic;">June 2023</div>
 
 ## References
