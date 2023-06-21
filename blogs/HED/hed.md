@@ -154,8 +154,8 @@ The architecture of Hedera's core services can be seen in {numref}`hed_service_d
 
 ```{figure} images/servicesarchitecture.png
 ---
-width: 733px
-height: 400px
+width: 800px
+height: 350px
 name: hed_service_diagram
 ---
 Architecture of Hedera's core service
