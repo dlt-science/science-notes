@@ -1,7 +1,7 @@
 # Blockchain Bridge Security
 
 <!-- ![Academic Insight](images/AI.svg) -->
-<ins>**Academic insight**</ins>
+<ins>**Academic Insight**</ins>
 
 ```{admonition} Key Insights
 :class: tip
