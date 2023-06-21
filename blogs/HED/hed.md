@@ -77,7 +77,7 @@ To configure this system, organisations need to create mirror nodes, program app
 
 The system provides robust distribution via both the mirror and Hedera public networks. Users can obtain records from multiple mirror nodes and verify state proofs, ensuring mainnet agreement on transaction order and timestamp. Consequently, this architecture allows real-time auditing of mirror nodes and immediate validation of ordering and correct conclusions for any user running a mirror node.
 <!-- = Discuss the benefits of the Consensus Service, such as fast, fair, secure, and decentralized consensus, reduced cost of operating private networks, improved trust model, and the potential for a network of interconnected applications. -->
-### Benefits
+### Benefits Hedera Consensus Service
 Hedera's Consensus Service (HCS) offers a transformative solution to blockchain-based networks. It provides quick, fair, secure, and decentralized consensus, greatly enhancing the operational efficiency and trust model of private networks. By leveraging the hashgraph consensus algorithm, HCS settles transactions in seconds, ensuring fairness with its transparent, time-stamped process. It's a cost-effective solution, eliminating the high expenses of maintaining private networks while bolstering trust through its decentralized nature. The service also fosters a collaborative ecosystem, enabling interconnected applications. With HCS, Hedera sets the foundation for the next generation of decentralized applications (dApps), significantly bolstering the promise of distributed ledger technology.
 
 
