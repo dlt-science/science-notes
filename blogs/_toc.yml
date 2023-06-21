@@ -20,3 +20,4 @@ parts:
     - file: SSI/ssi
     - file: SHARDING/sharding
     - file: SBT/SBT
+    - file: ZKP/zkp
