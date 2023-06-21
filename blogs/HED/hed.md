@@ -1,4 +1,4 @@
-# Understanding the Transactional Capabilities of Hedera Hashgraph: A Deep Dive into the Consensus and Token Services
+# Understanding the Transactional Capabilities of Hedera Hashgraph
 
 <!-- ![Industry Perspective](images/IP.svg) -->
 <ins>**Industry Perspective**</ins>
