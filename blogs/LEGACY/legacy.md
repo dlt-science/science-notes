@@ -37,11 +37,10 @@ Cryptocurrencies present unique challenges for legacy financial institutions fro
 
 Externally, the presence of institutional and retail cryptocurrency customers (e.g., cryptocurrency platforms or cryptocurrency holders) creates a conundrum. This demands meticulous attention to regulatory compliance, risk management, and product offerings within the existing framework, which aim to discover innovative revenue streams beyond traditional avenues. Indeed, from a financial statement perspective, this external view could have a significant impact on revenues, allowing a diversification strategy.
 
-
-`````{margin} **Internal Perspective**
-  Legacy banks face the challenge of integrating cryptocurrencies into their traditional banking systems, which involves exploring ways to leverage blockchain technology, decentralization, and secure transactions. By effectively integrating these digital assets, legacy banks can tap into the potential of cryptocurrencies and offer innovative financial services to their customers.
-`````
-
+```{admonition} Internal Perspective
+:class: info
+Legacy banks face the challenge of integrating cryptocurrencies into their traditional banking systems, which involves exploring ways to leverage blockchain technology, decentralization, and secure transactions. By effectively integrating these digital assets, legacy banks can tap into the potential of cryptocurrencies and offer innovative financial services to their customers.
+```
 
 ## Managing Crypto Customers
 
