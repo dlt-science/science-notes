@@ -30,9 +30,38 @@ MEV is prevalent in various financial applications, and extracting MEV typically
 
 Eskandari et al. highlighted a disconcerting aspect of economic inequality that MEV introduces into a system fundamentally designed for decentralization and equality. Their research showed that miners with more significant computational resources are advantaged, leading to an unequal distribution of wealth and power within the network. This core issue necessitates more rigorous examination and underscores the urgency for remedies that reestablish equilibrium and honor the essential principles of blockchain technology.
 
+### Financial losses
 
+Certain forms of MEV extraction can result in direct financial losses for users. A case in point is the predatory sandwich attacks, which led to profits exceeding $3 million for attackers in November 2022 alone (Eigen Phi). This substantial gain was, unfortunately, the result of monetary losses suffered by the victims.
+
+### Inefficiencies Stemming from Coordination Deficit
+The competitive pursuit of MEV by bots can lead to on-chain bidding battles. These contests may contribute to network traffic jams and inflate transaction costs. Some strategies intended to counter MEV can unintentionally trigger other forms of inefficiency. For instance, implementing a first-come-first-served transaction ordering can shift the competitive battleground to off-chain latency, thereby instigating off-chain latency wars among MEV searchers.
+
+### Threat to Consensus Stability
+
+Carlsten et al. demonstrated that when transaction fees surpass block rewards, miners may stray from honest mining practices. They could create forks with high-fee blocks to entice other miners to contribute to their fork. MEV can be seen as an expanded form of transaction fees directed to the miner, and a significant MEV can amplify this issue. Today, lucrative MEV extraction often outweighs block rewards (flashbots). 
+
+Daian et al. detailed an additional attack method that leverages MEV, referred to as Time-bandit attacks. Essentially, this approach enhances reorganization or 51% attacks by supplementing them with financial support derived from MEV.
+
+### A Catalyst for Centralization
+
+Vitalik asserted that MEV could foster centralization given the notable economies of scale associated with uncovering complex MEV extraction opportunities. A future dominated by centralization and monopoly is undesirable as it undermines the principles of transparency and decentralization. There's also a concern that MEV could promote "vertical integration" (Hasu et al.) where miners and traders combine to establish exclusive systems. This development could potentially jeopardize the transparency and permissionless nature of the blockchain.
 
 ## Solutions and Future Directions
+
+### MEV Auction Platforms 
+
+MEV auction platforms serve to facilitate auctions that allocate block space to users who place bids for their transaction inclusion. They place a high emphasis on transaction privacy and atomicity. Their services are mostly availed by MEV searchers, who carry out their MEV extraction transactions covertly, and regular users who protect their transactions from being exposed to searchers (Yang et al.).
+
+With the Ethereum merge, MEV auction platforms bifurcated into pre-merge and post-merge types. Pre-merge platforms like Flashbots and Eden Network use first-price sealed-bid auctions. Post-merge platforms are set to see native support in the form of a Proposer-Builder Separation (PBS) protocol in future Ethereum versions. However, an interim realization, MEV-Boost, continues to rely on trusted relays. For users exclusively interested in privacy, these platforms offer private channels that can be accessed via RPC endpoints (Yang et al.).
+
+### Time-Based Transaction Ordering
+
+Time-based ordering properties form a category of solutions aimed at preventing transaction order manipulation in the blockchain ecosystem. The concept, initially proposed by Kelkar et al., is built around "receive-order fairness," which is a first-come-first-served approach to transaction ordering. This notion has been further explored and improved upon by systems, which offer enhanced liveness and reduced communication complexity.
+
+In the field of transaction ordering, relative fairness has also been a focus of exploration. Kursawe et al. propose the concept of relative fairness, stipulating that if all honest validators see transaction T before a given time and another transaction T' after this time, T should be scheduled before T'. Zhang et al. offer a similar concept called ordering-linearizability. While there are slight differences in these approaches, they can be integrated into a single property referred to as fair separability. 
+
+Baird et al., in their exploration of Hashgraph, introduce a method that assigns each transaction a fair timestamp, derived from the median time that each node reports receiving the transaction first. A potential vulnerability in this method, however, is that a single adversary could manipulate a median-time-based order.
 
 ## Conclusion
 
@@ -56,6 +85,25 @@ I. Tsabary, M. Yechieli, A. Manuskin, and I. Eyal, “MAD-HTLC: because HTLC is 
 F. Winzer, B. Herd, and S. Faust, “Temporary Censorship Attacks in the Presence of Rational Miners,” in 2019 IEEE European Symposium on Security and Privacy Workshops (EuroS&PW). IEEE, 2019, pp. 357–366.
 
 Eskandari, S., Moosavi, S. and Clark, J. (2019) Sok: Transparent dishonesty: Front-running attacks on Blockchain, arXiv.org. Available at: https://arxiv.org/abs/1902.05164 (Accessed: 20 June 2023). 
+
+EigenPhi, “Sandwich overview | EigenPhi,” 2022. [Online]. Available: https://eigenphi.io/mev/ethereum/sandwich
+
+M. Carlsten, H. Kalodner, S. M. Weinberg, and A. Narayanan, “On the Instability of Bitcoin Without the Block Reward,” in Proceedings of the 2016 ACM SIGSAC Conference on Computer and Communi- cations Security, 2016, pp. 154–167.
+
+Flashbots, “Transparency dashboard | Flashbots,” 2022. [Online]. Available: https://dashboard.flashbots.net/
+
+Proposer/block builder separation-friendly fee market designs - eco- nomics - ethereum research. [Online]. Available: https://ethresear.ch/t/ proposer- block- builder- separation- friendly- fee- market- designs/9725
+
+Hasu and S. Gosselin. Why run mev-boost? | Flashbots. [Online]. Available: https://writings.flashbots.net/why-run-mevboost/
+
+M. Kelkar, F. Zhang, S. Goldfeder, and A. Juels, “Order-Fairness for Byzantine Consensus,” in Annual International Cryptology Confer-
+ence. Springer, 2020, pp. 451–480.
+
+K. Kursawe, “Wendy, the Good Little Fairness Widget: Achieving Order Fairness for Blockchains,” in Proceedings of the 2nd ACM Conference on Advances in Financial Technologies, 2020, pp. 25–36.
+
+Y. Zhang, S. Setty, Q. Chen, L. Zhou, and L. Alvisi, “Byzantine Ordered Consensus without Byzantine Oligarchy,” in 14th USENIX Symposium on Operating Systems Design and Implementation (OSDI 20), 2020, pp. 633–649.
+
+L. Baird, A. Luykx, and P. Madsen, “Hedera Tech- nical Insights: Fair Timestamping and Fair Ordering of Transactions,” 2022. [Online]. Available: https://hedera.com/blog/ fair- timestamping- and- fair- ordering- of- transactions
 
 
 ```{bibliography}
