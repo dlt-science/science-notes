@@ -1,4 +1,4 @@
-# Understanding the Transactional Capabilities of Hedera Hashgraph: A Deep Dive into the Consensus and Token Services
+# Understanding the Transactional Capabilities of Hedera Hashgraph
 
 <!-- ![Industry Perspective](images/IP.svg) -->
 <ins>**Industry Perspective**</ins>
@@ -9,8 +9,8 @@
 - Hedera's native cryptocurrency, HBAR, bolsters network security and powers transactions at low, stable fees
 - Hedera transaction fees, fixed in USD, offer stability and predictability, neutralizing the impact of HBAR's price volatility on transaction costs.
 - The Hedera Consensus Service streamlines consensus processes, fostering trust and decentralization for various applications.
-- Hedera Token Service streamlines tokenization, supporting secure asset conversion, and promoting interoperability.
-- Hedera File Service offers secure and efficient decentralized data storage, with features like 'proof-of-deletion' and controlled mutability.
+- The Hedera Token Service streamlines tokenization, supporting secure asset conversion, and promoting interoperability.
+- Hedera transaction fees are designed for specific network operations and are fixed in USD to maintain stability, thereby minimizing the effects of HBAR's price volatility on transaction costs. This design ensures a predictable and steady cost structure for network users.
 ```
 
 ## Introduction
@@ -33,7 +33,7 @@ Since Hedera Hashgraph launched in August 2018, it offers unique transactional c
 
 ## Hedera Cryptocurrency Service
 
-Hedera hashgraph provides two distincet services related to digital assets: the Hedera cryptocurrency service and token service. The Cryptocurrency Service pertains specifically to the use of HBAR for transactions and fees on the network, while the Token Service provides a platform for users to create and manage their own custom tokens. Hedera's cryptocurrency is engineered for speed, resulting in minimal network fees and enabling feasible microtransactions. When Hedera is fully operational, every user will have the capability to manage a network node and receive cryptocurrency payments for this contribution. Creating an account simply requires generating a key pair, without any necessity for a linked name or address. However, users have the option to connect hashes of identity certificates from any third-party certificate or identity authority of their choice. This feature is designed to facilitate compliance with regulatory requirements in jurisdictions with Know Your Customer (KYC) or Anti-Money Laundering (AML) laws. Additional information is available in the section on Regulatory Compliance {cite}`Baird2020`.
+Hedera hashgraph provides two distinct services related to digital assets: the Hedera cryptocurrency service and token service. The Cryptocurrency Service pertains specifically to the use of HBAR for transactions and fees on the network, while the Token Service provides a platform for users to create and manage their own custom tokens. Hedera's cryptocurrency is engineered for speed, resulting in minimal network fees and enabling feasible micro-transactions. When Hedera is fully operational, every user will have the capability to manage a network node and receive cryptocurrency payments for this contribution. Creating an account simply requires generating a key pair, without any necessity for a linked name or address. However, users have the option to connect hashes of identity certificates from any third-party certificate or identity authority of their choice. This feature is designed to facilitate compliance with regulatory requirements in jurisdictions with Know Your Customer (KYC) or Anti-Money Laundering (AML) laws. Additional information is available in the section on Regulatory Compliance {cite}`Baird2020`.
 
 ## Fees Associated with Hedera Transactions
 
