@@ -56,11 +56,11 @@ Hedera denominates HBAR into various units:
 
 Fee structures for various operations are as follows:
 
-- Cryptocurrency Service: The cost for creating a crypto account is $0.05, for auto renewing an account is $0.00022, and for transferring cryptocurrency is $0.0001, amongst others.
-- Consensus Service: Fees for creating a topic on the Consensus Service is $0.01, for updating a topic is $0.00022, and for submitting a message is $0.0001, etc.
-- Token Service: The cost to create a token is $1.00, to update a token is $0.001, and to associate a token with an account is $0.05, amongst others.
-- File Service: The fee for creating a file is $0.05, updating a file is $0.05, and deleting a file is $0.007, etc.
-- Smart Contract Service: Fees for creating a contract are $1.0, for updating a contract are $0.026, and for making a contract call are $0.05, etc.
+- Cryptocurrency Service: The cost for creating a crypto account is \$0.05, for auto renewing an account is \$0.00022, and for transferring cryptocurrency is \$0.0001, amongst others.
+- Consensus Service: Fees for creating a topic on the Consensus Service is \$0.01, for updating a topic is \$0.00022, and for submitting a message is \$0.0001, etc.
+- Token Service: The cost to create a token is \$1.00, to update a token is \$0.001, and to associate a token with an account is \$0.05, amongst others.
+- File Service: The fee for creating a file is \$0.05, updating a file is $0.05, and deleting a file is \$0.007, etc.
+- Smart Contract Service: Fees for creating a contract are $1.0, for updating a contract are \$0.026, and for making a contract call are \$0.05, etc.
 
 Exact service fees will be visible once finalized through the [pricing calculator](https://docs.hedera.com/hedera/networks/mainnet/fees). 
 
