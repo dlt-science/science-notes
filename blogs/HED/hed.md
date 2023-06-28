@@ -76,7 +76,7 @@ The Hedera Token Service (HTS) enables native token creation on the Hedera platf
 
 ### Applications of Hedera's Tokenization Model
 
-Hedera's tokenization model can support various token use cases {cite}`tokenization2020`. In financial services, it can facilitate efficient trading and settlement of assets like bonds, stocks, or commodities. Tokens can also track physical goods in supply chains, enable fractional ownership in real estate, represent unique art pieces as Non-fungible tokens (NFTs), and form the backbone of Decentralised Finance (DeFi). Other applications include tokenising in-game assets, loyalty rewards, and personal identities for enhanced security and user privacy.
+Hedera's tokenization model can support various token use cases {cite}`tokenization2020`. In financial services, it can facilitate efficient trading and settlement of assets like bonds, stocks, or commodities. Tokens can also track physical goods in supply chains, enable fractional ownership in real estate, represent unique art pieces as Non-fungible tokens (NFTs), and form the backbone of Decentralised Finance (DeFi). Other applications include tokenizing in-game assets, loyalty rewards, and personal identities for enhanced security and user privacy.
 
 
 ## Hedera Smart Contract Service
