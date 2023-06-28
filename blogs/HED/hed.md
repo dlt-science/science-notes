@@ -86,7 +86,7 @@ Hedera's Smart Contract service revolutionises the world of blockchain programmi
 ```{seealso}
 \
 The full documentation for the Smart Contract service and a "Deploy Your First Smart Contract" tutorial [here](https://docs.hedera.com/hedera/tutorials/smart-contracts/deploy-a-contract-using-the-hedera-token-service).
-Additionally, there's a code example (JavaScript) below for creating a very first smart contract transaction on Hedera.
+Additionally, a JavaScript code snippet is provided below for creating a very first smart contract transaction on Hedera.
 ```javascript
 {
 ....
