@@ -6,11 +6,10 @@
 ```{admonition} Key Insights
 :class: tip
 - Hedera Hashgraph's unique protocol and algorithm ensure a fast, secure, and fair platform for real-time applications and services.
-- Hedera's native cryptocurrency, HBAR, bolsters network security and powers transactions at low, stable fees
-- Hedera transaction fees, fixed in USD, offer stability and predictability, neutralising the impact of HBAR's price volatility on transaction costs.
+- Hedera's native cryptocurrency, HBAR, bolsters network security and powers transactions at low, stable fees.
+- Hedera's USD-fixed transaction fees, tailored for network operations, counteract HBAR price fluctuations to provide a stable and predictable cost framework for users.
 - The Hedera Consensus Service streamlines consensus processes, fostering trust and decentralisation for various applications.
-- The Hedera Token Service streamlines tokenisation, supporting secure asset conversion, and promoting interoperability.
-- Hedera transaction fees are designed for specific network operations and are fixed in USD to maintain stability, thereby minimising the effects of HBAR's price volatility on transaction costs. This design ensures a predictable and steady cost structure for network users.
+- The Hedera Token Service streamlines tokenization, supporting secure asset conversion, and promoting interoperability.
 ```
 
 ## Introduction
@@ -34,7 +33,7 @@ Since Hedera Hashgraph launched in August 2018, it offers unique transactional c
 
 ## Hedera Cryptocurrency Service
 
-Hedera hashgraph provides two distinct services related to digital assets: the Hedera cryptocurrency service and token service. The Cryptocurrency service pertains specifically to the use of HBAR for transactions and fees on the network, while the Token service provides a platform for users to create and manage their own custom tokens. Hedera's cryptocurrency is engineered for speed, resulting in minimal network fees and enabling feasible micro-transactions. When Hedera is fully operational, every user will have the capability to manage a network node and receive cryptocurrency payments for this contribution. To create an account, all that is needed is to generate a key pair; there is no need for a linked name or address. However, users have the option to connect hashes of identity certificates from any third-party certificate or identity authority of their choice. This feature is designed to facilitate compliance with regulatory requirements in jurisdictions with Know Your Customer (KYC) or Anti-Money Laundering (AML) laws. Additional information is available in the section on Regulatory Compliance {cite}`Baird2020`.
+Hedera hashgraph provides two distinct services related to digital assets: the Hedera cryptocurrency service and token service. The Cryptocurrency service pertains specifically to the use of HBAR for transactions and fees on the network, while the Token service provides a platform for users to create and manage their own custom tokens. Hedera's cryptocurrency is engineered for speed, resulting in minimal network fees and enabling feasible micro-transactions. When Hedera is fully operational, every user will have the capability to manage a network node and receive cryptocurrency payments for this contribution. To create an account, all that is needed is to generate a key pair; there is no need for a linked name or address. However, users are given the flexibility to link hashes of identity credentials from any selected third-party certificate or identity authority. This function is purposefully constructed to aid in adhering to legal standards in regions enforcing Know Your Customer (KYC) or Anti-Money Laundering (AML) regulations. Further details can be found in the Regulatory Compliance section {cite}`Baird2020`.
 
 ## Fees Associated with Hedera Transactions
 
@@ -76,9 +75,9 @@ HCS is made accessible through various SDKs and the Hedera API (HAPI). It proces
 
 The Hedera Token Service (HTS) enables native token creation on the Hedera platform, storing information on the public Hedera ledger and offering pseudonymous privacy. This model is governed by the Hedera Governing Council and allows for limited customisation {cite}`tokenization2020`. HTS makes token deployment straightforward and cost-effective, without the need for additional infrastructure. It can support high throughput applications with thousands of transactions per second, achieving transaction finality in 3-5 seconds. The interoperability of tokens across the Hedera ecosystem and decentralised trust model ensures transparent, verifiable transactions.
 
-### Applications of Hedera's Tokenisation Model
+### Applications of Hedera's Tokenization Model
 
-Hedera's tokenisation model can support various token use cases {cite}`tokenization2020`. In financial services, it can facilitate efficient trading and settlement of assets like bonds, stocks, or commodities. Tokens can also track physical goods in supply chains, enable fractional ownership in real estate, represent unique art pieces as Non-fungible tokens (NFTs), and form the backbone of Decentralised Finance (DeFi). Other applications include tokenising in-game assets, loyalty rewards, and personal identities for enhanced security and user privacy.
+Hedera's tokenization model can support various token use cases {cite}`tokenization2020`. In financial services, it can facilitate efficient trading and settlement of assets like bonds, stocks, or commodities. Tokens can also track physical goods in supply chains, enable fractional ownership in real estate, represent unique art pieces as Non-fungible tokens (NFTs), and form the backbone of Decentralised Finance (DeFi). Other applications include tokenising in-game assets, loyalty rewards, and personal identities for enhanced security and user privacy.
 
 
 ## Hedera Smart Contract Service
@@ -88,7 +87,7 @@ Hedera's Smart Contract service revolutionises the world of blockchain programmi
 ```{seealso}
 \
 The full documentation for the Smart Contract service and a "Deploy Your First Smart Contract" tutorial [here](https://docs.hedera.com/hedera/tutorials/smart-contracts/deploy-a-contract-using-the-hedera-token-service).
-Additionally, there's a code example below for creating a very first smart contract transaction on Hedera.
+Additionally, there's a code example (JavaScript) below for creating a very first smart contract transaction on Hedera.
 ```javascript
 {
 ....
@@ -140,7 +139,7 @@ Architecture of Hedera's core service
 
 <!-- = Summarize the key points discussed in the blog.
 = Discuss the potential impact of Hedera's transactional capabilities on the broader blockchain and DLT landscape. -->
-Hedera Hashgraph has emerged as a pioneer in the realm of blockchain and Distributed Ledger Technology (DLT), leveraging unique transactional capabilities. It has significantly transformed the DLT landscape through its core services such as the Hedera Cryptocurrency Service, Hedera Consensus Service (HCS), Hedera Token Service (HTS), Smart Contract Service, and File Service, altering the handling of consensus and tokenisation. The advanced transactional capabilities of Hedera Hashgraph, coupled with its suite of innovative services, position it as a substantial disruptor in the blockchain and DLT arena. Its commitment to cost-effectiveness, high performance, secure operations, and transparency has the potential to redefine how businesses and individuals interact with distributed ledger technology, thus paving the way for the next wave of decentralised applications.
+Hedera Hashgraph has emerged as a pioneer in the realm of blockchain and Distributed Ledger Technology (DLT), leveraging unique transactional capabilities. It has significantly transformed the DLT landscape through its core services such as the Hedera Cryptocurrency Service, Hedera Consensus Service (HCS), Hedera Token Service (HTS), Smart Contract Service, and File Service, altering the handling of consensus and tokenization. The advanced transactional capabilities of Hedera Hashgraph, coupled with its suite of innovative services, position it as a substantial disruptor in the blockchain and DLT arena. Its commitment to cost-effectiveness, high performance, secure operations, and transparency has the potential to redefine how businesses and individuals interact with distributed ledger technology, thus paving the way for the next wave of decentralised applications.
 
 
 <div style="text-align: right;font-weight: bold;">Ruoyi Zhao</div>
