@@ -14,6 +14,10 @@
 
 ## Introduction
 
+ `````{margin} **Gossip about gossip**
+  The "Gossip about Gossip" protocol is a fundamental part of the consensus algorithm, which disseminates transactions across network nodes through random information exchange, similar to social gossip. Beyond transaction data, this protocol also conveys the timeline and pathway of data propagation, enabling an efficient consensus on transaction order without a laborious proof-of-work process.
+`````
+
 <!-- = Briefly introduce Hedera, its mission, and its unique features. -->
 Hedera is a distributed ledger technology designed to offer a secure, fair, and fast platform for a new generation of real-time applications and services {cite}`decentralization2023`. In the Hedera network, a user initiates a transaction, which is then quickly disseminated among nodes through an efficient "gossip" protocol. Nodes gossip messages to each other about transactions randomly. Consensus on transactions is achieved independently by nodes using a virtual voting algorithm, which calculates a consensus timestamp based on the median timestamp when the majority of nodes received the transaction. This mechanism ensures transaction fairness and security, as no single node can significantly manipulate the order, thereby providing resilience against malicious activities.
 
