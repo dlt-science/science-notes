@@ -4,13 +4,11 @@
 
 ```{admonition} Key Insights
 :class: tip
-- Soulbound tokens (SBTs) can play a significant role in resolving identity challenges in Web3 by acting as reliable indicators of affiliations, certifications, and offering a detailed depiction of user identities.
 - Decentralised Society (DeSoc) serves as an innovative solution that encourages a trust-based, cooperative, bottom-up strategy in constructing resilient networks, thereby enhancing the potential of Web3.
-- SBTs, as non-transferable assets, improve the provenance and reputation in the Decentralised Society (DeSoc) and provide a versatile representation of digital identities.
+- Soulbound tokens (SBTs), as non-transferable assets, improve the provenance and reputation in the Decentralised Society (DeSoc) and provide a versatile representation of digital identities.
 - SBTs have the potential to redefine digital identity verification due to their non-transferable nature, allowing them to authenticate factual records, establish digital inheritance plans, and prevent Sybil attacks in Decentralised Autonomous Organisations.
-- Soulbound Tokens offer functional solutions in various sectors such as finance, real estate, and healthcare, promoting transparency, security, and innovation across these industries.
+- SBTs offer functional solutions in various sectors such as finance, real estate, and healthcare, promoting transparency, security, and innovation across these industries.
 - Despite the significant advancements that SBTs bring to digital identity systems, they also face obstacles concerning privacy, security, and interoperability.
-- SBTs are redefining NFTs in the decentralised society (DeSoc), their diverse applications are expected to revolutionise everyday life and significantly impact the web3 ecosystem.
 ```
 
 ## Introduction
@@ -68,15 +66,15 @@ The strength of DeSoc lies in fostering broader cooperation by encouraging the c
 - Conversely, NFTs can be utilised as tickets granting access to exclusive events, without requiring identity verification, as they can be freely transferred between parties.
 ```
 
-## Functionality
+## Functionality of SBTs
 
 A distinct and pivotal characteristic of Soulbound tokens (SBTs) is their inherent non-transferability. Unlike existing NFTs and token standards like the fungible ERC-20 or non-fungible ERC-721, which are built to hold market value and can be sold or transferred between wallets, SBTs are uniquely tied to Souls and therefore are not designed for selling or transferring {cite}`takyar2023what`.
 
 SBTs are issued and held within unique accounts known as Souls, which serve as a vessel for these tokens and play a crucial role in establishing provenance and reputation. Souls can denote various entities, ranging from individuals to organisations, companies, and more. It's noteworthy that in a decentralised society (DeSoc), Souls are not required to have a direct human equivalence, meaning a single person can be associated with multiple Souls. Unlike regular NFTs, soulbound tokens (SBTs) are a concept of non-transferable assets {cite}`titus2022decentralized`. Once issued, they belong to a specific identity {cite}`hildebrandt2022future`.
 
-This flexibility can manifest in a multitude of ways. For instance, an individual might have a variety of Souls representing different aspects of their identity - their credentials, medical records, and so on {cite}`takyar2023what`.
+This flexibility can manifest in a multitude of ways. For example, an individual could possess an array of 'Souls', each symbolizing different facets of their identity, such as their professional credentials, medical histories, among other elements {cite}`takyar2023what`.
 
-## Potential applications of SBTs
+## Potential Applications of SBTs
 
 Soulbound Tokens (SBTs) are a revolutionary concept in the realm of blockchain technology, enabling the creation of verifiable, non-transferable digital records tied to an individual's identity or "soul". With their immutable and decentralised characteristics, these tokens offer several potential applications that span numerous industries and societal structures. From authenticating factual records, devising digital inheritance plans, and facilitating alternative credit systems to preventing Sybil attacks in Decentralised Autonomous Organisations (DAOs), enhancing trust in online property rentals, and securing the management of healthcare records, SBTs are primed to reshape the digital world. The following sections detail some of the most promising applications of Soulbound Tokens in diverse fields.
 
@@ -116,7 +114,7 @@ Linking Soulbound Tokens (SBTs) to detailed resumes, university degrees, certifi
 
 In a patient-centric soulbound NFT framework for electronic health records (EHRs) to prevent the unauthorised trading of important medical documents, Soulbound Tokens (SBTs) can be employed. These tokens can't be bought or transferred; once assigned, they remain tethered to your private wallet and identity. As such, they're ideal for digitising non-transferable aspects like qualifications, reputation, and healthcare records. The ownership of the token bestows the right to control access to the information it contains, including the ability to revoke that access when required. Instead of being stored in a centralised database, personal information is managed in a blockchain-enabled format, providing enhanced access and control to the token's owner {cite}`tanwar2023patient`. The ability to manage personal information in a blockchain-enabled form rather than having it stored in a central database makes SBTs an option for people who want the most access to their information {cite}`moreland2023what`. 
 
-## Challenges and concerns
+## Challenges and Concerns
 
 Soulbound Tokens (SBTs), as an emerging concept, come with several challenges. Some of the notable concerns include {cite}`leal2022what`:
 

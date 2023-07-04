@@ -13,11 +13,12 @@ parts:
     numbered: False
     chapters:
     - file: MTP/mtp
+    - file: LEGACY/legacy
     - file: HED/hed
     # - file: legacy/legacy
   - caption: Innovation & Ideation
     numbered: False
     chapters:
     - file: SSI/ssi
-    - file: Sharding/sharding
+    - file: SHARDING/sharding
     - file: SBT/SBT
