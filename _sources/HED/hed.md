@@ -1,4 +1,4 @@
-# Understanding the Transactional Capabilities of Hedera
+# Understanding Hedera Services: An Overview of Transaction Types on the Hashgraph Network
 
 <!-- ![Industry Perspective](images/IP.svg) -->
 <ins>**Industry Perspective**</ins>
