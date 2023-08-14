@@ -135,7 +135,7 @@ In the quest to build a decentralised society, or DeSoc, Soulbound tokens (SBTs)
 Soulbound tokens, in their diverse and wide-ranging applications, span the spectrum from web3 and DeFi to facets of everyday life. They are a rapidly emerging trend, destined not only to significantly influence the Web3 ecosystem but also to elevate the perception of NFTs. Rather than being seen merely as a means of owning artwork or symbols of prestige, NFTs can function as pivotal tools in the creation and confirmation of digital identities and connections in a decentralised world.
 
 <div style="text-align: right;font-weight: bold;">Ali Kathia</div>
-<div style="text-align: right;font-style: italic;">May 2023</div>
+<div style="text-align: right;font-style: italic;">July 2023</div>
 
 ## References
  

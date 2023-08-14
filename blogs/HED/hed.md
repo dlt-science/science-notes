@@ -149,7 +149,7 @@ Hedera has emerged as a pioneer in the realm of blockchain and Distributed Ledge
 
 
 <div style="text-align: right;font-weight: bold;">Ruoyi Zhao</div>
-<div style="text-align: right;font-style: italic;">June 2023</div>
+<div style="text-align: right;font-style: italic;">July 2023</div>
 
 ## References
 
