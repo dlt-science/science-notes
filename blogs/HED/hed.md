@@ -118,7 +118,7 @@ const receipt = await txResponse.getReceipt(client);
 
 const newContractId = receipt.contractId;
 
-console.log("The new contract ID is " +newContractId);
+console.log("The new contract ID is " + newContractId);
 ....
 }
 ```
@@ -128,7 +128,7 @@ console.log("The new contract ID is " +newContractId);
  `````{margin} **Merkle Directed Acyclic Graph**
   Merkle DAG is a unique form of DAG where each node is identified by a cryptographic hash, composed of the node's content and the identifiers of its children nodes. They are self-verifying structures, immutable by nature, and constructed from the leaves up, meaning children nodes are added before their parents, with each node essentially serving as the root of its own sub-Merkle DAG.
 `````
-Hedera's File Service provides a resilient, secure, and efficient system for data storage in a decentralised environment. It functions like a transaction graph, processing data in parallel and storing files across all network nodes in Merkle Trees and Merkle Directed Acyclic Graphs, ensuring tamper-proof, regionally accessible, and 100% available data. A unique feature is the provision of 'proof-of-deletion,' allowing businesses to comply with General Data Protection Regulations (GDPR) requirements. Files in the system have a set expiration date and are deleted automatically, while the storage service costs are based on the file size and the desired storage duration. Furthermore, Hedera offers controlled mutability via WACL(WriteAccess Control) keys, providing flexible data management and ensuring consensus for any changes. Transactions on Hedera are limited to 4KB, ensuring efficiency, although larger files can be accommodated through the appending of additional data. The service supports various transactions including creating, appending, deleting, and updating files, offering comprehensive and flexible options for developers and users. In essence, Hedera's File Service is a robust, secure, and efficient solution for decentralised data storage, embodying the low-cost and high-performance advantages of the platform {cite}`Wong2019`.
+Hedera's File Service provides a resilient, secure, and efficient system for data storage in a decentralised environment. It functions like a transaction graph, processing data in parallel and storing files across all network nodes in Merkle Trees and Merkle Directed Acyclic Graphs, ensuring tamper-proof, regionally accessible, and 100% available data. A unique feature is the provision of proof-of-deletion, allowing businesses to comply with General Data Protection Regulations (GDPR) requirements. Files in the system have a set expiration date and are deleted automatically, while the storage service costs are based on the file size and the desired storage duration. Furthermore, Hedera offers controlled mutability via WACL (WriteAccess Control) keys, providing flexible data management and ensuring consensus for any changes. Transactions on Hedera are limited to 4KB, ensuring efficiency, although larger files can be accommodated through the appending of additional data. The service supports various transactions including creating, appending, deleting, and updating files, offering comprehensive and flexible options for developers and users. In essence, Hedera's File Service is a robust, secure, and efficient solution for decentralised data storage, embodying the low-cost and high-performance advantages of the platform {cite}`Wong2019`.
 
 The architecture of Hedera's core services can be seen in {numref}`hed_service_diagram`.
 
