@@ -21,7 +21,7 @@ The authors make a comparative analysis of different PoS systems, shedding light
 
 ## The Energy Intensity of Blockchain Consensus Mechanisms and Bitcoin's Overwhelming Energy Footprint
 
- Proof-of-Work (PoW) systems like Bitcoin are criticised for their high energy requirements, comparable to those of industrialised nations, due to their correlation with market capitalization {cite}`sedlmeir2020energy`. Proof-of-Work (PoW) is a mechanism designed to resist Sybil attacks, and it has been implemented in many of the initial cryptocurrencies {cite}`nakamoto2008bitcoin`. This raises sustainability concerns. Platt et al. {cite}`platt2021energy` demonstrate that Proof-of-Stake (PoS) systems, which prioritise validators with higher stakes in the native currency, significantly reduce energy consumption. Despite this, Bitcoin's energy use dwarfs that of all analysed PoS systems by at least two orders of magnitude, emphasising the potential of PoS as a more sustainable alternative {cite}`ismail2019review`.
+ Proof-of-Work (PoW) systems like Bitcoin are criticised for their high energy requirements, comparable to those of industralised nations, due to their correlation with market capitalization {cite}`sedlmeir2020energy`. Proof-of-Work (PoW) is a mechanism designed to resist Sybil attacks, and it has been implemented in many of the initial cryptocurrencies {cite}`nakamoto2008bitcoin`. This raises sustainability concerns. Platt et al. {cite}`platt2021energy` demonstrate that Proof-of-Stake (PoS) systems, which prioritise validators with higher stakes in the native currency, significantly reduce energy consumption. Despite this, Bitcoin's energy use dwarfs that of all analysed PoS systems by at least two orders of magnitude, emphasising the potential of PoS as a more sustainable alternative {cite}`ismail2019review`.
 
 ## Variation in Energy Footprint and Consumption Patterns Among PoS Systems
 
@@ -29,7 +29,7 @@ There are marked variations in energy consumption among PoS systems. Factors suc
 
 ## Methodology Overview
 
-In their study {cite}`platt2021energy`, the authors developed a fundamental energy consumption model specific to PoS blockchains. This model primarily considered energy consumption on a per transaction basis rather than the overall system's consumption. The authors assumed that the validating nodes would run on comparable server hardware types, regardless of network load. Thus, the overall energy requirement of a protocol was attributed exclusively to the number and the specific hardware configuration of the validator nodes. Three different hardware configurations were considered to cover the potential hardware variation and expected hardware usage: a single-board computer, a rackmount server for midsize and large enterprises, and a high-performance server. This holistic approach allowed for a nuanced analysis of energy consumption across PoS blockchains.
+In their study {cite}`platt2021energy`, the authors developed a fundamental energy consumption model specific to PoS blockchains. This model primarily considered energy consumption on a per transaction basis rather than the overall system's consumption. The authors assumed that the validating nodes would run on comparable server hardware types, regardless of network load. Thus, the overall energy requirement of a protocol was attributed exclusively to the number and the specific hardware configuration of the validator nodes. Three different hardware configurations were considered to cover the potential hardware variation and expected hardware usage: a single-board computer, a rack-mount server for midsize and large enterprises, and a high-performance server. This holistic approach allowed for a nuanced analysis of energy consumption across PoS blockchains.
 
 ```{figure} images/ETH2.0.png
 ---
@@ -81,7 +81,7 @@ The study identified the assumption that the number of validators is an affine f
 Platt et al. {cite}`platt2021energy` emphasised the urgent need for transitioning from energy-intensive PoW systems to more efficient PoS systems. Their analysis reveals that by opting for energy-saving hardware, PoS systems could drastically lower their energy consumption, potentially outperforming even traditional central payment systems in terms of energy usage. This research injects optimism into the discourse around blockchain technology's role in addressing climate change. Moreover, it serves as an important call-to-action for blockchain developers and practitioners, urging them to prioritise energy efficiency in their system designs. Utilising benchmarking frameworks to quantify real energy usage could be especially beneficial for permissioned systems that strive for high performance {cite}`sedlmeir2021dlps`. In the future, more nuanced models and factors influencing validator count, beyond network throughput, could be considered for a more comprehensive understanding. 
 
 <div style="text-align: right;font-weight: bold;">Ali Kathia</div>
-<div style="text-align: right;font-style: italic;">June 2023</div>
+<div style="text-align: right;font-style: italic;">July 2023</div>
 
 ## References
 
