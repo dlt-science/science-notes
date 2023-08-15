@@ -7,7 +7,7 @@
 
 :::{grid-item-card} Governance In DeFi
 :margin: 3 0 0 0
-:link: ../../../_build/html/GOV/gov.html
+:link: https://dlt-science.github.io/science-notes/GOV/gov.html
 :link-type: url
 :text-align: center
 :shadow: md
@@ -20,7 +20,7 @@
 
 :::{grid-item-card} Blockchain Bridge Security
 :margin: 3 0 0 0
-:link: ../../../_build/html/BBSecurity/bbsecurity.html
+:link: https://dlt-science.github.io/science-notes/BBSecurity/bbsecurity.html
 :link-type: url
 :text-align: center
 :shadow: md
