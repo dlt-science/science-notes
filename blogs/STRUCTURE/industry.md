@@ -6,7 +6,7 @@
 
 :::{grid-item-card} Mobile Theft Prevention using Blockchain
 :margin: 3 0 0 0
-:link: ../../../_build/html/MTP/mtp.html
+:link: https://dlt-science.github.io/science-notes/MTP/mtp.html
 :link-type: url
 :text-align: center
 :shadow: md
@@ -18,7 +18,7 @@
 
 :::{grid-item-card} Managing Crypto Customers in Legacy Financial Institutions
 :margin: 3 0 0 0
-:link: ../../../_build/html/LEGACY/legacy.html
+:link: https://dlt-science.github.io/science-notes/LEGACY/legacy.html
 :link-type: url
 :text-align: center
 :shadow: md

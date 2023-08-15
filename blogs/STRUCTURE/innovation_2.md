@@ -6,7 +6,7 @@
 
 :::{grid-item-card} Soulbound Tokens (SBTs)
 :margin: 3 0 0 0
-:link: ../../../_build/html/SBT/sbt.html
+:link: https://dlt-science.github.io/science-notes/SBT/SBT.html
 :link-type: url
 :text-align: center
 :shadow: md

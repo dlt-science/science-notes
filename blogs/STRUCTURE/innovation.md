@@ -6,7 +6,7 @@
 
 :::{grid-item-card} Sharding: A Panacea for Blockchain Scalability Challenges
 :margin: 3 0 0 0
-:link: ../../../_build/html/SHARDING/sharding.html
+:link: https://dlt-science.github.io/science-notes/SHARDING/sharding.html
 :link-type: url
 :text-align: center
 :shadow: md
@@ -18,7 +18,7 @@
 
 :::{grid-item-card} Self-Sovereign Identity: Technical Foundations and Applications
 :margin: 3 0 0 0
-:link: ../../../_build/html/SSI/ssi.html
+:link: https://dlt-science.github.io/science-notes/SSI/ssi.html
 :link-type: url
 :text-align: center
 :shadow: md

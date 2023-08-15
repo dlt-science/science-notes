@@ -6,7 +6,7 @@
 
 :::{grid-item-card} Understanding Hedera Services: An Overview of Transaction Types on the Hashgraph Network
 :margin: 3 0 0 0
-:link: ../../../_build/html/HED/hed.html
+:link: https://dlt-science.github.io/science-notes/HED/hed.html
 :link-type: url
 :text-align: center
 :shadow: md
