@@ -7,12 +7,26 @@ parts:
   - caption: Q2 2023
     numbered: False
     chapters:
-    - file: GOV/gov
-    - file: BBSecurity/bbsecurity
-    - file: POS/pos
-  - caption: Industry Perspectives
+      - file: STRUCTURE/academic
+        title: Academic Insights
+        sections:
+          - file: GOV/gov
+          - file: BBSecurity/bbsecurity
+      - file: STRUCTURE/industry
+        sections:
+          - file: MTP/mtp
+          - file: LEGACY/legacy
+      - file: STRUCTURE/innovation
+        sections:
+          - file: SHARDING/sharding
+          - file: SSI/ssi
+      
+  - caption: Q3 2023
     numbered: False
     chapters:
+      - file: STRUCTURE/academic_2
+        sections:
+          - file: POS/pos
       - file: STRUCTURE/industry_2
         sections:
           - file: HED/hed
