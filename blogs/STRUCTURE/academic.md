@@ -27,6 +27,6 @@
 
 <!-- +++ -->
 
-<img src= "https://cimg.co/news/95314/237705/responsive-images/shubham-dhage-t9rkvi3n0nm-unsplash___media_library_original_1920_1080.jpg">
+<img src= "https://cimg.co/news/95314/237705/responsive-images/shubham-dhage-t9rkvi3n0nm-unsplash___media_library_original_1920_1080.jpg" height="88%">
 
 :::
