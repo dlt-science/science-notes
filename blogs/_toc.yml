@@ -24,6 +24,10 @@ parts:
   - caption: Q3 2023
     numbered: False
     chapters:
+      - file: STRUCTURE/academic_2
+        title: Academic Insights
+        sections:
+          - file: SDE/ScamDetec
       - file: STRUCTURE/industry_2
         sections:
           - file: HED/hed
