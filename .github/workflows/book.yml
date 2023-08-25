@@ -29,15 +29,17 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Set up Python
-        uses: actions/setup-python@v4
+      - name: Set up Python 3.8
+        uses: actions/setup-python@v2
         with:
-          python-version: '3.8'
-          cache: 'pip'
-          run: pip install -r requirements.txt
+          python-version: 3.8
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
   
       - name: Build the book
-        run: jupyter-book build ./blogs
+        run: |
+          jupyter-book build .
 
       - name: GitHub Pages action
         uses: peaceiris/actions-gh-pages@v3.6.1
