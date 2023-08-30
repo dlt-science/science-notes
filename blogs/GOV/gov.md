@@ -1,4 +1,4 @@
-# Governance in DeFi
+# Governance In DeFi
 
 <!-- ![Academic Insight](images/AI.svg) -->
 <ins>**Academic Insight**</ins>
