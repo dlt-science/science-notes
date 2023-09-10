@@ -31,6 +31,7 @@ parts:
       - file: STRUCTURE/industry_2
         sections:
           - file: HED/hed
+          - file: ARM/arm
       - file: STRUCTURE/innovation_2
         sections:
           - file: SBT/SBT
