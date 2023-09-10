@@ -25,3 +25,14 @@
 <img src= "https://images.ctfassets.net/0idwgenf7ije/6l6n6P2UwYXrFafFpRDo7j/932694c7548f798e87feafa5eb3b62c5/Gemini-Cryptocurrency_Brings_New_Meaning_to_Risk_Management.png?fm=webp&w=1024&q=100">
 
 :::
+
+:::{grid-item-card} Business Opportunities and Emerging Risks for Traditional Insurance Companies and Banks with DeFi Business Models. How to get most of DeFi value?
+:margin: 3 0 0 0
+:link: https://dlt-science.github.io/science-notes/BOER/boer.html
+:link-type: url
+:text-align: center
+:shadow: md
+
+<img src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAEXtNCAmC7fsCJOrWer49tNsEzWI_Cx9ffg&usqp=CAU">
+
+:::
