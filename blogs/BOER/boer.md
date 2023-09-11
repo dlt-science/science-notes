@@ -1,4 +1,4 @@
-# Business Opportunities and Emerging Risks for Traditional Insurance Companies and Banks with DeFi Business Models. How to get most of DeFi value?
+# Opportunities and Risks for Traditional Insurance Companies and Banks with DeFi Business Models
 <ins>**Industry Perspective**</ins>
 
 **Disclaimer:** The views and opinions expressed in this article are solely those of the author
@@ -17,7 +17,7 @@
 ``` -->
 
 ## Introduction
-The decentralized finance (DeFi) ecosystem, with its innovative models and frameworks, has introduced disruptive business models that challenge the traditional financial landscape. This article aims to analyze this challenge in detail, exploring how traditional players in finance can leverage the hidden and visible value within DeFi business models. To enhance your understanding of this topic and to provide you a better understanding of this article, I recommend reviewing the following articles “*Short Survey on Business Models of Decentralized Finance*” by Dr Jiahua Xu and Andrea Xu. Dr Jiahua Xu and “*DeFi vs TradFi: Valuation Using Multiples and Discounted Cash Flow*” by Teng Andrea Xu, Jiahua Xu, Kristof Lommers.
+The decentralized finance (DeFi) ecosystem, with its innovative models and frameworks, has introduced disruptive business models that challenge the traditional financial landscape. This article aims to analyze this challenge in detail, exploring how traditional players in finance can leverage the hidden and visible value within DeFi business models. To enhance your understanding of this topic and to provide you with a better understanding of this article, I recommend reviewing the following articles “*Short Survey on Business Models of Decentralized Finance*” by Jiahua Xu and Teng Andrea Xu and “*DeFi vs TradFi: Valuation Using Multiples and Discounted Cash Flow*” by Teng Andrea Xu, Jiahua Xu, Kristof Lommers.
 
 ## Business Ideas
 
@@ -114,7 +114,7 @@ The question arises: Is it paradoxical for traditional insurance companies and b
 
   1. Investment Ventures: Banks can partner with Yield Aggregators to offer innovative investment opportunities to clients, potentially yielding higher returns.
 
-  2. Fee-Based Income: Banks can receive fees for directing client funds towards specific Yield Aggregator strategies, reducing reliance on central bank interest rate changes.
+  2. Fee-Based Income: Banks can receive fees for directing client funds toward specific Yield Aggregator strategies, reducing reliance on central bank interest rate changes.
 
 - **Risks for Traditional Banks**：
 
