@@ -15,24 +15,26 @@
 
 :::
 
-:::{grid-item-card} Crypto and Digital Assets Risk Management: Navigating Opportunities and Challenges to create an innovative, rare and hard-to-replicate competitive advantage
+<!-- :::{grid-item-card} Crypto and Digital Assets Risk Management: Navigating Opportunities and Challenges
 :margin: 3 0 0 0
-:link: https://dlt-science.github.io/science-notes/ARM/hed.html
+:link: https://dlt-science.github.io/science-notes/ARM/arm.html
 :link-type: url
 :text-align: center
 :shadow: md
 
 <img src= "https://images.ctfassets.net/0idwgenf7ije/6l6n6P2UwYXrFafFpRDo7j/932694c7548f798e87feafa5eb3b62c5/Gemini-Cryptocurrency_Brings_New_Meaning_to_Risk_Management.png?fm=webp&w=1024&q=100">
 
-:::
+::: -->
 
-:::{grid-item-card} Business Opportunities and Emerging Risks for Traditional Insurance Companies and Banks with DeFi Business Models. How to get most of DeFi value?
+:::{grid-item-card} Opportunities and Risks for Traditional Insurance Companies and Banks with DeFi Business Models
 :margin: 3 0 0 0
 :link: https://dlt-science.github.io/science-notes/BOER/boer.html
 :link-type: url
 :text-align: center
 :shadow: md
 
-<img src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAEXtNCAmC7fsCJOrWer49tNsEzWI_Cx9ffg&usqp=CAU">
+<!-- <img src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAEXtNCAmC7fsCJOrWer49tNsEzWI_Cx9ffg&usqp=CAU"> -->
+
+<img src= "https://images.cointelegraph.com/images/717_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS9zdG9yYWdlL3VwbG9hZHMvdmlldy82OThiOTliNDM0ZGRlYWM3MGEzYzQ5YTcxMGZjYTUzNS5qcGc=.jpg">
 
 :::
