@@ -27,6 +27,7 @@ parts:
       - file: STRUCTURE/academic_2
         title: Academic Insights
         sections:
+          - file: Interoperability/Cross-Chain Interoperability
           - file: SDE/ScamDetec
       - file: STRUCTURE/industry_2
         sections:
