@@ -1,0 +1,676 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Blockchain Bridge Security &#8212; DSF Science Notes</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'BBSecurity/bbsecurity';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Industry Perspective" href="../STRUCTURE/industry.html" />
+    <link rel="prev" title="Governance in DeFi" href="../GOV/gov.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/dsf.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../_static/dsf.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Q2 2023</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../STRUCTURE/academic.html">Academic Insights</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../GOV/gov.html">Governance in DeFi</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Blockchain Bridge Security</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../STRUCTURE/industry.html">Industry Perspective</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../MTP/mtp.html">Mobile Theft Prevention using Blockchain</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../LEGACY/legacy.html">Financial Institutions and Crypto Customers</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../STRUCTURE/innovation.html">Innovation &amp; Ideation</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../SHARDING/sharding.html">Sharding: A Panacea for Blockchain Scalability Challenges?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../SSI/ssi.html">Self-Sovereign Identity: Technical Foundations and Applications</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Q3 2023</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../STRUCTURE/academic_2.html">Academic Insights</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Interoperability/Cross-Chain%20Interoperability.html">Cross-Chain Interoperability: A Comprehensive Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../SDE/ScamDetec.html">Scam Detection on Ethereum</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../STRUCTURE/industry_2.html">Industry Perspective</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../HED/hed.html">Understanding Hedera Services: An Overview of Transaction Types on the Hashgraph Network</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../BOER/boer.html">Opportunities and Risks for Traditional Insurance Companies and Banks with DeFi Business Models</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ARM/arm.html">Crypto and Digital Assets Risk Management: Navigating Opportunities and Challenges</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../STRUCTURE/innovation_2.html">Innovation &amp; Ideation</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../SBT/SBT.html">Soulbound Tokens (SBTs)</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/dlt-science/science-notes" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/dlt-science/science-notes/edit/main/blogs/BBSecurity/bbsecurity.md" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/dlt-science/science-notes/issues/new?title=Issue%20on%20page%20%2FBBSecurity/bbsecurity.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/BBSecurity/bbsecurity.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Blockchain Bridge Security</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#interoperability-and-security-challenges">Interoperability and Security Challenges</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-role-of-cryptography-in-blockchain-bridge-security">The Role of Cryptography in Blockchain Bridge Security</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#scalability-and-security">Scalability and Security</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#maintaining-sovereignty-of-blockchains">Maintaining Sovereignty of blockchains</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion">Conclusion</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="blockchain-bridge-security">
+<h1>Blockchain Bridge Security<a class="headerlink" href="#blockchain-bridge-security" title="Permalink to this heading">#</a></h1>
+<!-- ![Academic Insight](images/AI.svg) -->
+<p><ins><strong>Academic Insight</strong></ins></p>
+<div class="tip admonition">
+<p class="admonition-title">Key Insights</p>
+<ul class="simple">
+<li><p>To mitigate security risks, a cross-chain bridge that leverages zk-SNARK technology has been proposed. This provides a secure, trustless cross-chain bridge, marking the first implementation of Zero-Knowledge Proofs (ZKP) in a decentralised trustless bridge system.</p></li>
+<li><p>To facilitate secure cross-chain interoperability, a Hash time-lock scheme that does not rely on external trust ensuring transaction security is introduced.</p></li>
+<li><p>To mitigate token transfer risks, a series of protocols called TrustBoost using smart contracts to achieve a consensus on top of consensus mechanism is proposed.</p></li>
+<li><p>In a bid to boost interoperability, a groundbreaking framework has been proposed that not only mitigates security risks inherent in cross-blockchain technology but also simplifies the process of identifying key assumptions and characteristics.</p></li>
+</ul>
+</div>
+<section id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">#</a></h2>
+<p>Blockchain technology has been lauded for its potential to disrupt various industries, given its unique properties such as decentralisation, transparency, and security. One recent advancement in this area is the development of blockchain bridges, which enable interoperability among different blockchains. Bridges facilitate communication between two blockchain ecosystems through the transfer of assets and information. However, as with any innovative technology, these bridges pose new security challenges. In this science note, we delve into the current academic landscape surrounding the security of blockchain bridges and summarise the recent research findings.</p>
+<figure class="align-default" id="bridge-security">
+<a class="reference internal image-reference" href="../_images/BSecurity4.drawio.png"><img alt="../_images/BSecurity4.drawio.png" src="../_images/BSecurity4.drawio.png" style="width: 780px; height: 456px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 2 </span><span class="caption-text">Communication through a Blockchain Bridge.</span><a class="headerlink" href="#bridge-security" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="interoperability-and-security-challenges">
+<h2>Interoperability and Security Challenges<a class="headerlink" href="#interoperability-and-security-challenges" title="Permalink to this heading">#</a></h2>
+<aside class="margin sidebar">
+<p class="sidebar-title"><strong>Zero-Knowledge Proofs</strong></p>
+<p>A zero-knowledge proof (ZKP) is a cryptographic technique that enables one party, the prover, to convince another party, the verifier, of the validity of a statement or the possession of a secret without revealing any additional information about the underlying secret or data.</p>
+</aside>
+<aside class="margin sidebar">
+<p class="sidebar-title"><strong>zk-SNARK</strong></p>
+<p>Zk-SNARK is an acronym that stands for “Zero-Knowledge Succinct Non-Interactive Argument of Knowledge”. A zk-SNARK is a cryptographic proof that allows one party to prove it possesses certain information without revealing that information.</p>
+</aside>
+<p>Interoperability in blockchain environments brings forth a series of unique security challenges. Trustless, interoperable, cryptocurrency-backed assets can be subjected to various threats. In April 2022, attackers were able to obtain five of the nine validator keys, through which they stole 624 million USD by exploiting the Ronin bridge, making it the largest attack in the history of DeFi <span id="id1">[<a class="reference internal" href="#id101" title="Sam Kessler and Sage D. Young. Ronin attack shows cross-chain crypto is a bridge too far, coindesk latest headlines. CoinDesk, 2022. URL: https://www.coindesk.com/layer2/2022/04/05/ronin-attack-shows-cross-chain-crypto-is-a-bridge-too-far/.">KY22</a>]</span>. According to blockchain analytics firm Chainalysis, until August 2022 recurring attacks against bridges have cost users around 1.4 billion USD <span id="id2">[<a class="reference internal" href="#id100" title="Ryan Browne. Hackers have stolen $1.4 billion this year using crypto bridges. here’s why it’s happening, cnbc. CNBC, 2022. URL: https://www.cnbc.com/2022/08/10/hackers-have-stolen-1point4-billion-this-year-using-crypto-bridges.html.">Bro22</a>]</span>. In 2022 attacks on bridges accounted for 69% of total funds stolen <span id="id3">[<a class="reference internal" href="#id88" title="ChainAnalysis. Cross-chain bridge hacks emerge as top security risk, chainalysis. ChainAnalysis, 2022. URL: https://blog.chainalysis.com/reports/cross-chain-bridge-hacks-2022/.">Cha22</a>]</span>.</p>
+<p>This necessitates the development of novel security models and protocols to protect against potential attack vectors arising from cross-chain communication and is particularly true for blockchain bridges that need to uphold the integrity and security of transactions across disparate networks. Most existing solutions rely on the trust assumptions of committees, which lowers security significantly.</p>
+<p>Xie et al. <span id="id4">[<a class="reference internal" href="#id97" title="Tiancheng Xie, Jiaheng Zhang, Zerui Cheng, Fan Zhang, Yupeng Zhang, Yongzheng Jia, Dan Boneh, and Dawn Song. Zkbridge: trustless cross-chain bridges made practical. arXiv preprint arXiv:2210.00264, 2022.">XZC+22</a>]</span> proposed a solution by introducing zkBridge, an efficient cross-chain bridge that guarantees strong security without external trust assumptions. The main idea is to leverage zk-SNARK, which are succinct non-interactive proofs (arguments) of knowledge as a result security is ensured without relying on a committee. zkBridge uses the zk-SNARK protocol to achieve both reasonable proof generation times and on-chain verification costs. zkBridge is trustless as it does not require extra assumptions other than those of blockchains and underlying cryptographic protocols. It is the first to use Zero-Knowledge Proofs (ZKP) to enable a decentralised trustless bridge.</p>
+<p>Pillai et al. <span id="id5">[<a class="reference internal" href="#id99" title="Babu Pillai, Kamanashis Biswas, Zhé Hóu, and Vallipuram Muthukkumarasamy. Cross-blockchain technology: integration framework and security assumptions. IEEE Access, 10:41239–41259, 2022.">PBHouM22</a>]</span> proposed a novel cross-blockchain integration framework designed to guide the integration of cross-blockchain technology. The framework aids in identifying crucial assumptions and characteristics, mitigating security risks, enhancing the decision-making process, and minimising design mistakes and performance issues. It recognises the integration system as the fundamental unit of cross-blockchain technology, providing comprehensive analysis and addressing security concerns. Moreover, the framework supports businesses in designing and integrating various blockchain applications, while enabling a more accurate evaluation of security assumptions. Thus, it paves the way for effective interoperability among multiple blockchains.</p>
+</section>
+<section id="the-role-of-cryptography-in-blockchain-bridge-security">
+<h2>The Role of Cryptography in Blockchain Bridge Security<a class="headerlink" href="#the-role-of-cryptography-in-blockchain-bridge-security" title="Permalink to this heading">#</a></h2>
+<aside class="margin sidebar">
+<p class="sidebar-title"><strong>Sidechain</strong></p>
+<p>A sidechain is a blockchain that communicates with other blockchains via a two-way peg. It stems from the main blockchain and runs in parallel to it.</p>
+</aside>
+<aside class="margin sidebar">
+<p class="sidebar-title"><strong>Cryptographic Protocol</strong></p>
+<p>A cryptographic protocol is an abstract or concrete protocol that performs a security-related function and applies cryptographic methods, often as sequences of cryptographic primitives. A protocol describes how the algorithms should be used and includes details about data structures and representations, at which point it can be used to implement multiple, interoperable versions of a programme.</p>
+</aside>
+<p>Securing blockchain bridges is greatly dependent on the strength of the cryptographic techniques deployed. The fundamental study by Kiayias et al. <span id="id6">[<a class="reference internal" href="#id91" title="Aggelos Kiayias, Alexander Russell, Bernardo David, and Roman Oliynykov. Ouroboros: a provably secure proof-of-stake blockchain protocol. In Advances in Cryptology–CRYPTO 2017: 37th Annual International Cryptology Conference, Santa Barbara, CA, USA, August 20–24, 2017, Proceedings, Part I, 357–388. Springer, 2017.">KRDO17</a>]</span> on proof-of-stake blockchain protocols is of significant relevance. They outlined a novel cryptographic mechanism that provides transactional security while ensuring transparency.</p>
+<p>To mitigate the reliance on external trust assumptions, Li et al. <span id="id7">[<a class="reference internal" href="#id92" title="Taotao Li, Changlin Yang, Qinglin Yang, Siqi Zhou, Huawei Huang, and Zibin Zheng. Metaopera: a cross-metaverse interoperability protocol. arXiv preprint arXiv:2302.01600, 2023.">LYY+23</a>]</span> in their paper proposed a Hash time-lock scheme that utilises a hash function and time-lock features to achieve cross-chain interoperability. The security of the Hash time-lock scheme is based on cryptographic hardness assumptions. The asset receiver is forced to determine the collection and produce proof of collection to the payer within the cut-off time, or the asset will be returned via hash-locks and blockchain time-locks. The proof of receipt can be used by the payer to acquire assets of equal value on the recipient’s blockchain or trigger other events. However, this scheme only supports monetary exchange and thus has low scalability.</p>
+<p>Li et al. <span id="id8">[<a class="reference internal" href="#id92" title="Taotao Li, Changlin Yang, Qinglin Yang, Siqi Zhou, Huawei Huang, and Zibin Zheng. Metaopera: a cross-metaverse interoperability protocol. arXiv preprint arXiv:2302.01600, 2023.">LYY+23</a>]</span>, identified a high-security and highly scalable option as the sidechains/relay scheme, which supports the interoperability of multiple objects such as assets and other data, thus having high scalability. In particular, the two-way peg is a mechanism that allows bidirectional communication between blockchains. An example of a two-way peg is simplified payment verification (SPV) in Bitcoin. Relays represent a mechanism that enables a blockchain network to authenticate data from other blockchain networks, eliminating the need for external third-party sources. Operating as a light client on a network, a relay system incorporates a smart contract and records block header information from different networks <span id="id9">[<a class="reference internal" href="#id93" title="P Frauenthaler and others. Leveraging blockchain relays for cross-chain token transfers. 2020. URL: https://www. dsg. tuwien. ac. at/projects/tast/pub/tast-white-paper-8. pdf. White Paper, Technische Universität Wien. Version, 2020.">F+20</a>]</span>. A trade-off of the sidechain implementation is that the vulnerability might increase in the main chain or other sidechains if there is a compromised sidechain in the network <span id="id10">[<a class="reference internal" href="#id94" title="Paul Sztorc. Drivechain-the simple two way peg. 2015.">Szt15</a>]</span>.</p>
+<p>Ding et al. <span id="id11">[<a class="reference internal" href="#id89" title="Donghui Ding, Tiantian Duan, Linpeng Jia, Kang Li, Zhongcheng Li, and Yi Sun. Interchain: a framework to support blockchain interoperability. Second Asia-Pacific Work. Netw, 2018.">DDJ+18</a>]</span>, proposed a framework for connecting multiple blockchain networks via an intermediary structure known as the InterChain. The InterChain possesses its own validation nodes, while SubChain networks are linked to this InterChain via gateway nodes.</p>
+<p>Hardjono et al. <span id="id12">[<a class="reference internal" href="#id95" title="Thomas Hardjono, Alexander Lipton, and Alex Pentland. Toward an interoperability architecture for blockchain autonomous systems. IEEE Transactions on Engineering Management, 67(4):1298–1309, 2019.">HLP19</a>]</span>, discussed blockchain interoperability by drawing parallels with the design principles of Internet architecture. Just as the internet uses routers to guide message packets across its network at a mechanical level, they propose the use of gateways to direct messages between different blockchain networks.</p>
+<p>Such cryptographic protocols can serve as a guiding light for the development of security measures in the context of blockchain bridges.</p>
+</section>
+<section id="scalability-and-security">
+<h2>Scalability and Security<a class="headerlink" href="#scalability-and-security" title="Permalink to this heading">#</a></h2>
+<p>As important as security is for blockchain bridges, it should not compromise the scalability of the systems. Zamyatin et al. <span id="id13">[<a class="reference internal" href="#id98" title="Alexei Zamyatin, Dominik Harz, Joshua Lind, Panayiotis Panayiotou, Arthur Gervais, and William Knottenbelt. Xclaim: trustless, interoperable, cryptocurrency-backed assets. In 2019 IEEE Symposium on Security and Privacy (SP), 193–210. IEEE, 2019.">ZHL+19</a>]</span> discussed the scalability-security trade-off in their study on interoperable assets. There is a need for a balance that allows for scalability without jeopardising security. Future research in blockchain bridge security needs to address this delicate balance, ensuring the development of robust and efficient interoperable systems.</p>
+<p>Zhang et al. <span id="id14">[<a class="reference internal" href="#id90" title="Jianbiao Zhang, Yanhui Liu, and Zhaoqian Zhang. Research on cross-chain technology architecture system based on blockchain. In Communications, Signal Processing, and Systems: Proceedings of the 8th International Conference on Communications, Signal Processing, and Systems 8th, 2609–2617. Springer, 2020.">ZLZ20</a>]</span> introduced a method that facilitates asset exchange between inter-firm alliance chains and private chains. Users from both the sending and receiving chains authenticate their identities and secure a certificate by interacting with the alliance chain. When a cross-blockchain transfer request is initiated, the alliance chain validates the ownership of the users over the assets, then proceeds with the asset transfer through a cross-blockchain interaction process.</p>
+</section>
+<section id="maintaining-sovereignty-of-blockchains">
+<h2>Maintaining Sovereignty of blockchains<a class="headerlink" href="#maintaining-sovereignty-of-blockchains" title="Permalink to this heading">#</a></h2>
+<p>Existing solutions to boost the trust using a stronger blockchain, e.g., via checkpointing, require the weaker blockchain to give up sovereignty. Wang et al. <span id="id15">[<a class="reference internal" href="#id96" title="Xuechao Wang, Peiyao Sheng, Sreeram Kannan, Kartik Nayak, and Pramod Viswanath. Trustboost: boosting trust among interoperable blockchains. arXiv preprint arXiv:2210.11571, 2022.">WSK+22</a>]</span> in their paper present a series of protocols known as TrustBoost designed to bolster trust across multiple blockchains without compromising their sovereignty. These protocols function through smart contracts, achieving a “consensus on top of consensus” that avoids changes to the blockchains’ consensus layers. TrustBoost operates by allowing cross-chain communication via bridges, facilitating the sharing of information across smart contracts on different blockchains. This system maintains its security as long as two-thirds of the participating blockchains are secure. Furthermore, TrustBoost shows potential in mitigating risks associated with cross-chain token transfers and exhibits promising prospects for future applications, especially as heterogeneous blockchain networks continue to mature.</p>
+</section>
+<section id="conclusion">
+<h2>Conclusion<a class="headerlink" href="#conclusion" title="Permalink to this heading">#</a></h2>
+<p>Blockchain bridges represent an important evolution in blockchain technology, facilitating crucial interoperability. However, the security aspects of these bridges are complex and multifaceted, requiring rigorous academic and industry attention. The body of research surrounding blockchain security provides critical insights that can help guide the development of secure and efficient blockchain bridges. As this field continues to evolve, a focus on understanding and mitigating security risks while maintaining scalability will be paramount.</p>
+<div style="text-align: right;font-weight: bold;">Ali Kathia</div>
+<div style="text-align: right;font-style: italic;">May 2023</div>
+</section>
+<section id="references">
+<h2>References<a class="headerlink" href="#references" title="Permalink to this heading">#</a></h2>
+<div class="docutils container" id="id16">
+<div class="citation" id="id100" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">Bro22</a><span class="fn-bracket">]</span></span>
+<p>Ryan Browne. Hackers have stolen $1.4 billion this year using crypto bridges. here’s why it’s happening, cnbc. <em>CNBC</em>, 2022. URL: <a class="reference external" href="https://www.cnbc.com/2022/08/10/hackers-have-stolen-1point4-billion-this-year-using-crypto-bridges.html">https://www.cnbc.com/2022/08/10/hackers-have-stolen-1point4-billion-this-year-using-crypto-bridges.html</a>.</p>
+</div>
+<div class="citation" id="id88" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id3">Cha22</a><span class="fn-bracket">]</span></span>
+<p>ChainAnalysis. Cross-chain bridge hacks emerge as top security risk, chainalysis. <em>ChainAnalysis</em>, 2022. URL: <a class="reference external" href="https://blog.chainalysis.com/reports/cross-chain-bridge-hacks-2022/">https://blog.chainalysis.com/reports/cross-chain-bridge-hacks-2022/</a>.</p>
+</div>
+<div class="citation" id="id89" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id11">DDJ+18</a><span class="fn-bracket">]</span></span>
+<p>Donghui Ding, Tiantian Duan, Linpeng Jia, Kang Li, Zhongcheng Li, and Yi Sun. Interchain: a framework to support blockchain interoperability. <em>Second Asia-Pacific Work. Netw</em>, 2018.</p>
+</div>
+<div class="citation" id="id93" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id9">F+20</a><span class="fn-bracket">]</span></span>
+<p>P Frauenthaler and others. Leveraging blockchain relays for cross-chain token transfers. 2020. <em>URL: https://www. dsg. tuwien. ac. at/projects/tast/pub/tast-white-paper-8. pdf. White Paper, Technische Universität Wien. Version</em>, 2020.</p>
+</div>
+<div class="citation" id="id95" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id12">HLP19</a><span class="fn-bracket">]</span></span>
+<p>Thomas Hardjono, Alexander Lipton, and Alex Pentland. Toward an interoperability architecture for blockchain autonomous systems. <em>IEEE Transactions on Engineering Management</em>, 67(4):1298–1309, 2019.</p>
+</div>
+<div class="citation" id="id101" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">KY22</a><span class="fn-bracket">]</span></span>
+<p>Sam Kessler and Sage D. Young. Ronin attack shows cross-chain crypto is a bridge too far, coindesk latest headlines. <em>CoinDesk</em>, 2022. URL: <a class="reference external" href="https://www.coindesk.com/layer2/2022/04/05/ronin-attack-shows-cross-chain-crypto-is-a-bridge-too-far/">https://www.coindesk.com/layer2/2022/04/05/ronin-attack-shows-cross-chain-crypto-is-a-bridge-too-far/</a>.</p>
+</div>
+<div class="citation" id="id91" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id6">KRDO17</a><span class="fn-bracket">]</span></span>
+<p>Aggelos Kiayias, Alexander Russell, Bernardo David, and Roman Oliynykov. Ouroboros: a provably secure proof-of-stake blockchain protocol. In <em>Advances in Cryptology–CRYPTO 2017: 37th Annual International Cryptology Conference, Santa Barbara, CA, USA, August 20–24, 2017, Proceedings, Part I</em>, 357–388. Springer, 2017.</p>
+</div>
+<div class="citation" id="id92" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>LYY+23<span class="fn-bracket">]</span></span>
+<span class="backrefs">(<a role="doc-backlink" href="#id7">1</a>,<a role="doc-backlink" href="#id8">2</a>)</span>
+<p>Taotao Li, Changlin Yang, Qinglin Yang, Siqi Zhou, Huawei Huang, and Zibin Zheng. Metaopera: a cross-metaverse interoperability protocol. <em>arXiv preprint arXiv:2302.01600</em>, 2023.</p>
+</div>
+<div class="citation" id="id99" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id5">PBHouM22</a><span class="fn-bracket">]</span></span>
+<p>Babu Pillai, Kamanashis Biswas, Zhé Hóu, and Vallipuram Muthukkumarasamy. Cross-blockchain technology: integration framework and security assumptions. <em>IEEE Access</em>, 10:41239–41259, 2022.</p>
+</div>
+<div class="citation" id="id94" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id10">Szt15</a><span class="fn-bracket">]</span></span>
+<p>Paul Sztorc. Drivechain-the simple two way peg. 2015.</p>
+</div>
+<div class="citation" id="id96" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id15">WSK+22</a><span class="fn-bracket">]</span></span>
+<p>Xuechao Wang, Peiyao Sheng, Sreeram Kannan, Kartik Nayak, and Pramod Viswanath. Trustboost: boosting trust among interoperable blockchains. <em>arXiv preprint arXiv:2210.11571</em>, 2022.</p>
+</div>
+<div class="citation" id="id97" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id4">XZC+22</a><span class="fn-bracket">]</span></span>
+<p>Tiancheng Xie, Jiaheng Zhang, Zerui Cheng, Fan Zhang, Yupeng Zhang, Yongzheng Jia, Dan Boneh, and Dawn Song. Zkbridge: trustless cross-chain bridges made practical. <em>arXiv preprint arXiv:2210.00264</em>, 2022.</p>
+</div>
+<div class="citation" id="id98" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id13">ZHL+19</a><span class="fn-bracket">]</span></span>
+<p>Alexei Zamyatin, Dominik Harz, Joshua Lind, Panayiotis Panayiotou, Arthur Gervais, and William Knottenbelt. Xclaim: trustless, interoperable, cryptocurrency-backed assets. In <em>2019 IEEE Symposium on Security and Privacy (SP)</em>, 193–210. IEEE, 2019.</p>
+</div>
+<div class="citation" id="id90" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id14">ZLZ20</a><span class="fn-bracket">]</span></span>
+<p>Jianbiao Zhang, Yanhui Liu, and Zhaoqian Zhang. Research on cross-chain technology architecture system based on blockchain. In <em>Communications, Signal Processing, and Systems: Proceedings of the 8th International Conference on Communications, Signal Processing, and Systems 8th</em>, 2609–2617. Springer, 2020.</p>
+</div>
+</div>
+</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./BBSecurity"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../GOV/gov.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Governance in DeFi</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../STRUCTURE/industry.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Industry Perspective</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#interoperability-and-security-challenges">Interoperability and Security Challenges</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-role-of-cryptography-in-blockchain-bridge-security">The Role of Cryptography in Blockchain Bridge Security</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#scalability-and-security">Scalability and Security</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#maintaining-sovereignty-of-blockchains">Maintaining Sovereignty of blockchains</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion">Conclusion</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By DLT Science Foundation
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

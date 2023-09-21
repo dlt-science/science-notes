@@ -1,0 +1,837 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Crypto and Digital Assets Risk Management: Navigating Opportunities and Challenges &#8212; DSF Science Notes</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'ARM/arm';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Innovation &amp; Ideation" href="../STRUCTURE/innovation_2.html" />
+    <link rel="prev" title="Opportunities and Risks for Traditional Insurance Companies and Banks with DeFi Business Models" href="../BOER/boer.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/dsf.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../_static/dsf.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Q2 2023</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../STRUCTURE/academic.html">Academic Insights</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../GOV/gov.html">Governance in DeFi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../BBSecurity/bbsecurity.html">Blockchain Bridge Security</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../STRUCTURE/industry.html">Industry Perspective</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../MTP/mtp.html">Mobile Theft Prevention using Blockchain</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../LEGACY/legacy.html">Financial Institutions and Crypto Customers</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../STRUCTURE/innovation.html">Innovation &amp; Ideation</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../SHARDING/sharding.html">Sharding: A Panacea for Blockchain Scalability Challenges?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../SSI/ssi.html">Self-Sovereign Identity: Technical Foundations and Applications</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Q3 2023</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../STRUCTURE/academic_2.html">Academic Insights</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Interoperability/Cross-Chain%20Interoperability.html">Cross-Chain Interoperability: A Comprehensive Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../SDE/ScamDetec.html">Scam Detection on Ethereum</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../STRUCTURE/industry_2.html">Industry Perspective</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../HED/hed.html">Understanding Hedera Services: An Overview of Transaction Types on the Hashgraph Network</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../BOER/boer.html">Opportunities and Risks for Traditional Insurance Companies and Banks with DeFi Business Models</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Crypto and Digital Assets Risk Management: Navigating Opportunities and Challenges</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../STRUCTURE/innovation_2.html">Innovation &amp; Ideation</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../SBT/SBT.html">Soulbound Tokens (SBTs)</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/dlt-science/science-notes" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/dlt-science/science-notes/edit/main/blogs/ARM/arm.md" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/dlt-science/science-notes/issues/new?title=Issue%20on%20page%20%2FARM/arm.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/ARM/arm.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Crypto and Digital Assets Risk Management: Navigating Opportunities and Challenges</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#managing-risks">Managing Risks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#main-results">Main results</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion">Conclusion</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="crypto-and-digital-assets-risk-management-navigating-opportunities-and-challenges">
+<h1>Crypto and Digital Assets Risk Management: Navigating Opportunities and Challenges<a class="headerlink" href="#crypto-and-digital-assets-risk-management-navigating-opportunities-and-challenges" title="Permalink to this heading">#</a></h1>
+<p><ins><strong>Industry Perspective</strong></ins></p>
+<p><strong>Disclaimer:</strong> The views and opinions expressed in this article are solely those of the author</p>
+<div class="tip admonition">
+<p class="admonition-title">Key Insights</p>
+<ul class="simple">
+<li><p>Cryptocurrencies and digital assets offer legacy banks opportunities for diversification and portfolio expansion beyond traditional financial instruments, leading to potential risk-adjusted returns and exposure to new markets. Final goal is to gain a rare and hard-to-replicate competitive advantage that will lead to extra-profits.</p></li>
+<li><p>Traditional banks that offer cryptocurrency and digital assets services can attract and retain more clients, leading to increased customer engagement and new revenues streams.</p></li>
+<li><p>Embracing cryptocurrencies allows banks to position themselves as innovators in the financial industry, differentiating themselves from competitors and gaining a competitive advantage.</p></li>
+<li><p>Banks need to consider the inter-relationships between arising risks deriving from crypto-currencies and traditional risks such as interest rate risk, currency risk, and liquidity risks when managing their exposure to these assets.</p></li>
+<li><p>Interest rate fluctuations can impact the valuation and attractiveness of cryptocurrencies, influencing banks’ investment strategies and portfolio allocation.</p></li>
+<li><p>Cryptocurrencies do not affect currency risk due to their lack of ties to specific fiat currencies.</p></li>
+<li><p>Banks have opportunities to hedge against volatility in customer digital asset portfolios and their own exposure to price volatility through emerging cryptocurrency derivatives and hedging instruments.</p></li>
+<li><p>Liquidity risks in cryptocurrency markets need to be carefully assessed and managed, particularly during periods of market stress.</p></li>
+<li><p>Banks, especially in the European Union, need to consider climate and environmental risks associated with financing crypto customers, given the energy-intensive nature of cryptocurrency assets.</p></li>
+<li><p>Information and Communication Technology (ICT) risks and Cyber Risks are critical considerations for banks offering cryptocurrency services.</p></li>
+<li><p>Effective risk management practices, proactive monitoring, robust internal controls, and compliance with regulations are crucial for banks to navigate the opportunities and challenges presented by cryptocurrencies and digital assets. By adopting a proactive approach to risk management, banks can position themselves as industry leaders, enhance customer relationships, and drive sustainable growth in the digital era.</p></li>
+</ul>
+</div>
+<section id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">#</a></h2>
+<p>Cryptocurrencies and digital assets have emerged as disruptive forces in the financial industry, presenting both opportunities and risks for banks <span id="id1">[<a class="reference internal" href="#id144" title="Arvind Narayanan, Joseph Bonneau, Edward Felten, Andrew Miller, and Steven Goldfeder. Bitcoin and Cryptocurrency Technologies: A Comprehensive Introduction. Princeton University Press, 2016.">NBMG16</a>, <a class="reference internal" href="#id145" title="Fabio Panetta. Paradise lost? how crypto failed to deliver on its promises and what to do about it. Jun. 2023. URL: https://www.ecb.europa.eu/press/key/date/2023/html/ecb.sp230623_1~80751450e6.en.html.">Pan23</a>]</span>.
+As technology advances and the digital economy expands, it is crucial for banks (to be more specific: legacy and traditional banks) to understand and effectively manage the risks associated with these assets. These risks are generated and linked from the following drivers:</p>
+<ul class="simple">
+<li><p>the volatile nature and intrinsic features of digital assets and cryptos</p></li>
+<li><p>customers that trade and hold these specific assets</p></li>
+<li><p>as-is organizational frameworks related to risk management and best practices that did not consider cryptocurrencies and digital assets</p></li>
+</ul>
+<p>The objective of this article is twofold: on one hand to provide a review of the main financial and non-financial risks arising from the management of non-standard products for traditional banks; on the other hand, to identify the key value drivers within risk management to uncover new best practices and new business opportunities.</p>
+<p>To achieve these two objectives, the pros and cons of each risk will be emphasized.</p>
+<p>At the conclusion of the article, the risks that can raise greater concern and those that can be harnessed as catalysts to amplify innovation, both technologically and financially, will become clear.</p>
+</section>
+<section id="managing-risks">
+<h2>Managing Risks<a class="headerlink" href="#managing-risks" title="Permalink to this heading">#</a></h2>
+<p>Let us begin with an examination of the various pros related to holding and trading cryptocurrencies for legacy Banks:</p>
+<ol class="arabic simple">
+<li><p><strong>Diversification and Portfolio Expansion</strong>:
+Cryptocurrencies and digital assets offer banks the potential for diversifying their portfolios beyond traditional financial instruments. This can enhance risk-adjusted returns and provide exposure to new markets and investment opportunities.</p></li>
+<li><p><strong>Client Demand and Engagement</strong>:<br />
+Banks that offer cryptocurrency services can attract and retain more clients seeking exposure to digital assets. Meeting this demand can lead to increased customer engagement and revenue generation (i.e., new revenue streams). Let’s look for example at Revolut Ltd. case <span id="id2">[<a class="reference internal" href="#id150" title="Revolut Ltd. Annual report and financial statements. Dec. 2021. URL: https://assets.revolut.com/pdf/Revolut_Ltd_YE_2021_Annual%20Report.pdf.">Ltd21</a>]</span>. As widely acknowledged, Revolut stands as one of the most accomplished digital banks, providing customers with an array of services encompassing crypto services, traditional banking features, and various other financial offerings. The Financial Statements of Revolut Ltd. communicate that the company succeeded in drawing a substantial customer base by utilizing a comprehensive financial package, with its cryptocurrency services taking the spotlight. Moreover, Revolut’s strong suit lies in its ability to enable many individuals to manage cryptocurrencies without encountering technicalities or complexities associated with handling the private keys of digital assets. All these concepts are derived from Revolut’s main financials <span id="id3">[<a class="reference internal" href="#id150" title="Revolut Ltd. Annual report and financial statements. Dec. 2021. URL: https://assets.revolut.com/pdf/Revolut_Ltd_YE_2021_Annual%20Report.pdf.">Ltd21</a>]</span> and Revolut case, as depicted in the table below, Revolut’s growth rate is remarkable, encompassing both its customer base and revenues. <strong>This underscores the hidden value that legacy banks can uncover and harness by integrating cryptocurrency and digital asset services into their existing offerings.</strong></p></li>
+</ol>
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-ncd7{background-color:#ffffc7;border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+<thead>
+<tr>
+    <th class="tg-ncd7"><span style="font-weight:bold">Revolut Ltd main financials</span></th>
+    <th class="tg-ncd7">2021</th>
+    <th class="tg-ncd7">2020</th>
+    <th class="tg-ncd7">2019</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+    <td class="tg-0pky"><span style="background-color:transparent">Total Retail Customers (#)</span></td>
+    <td class="tg-0pky"><span style="background-color:transparent">16,42 million</span></td>
+    <td class="tg-0pky"><span style="background-color:transparent">11,27 million</span></td>
+    <td class="tg-0pky">10.00 million</td>
+</tr>
+<tr>
+    <td class="tg-0pky"><span style="background-color:transparent">Total Revenues (000)</span></td>
+    <td class="tg-0pky">636,205</td>
+    <td class="tg-0pky">219,931</td>
+    <td class="tg-0pky">166,026</td>
+</tr>
+</tbody>
+</table>
+<ol class="arabic simple" start="3">
+<li><p><strong>Innovation and Competitive Advantage</strong> <span id="id4">[<a class="reference internal" href="#id144" title="Arvind Narayanan, Joseph Bonneau, Edward Felten, Andrew Miller, and Steven Goldfeder. Bitcoin and Cryptocurrency Technologies: A Comprehensive Introduction. Princeton University Press, 2016.">NBMG16</a>]</span>:<br />
+Embracing cryptocurrencies allows banks to position themselves as innovators in the financial industry. It demonstrates adaptability and can help differentiate them from competitors enabling the creation of a different, cutting-edge competitive advantage, something that is rare in the financial industry, and hard to copy. It is very important to highlight that, within the legacy banks market, the first mover advantage is paramount – guaranteeing the capture of extra profits that later movers cannot exploit.</p></li>
+</ol>
+<p>At this stage, it becomes crucial to emphasize the interrelations between cryptocurrencies and traditional risks. Below, you will discover the key insights pertaining to this subject.</p>
+<ol class="arabic">
+<li><p><strong>Interest Rate Risk</strong> <span id="id5">[<a class="reference internal" href="#id146" title="Duggan，Wayne and Powell，Farran. Crypto lending: earn money from your crypto holdings by wayne daggan and farran powell. Jun. 2023. URL: https://www.forbes.com/advisor/investing/cryptocurrency/crypto-lending/.">DugganWaynePowellFarran23</a>, <a class="reference internal" href="#id149" title="Lynette Tan. Managing crypto investment risks. Jun. 2023. URL: https://www.dbs.com.sg/personal/articles/nav/investing/crypto-risk.">Tan23</a>]</span>:
+Banks need to consider the potential impact of interest rate fluctuations on the valuation of cryptocurrencies, especially if they hold these assets on their balance sheets. It’s important to recognize that the relationship between interest rates and cryptocurrencies is complex and influenced by numerous factors, including absolute value of interests, market sentiment, regulatory developments, and technological advancements <span id="id6">[<a class="reference internal" href="#id146" title="Duggan，Wayne and Powell，Farran. Crypto lending: earn money from your crypto holdings by wayne daggan and farran powell. Jun. 2023. URL: https://www.forbes.com/advisor/investing/cryptocurrency/crypto-lending/.">DugganWaynePowellFarran23</a>, <a class="reference internal" href="#id151" title="Marcel Pechman. How do the fed’s interest rates impact the crypto market? Mar. 2023. URL: https://cointelegraph.com/news/how-do-the-fed-s-interest-rates-impact-the-crypto-market.">Pec23</a>, <a class="reference internal" href="#id149" title="Lynette Tan. Managing crypto investment risks. Jun. 2023. URL: https://www.dbs.com.sg/personal/articles/nav/investing/crypto-risk.">Tan23</a>]</span>. Banks need to carefully assess and monitor these dynamics to effectively manage the interest rate risk associated with cryptocurrencies.</p>
+<p>Let’s look at the <strong>Interest Rate Increase</strong> scenario:</p>
+<p>If interest rates rise, they can have several implications for cryptocurrencies held by banks:</p>
+<ul class="simple">
+<li><p><strong>Valuation Impact</strong>: cryptocurrencies, like other investment assets, may experience a decline in value when interest rates increase. This valuation impact can affect the overall profitability of the bank’s investment portfolio.</p></li>
+<li><p><strong>Opportunity Cost</strong>: Rising interest rates can make traditional fixed-income investments more attractive, potentially diverting investment capital away from cryptocurrencies. This could lead to a reduced allocation to cryptocurrencies within the bank’s portfolio.</p></li>
+</ul>
+<p>Conversely, if <strong>interest rates decrease</strong>, they can also affect cryptocurrencies in the following ways:</p>
+<ul class="simple">
+<li><p><strong>Valuation Impact</strong>: cryptocurrencies may experience increased demand when interest rates decline, leading to potential price appreciation. However, it is important to note that cryptocurrencies are influenced by various other factors, and interest rates alone may not be the sole driver of their valuation.</p></li>
+<li><p><strong>Investment Attractiveness</strong>: lower interest rates can make cryptocurrencies relatively more attractive compared to traditional fixed-income investments that provide lower yields. Banks may consider increasing their exposure to cryptocurrencies as part of their investment strategy during periods of low interest rates.</p></li>
+</ul>
+<p>Moreover, it’s worth noting that interest rate risk related to cryptocurrencies primarily arises when they are held as investment assets on a bank’s balance sheet. If cryptocurrencies are held for other purposes, such as providing custody <span id="id7">[<a class="reference internal" href="#id147" title="Custodial vs non-custodial wallets. Feb. 2023. URL: https://crypto.com/university/custodial-vs-non-custodial-wallets.">20223</a>]</span>or trading services, the interest rate risk may be less relevant. As with any investment asset, banks should have appropriate risk management policies and frameworks in place to assess and monitor interest rate risk associated with cryptocurrencies. This may involve stress testing, scenario analysis, and regular reviews to ensure the bank’s exposure to interest rate fluctuations aligns with its risk appetite and strategic objectives.</p>
+</li>
+<li><p><strong>Currency Risk</strong>: Cryptocurrencies are not tied to any specific fiat currency, so it is possible to infer that no idiosyncratic currency risk is in place.</p></li>
+<li><p><strong>Hedging Risks</strong> <span id="id8">[<a class="reference internal" href="#id149" title="Lynette Tan. Managing crypto investment risks. Jun. 2023. URL: https://www.dbs.com.sg/personal/articles/nav/investing/crypto-risk.">Tan23</a>]</span>: here, hedging risks have two financial legs:</p>
+<ul class="simple">
+<li><p>The first one is related to the protection against volatility related to customer digital assets portfolios (that can be seen as a commercial opportunity for legacy banks)</p></li>
+<li><p>The second one is related to the protection of the legacy bank itself against volatility. Please note that cryptocurrency derivatives (or more in general, digital assets derivatives) and hedging instruments are emerging, providing opportunities, and related risks, for banks to hedge their exposure to price volatility and mitigate associated risks.</p></li>
+</ul>
+</li>
+<li><p><strong>Liquidity Risks</strong> <span id="id9">[<a class="reference internal" href="#id149" title="Lynette Tan. Managing crypto investment risks. Jun. 2023. URL: https://www.dbs.com.sg/personal/articles/nav/investing/crypto-risk.">Tan23</a>]</span>: cryptocurrency markets can experience liquidity challenges, especially during periods of market stress. Banks should carefully assess liquidity ratios and availability (to be more specific also in the interbank and monetary market) when holding and trading these assets.</p></li>
+<li><p><strong>Climate &amp; Environmental Risks</strong>: banks, especially in the European Union, have targets (such as Net Zero Banking Alliance) on their own greenhouse gases (GHG) emissions and financed emissions (GHG emissions produced by banks’ customers). This topic is very relevant because financing crypto customers could result in increasing GHG financed emissions. Since some cryptocurrency assets/digital assets are very energy-intensive assets (e.g., due to mining), the main challenge is how to make a fruitful cherry-picking of digital and crypto assets that at the same time:</p>
+<ul class="simple">
+<li><p>rely on the most efficient technology (hence, they emit less with respect to the market)</p></li>
+<li><p>guarantee the most profitable income for legacy banks and customers, given the GHG emissions target</p></li>
+</ul>
+</li>
+<li><p><strong>Reputational Risks</strong>: Reputational risks can emerge while managing cryptocurrencies and crypto customers, stemming from regulatory scrutiny as well as media and public perception surrounding these assets.</p></li>
+<li><p><strong>ICT Risks</strong> <span id="id10">[<a class="reference internal" href="#id148" title="Andrey Sergeenkov. How to manage risk when trading cryptocurrency. May 2023. URL: https://www.coindesk.com/learn/how-to-manage-risk-when-trading-cryptocurrency/.">Ser23</a>, <a class="reference internal" href="#id149" title="Lynette Tan. Managing crypto investment risks. Jun. 2023. URL: https://www.dbs.com.sg/personal/articles/nav/investing/crypto-risk.">Tan23</a>]</span>: Information and Communication Technology (ICT) risks refer to the potential risks associated with the use of technology, information systems, and infrastructure within an organization. In the context of cryptocurrencies and digital assets, ICT risk could be the paramount one, and can manifest in the following ways:</p>
+<ul class="simple">
+<li><p><strong>Security of Digital Wallets and Exchanges</strong>:</p>
+<ul>
+<li><p>Unauthorized Access: Cryptocurrency wallets (provided by legacy banks) can be vulnerable to unauthorized access, leading to (personal) data theft or loss of digital assets. Risks include hacking attempts, phishing attacks, or malware targeting the storage or transfer mechanisms of cryptocurrencies.</p></li>
+<li><p>Infrastructure Vulnerabilities: Weaknesses in ICT infrastructure, such as servers, networks, or software, can expose digital wallets to potential security breaches. Vulnerabilities in infrastructure may arise due to outdated systems, inadequate security measures, or insufficient monitoring and patching practices.</p></li>
+</ul>
+</li>
+<li><p><strong>Data Integrity and Availability</strong>: No specific issues coming from these topics.</p></li>
+</ul>
+</li>
+<li><p><strong>Cyber Risks</strong> <span id="id11">[<a class="reference internal" href="#id148" title="Andrey Sergeenkov. How to manage risk when trading cryptocurrency. May 2023. URL: https://www.coindesk.com/learn/how-to-manage-risk-when-trading-cryptocurrency/.">Ser23</a>, <a class="reference internal" href="#id149" title="Lynette Tan. Managing crypto investment risks. Jun. 2023. URL: https://www.dbs.com.sg/personal/articles/nav/investing/crypto-risk.">Tan23</a>]</span>: Cyber risks refer to the potential risks arising from malicious activities. In the context of cryptocurrencies and digital assets, cyber risks can include, inter alia:</p>
+<ul class="simple">
+<li><p><strong>Phishing and Social Engineering</strong>: Cybercriminals may attempt to deceive individuals within the bank or its clients into revealing sensitive information, such as private keys or login credentials, through phishing emails, fake websites, or social engineering techniques.</p></li>
+<li><p><strong>Malware and Ransomware Attacks</strong>: Malicious software can be used to target digital wallets, exchanges, or users, aiming to gain unauthorized access, steal funds, or encrypt data for ransom. Ransomware attacks can disrupt operations and cause financial losses if not adequately mitigated.</p></li>
+<li><p><strong>Insider Threats</strong>: Internal personnel with access to sensitive information or systems can intentionally or unintentionally misuse or compromise digital assets.</p></li>
+</ul>
+</li>
+<li><p><strong>Operational Risks</strong>: There are no specific or innovative aspects in terms of Operational Risks. All Operational Risks are interconnected and integrated within the Cyber Risk realm. Therefore, there’s no necessity to extensively explore this topic.</p></li>
+</ol>
+<p>As evident from the text above, ICT Risks and Cyber Risks pose the most significant threats that legacy banks must face, and these could even lead to potential reputational risks in the event of their occurrence. These two areas require the most substantial efforts in terms of financial IT investment, skilled human resources, and new organization framework by the legacy banks. They must undertake considerable technological advancements to enter the realm of cryptocurrency business.</p>
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-yzq4{background-color:#7cc363;border-color:inherit;text-align:center;vertical-align:top}
+.tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
+.tg .tg-w3ps{background-color:#ffce93;border-color:inherit;font-weight:bold;text-align:center;vertical-align:top}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-7btt{border-color:inherit;font-weight:bold;text-align:center;vertical-align:top}
+.tg .tg-xy3e{background-color:#cb0000;border-color:inherit;color:#ffffff;text-align:center;vertical-align:top}
+.tg .tg-mfhl{background-color:#ffffc7;border-color:inherit;text-align:center;vertical-align:top}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-0pky"></th>
+    <th class="tg-w3ps">Summary of Risks for <br>Traditional Banks in <br>Managing<br>Cryptocurrencies</th>
+    <th class="tg-w3ps">Emerging<br> issues for<br>traditional<br>banks?</th>
+    <th class="tg-w3ps">Are these risks <br>levers for new<br>business<br>opportunities?</th>
+    <th class="tg-w3ps">Is this risk a driver<br> for an innovative,<br>hard-to-replicate,<br>and rare<br>competitive<br> advantage?<br></th>
+    <th class="tg-w3ps">Is this Risk a driver<br> for technology<br>leapfrogging for<br> Legacy Banks?</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-c3ow">1</td>
+    <td class="tg-7btt">Interest Rate Risk</td>
+    <td class="tg-c3ow">NO</td>
+    <td class="tg-yzq4">YES</td>
+    <td class="tg-c3ow">NO</td>
+    <td class="tg-c3ow">NO</td>
+  </tr>
+  <tr>
+    <td class="tg-c3ow">2</td>
+    <td class="tg-7btt">Currency Risk</td>
+    <td class="tg-c3ow">NO</td>
+    <td class="tg-yzq4">YES</td>
+    <td class="tg-c3ow">NO</td>
+    <td class="tg-c3ow">NO</td>
+  </tr>
+  <tr>
+    <td class="tg-c3ow">3</td>
+    <td class="tg-7btt">Hedging Risks</td>
+    <td class="tg-xy3e">YES</td>
+    <td class="tg-yzq4">YES</td>
+    <td class="tg-mfhl">YES</td>
+    <td class="tg-c3ow">NO</td>
+  </tr>
+  <tr>
+    <td class="tg-c3ow">4</td>
+    <td class="tg-7btt">Liquidity Risks</td>
+    <td class="tg-c3ow">NO</td>
+    <td class="tg-yzq4">YES</td>
+    <td class="tg-c3ow">NO</td>
+    <td class="tg-c3ow">NO</td>
+  </tr>
+  <tr>
+    <td class="tg-c3ow">5</td>
+    <td class="tg-7btt">Climate &amp;<br>Environmental Risks</td>
+    <td class="tg-xy3e">YES</td>
+    <td class="tg-yzq4">YES</td>
+    <td class="tg-c3ow">NO</td>
+    <td class="tg-c3ow">NO</td>
+  </tr>
+  <tr>
+    <td class="tg-c3ow">6</td>
+    <td class="tg-7btt">Reputational Risks</td>
+    <td class="tg-xy3e">YES</td>
+    <td class="tg-c3ow">NO</td>
+    <td class="tg-c3ow">NO</td>
+    <td class="tg-c3ow">NO</td>
+  </tr>
+  <tr>
+    <td class="tg-c3ow">7</td>
+    <td class="tg-7btt">ICT Risks</td>
+    <td class="tg-xy3e">YES</td>
+    <td class="tg-c3ow">NO</td>
+    <td class="tg-mfhl">YES</td>
+    <td class="tg-mfhl">YES</td>
+  </tr>
+  <tr>
+    <td class="tg-c3ow">8</td>
+    <td class="tg-7btt">Cyber Risks</td>
+    <td class="tg-xy3e">YES</td>
+    <td class="tg-c3ow">NO</td>
+    <td class="tg-mfhl">YES</td>
+    <td class="tg-mfhl">YES</td>
+  </tr>
+  <tr>
+    <td class="tg-c3ow">9</td>
+    <td class="tg-7btt">Operational Risks</td>
+    <td class="tg-c3ow">NO</td>
+    <td class="tg-c3ow">NO</td>
+    <td class="tg-c3ow">NO</td>
+    <td class="tg-c3ow">NO</td>
+  </tr>
+</tbody>
+</table>
+</section>
+<section id="main-results">
+<h2>Main results<a class="headerlink" href="#main-results" title="Permalink to this heading">#</a></h2>
+<p>The objective of this article, as previously mentioned, was two-fold: firstly, to provide an overview of the main financial and non-financial risks arising from managing non-standard products for traditional banks, such as cryptocurrencies and digital assets. Secondly, to pinpoint the key value drivers within risk management to uncover novel best practices and innovative business opportunities. The primary advantage of the guidelines outlined in the main section of this article is the following: to manage cryptocurrencies and digital assets, banks must introduce an additional variable, in other words, an additional complexity layer, into their organizational framework, and to be more specific within their risk management models. This complexity translates into both a negative aspect, which can be represented as increased costs to manage this new layer of complexity, and a positive aspect: skillful management of this complexity could transform legacy institutions into innovative ones, securing additional profits and competitive advantages that are rare and hard to replicate within the financial industry <span id="id12">[<a class="reference internal" href="#id147" title="Custodial vs non-custodial wallets. Feb. 2023. URL: https://crypto.com/university/custodial-vs-non-custodial-wallets.">20223</a>, <a class="reference internal" href="#id146" title="Duggan，Wayne and Powell，Farran. Crypto lending: earn money from your crypto holdings by wayne daggan and farran powell. Jun. 2023. URL: https://www.forbes.com/advisor/investing/cryptocurrency/crypto-lending/.">DugganWaynePowellFarran23</a>, <a class="reference internal" href="#id144" title="Arvind Narayanan, Joseph Bonneau, Edward Felten, Andrew Miller, and Steven Goldfeder. Bitcoin and Cryptocurrency Technologies: A Comprehensive Introduction. Princeton University Press, 2016.">NBMG16</a>, <a class="reference internal" href="#id149" title="Lynette Tan. Managing crypto investment risks. Jun. 2023. URL: https://www.dbs.com.sg/personal/articles/nav/investing/crypto-risk.">Tan23</a>]</span>.</p>
+<p>Furthermore, the legacy bank that first adopts this new analytical variable into its risk management model (and therefore, also into its business approach) can enjoy the benefits of being a first mover.</p>
+<p>Eventually, the following key takeaways emerge:
+1. Banks can benefit from engaging with cryptocurrencies through diversification, attracting clients, and fostering innovation (let’s look for example at the Revolut case, highlighted in this article).
+2. Effective, proactive, and reactive risk management practices are crucial to mitigate traditional risks (e.g., interest rate risk) in the context of cryptocurrencies.
+3. Liquidity risks in cryptocurrency markets require careful consideration and contingency planning.
+4. Proactive monitoring, robust internal controls, and compliance with regulations are essential for banks to manage risks effectively.</p>
+</section>
+<section id="conclusion">
+<h2>Conclusion<a class="headerlink" href="#conclusion" title="Permalink to this heading">#</a></h2>
+<p>Cryptocurrencies and digital assets represent a significant paradigm shift in the financial industry.</p>
+<p><strong>It’s important for a legacy bank to:</strong></p>
+<ul class="simple">
+<li><p>gain a rare and hard-to-replicate competitive advantage, leveraging also on first-mover advantage. The ultimate objective is to secure additional profits compared to the current state.</p></li>
+<li><p>tailor risk management practices specific to your organization, regulatory requirements, and commercial opportunities. Banks that recognize and embrace these changes can harness new opportunities while managing the associated risks. By adopting a proactive and reactive approach to risk management, banks can position themselves at the forefront of innovation, enhance customer relationships, and drive sustainable growth in the digital era.</p></li>
+</ul>
+<div style="text-align: right;font-weight: bold;">Alessio Pezzotta</div>
+<div style="text-align: right;font-style: italic;">September 2023</div>
+</section>
+<section id="references">
+<h2>References<a class="headerlink" href="#references" title="Permalink to this heading">#</a></h2>
+<div class="docutils container" id="id13">
+<div class="citation" id="id147" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>20223<span class="fn-bracket">]</span></span>
+<span class="backrefs">(<a role="doc-backlink" href="#id7">1</a>,<a role="doc-backlink" href="#id12">2</a>)</span>
+<p>Custodial vs non-custodial wallets. Feb. 2023. URL: <a class="reference external" href="https://crypto.com/university/custodial-vs-non-custodial-wallets">https://crypto.com/university/custodial-vs-non-custodial-wallets</a>.</p>
+</div>
+<div class="citation" id="id146" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>DugganWaynePowellFarran23<span class="fn-bracket">]</span></span>
+<span class="backrefs">(<a role="doc-backlink" href="#id5">1</a>,<a role="doc-backlink" href="#id6">2</a>,<a role="doc-backlink" href="#id12">3</a>)</span>
+<p>Duggan，Wayne and Powell，Farran. Crypto lending: earn money from your crypto holdings by wayne daggan and farran powell. Jun. 2023. URL: <a class="reference external" href="https://www.forbes.com/advisor/investing/cryptocurrency/crypto-lending/">https://www.forbes.com/advisor/investing/cryptocurrency/crypto-lending/</a>.</p>
+</div>
+<div class="citation" id="id150" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>Ltd21<span class="fn-bracket">]</span></span>
+<span class="backrefs">(<a role="doc-backlink" href="#id2">1</a>,<a role="doc-backlink" href="#id3">2</a>)</span>
+<p>Revolut Ltd. Annual report and financial statements. Dec. 2021. URL: <a class="reference external" href="https://assets.revolut.com/pdf/Revolut_Ltd_YE_2021_Annual%20Report.pdf">https://assets.revolut.com/pdf/Revolut_Ltd_YE_2021_Annual%20Report.pdf</a>.</p>
+</div>
+<div class="citation" id="id144" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>NBMG16<span class="fn-bracket">]</span></span>
+<span class="backrefs">(<a role="doc-backlink" href="#id1">1</a>,<a role="doc-backlink" href="#id4">2</a>,<a role="doc-backlink" href="#id12">3</a>)</span>
+<p>Arvind Narayanan, Joseph Bonneau, Edward Felten, Andrew Miller, and Steven Goldfeder. <em>Bitcoin and Cryptocurrency Technologies: A Comprehensive Introduction</em>. Princeton University Press, 2016.</p>
+</div>
+<div class="citation" id="id145" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">Pan23</a><span class="fn-bracket">]</span></span>
+<p>Fabio Panetta. Paradise lost? how crypto failed to deliver on its promises and what to do about it. Jun. 2023. URL: <a class="reference external" href="https://www.ecb.europa.eu/press/key/date/2023/html/ecb.sp230623_1~80751450e6.en.html">https://www.ecb.europa.eu/press/key/date/2023/html/ecb.sp230623_1~80751450e6.en.html</a>.</p>
+</div>
+<div class="citation" id="id151" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id6">Pec23</a><span class="fn-bracket">]</span></span>
+<p>Marcel Pechman. How do the fed’s interest rates impact the crypto market? Mar. 2023. URL: <a class="reference external" href="https://cointelegraph.com/news/how-do-the-fed-s-interest-rates-impact-the-crypto-market">https://cointelegraph.com/news/how-do-the-fed-s-interest-rates-impact-the-crypto-market</a>.</p>
+</div>
+<div class="citation" id="id148" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>Ser23<span class="fn-bracket">]</span></span>
+<span class="backrefs">(<a role="doc-backlink" href="#id10">1</a>,<a role="doc-backlink" href="#id11">2</a>)</span>
+<p>Andrey Sergeenkov. How to manage risk when trading cryptocurrency. May 2023. URL: <a class="reference external" href="https://www.coindesk.com/learn/how-to-manage-risk-when-trading-cryptocurrency/">https://www.coindesk.com/learn/how-to-manage-risk-when-trading-cryptocurrency/</a>.</p>
+</div>
+<div class="citation" id="id149" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>Tan23<span class="fn-bracket">]</span></span>
+<span class="backrefs">(<a role="doc-backlink" href="#id5">1</a>,<a role="doc-backlink" href="#id6">2</a>,<a role="doc-backlink" href="#id8">3</a>,<a role="doc-backlink" href="#id9">4</a>,<a role="doc-backlink" href="#id10">5</a>,<a role="doc-backlink" href="#id11">6</a>,<a role="doc-backlink" href="#id12">7</a>)</span>
+<p>Lynette Tan. Managing crypto investment risks. Jun. 2023. URL: <a class="reference external" href="https://www.dbs.com.sg/personal/articles/nav/investing/crypto-risk">https://www.dbs.com.sg/personal/articles/nav/investing/crypto-risk</a>.</p>
+</div>
+</div>
+</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./ARM"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../BOER/boer.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Opportunities and Risks for Traditional Insurance Companies and Banks with DeFi Business Models</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../STRUCTURE/innovation_2.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Innovation &amp; Ideation</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#managing-risks">Managing Risks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#main-results">Main results</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion">Conclusion</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By DLT Science Foundation
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

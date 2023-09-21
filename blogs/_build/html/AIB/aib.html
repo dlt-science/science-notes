@@ -1,0 +1,745 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>The Symbiotic Relationship between Blockchain and Artificial Intelligence &#8212; DSF Science Notes</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'AIB/aib';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/dsf.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../_static/dsf.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Q2 2023</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../STRUCTURE/academic.html">Academic Insights</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../GOV/gov.html">Governance in DeFi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../BBSecurity/bbsecurity.html">Blockchain Bridge Security</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../STRUCTURE/industry.html">Industry Perspective</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../MTP/mtp.html">Mobile Theft Prevention using Blockchain</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../LEGACY/legacy.html">Financial Institutions and Crypto Customers</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../STRUCTURE/innovation.html">Innovation &amp; Ideation</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../SHARDING/sharding.html">Sharding: A Panacea for Blockchain Scalability Challenges?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../SSI/ssi.html">Self-Sovereign Identity: Technical Foundations and Applications</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Q3 2023</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../STRUCTURE/academic_2.html">Academic Insights</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Interoperability/Cross-Chain%20Interoperability.html">Cross-Chain Interoperability: A Comprehensive Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../SDE/ScamDetec.html">Scam Detection on Ethereum</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../STRUCTURE/industry_2.html">Industry Perspective</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../HED/hed.html">Understanding Hedera Services: An Overview of Transaction Types on the Hashgraph Network</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../BOER/boer.html">Opportunities and Risks for Traditional Insurance Companies and Banks with DeFi Business Models</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ARM/arm.html">Crypto and Digital Assets Risk Management: Navigating Opportunities and Challenges</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../STRUCTURE/innovation_2.html">Innovation &amp; Ideation</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../SBT/SBT.html">Soulbound Tokens (SBTs)</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/dlt-science/science-notes" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/dlt-science/science-notes/edit/main/blogs/AIB/aib.md" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/dlt-science/science-notes/issues/new?title=Issue%20on%20page%20%2FAIB/aib.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/AIB/aib.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>The Symbiotic Relationship between Blockchain and Artificial Intelligence</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#technology-explianed">Technology Explianed</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#blockchain-technology">Blockchain Technology</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ai-technology">AI Technology</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-mutual-empowerment-between-blockchain-and-ai-technology">The mutual empowerment between blockchain and AI technology</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#application-scenario">Application Scenario</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#blockchain-for-ai">Blockchain for AI</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ai-for-blockchain">AI for Blockchain</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ai-with-blockchain">AI with Blockchain</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#challenges">Challenges</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion">Conclusion</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="the-symbiotic-relationship-between-blockchain-and-artificial-intelligence">
+<h1>The Symbiotic Relationship between Blockchain and Artificial Intelligence<a class="headerlink" href="#the-symbiotic-relationship-between-blockchain-and-artificial-intelligence" title="Permalink to this heading">#</a></h1>
+<p><ins><strong>Innovation &amp; Ideation</strong></ins></p>
+<div class="tip admonition">
+<p class="admonition-title">Key Insights</p>
+<ul class="simple">
+<li><p>Blockchain and AI are fundamentally different - the former is decentralized, transparent, and deterministic, while the latter functions within centralized systems and relies on probabilistic computations.</p></li>
+<li><p>Despite their differences, they can empower each other, with blockchain addressing some of AI’s shortcomings like privacy and control of data, while AI can enhance blockchain systems’ efficiency, security, and effectiveness.</p></li>
+<li><p>Blockchain for AI involves using blockchain to promote data sharing, provide transparency, enable secure data marketplaces, foster decentralized AI architectures, and enhance swarm systems.</p></li>
+<li><p>AI for Blockchain suggests AI can augment smart contract capabilities and optimize the blockchain mining process.</p></li>
+<li><p>AI with Blockchain refers to applications that use both technologies in synergy, creating novel applications like enhancing human resources management, securing collaborative recommender systems, and automating process in SMEs with IoT data.</p></li>
+<li><p>However, the convergence of AI and blockchain faces challenges like scalability, security and privacy, and the data collaboration between on-chain and off-chain storage.</p></li>
+</ul>
+</div>
+<section id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">#</a></h2>
+<p>Artificial intelligence and blockchain are two progressive technologies that hold great potential in stimulating the intelligent evolution of various industries. Each possesses inherent strengths but also faces its own unique challenges. AI is gradually transforming industries by introducing advanced capabilities but struggles with issues such as interpretability and effectiveness. It operates based on three key elements: algorithms, computational power, and data <span id="id1">[<a class="reference internal" href="#id119" title="Zhonghua Zhang, Xifei Song, Lei Liu, Jie Yin, Yu Wang, and Dapeng Lan. Recent advances in blockchain and artificial intelligence integration: feasibility analysis, research issues, applications, challenges, and future work. Security and Communication Networks, 2021:1–15, 2021.">ZSL+21</a>]</span>. On the other hand, blockchain, despite being an advantageous foundation for trustworthy transactions, grapples with hurdles concerning energy consumption, scalability, security, privacy, and efficiency <span id="id2">[<a class="reference internal" href="#id119" title="Zhonghua Zhang, Xifei Song, Lei Liu, Jie Yin, Yu Wang, and Dapeng Lan. Recent advances in blockchain and artificial intelligence integration: feasibility analysis, research issues, applications, challenges, and future work. Security and Communication Networks, 2021:1–15, 2021.">ZSL+21</a>]</span>. Despite these separate research directions and associated challenges, AI and blockchain exhibit a natural synergy due to shared requirements for data analysis, security, and trust. This intersection between the two technologies can significantly amplify their respective strengths. According to the estimations of Spherical Insights, the Blockchain AI Market, valued at USD 230.10 million in 2021, is projected to grow to USD 980.70 million by 2030 <span id="id3">[<a class="reference internal" href="#id122" title="Spherical Insights. Blockchain ai market: overview. 8 2022. Accessed: 2023-06-07. URL: https://www.sphericalinsights.com/reports/blockchain-ai-market.">Ins22</a>]</span>. The merger of these two technologies is an area that still calls for in-depth exploration. Moving forward, we’ll examine AI in the context of blockchain, investigating in detail the possible intersections and inherent value these two technologies may possess when coalesced.</p>
+</section>
+<section id="technology-explianed">
+<h2>Technology Explianed<a class="headerlink" href="#technology-explianed" title="Permalink to this heading">#</a></h2>
+<aside class="margin sidebar">
+<p class="sidebar-title"><strong>Proof of Work</strong></p>
+<p>PoW involves nodes competing for bookkeeping rights by comparing computing power.</p>
+</aside>
+<aside class="margin sidebar">
+<p class="sidebar-title"><strong>Proof of Stake</strong></p>
+<p>PoS is where the length and amount of digital currency held increases the likelihood of obtaining bookkeeping rights and rewards.</p>
+</aside>
+<aside class="margin sidebar">
+<p class="sidebar-title"><strong>Delegated Proof of Stake</strong></p>
+<p>DPoS indicating where representative nodes are selected for proxy verification and accounting</p>
+</aside>
+<section id="blockchain-technology">
+<h3>Blockchain Technology<a class="headerlink" href="#blockchain-technology" title="Permalink to this heading">#</a></h3>
+<p>Blockchain can be conceptualized as an unalterable, collectively maintained digital register that facilitates instantaneous, transparent, and collaborative data exchange via encrypted transactions initiated and completed by multiple parties. The capability of Blockchain networks extends to the tracking of an assortment of operations, encompassing order processing, financial transactions, account management, and manufacturing procedures. As the authorized members have a unified view of the facts, they accrue a sense of trust and assurance in engaging in transactions with fellow businesses. This, in turn, augments operational efficiency and engenders the emergence of novel business opportunities.</p>
+<p>The concept of blockchain is grounded in four core technologies <span id="id4">[<a class="reference internal" href="#id119" title="Zhonghua Zhang, Xifei Song, Lei Liu, Jie Yin, Yu Wang, and Dapeng Lan. Recent advances in blockchain and artificial intelligence integration: feasibility analysis, research issues, applications, challenges, and future work. Security and Communication Networks, 2021:1–15, 2021.">ZSL+21</a>]</span>: consensus mechanism, data structure, cryptography, and distributed storage. The consensus mechanism encourages nodes to keep accounts; common mechanisms include proof of work (PoW), proof of stake (PoS), and delegated proof of stake (DPoS). The data structure of the blockchain resembles a chain, linking each block via a hash pointer in the block header, creating an interconnected chain. The use of cryptography, specifically symmetric and asymmetric encryption, provides confidentiality, integrity, and authentication to ensure the security of transactions, while the distributed storage mechanism prevents data tampering by requiring consensus from a majority of nodes. The emerging cross-chain technology aims to enable blockchain interconnection and enhance scalability, enabling operations like digital asset transfer and communication between chains.</p>
+</section>
+<section id="ai-technology">
+<h3>AI Technology<a class="headerlink" href="#ai-technology" title="Permalink to this heading">#</a></h3>
+<p>As mentioned in the literature review by Karger <span id="id5">[]</span>, artificial intelligence technology was sparked by the introduction of machine learning in 1959 and was further driven by focused research in the USA and Japan during the ’80s and ’90s. Breakthroughs in deep learning and reinforcement learning algorithms, along with the rapid growth of network data and significant advances in computing power, have propelled AI’s development. Key AI technologies such as natural language processing, adaptive learning, and computational vision already have vast applications in various industries. Recently, the advent of ChatGPT seems to push human society toward the technological point of singularity.</p>
+<p>As a dominant power in the technological realm, artificial intelligence (AI) has introduced an array of benefits and conveniences into our daily lives. Yet, it’s impossible to turn a blind eye to the accompanying risks and challenges that AI brings along. Some of these potential threats could be significant enough to impact the future trajectory of humanity. Recently, a notable development that has sparked further contemplation on the growth and inherent risks of AI is the departure of Geoffrey Hinton from Google. His unexpected move away from Google prompts us to scrutinize the future of AI more closely, raising questions about the direction AI research might take, the potential risks associated with the rapid advancement of this technology, and the measures we need to adopt for responsible AI development and usage.</p>
+</section>
+</section>
+<section id="the-mutual-empowerment-between-blockchain-and-ai-technology">
+<h2>The mutual empowerment between blockchain and AI technology<a class="headerlink" href="#the-mutual-empowerment-between-blockchain-and-ai-technology" title="Permalink to this heading">#</a></h2>
+<p>Rohan Pinto, the CTO of 1Kosmos BlockID, with over two decades of experience in the field of cryptography, has shed light on the fundamental contrasts between AI and blockchain <span id="id6">[<a class="reference internal" href="#id121" title="Rohan Pinto. Next steps in the integration of artificial intelligence and the blockchain. 10 2018. Accessed: 2023-06-07. URL: https://www.forbes.com/sites/forbestechcouncil/2018/10/09/next-steps-in-the-integration-of-artificial-intelligence-and-the-blockchain/.">Pin18</a>]</span>:</p>
+<ol class="arabic simple">
+<li><p>AI largely functions within centralized systems, in contrast to blockchain that is rooted in a decentralized and distributed environment.</p></li>
+<li><p>Where most AI technologies are under the ownership and operation of centralized organizations, most blockchain advocates opt for open-source codebases, enabling anyone to review and inspect their codes freely.</p></li>
+<li><p>AI is often perceived as a ‘black-box’ approach in its current form, whereas blockchain provides clear visibility into each transaction it processes.</p></li>
+<li><p>AI is built on the basis of probabilistic computations, while blockchain is guided by a more deterministic methodology.</p></li>
+</ol>
+<p>Nevertheless, He also pointed out that the centralized AI can lead to misuse, including extensive surveillance via facial recognition and computer vision technology. Moreover, developing solutions in a centralized setting necessitates businesses to relinquish privacy and control of their data to third parties. Here, blockchain technology plays a crucial role by potentially addressing several drawbacks associated with AI.</p>
+<p>AI algorithms excel at handling vast amounts of data and mimicking cognitive processes akin to the human brain. Utilizing complex neural networks, they recognize patterns, predict outcomes, and make decisions. Conversely, blockchain networks offer a transparent, decentralized, and tamper-resistant transaction layer. Anyone connected to the network can use it, and once data is stored, it becomes unalterable. This allows users to interact with the blockchain in a trust-minimized, permission-less manner.</p>
+<p>Blockchain’s inherent qualities of decentralization, immutability, and anonymization can address some of AI’s key needs. It can break data silos and facilitate the free flow of algorithms, computational power, and data resources. Additionally, blockchain can ensure the integrity of original data and enhance the audit credibility and traceability of AI’s operations. It can document AI’s decision-making processes, thereby increasing transparency, explicability, and trust in AI’s actions.</p>
+<p>Conversely, AI can reciprocate by improving the architecture of blockchain systems, making them more secure, energy-efficient, and effective. In essence, the convergence of AI and blockchain technologies results in an autonomous, credible, and intelligent system, leveraging the benefits of both while mitigating their respective shortcomings.</p>
+</section>
+<section id="application-scenario">
+<h2>Application Scenario<a class="headerlink" href="#application-scenario" title="Permalink to this heading">#</a></h2>
+<p>In this section, we will discuss the combination of AI and blockchain technology in detail. At the 2020 International Conference on Information Systems, Erik Karger proposed a detailed review on the combination of blockchain and AI <span id="id7">[]</span>. According to his research, the integration of AI and blockchain can be categorized into three main areas, each with its own subdivisions.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>AI &amp; Blockchain Combination Classification</strong></p>
+<ul class="simple">
+<li><p>Blockchain for AI: Blockchain for AI pertains to scenarios and applications in which blockchain technology is utilized to bolster or amplify pre-existing AI applications.</p></li>
+<li><p>AI for Blockchain: AI for Blockchain encompasses situations where AI applications strive to enhance blockchain technology. This can be seen in areas like mining processes and smart contract execution.</p></li>
+<li><p>AI with Blockchain: AI with Blockchain refers to systems and platforms that concurrently employ AI and blockchain technology, with neither being solely reliant on or used as a leveraging tool for the other.</p></li>
+</ul>
+</div>
+<figure class="align-default" id="aib-fig">
+<a class="reference internal image-reference" href="../_images/AIB.png"><img alt="../_images/AIB.png" src="../_images/AIB.png" style="width: 550px; height: 300px;" /></a>
+<figcaption>
+<p><span class="caption-text">Integration of Blockchain and AI</span><a class="headerlink" href="#aib-fig" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<section id="blockchain-for-ai">
+<h3>Blockchain for AI<a class="headerlink" href="#blockchain-for-ai" title="Permalink to this heading">#</a></h3>
+<p>Most commonly, research and applications have explored the potential of using blockchain to augment AI. These applications can be subdivided into the following sections <span id="id8">[]</span>:</p>
+<ul class="simple">
+<li><p>Data management based on blockchain</p></li>
+</ul>
+<p>The availability of vast data is a key driver behind the AI revolution, but access to this data is often hindered by factors such as dominance by big players like Facebook and Google and growing concerns about privacy following instances of data misuse. This deters competition among AI researchers and companies, and increases fear and mistrust among users <span id="id9">[<a class="reference internal" href="#id123" title="Thang N. Dinh and My T. Thai. Ai and blockchain: a disruptive integration. Computer, 51(9):48-53, 2018. doi:10.1109/MC.2018.3620971.">DT18</a>]</span>. Blockchain technology can offer a solution by promoting data sharing, providing transparency, accountability, and giving users control over their data.
+In e-healthcare <span id="id10">[<a class="reference internal" href="#id124" title="Priti Tagde, Sandeep Tagde, Tanima Bhattacharya, Pooja Tagde, Hitesh Chopra, Rokeya Akter, Deepak Kaushik, and Md. Habibur Rahman. Blockchain and artificial intelligence technology in e-health. Environmental Science and Pollution Research, 28(38):52810-52831, 2021. URL: https://doi.org/10.1007/s11356-021-16223-0, doi:10.1007/s11356-021-16223-0.">TTB+21</a>]</span>, blockchain can be used to securely store patient data. Each patient’s health data could be stored in a block and added to the blockchain. This provides secure, immutable records that can easily be tracked and traced, ensuring patient data integrity and confidentiality. This can boost user confidence and enable better data use for societal benefits, such as faster discovery of cures for diseases.</p>
+<ul class="simple">
+<li><p>Data marketplaces that utilize blockchain</p></li>
+</ul>
+<p>Blockchain could facilitate the creation of secure, private data marketplaces via smart contracts, eliminating the need for intermediaries. This would lower entry barriers for smaller players, encourage innovation, and allow for the search of relevant information while maintaining user privacy <span id="id11">[<a class="reference internal" href="#id123" title="Thang N. Dinh and My T. Thai. Ai and blockchain: a disruptive integration. Computer, 51(9):48-53, 2018. doi:10.1109/MC.2018.3620971.">DT18</a>]</span>. The primary aim of Ocean Protocol is to democratize the access to data, making it universally accessible for AI training and analysis <span id="id12">[<a class="reference internal" href="#id125">FG22</a>]</span>. They do this by providing a platform that allows individuals and organizations to monetize and share their data without losing control over it. This ensures data privacy and security while enabling the data to be used to its fullest potential.</p>
+<ul class="simple">
+<li><p>AI architectures that rely on blockchain</p></li>
+</ul>
+<p>SingularityNET <span id="id13">[<a class="reference internal" href="#id126">Sin19</a>]</span> exemplifies an AI architecture that leverages blockchain. It’s a decentralized marketplace, powered by a blockchain protocol, for buying and selling AI services. This unique setup fosters an environment where anyone can create, share, and monetize AI tools. Developers can use the platform to sell AI services, while buyers can test these services before purchase. The decentralization provided by blockchain ensures that the marketplace is not dominated by any single entity. Additionally, blockchain’s inherent transparency and immutability boost user trust and data security. The platform also uses smart contracts to automate transactions, making exchanges efficient and trustless. The platform even supports interoperability, enabling different AI services to collaborate and form complex models. By combining AI and blockchain, SingularityNET democratizes access to AI, fosters innovation, and promotes a transparent, secure AI ecosystem.</p>
+<ul class="simple">
+<li><p>Swarm systems enhanced by blockchain</p></li>
+</ul>
+<p>Ferrer <span id="id14">[<a class="reference internal" href="#id127" title="Eduardo Castelló Ferrer. The blockchain: a new framework for robotic swarm systems. In Kohei Arai, Rahul Bhatia, and Supriya Kapoor, editors, Proceedings of the Future Technologies Conference (FTC) 2018, 1037–1058. Cham, 2019. Springer International Publishing.">CastelloF19</a>]</span> discussed how blockchain technology can provide innovative solutions to emergent issues in the swarm robotics research field. Blockchain technology can significantly enhance swarm systems by increasing safety, supporting distributed decision making, and differentiating individual robot behaviors. Security threats can arise from insecure communication channels or manipulated swarm members. Blockchain addresses these vulnerabilities by providing a reliable peer-to-peer communication channel for each swarm agent. Using public-key cryptography, robots can securely exchange information, and message authorship can be easily verified. Moreover, a coordination mechanism using blockchain for various purposes has been developed. Each robot acts as a node and a miner in the blockchain network, enabling knowledge exchange, voice capture, and decision strategy application via smart contracts. Furthermore, blockchain can support decentralized decision-making algorithms in swarm systems, with benchmark tests showing improved consensus time and exit probability compared to non-blockchain methods.</p>
+</section>
+<section id="ai-for-blockchain">
+<h3>AI for Blockchain<a class="headerlink" href="#ai-for-blockchain" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Intelligent Smart Contract</p></li>
+</ul>
+<p>According to Almasoud et al. <span id="id15">[<a class="reference internal" href="#id128" title="Ahmed S. Almasoud, Maged M. Eljazzar, and Farookh Hussain. Toward a self-learned smart contracts. In 2018 IEEE 15th International Conference on e-Business Engineering (ICEBE), volume, 269-273. 2018. doi:10.1109/ICEBE.2018.00051.">AEH18</a>]</span>, AI can significantly augment the capabilities of smart contracts by serving as recommendation systems during contract negotiations. They can analyse archived smart contracts, evaluate past negotiation strategies, propose effective language and clauses, and identify factors to consider in future contracts. Furthermore, AI can be programmed to negotiate conditions that affect the price or quality of goods. Nguyen and Bailey <span id="id16">[<a class="reference internal" href="#id129" title="Huu Nguyen and Scott Bailey. Use of artificial intelligence for smart contracts and blockchains. FinTechLaw Report: E-Banking, Payments and Commerce in the Mobile World, 20(2):1-7, 2018.">NB18</a>]</span> propose that AI can determine the optimal time to trigger a smart contract using supervised or unsupervised learning techniques. AI can also assist in providing dynamic, tailored solutions during contract failures. Omohundro <span id="id17">[<a class="reference internal" href="#id130" title="Steve Omohundro. Cryptocurrencies, smart contracts, and artificial intelligence. AI Matters, 1(2):19-21, dec 2014. URL: https://doi.org/10.1145/2685328.2685334, doi:10.1145/2685328.2685334.">Omo14</a>]</span> argues that the integration of AI methods could make smart contracts operational in Internet of Things (IoT) environments, aiding the translation of sensor information into precise terms to which smart contracts can respond.</p>
+<ul class="simple">
+<li><p>Improvement of the Mining Process</p></li>
+</ul>
+<p>Singh and Hafid <span id="id18">[<a class="reference internal" href="#id131" title="Harsh Jot Singh and Abdelhakim Senhaji Hafid. Prediction of transaction confirmation time in ethereum blockchain using machine learning. In Javier Prieto, Ashok Kumar Das, Stefano Ferretti, António Pinto, and Juan Manuel Corchado, editors, Blockchain and Applications, 126–133. Cham, 2020. Springer International Publishing.">SH20</a>]</span> suggest that machine learning can improve the blockchain mining process by predicting transaction confirmation times on the Ethereum blockchain. This assists users in understanding the acceptance and timing of their transactions. Chen et al. <span id="id19">[<a class="reference internal" href="#id132">CDZ+18</a>]</span> propose an AI-based consensus mechanism, “Proof of Artificial Intelligence” (PoAI), that ranks blockchain network nodes based on criteria such as computing power or security aspects, thereby allowing only the best nodes to conduct mining. This reduces competition for computing power, saves energy, and promotes fairness and decentralization. Although this field is still in its infancy, it holds substantial potential for future research and development.</p>
+</section>
+<section id="ai-with-blockchain">
+<h3>AI with Blockchain<a class="headerlink" href="#ai-with-blockchain" title="Permalink to this heading">#</a></h3>
+<p>Erik proposeed a third category of use cases for the combination of AI and blockchain, which create entirely new applications through their synergistic use, a concept termed ‘blockchain with AI’. <span id="id20">[]</span></p>
+<p>In the context of human resources management, Markopoulos et al. <span id="id21">[<a class="reference internal" href="#id133">MKBV20</a>]</span> describe an approach combining AI and blockchain to enhance the Democratic Teaming Model (DTM) for selecting project personnel. Expert systems in AI can recommend ideal team compositions based on employee data, while blockchain can secure the data and transactions for optimal analysis. Arora et al. <span id="id22">[<a class="reference internal" href="#id134" title="Monika Arora, Akanksha Bansal Chopra, and Veer Sain Dixit. An approach to secure collaborative recommender system using artificial intelligence, deep learning, and blockchain. In Sushabhan Choudhury, Ranjan Mishra, Raj Gaurav Mishra, and Adesh Kumar, editors, Intelligent Communication, Control and Devices, 483–495. Singapore, 2020. Springer Singapore.">ACD20</a>]</span> propose combining deep learning and blockchain to enhance the security of collaborative recommender systems, especially in industries where data privacy is paramount. Li et al. <span id="id23">[<a class="reference internal" href="#id135" title="Zhi Li, Hanyang Guo, Wai Ming Wang, Yijiang Guan, Ali Vatankhah Barenji, George Q. Huang, Kevin S. McFall, and Xin Chen. A blockchain and automl approach for open and automated customer service. IEEE Transactions on Industrial Informatics, 15(6):3642-3651, 2019. doi:10.1109/TII.2019.2900987.">LGW+19</a>]</span> present a customer service approach using blockchain and automated machine learning (AutoML) to analyse data from IoT devices securely. This process automation can particularly benefit small and medium-sized enterprises (SMEs). Mylrea <span id="id24">[<a class="reference internal" href="#id136" title="Michael Mylrea. Chapter 12 - distributed autonomous energy organizations: next-generation blockchain applications for energy infrastructure. In William Lawless, Ranjeev Mittu, Donald Sofge, Ira S. Moskowitz, and Stephen Russell, editors, Artificial Intelligence for the Internet of Everything, pages 217-239. Academic Press, 2019. URL: https://www.sciencedirect.com/science/article/pii/B9780128176368000120, doi:https://doi.org/10.1016/B978-0-12-817636-8.00012-0.">Myl19</a>]</span> investigates the potential of blockchain, AI, and machine learning in forming Distributed Autonomous Energy Organizations (DAEOs), improving security, speed, and reducing the need for intermediaries. Autonomous smart contracts could facilitate automatic value or service exchanges, and the blockchain can function as a secure storage medium for sensitive data.</p>
+</section>
+</section>
+<section id="challenges">
+<h2>Challenges<a class="headerlink" href="#challenges" title="Permalink to this heading">#</a></h2>
+<p>As we look to the future of technological advancements, the integration of AI and blockchain holds tremendous promise. This convergence could revolutionize many fields around us. However, this promise is not without its challenges:</p>
+<ol class="arabic simple">
+<li><p>Scalability: The performance and scalability of the existing blockchain platform is crucial to the successful implementation of smart blockchain applications. Challenges include consistency issues, network delays, and performance limitations. Pursuing scalability may decrease the consistency requirements of the distributed network, leading to blockchain bifurcation. The peer-to-peer nature of the blockchain results in network delays, especially for nodes with longer delays. Also, the transaction performance limits the scalability of the blockchain, as to ensure security and eventual consistency, transactions can’t be performed in parallel, making it hard to increase transaction throughput.</p></li>
+<li><p>Security and Privacy: Blockchain’s transparency is a double-edged sword. On one hand, it is one of its main selling points. On the other hand, this very transparency poses a significant challenge: how do we protect user privacy in an open system? Currently, common privacy protection methods in blockchain include information hiding and identity confusion. Yet, these measures often require increased computational processes, leading to reduced system efficiency. The challenge here is leveraging AI to improve this low efficiency, while also adapting existing algorithms for application in a distributed environment.</p></li>
+<li><p>Data Collaboration between On-Chain and Off-Chain Storage: The effective combination of blockchain technology and traditional information systems is crucial to ensure the relevance and consistency of data both on-chain and off-chain. Challenges like poor data quality, data monopoly, and data abuse can be given new development opportunities with the intervention of blockchain. Ensuring the correct combination of on-chain and off-chain data is necessary for the practical application of the blockchain and AI combination in the real economy.</p></li>
+</ol>
+</section>
+<section id="conclusion">
+<h2>Conclusion<a class="headerlink" href="#conclusion" title="Permalink to this heading">#</a></h2>
+<p>In conclusion, the integration of artificial intelligence and blockchain promises exciting potential across various applications. However, realizing this potential still remains challenging. The existing taxonomy of AI and blockchain synergy may not remain static in the coming years. As technological boundaries continue to be pushed, the fusion of artificial intelligence and blockchain is set to significantly transform our digital and commercial landscape.</p>
+<div style="text-align: right;font-weight: bold;">Ruoyi Zhao</div>
+<div style="text-align: right;font-style: italic;">June 2023</div>
+</section>
+<section id="references">
+<h2>References<a class="headerlink" href="#references" title="Permalink to this heading">#</a></h2>
+<div class="docutils container" id="id25">
+<div class="citation" id="id128" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id15">AEH18</a><span class="fn-bracket">]</span></span>
+<p>Ahmed S. Almasoud, Maged M. Eljazzar, and Farookh Hussain. Toward a self-learned smart contracts. In <em>2018 IEEE 15th International Conference on e-Business Engineering (ICEBE)</em>, volume, 269–273. 2018. <a class="reference external" href="https://doi.org/10.1109/ICEBE.2018.00051">doi:10.1109/ICEBE.2018.00051</a>.</p>
+</div>
+<div class="citation" id="id134" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id22">ACD20</a><span class="fn-bracket">]</span></span>
+<p>Monika Arora, Akanksha Bansal Chopra, and Veer Sain Dixit. An approach to secure collaborative recommender system using artificial intelligence, deep learning, and blockchain. In Sushabhan Choudhury, Ranjan Mishra, Raj Gaurav Mishra, and Adesh Kumar, editors, <em>Intelligent Communication, Control and Devices</em>, 483–495. Singapore, 2020. Springer Singapore.</p>
+</div>
+<div class="citation" id="id127" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id14">CastelloF19</a><span class="fn-bracket">]</span></span>
+<p>Eduardo Castelló Ferrer. The blockchain: a new framework for robotic swarm systems. In Kohei Arai, Rahul Bhatia, and Supriya Kapoor, editors, <em>Proceedings of the Future Technologies Conference (FTC) 2018</em>, 1037–1058. Cham, 2019. Springer International Publishing.</p>
+</div>
+<div class="citation" id="id132" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id19">CDZ+18</a><span class="fn-bracket">]</span></span>
+<p><strong>missing journal in unknown</strong></p>
+</div>
+<div class="citation" id="id123" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>DT18<span class="fn-bracket">]</span></span>
+<span class="backrefs">(<a role="doc-backlink" href="#id9">1</a>,<a role="doc-backlink" href="#id11">2</a>)</span>
+<p>Thang N. Dinh and My T. Thai. Ai and blockchain: a disruptive integration. <em>Computer</em>, 51(9):48–53, 2018. <a class="reference external" href="https://doi.org/10.1109/MC.2018.3620971">doi:10.1109/MC.2018.3620971</a>.</p>
+</div>
+<div class="citation" id="id125" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id12">FG22</a><span class="fn-bracket">]</span></span>
+<p><strong>missing journal in oceanprotocol2022</strong></p>
+</div>
+<div class="citation" id="id122" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id3">Ins22</a><span class="fn-bracket">]</span></span>
+<p>Spherical Insights. Blockchain ai market: overview. 8 2022. Accessed: 2023-06-07. URL: <a class="reference external" href="https://www.sphericalinsights.com/reports/blockchain-ai-market">https://www.sphericalinsights.com/reports/blockchain-ai-market</a>.</p>
+</div>
+<div class="citation" id="id135" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id23">LGW+19</a><span class="fn-bracket">]</span></span>
+<p>Zhi Li, Hanyang Guo, Wai Ming Wang, Yijiang Guan, Ali Vatankhah Barenji, George Q. Huang, Kevin S. McFall, and Xin Chen. A blockchain and automl approach for open and automated customer service. <em>IEEE Transactions on Industrial Informatics</em>, 15(6):3642–3651, 2019. <a class="reference external" href="https://doi.org/10.1109/TII.2019.2900987">doi:10.1109/TII.2019.2900987</a>.</p>
+</div>
+<div class="citation" id="id133" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id21">MKBV20</a><span class="fn-bracket">]</span></span>
+<p><strong>missing publisher in inbook</strong></p>
+</div>
+<div class="citation" id="id136" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id24">Myl19</a><span class="fn-bracket">]</span></span>
+<p>Michael Mylrea. Chapter 12 - distributed autonomous energy organizations: next-generation blockchain applications for energy infrastructure. In William Lawless, Ranjeev Mittu, Donald Sofge, Ira S. Moskowitz, and Stephen Russell, editors, <em>Artificial Intelligence for the Internet of Everything</em>, pages 217–239. Academic Press, 2019. URL: <a class="reference external" href="https://www.sciencedirect.com/science/article/pii/B9780128176368000120">https://www.sciencedirect.com/science/article/pii/B9780128176368000120</a>, <a class="reference external" href="https://doi.org/https://doi.org/10.1016/B978-0-12-817636-8.00012-0">doi:https://doi.org/10.1016/B978-0-12-817636-8.00012-0</a>.</p>
+</div>
+<div class="citation" id="id129" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id16">NB18</a><span class="fn-bracket">]</span></span>
+<p>Huu Nguyen and Scott Bailey. Use of artificial intelligence for smart contracts and blockchains. <em>FinTechLaw Report: E-Banking, Payments and Commerce in the Mobile World</em>, 20(2):1–7, 2018.</p>
+</div>
+<div class="citation" id="id130" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id17">Omo14</a><span class="fn-bracket">]</span></span>
+<p>Steve Omohundro. Cryptocurrencies, smart contracts, and artificial intelligence. <em>AI Matters</em>, 1(2):19–21, dec 2014. URL: <a class="reference external" href="https://doi.org/10.1145/2685328.2685334">https://doi.org/10.1145/2685328.2685334</a>, <a class="reference external" href="https://doi.org/10.1145/2685328.2685334">doi:10.1145/2685328.2685334</a>.</p>
+</div>
+<div class="citation" id="id121" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id6">Pin18</a><span class="fn-bracket">]</span></span>
+<p>Rohan Pinto. Next steps in the integration of artificial intelligence and the blockchain. 10 2018. Accessed: 2023-06-07. URL: <a class="reference external" href="https://www.forbes.com/sites/forbestechcouncil/2018/10/09/next-steps-in-the-integration-of-artificial-intelligence-and-the-blockchain/">https://www.forbes.com/sites/forbestechcouncil/2018/10/09/next-steps-in-the-integration-of-artificial-intelligence-and-the-blockchain/</a>.</p>
+</div>
+<div class="citation" id="id131" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id18">SH20</a><span class="fn-bracket">]</span></span>
+<p>Harsh Jot Singh and Abdelhakim Senhaji Hafid. Prediction of transaction confirmation time in ethereum blockchain using machine learning. In Javier Prieto, Ashok Kumar Das, Stefano Ferretti, António Pinto, and Juan Manuel Corchado, editors, <em>Blockchain and Applications</em>, 126–133. Cham, 2020. Springer International Publishing.</p>
+</div>
+<div class="citation" id="id126" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id13">Sin19</a><span class="fn-bracket">]</span></span>
+<p><strong>missing journal in singularitynet2019</strong></p>
+</div>
+<div class="citation" id="id124" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id10">TTB+21</a><span class="fn-bracket">]</span></span>
+<p>Priti Tagde, Sandeep Tagde, Tanima Bhattacharya, Pooja Tagde, Hitesh Chopra, Rokeya Akter, Deepak Kaushik, and Md. Habibur Rahman. Blockchain and artificial intelligence technology in e-health. <em>Environmental Science and Pollution Research</em>, 28(38):52810–52831, 2021. URL: <a class="reference external" href="https://doi.org/10.1007/s11356-021-16223-0">https://doi.org/10.1007/s11356-021-16223-0</a>, <a class="reference external" href="https://doi.org/10.1007/s11356-021-16223-0">doi:10.1007/s11356-021-16223-0</a>.</p>
+</div>
+<div class="citation" id="id119" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>ZSL+21<span class="fn-bracket">]</span></span>
+<span class="backrefs">(<a role="doc-backlink" href="#id1">1</a>,<a role="doc-backlink" href="#id2">2</a>,<a role="doc-backlink" href="#id4">3</a>)</span>
+<p>Zhonghua Zhang, Xifei Song, Lei Liu, Jie Yin, Yu Wang, and Dapeng Lan. Recent advances in blockchain and artificial intelligence integration: feasibility analysis, research issues, applications, challenges, and future work. <em>Security and Communication Networks</em>, 2021:1–15, 2021.</p>
+</div>
+</div>
+</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./AIB"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#technology-explianed">Technology Explianed</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#blockchain-technology">Blockchain Technology</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ai-technology">AI Technology</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-mutual-empowerment-between-blockchain-and-ai-technology">The mutual empowerment between blockchain and AI technology</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#application-scenario">Application Scenario</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#blockchain-for-ai">Blockchain for AI</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ai-for-blockchain">AI for Blockchain</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ai-with-blockchain">AI with Blockchain</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#challenges">Challenges</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion">Conclusion</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By DLT Science Foundation
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

@@ -1,0 +1,741 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Soulbound Tokens (SBTs) &#8212; DSF Science Notes</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'SBT/SBT';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="Innovation &amp; Ideation" href="../STRUCTURE/innovation_2.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/dsf.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../_static/dsf.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Q2 2023</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../STRUCTURE/academic.html">Academic Insights</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../GOV/gov.html">Governance in DeFi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../BBSecurity/bbsecurity.html">Blockchain Bridge Security</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../STRUCTURE/industry.html">Industry Perspective</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../MTP/mtp.html">Mobile Theft Prevention using Blockchain</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../LEGACY/legacy.html">Financial Institutions and Crypto Customers</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../STRUCTURE/innovation.html">Innovation &amp; Ideation</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../SHARDING/sharding.html">Sharding: A Panacea for Blockchain Scalability Challenges?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../SSI/ssi.html">Self-Sovereign Identity: Technical Foundations and Applications</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Q3 2023</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../STRUCTURE/academic_2.html">Academic Insights</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Interoperability/Cross-Chain%20Interoperability.html">Cross-Chain Interoperability: A Comprehensive Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../SDE/ScamDetec.html">Scam Detection on Ethereum</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../STRUCTURE/industry_2.html">Industry Perspective</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../HED/hed.html">Understanding Hedera Services: An Overview of Transaction Types on the Hashgraph Network</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../BOER/boer.html">Opportunities and Risks for Traditional Insurance Companies and Banks with DeFi Business Models</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ARM/arm.html">Crypto and Digital Assets Risk Management: Navigating Opportunities and Challenges</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../STRUCTURE/innovation_2.html">Innovation &amp; Ideation</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Soulbound Tokens (SBTs)</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/dlt-science/science-notes" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/dlt-science/science-notes/edit/main/blogs/SBT/SBT.md" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/dlt-science/science-notes/issues/new?title=Issue%20on%20page%20%2FSBT/SBT.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/SBT/SBT.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Soulbound Tokens (SBTs)</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#moving-towards-a-decentralised-society-desoc">Moving towards a Decentralised Society (DeSoc)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#functionality-of-sbts">Functionality of SBTs</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#potential-applications-of-sbts">Potential Applications of SBTs</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#verifying-authenticity-of-factual-records">Verifying Authenticity of Factual Records</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#digital-inheritance-planning">Digital Inheritance Planning</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#alternative-credit-systems">Alternative Credit Systems</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#preventing-sybil-attacks-in-daos">Preventing Sybil Attacks in DAOs</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enhancing-trust-in-online-property-rental">Enhancing Trust in Online Property Rental</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#decentralised-dispute-resolution">Decentralised Dispute Resolution</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#recording-employment-history-and-professional-qualifications">Recording Employment History and Professional Qualifications</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#authenticating-academic-credentials">Authenticating Academic Credentials</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#secure-management-of-healthcare-records">Secure Management of Healthcare Records</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#challenges-and-concerns">Challenges and Concerns</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion">Conclusion</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="soulbound-tokens-sbts">
+<h1>Soulbound Tokens (SBTs)<a class="headerlink" href="#soulbound-tokens-sbts" title="Permalink to this heading">#</a></h1>
+<p><ins><strong>Innovation &amp; Ideation</strong></ins></p>
+<div class="tip admonition">
+<p class="admonition-title">Key Insights</p>
+<ul class="simple">
+<li><p>Decentralised Society (DeSoc) serves as an innovative solution that encourages a trust-based, cooperative, bottom-up strategy in constructing resilient networks, thereby enhancing the potential of Web3.</p></li>
+<li><p>Soulbound tokens (SBTs), as non-transferable assets, improve the provenance and reputation in the Decentralised Society (DeSoc) and provide a versatile representation of digital identities.</p></li>
+<li><p>SBTs have the potential to redefine digital identity verification due to their non-transferable nature, allowing them to authenticate factual records, establish digital inheritance plans, and prevent Sybil attacks in Decentralised Autonomous Organisations.</p></li>
+<li><p>SBTs offer functional solutions in various sectors such as finance, real estate, and healthcare, promoting transparency, security, and innovation across these industries.</p></li>
+<li><p>Despite the significant advancements that SBTs bring to digital identity systems, they also face obstacles concerning privacy, security, and interoperability.</p></li>
+</ul>
+</div>
+<section id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">#</a></h2>
+<aside class="margin sidebar">
+<p class="sidebar-title"><strong>Web3</strong></p>
+<p>Web3, short for Web 3.0, is the third generation of internet services for websites and applications that incorporate blockchain-based and decentralised processes. It emphasises a user-centric online experience where data ownership and control is returned to the individual, as opposed to being centralised in large tech companies.</p>
+</aside>
+<aside class="margin sidebar">
+<p class="sidebar-title"><strong>DAOs</strong></p>
+<p>A Decentralised Autonomous Organization (DAO) is a blockchain-based system governed by rules encoded as computer programmes known as smart contracts, with decision-making authority distributed among its members.</p>
+</aside>
+<p>Web3 has largely been anonymous for its users, due to its founding principles, which are deeply rooted in privacy and decentralisation. However, the lack of ability to confirm individual identities, their properties, and affiliations has posed a challenge for blockchain adoption in some industries. Soulbound tokens (SBTs) are set to bridge this identity gap inherent in Web3, facilitating the formation of trusted relationships. Soulbound tokens can be issued by any entity, be it DAOs, academic institutions, DeFi firms, or employers, to denote membership, authentication or certification, or event participation. Moreover, soulbound tokens can utilise these links between individuals and various entities to provide a more comprehensive picture of distinct user identities and their roots. The reputation of the issuing entity is transferred via SBTs to the wallets or individuals who hold them. The more prestigious the issuing body, the higher the standing of the individual in possession of a soulbound token.</p>
+<p>As an individual’s connections with different entities grow, so does their unique identity and reputation. Soulbound tokens capitalise on this network of connections to construct verifiable identities for souls. NFTs will serve as proof of ownership, and SBTs as proof of character <span id="id1">[<a class="reference internal" href="#id80" title="Tomer Jordi Chaffer and Justin Goldston. On the existential basis of self-sovereign identity and soulbound tokens: an examination of the “self” in the age of web3. Journal of Strategic Innovation and Sustainability Vol, 17(3):1, 2022.">CG22</a>]</span>.</p>
+<figure class="align-default" id="sbt-diagram">
+<a class="reference internal image-reference" href="../_images/USBTDiagram3.drawio.png"><img alt="../_images/USBTDiagram3.drawio.png" src="../_images/USBTDiagram3.drawio.png" style="width: 1055px; height: 785px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 13 </span><span class="caption-text">Soulbound Token Issuance in DeSoc.</span><a class="headerlink" href="#sbt-diagram" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="moving-towards-a-decentralised-society-desoc">
+<h2>Moving towards a Decentralised Society (DeSoc)<a class="headerlink" href="#moving-towards-a-decentralised-society-desoc" title="Permalink to this heading">#</a></h2>
+<aside class="margin sidebar">
+<p class="sidebar-title"><strong>Sybil Attack</strong></p>
+<p>A Sybil attack is a type of security threat in decentralised networks where a single entity creates multiple fake identities (Sybils) to gain undue influence or control. These attacks can disrupt the functioning of the network by undermining consensus mechanisms.</p>
+</aside>
+<aside class="margin sidebar">
+<p class="sidebar-title"><strong>Collusion Attack</strong></p>
+<p>A collusion attack in blockchain refers to a scenario where a group of participants in a network conspire together to manipulate the system for their own advantage. This can happen in proof-of-stake or proof-of-work blockchain systems where enough nodes, typically over 50%, are controlled by a colluding group. This allows them to control the validation of transactions, potentially allowing them to double-spend, block transactions, or manipulate the blockchain in other ways. This is often referred to as a 51% attack.</p>
+</aside>
+<aside class="margin sidebar">
+<p class="sidebar-title"><strong>Hyper-financialization</strong></p>
+<p>Hyper-financialization refers to the dominance of financial markets, institutions, and elites in the economy.</p>
+</aside>
+<p>Web3 aims to revolutionise society beyond just financial systems, but its current lack of mechanisms to represent human identities and relationships in virtual worlds leads to issues like Sybil attacks, collusion, and an inclination towards hyper-financialization <span id="id2">[<a class="reference internal" href="#id86" title="E Glen Weyl, Puja Ohlhaver, and Vitalik Buterin. Decentralized society: finding web3's soul. Available at SSRN 4105763, 2022.">WOB22</a>]</span>. To counter this, Weyl et al. <span id="id3">[<a class="reference internal" href="#id86" title="E Glen Weyl, Puja Ohlhaver, and Vitalik Buterin. Decentralized society: finding web3's soul. Available at SSRN 4105763, 2022.">WOB22</a>]</span> proposed the concept of a Decentralised Society (DeSoc), an approach fostering complex and diverse relationships across digital and physical realities. It is built on trust and cooperation while also correcting for biases and tendencies to overcoordinate.</p>
+<aside class="margin sidebar">
+<p class="sidebar-title"><strong>Vampire Attack</strong></p>
+<p>In the context of decentralised finance (DeFi) and blockchain, a vampire attack is a strategy where a new protocol aims to drain liquidity and users from an existing one. This is often done by offering higher rewards or better incentives on the new platform, incentivizing users of the old platform to migrate their assets.</p>
+</aside>
+<p>Economic growth is primarily driven by networks yielding increasing returns, but the current private property paradigm of DeFi can limit such growth. DeSoc recommends treating networks as partially and collectively shared goods, applying governance mechanisms that balance trust and cooperation, while checking for collusion and capture. This model supports a bottom-up approach in building, participating in, and governing networks. Consequently, it creates structures resilient to Sybil and vampire attacks and collusion, and promotes plural networks that provide widespread benefits, agreed upon by diverse members.</p>
+<p>The strength of DeSoc lies in fostering broader cooperation by encouraging the creation and intersection of nested networks across the physical and digital realms. Building on trust, it allows for the establishment of resilient plural network goods. This approach enables Web3 to resist short-term financialization and cultivate a future with increasing returns across diverse social connections.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Differences between soulbound tokens (SBTs) and regular non-fungible tokens (NFTs)</strong></p>
+<ul class="simple">
+<li><p>Soulbound Tokens (SBTs) are unique in that they are non-transferable and exhibit public transparency.</p></li>
+<li><p>Regular Non-Fungible Tokens (NFTs), on the other hand, are unique, non-interchangeable tokens that can represent digital assets, such as digital art.</p></li>
+<li><p>Both SBTs and NFTs can serve as a means to authenticate and identify products or records.</p></li>
+<li><p>SBTs stand out in their ability to serve as a form of permission, authorisation, and access to legal documents, binding the token to a specific identity.</p></li>
+<li><p>Conversely, NFTs can be utilised as tickets granting access to exclusive events, without requiring identity verification, as they can be freely transferred between parties.</p></li>
+</ul>
+</div>
+</section>
+<section id="functionality-of-sbts">
+<h2>Functionality of SBTs<a class="headerlink" href="#functionality-of-sbts" title="Permalink to this heading">#</a></h2>
+<p>A distinct and pivotal characteristic of Soulbound tokens (SBTs) is their inherent non-transferability. Unlike existing NFTs and token standards like the fungible ERC-20 or non-fungible ERC-721, which are built to hold market value and can be sold or transferred between wallets, SBTs are uniquely tied to Souls and therefore are not designed for selling or transferring <span id="id4">[<a class="reference internal" href="#id90" title="Akash Takyar. What are soulbound tokens, and how do they work? LeewayHertz, 2023. URL: https://www.leewayhertz.com/soulbound-tokens/.">Tak23</a>]</span>.</p>
+<p>SBTs are issued and held within unique accounts known as Souls, which serve as a vessel for these tokens and play a crucial role in establishing provenance and reputation. Souls can denote various entities, ranging from individuals to organisations, companies, and more. It’s noteworthy that in a decentralised society (DeSoc), Souls are not required to have a direct human equivalence, meaning a single person can be associated with multiple Souls. Unlike regular NFTs, soulbound tokens (SBTs) are a concept of non-transferable assets <span id="id5">[<a class="reference internal" href="#id91" title="Olusegun Joel Titus. Decentralized society's next stage: the soulbound token. HackerNoon, 2022. URL: https://hackernoon.com/cbdcs-and-soulbound-token-explained.">Tit22</a>]</span>. Once issued, they belong to a specific identity <span id="id6">[<a class="reference internal" href="#id82" title="Felix Hildebrandt. The future of soulbound tokens and their blockchain accounts. In Konferenzband zum Scientific Track der Blockchain Autumn School 2022, number 2, 18–24. Hochschule Mittweida, 2022.">Hil22</a>]</span>.</p>
+<p>This flexibility can manifest in a multitude of ways. For example, an individual could possess an array of ‘Souls’, each symbolizing different facets of their identity, such as their professional credentials, medical histories, among other elements <span id="id7">[<a class="reference internal" href="#id90" title="Akash Takyar. What are soulbound tokens, and how do they work? LeewayHertz, 2023. URL: https://www.leewayhertz.com/soulbound-tokens/.">Tak23</a>]</span>.</p>
+</section>
+<section id="potential-applications-of-sbts">
+<h2>Potential Applications of SBTs<a class="headerlink" href="#potential-applications-of-sbts" title="Permalink to this heading">#</a></h2>
+<p>Soulbound Tokens (SBTs) are a revolutionary concept in the realm of blockchain technology, enabling the creation of verifiable, non-transferable digital records tied to an individual’s identity or “soul”. With their immutable and decentralised characteristics, these tokens offer several potential applications that span numerous industries and societal structures. From authenticating factual records, devising digital inheritance plans, and facilitating alternative credit systems to preventing Sybil attacks in Decentralised Autonomous Organisations (DAOs), enhancing trust in online property rentals, and securing the management of healthcare records, SBTs are primed to reshape the digital world. The following sections detail some of the most promising applications of Soulbound Tokens in diverse fields.</p>
+<section id="verifying-authenticity-of-factual-records">
+<h3>Verifying Authenticity of Factual Records<a class="headerlink" href="#verifying-authenticity-of-factual-records" title="Permalink to this heading">#</a></h3>
+<p>Soulbound Tokens can be used to confirm the authenticity of supposed factual records, such as photos and videos. As deep fake technology continues to advance, it’s becoming increasingly difficult for both humans and algorithms to determine the truth through direct examination. While blockchain inclusion enables us to trace the time a particular work was made, SBTs would enable us to trace the social provenance, giving us rich social context to the Soul that issued the work, their constellation of memberships, aliations, credentials and their social distance to the subject <span id="id8">[<a class="reference internal" href="#id86" title="E Glen Weyl, Puja Ohlhaver, and Vitalik Buterin. Decentralized society: finding web3's soul. Available at SSRN 4105763, 2022.">WOB22</a>]</span>.</p>
+</section>
+<section id="digital-inheritance-planning">
+<h3>Digital Inheritance Planning<a class="headerlink" href="#digital-inheritance-planning" title="Permalink to this heading">#</a></h3>
+<p>Soulbound Tokens (SBTs) can be employed as a mechanism to confirm a user’s existence. Considering SBT use cases, a digital inheritance plan could be created where the testator generates SBTs for executors, guardians, and beneficiaries, transferring these tokens to their respective wallets. This process not only verifies the existence of all involved parties but also bolsters the security of the testator’s digital assets <span id="id9">[<a class="reference internal" href="#id81" title="Justin Goldston, Tomer Jordi Chaffer, Justyna Osowska, and Charles von Goins II. Digital inheritance in web3: a case study of soulbound tokens and the social recovery pallet within the polkadot and kusama ecosystems. arXiv preprint arXiv:2301.11074, 2023.">GCOGI23</a>]</span>.</p>
+</section>
+<section id="alternative-credit-systems">
+<h3>Alternative Credit Systems<a class="headerlink" href="#alternative-credit-systems" title="Permalink to this heading">#</a></h3>
+<p>An ecosystem of Soulbound Tokens (SBTs) could provide an alternative to traditional credit systems, using education credentials, work history, and rental contracts to build a credit history. Non-transferable SBTs representing loans could be used as non-seizable reputation-based collateral. The system would prevent loan evasion and promote transparency in lending markets, reducing reliance on centralised credit-scoring. Ultimately, this could enhance lending algorithms and facilitate lending within social networks <span id="id10">[<a class="reference internal" href="#id86" title="E Glen Weyl, Puja Ohlhaver, and Vitalik Buterin. Decentralized society: finding web3's soul. Available at SSRN 4105763, 2022.">WOB22</a>]</span>.</p>
+</section>
+<section id="preventing-sybil-attacks-in-daos">
+<h3>Preventing Sybil Attacks in DAOs<a class="headerlink" href="#preventing-sybil-attacks-in-daos" title="Permalink to this heading">#</a></h3>
+<p>Soulbound Tokens (SBTs) can also be used to prevent Sybil attacks in Decentralised Autonomous Organisations (DAOs) by differentiating between unique users and potential bots based on their SBTs. More reputable SBT holders can be given more voting power. Specific “proof-of-personhood” SBTs can be issued to assist other DAOs in Sybil resistance. Additionally, vote weight can be adjusted based on correlations among SBTs held by voting participants <span id="id11">[<a class="reference internal" href="#id86" title="E Glen Weyl, Puja Ohlhaver, and Vitalik Buterin. Decentralized society: finding web3's soul. Available at SSRN 4105763, 2022.">WOB22</a>]</span>.</p>
+</section>
+<section id="enhancing-trust-in-online-property-rental">
+<h3>Enhancing Trust in Online Property Rental<a class="headerlink" href="#enhancing-trust-in-online-property-rental" title="Permalink to this heading">#</a></h3>
+<p>The economic growth potential of the real estate sector is significant, encompassing diverse industries from retail to housing services. The digitization of real estate, however, has invited several challenges, notably in the form of scams targeting landlords and tenants. To address this issue, a blockchain-based property rental platform is proposed. This platform will utilise Soulbound Tokens (SBTs) to verify the credibility and reputation of users, providing security against online rental fraud. A non-transferable, non-fungible token is provided to the new user that records their reputation across their time on the website. Property listings will be structured as smart contracts on the platform, ensuring secure and immutable transaction terms between landlords and tenants. This could drastically reduce fraud, enhance trust, and potentially transform the online rental industry <span id="id12">[<a class="reference internal" href="#id83" title="Sanskar Sharma, Aryan Kumar, Nidhi Sengar, and Ajay Kumar Kaushik. Implementation of property rental website using blockchain with soulbound tokens for reputation and review system. ceur-ws.org, 2023.">SKSK23</a>]</span>.</p>
+</section>
+<section id="decentralised-dispute-resolution">
+<h3>Decentralised Dispute Resolution<a class="headerlink" href="#decentralised-dispute-resolution" title="Permalink to this heading">#</a></h3>
+<p>Decentralised dispute resolution platforms could use soulbound tokens, tied to an arbitrator’s real identity, as a mechanism to enhance system integrity. These tokens, earned through completing tasks, safeguard against system manipulation such as whitewashing or Sybil attacks. Additionally, the tokens represent an arbitrator’s decision-making accuracy, not their financial capacity. Arbitrators may need to provide credentials like licences or certificates, along with proof of identity. This data would be presented to a decentralised committee, which upon verification, associates a long-term secret key with the arbitrator’s identity and the soulbound token, ensuring transparency and confidentiality <span id="id13">[<a class="reference internal" href="#id85" title="Ece Su Ustun and Melek Yuce. Smart legal contracts &amp; smarter dispute resolution. In 2022 IEEE 24th Conference on Business Informatics (CBI), volume 2, 111–117. IEEE, 2022.">UY22</a>]</span>.</p>
+</section>
+<section id="recording-employment-history-and-professional-qualifications">
+<h3>Recording Employment History and Professional Qualifications<a class="headerlink" href="#recording-employment-history-and-professional-qualifications" title="Permalink to this heading">#</a></h3>
+<p>Soulbound Tokens (SBTs) can be utilised to record employment history and professional qualifications. Employers can distribute these tokens to reflect an employee’s work experience, project involvement, accomplishments, and other pertinent details. When seeking new employment opportunities or during job interviews, employees can present these SBTs. Thus, SBTs function as tangible evidence of professional skills and achievements <span id="id14">[<a class="reference internal" href="#id90" title="Akash Takyar. What are soulbound tokens, and how do they work? LeewayHertz, 2023. URL: https://www.leewayhertz.com/soulbound-tokens/.">Tak23</a>]</span>.</p>
+</section>
+<section id="authenticating-academic-credentials">
+<h3>Authenticating Academic Credentials<a class="headerlink" href="#authenticating-academic-credentials" title="Permalink to this heading">#</a></h3>
+<p>Linking Soulbound Tokens (SBTs) to detailed resumes, university degrees, certificates, and transcripts could be another practical use of this technology. Considering that such credentials are non-transferable in the traditional Web2 world, employers and educational institutions could utilise SBTs to authenticate the details provided by an applicant in their resume. Moreover, for reference verification, the addresses of the references could be incorporated into the SBT, facilitating on-chain attestations, and thus further streamlining the verification process <span id="id15">[<a class="reference internal" href="#id81" title="Justin Goldston, Tomer Jordi Chaffer, Justyna Osowska, and Charles von Goins II. Digital inheritance in web3: a case study of soulbound tokens and the social recovery pallet within the polkadot and kusama ecosystems. arXiv preprint arXiv:2301.11074, 2023.">GCOGI23</a>]</span>.</p>
+</section>
+<section id="secure-management-of-healthcare-records">
+<h3>Secure Management of Healthcare Records<a class="headerlink" href="#secure-management-of-healthcare-records" title="Permalink to this heading">#</a></h3>
+<p>In a patient-centric soulbound NFT framework for electronic health records (EHRs) to prevent the unauthorised trading of important medical documents, Soulbound Tokens (SBTs) can be employed. These tokens can’t be bought or transferred; once assigned, they remain tethered to your private wallet and identity. As such, they’re ideal for digitising non-transferable aspects like qualifications, reputation, and healthcare records. The ownership of the token bestows the right to control access to the information it contains, including the ability to revoke that access when required. Instead of being stored in a centralised database, personal information is managed in a blockchain-enabled format, providing enhanced access and control to the token’s owner <span id="id16">[<a class="reference internal" href="#id84" title="Namrta Tanwar and Jawahar Thakur. Patient-centric soulbound nft framework for electronic health record (ehr). Journal of Engineering and Applied Science, 70(1):33, 2023.">TT23</a>]</span>. The ability to manage personal information in a blockchain-enabled form rather than having it stored in a central database makes SBTs an option for people who want the most access to their information <span id="id17">[<a class="reference internal" href="#id89" title="Kirsty Moreland. What is a soulbound token? Ledger Academy, 2023. URL: https://www.ledger.com/academy/topics/blockchain/what-is-a-soulbound-token.">Mor23</a>]</span>.</p>
+</section>
+</section>
+<section id="challenges-and-concerns">
+<h2>Challenges and Concerns<a class="headerlink" href="#challenges-and-concerns" title="Permalink to this heading">#</a></h2>
+<p>Soulbound Tokens (SBTs), as an emerging concept, come with several challenges. Some of the notable concerns include <span id="id18">[<a class="reference internal" href="#id88" title="Juan Leal. What are soulbound tokens? thirdweb, 2022. URL: https://blog.thirdweb.com/soulbound-tokens/#:~:text=Limitations%20of%20soulbound%20tokens%2C%20or%20non%2Dtransferable%20NFTs&amp;text=Currently%2C%20soulbound%20tokens%20lack%20the,monitor%20that%20person%27s%20online%20activities.">Lea22</a>]</span>:</p>
+<ul class="simple">
+<li><p><strong>Privacy:</strong> As SBTs are linked to a specific individual, they could potentially be used for tracking and monitoring that individual’s online activities. Technological advancements like zero-knowledge proofs on the blockchain could help address these privacy concerns by providing improved anonymity.</p></li>
+<li><p><strong>Security:</strong> If a user’s non-custodial wallet is compromised, malicious entities could misuse the SBTs, particularly those providing exclusive access or governance rights. This could harm the user and the communities they’re associated with. This issue can be mitigated by storing assets in secure custodial wallets or vaults.</p></li>
+<li><p><strong>Interoperability:</strong> Like many NFTs, SBTs are often minted on specific blockchains, which can restrict their versatility and applicability beyond their native chain. This limitation can be partially addressed by integrating EVM-compatible chains into prevalent Web3 applications and ensuring most users stay within a single blockchain ecosystem.</p></li>
+<li><p><strong>Non-transferability:</strong> The non-transferable nature of SBTs, while offering numerous benefits, can also pose challenges. If a token is unwillingly assigned to someone, it may lead to issues. This can be resolved by developing more robust permissioned interfaces on top of the blockchain, allowing users to enjoy the benefits of SBTs while also having the option to conceal or remove SBTs from their profile.</p></li>
+</ul>
+<p>To ensure wider adoption and success, these issues associated with SBTs need to be ironed out. Although souls can choose to hide what SBTs reveal, in a way, they could also foster discrimination by revealing too many details in specific situations or contexts. This is particularly true for marginalized social groups who are more likely to experience disfavor <span id="id19">[<a class="reference internal" href="#id87" title="Shrishti.Eth. Cbdcs and soulbound token explained. HackerNoon, 2022. URL: https://hackernoon.com/cbdcs-and-soulbound-token-explained.">ShrishtiEth22</a>]</span>(HackerNoon, CBDCs and soulbound token explained 2022). With the right solutions, non-transferable NFTs like SBTs have the potential to contribute to a more equitable and privacy-focused digital society.</p>
+</section>
+<section id="conclusion">
+<h2>Conclusion<a class="headerlink" href="#conclusion" title="Permalink to this heading">#</a></h2>
+<p>In the quest to build a decentralised society, or DeSoc, Soulbound tokens (SBTs) serve as fundamental components. By creating a solid digital identity and provenance, they play an instrumental role in the growth of this new societal structure. The idea of a decentralised society might seem theoretical or abstract, yet it has numerous practical implications that are worth contemplating.</p>
+<p>Soulbound tokens, in their diverse and wide-ranging applications, span the spectrum from web3 and DeFi to facets of everyday life. They are a rapidly emerging trend, destined not only to significantly influence the Web3 ecosystem but also to elevate the perception of NFTs. Rather than being seen merely as a means of owning artwork or symbols of prestige, NFTs can function as pivotal tools in the creation and confirmation of digital identities and connections in a decentralised world.</p>
+<div style="text-align: right;font-weight: bold;">Ali Kathia</div>
+<div style="text-align: right;font-style: italic;">July 2023</div>
+</section>
+<section id="references">
+<h2>References<a class="headerlink" href="#references" title="Permalink to this heading">#</a></h2>
+<div class="docutils container" id="id20">
+<div class="citation" id="id80" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">CG22</a><span class="fn-bracket">]</span></span>
+<p>Tomer Jordi Chaffer and Justin Goldston. On the existential basis of self-sovereign identity and soulbound tokens: an examination of the “self” in the age of web3. <em>Journal of Strategic Innovation and Sustainability Vol</em>, 17(3):1, 2022.</p>
+</div>
+<div class="citation" id="id81" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>GCOGI23<span class="fn-bracket">]</span></span>
+<span class="backrefs">(<a role="doc-backlink" href="#id9">1</a>,<a role="doc-backlink" href="#id15">2</a>)</span>
+<p>Justin Goldston, Tomer Jordi Chaffer, Justyna Osowska, and Charles von Goins II. Digital inheritance in web3: a case study of soulbound tokens and the social recovery pallet within the polkadot and kusama ecosystems. <em>arXiv preprint arXiv:2301.11074</em>, 2023.</p>
+</div>
+<div class="citation" id="id82" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id6">Hil22</a><span class="fn-bracket">]</span></span>
+<p>Felix Hildebrandt. The future of soulbound tokens and their blockchain accounts. In <em>Konferenzband zum Scientific Track der Blockchain Autumn School 2022</em>, number 2, 18–24. Hochschule Mittweida, 2022.</p>
+</div>
+<div class="citation" id="id88" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id18">Lea22</a><span class="fn-bracket">]</span></span>
+<p>Juan Leal. What are soulbound tokens? <em>thirdweb</em>, 2022. URL: <a class="reference external" href="https://blog.thirdweb.com/soulbound-tokens/#:~:text=Limitations%20of%20soulbound%20tokens%2C%20or%20non%2Dtransferable%20NFTs&amp;text=Currently%2C%20soulbound%20tokens%20lack%20the,monitor%20that%20person%27s%20online%20activities">https://blog.thirdweb.com/soulbound-tokens/#:~:text=Limitations%20of%20soulbound%20tokens%2C%20or%20non%2Dtransferable%20NFTs&amp;text=Currently%2C%20soulbound%20tokens%20lack%20the,monitor%20that%20person%27s%20online%20activities</a>.</p>
+</div>
+<div class="citation" id="id89" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id17">Mor23</a><span class="fn-bracket">]</span></span>
+<p>Kirsty Moreland. What is a soulbound token? <em>Ledger Academy</em>, 2023. URL: <a class="reference external" href="https://www.ledger.com/academy/topics/blockchain/what-is-a-soulbound-token">https://www.ledger.com/academy/topics/blockchain/what-is-a-soulbound-token</a>.</p>
+</div>
+<div class="citation" id="id83" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id12">SKSK23</a><span class="fn-bracket">]</span></span>
+<p>Sanskar Sharma, Aryan Kumar, Nidhi Sengar, and Ajay Kumar Kaushik. Implementation of property rental website using blockchain with soulbound tokens for reputation and review system. <em>ceur-ws.org</em>, 2023.</p>
+</div>
+<div class="citation" id="id87" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id19">ShrishtiEth22</a><span class="fn-bracket">]</span></span>
+<p>Shrishti.Eth. Cbdcs and soulbound token explained. <em>HackerNoon</em>, 2022. URL: <a class="reference external" href="https://hackernoon.com/cbdcs-and-soulbound-token-explained">https://hackernoon.com/cbdcs-and-soulbound-token-explained</a>.</p>
+</div>
+<div class="citation" id="id90" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>Tak23<span class="fn-bracket">]</span></span>
+<span class="backrefs">(<a role="doc-backlink" href="#id4">1</a>,<a role="doc-backlink" href="#id7">2</a>,<a role="doc-backlink" href="#id14">3</a>)</span>
+<p>Akash Takyar. What are soulbound tokens, and how do they work? <em>LeewayHertz</em>, 2023. URL: <a class="reference external" href="https://www.leewayhertz.com/soulbound-tokens/">https://www.leewayhertz.com/soulbound-tokens/</a>.</p>
+</div>
+<div class="citation" id="id84" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id16">TT23</a><span class="fn-bracket">]</span></span>
+<p>Namrta Tanwar and Jawahar Thakur. Patient-centric soulbound nft framework for electronic health record (ehr). <em>Journal of Engineering and Applied Science</em>, 70(1):33, 2023.</p>
+</div>
+<div class="citation" id="id91" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id5">Tit22</a><span class="fn-bracket">]</span></span>
+<p>Olusegun Joel Titus. Decentralized society's next stage: the soulbound token. <em>HackerNoon</em>, 2022. URL: <a class="reference external" href="https://hackernoon.com/cbdcs-and-soulbound-token-explained">https://hackernoon.com/cbdcs-and-soulbound-token-explained</a>.</p>
+</div>
+<div class="citation" id="id85" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id13">UY22</a><span class="fn-bracket">]</span></span>
+<p>Ece Su Ustun and Melek Yuce. Smart legal contracts &amp; smarter dispute resolution. In <em>2022 IEEE 24th Conference on Business Informatics (CBI)</em>, volume 2, 111–117. IEEE, 2022.</p>
+</div>
+<div class="citation" id="id86" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>WOB22<span class="fn-bracket">]</span></span>
+<span class="backrefs">(<a role="doc-backlink" href="#id2">1</a>,<a role="doc-backlink" href="#id3">2</a>,<a role="doc-backlink" href="#id8">3</a>,<a role="doc-backlink" href="#id10">4</a>,<a role="doc-backlink" href="#id11">5</a>)</span>
+<p>E Glen Weyl, Puja Ohlhaver, and Vitalik Buterin. Decentralized society: finding web3's soul. <em>Available at SSRN 4105763</em>, 2022.</p>
+</div>
+</div>
+</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./SBT"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../STRUCTURE/innovation_2.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Innovation &amp; Ideation</p>
+      </div>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#moving-towards-a-decentralised-society-desoc">Moving towards a Decentralised Society (DeSoc)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#functionality-of-sbts">Functionality of SBTs</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#potential-applications-of-sbts">Potential Applications of SBTs</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#verifying-authenticity-of-factual-records">Verifying Authenticity of Factual Records</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#digital-inheritance-planning">Digital Inheritance Planning</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#alternative-credit-systems">Alternative Credit Systems</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#preventing-sybil-attacks-in-daos">Preventing Sybil Attacks in DAOs</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enhancing-trust-in-online-property-rental">Enhancing Trust in Online Property Rental</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#decentralised-dispute-resolution">Decentralised Dispute Resolution</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#recording-employment-history-and-professional-qualifications">Recording Employment History and Professional Qualifications</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#authenticating-academic-credentials">Authenticating Academic Credentials</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#secure-management-of-healthcare-records">Secure Management of Healthcare Records</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#challenges-and-concerns">Challenges and Concerns</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion">Conclusion</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By DLT Science Foundation
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
