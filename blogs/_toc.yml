@@ -28,6 +28,7 @@ parts:
         title: Academic Insights
         sections:
           - file: SDE/ScamDetec
+          - file: SSIChallenges/ssi_challenges
       - file: STRUCTURE/industry_2
         sections:
           - file: HED/hed
