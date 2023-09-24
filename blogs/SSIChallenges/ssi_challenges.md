@@ -24,7 +24,7 @@ name: ssi-model
 SSI architecture
 ```
 ### Decentralized identifier
-Various identifier schemes exist, such as the International Standard Book Number (ISBN), the Global Trade Item Number, and the Uniform Resource Identifier (URI). All of these examples require a central registry to issue and maintain the identifiers. SSI systems utilize the emerging scheme called Decentralized Identifiers (DIDs) {cite}`DIDs`. These DIDs are standardized by the World Wide Web Consortium (W3C) and offer a novel approach to identification in a decentralized way within the SSI framework. DID has the format of a URI scheme and is in the form *did:<DID method>:<method-specific identifier>*. 
+Various identifier schemes exist, such as the International Standard Book Number (ISBN), the Global Trade Item Number, and the Uniform Resource Identifier (URI). All of these examples require a central registry to issue and maintain the identifiers. SSI systems utilize the emerging scheme called Decentralized Identifiers (DIDs) {cite}`DIDs`. These DIDs are standardized by the World Wide Web Consortium (W3C) and offer a novel approach to identification in a decentralized way within the SSI framework. DID has the format of a URI scheme.
 ### DID document
 DIDs are resolvable to DID documents which contain additional information associated with a particular DID such as cryptographic public keys and authentication suites. Additionally, the document may include service endpoints that describe how to reach the DID subject and establish trusted communication channels. Organizations seeking public visibility can create public DIDs. The corresponding DID documents can be stored directly in a Verifiable Data Registry (VDR), such as a blockchain. 
 ### Verifiable data registry
