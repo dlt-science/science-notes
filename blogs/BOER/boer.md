@@ -6,14 +6,10 @@
 ```{admonition} Key Insights
 :class: tip
 - Legacy banks and financial institutions face internal and external challenges in integrating cryptocurrencies into their existing business framework for generating new revenue streams.
-- The internal perspective involves leveraging distributed ledger technology for an overall better management.
-- The external perspective focuses on managing crypto customers, including regulatory compliance and environmental sustainability.
+- The internal perspective involves leveraging distributed ledger technology for enhanced management, while the external perspective centers on handling crypto customers with an emphasis on regulatory compliance and environmental sustainability
 - Legacy banks often miss out on business opportunities due to constraints related to regulation, organization, processes, delivery, and employee biases.
-- Innovative central organizational structures should establish clear provisions, monitor key performance indicators, and develop product management strategies.
-- Offering tailored financial products, such as crypto mining equipment insurance and crypto hedging insurance, can enhance profitability and help diversifying revenue streams.
+- Offering tailored financial products, such as crypto mining equipment insurance and crypto hedging insurance, can enhance profitability and help diversifying revenue streams of Legacy Banks and financial institutions.
 - Talent acquisition and skill development are crucial to improve crypto risk management within legacy banks.
-- Additional expertise is required in advanced programming languages, an end-to-end vision of innovation, and product design.
-- By addressing these challenges, legacy financial institutions can embrace the potential of cryptocurrencies and stay ahead in the evolving financial landscape.
 ```
 
 ## Introduction

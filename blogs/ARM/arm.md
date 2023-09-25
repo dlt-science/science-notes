@@ -6,18 +6,12 @@
 
 ```{admonition} Key Insights
 :class: tip
-- Cryptocurrencies and digital assets offer legacy banks opportunities for diversification and portfolio expansion beyond traditional financial instruments, leading to potential risk-adjusted returns and exposure to new markets. Final goal is to gain a rare and hard-to-replicate competitive advantage that will lead to extra-profits.
-- Traditional banks that offer cryptocurrency and digital assets services can attract and retain more clients, leading to increased customer engagement and new revenues streams.
-- Embracing cryptocurrencies allows banks to position themselves as innovators in the financial industry, differentiating themselves from competitors and gaining a competitive advantage.
+- Cryptocurrencies and digital assets offer legacy banks opportunities for diversification and portfolio expansion beyond traditional financial instruments, leading to potential risk-adjusted returns and exposure to new markets.
 - Banks need to consider the inter-relationships between arising risks deriving from crypto-currencies and traditional risks such as interest rate risk, currency risk, and liquidity risks when managing their exposure to these assets.
 - Interest rate fluctuations can impact the valuation and attractiveness of cryptocurrencies, influencing banks' investment strategies and portfolio allocation.
-- Cryptocurrencies do not affect currency risk due to their lack of ties to specific fiat currencies.
 - Banks have opportunities to hedge against volatility in customer digital asset portfolios and their own exposure to price volatility through emerging cryptocurrency derivatives and hedging instruments.
-- Liquidity risks in cryptocurrency markets need to be carefully assessed and managed, particularly during periods of market stress.
 - Banks, especially in the European Union, need to consider climate and environmental risks associated with financing crypto customers, given the energy-intensive nature of cryptocurrency assets.
-- Information and Communication Technology (ICT) risks and Cyber Risks are critical considerations for banks offering cryptocurrency services.
-- Effective risk management practices, proactive monitoring, robust internal controls, and compliance with regulations are crucial for banks to navigate the opportunities and challenges presented by cryptocurrencies and digital assets. By adopting a proactive approach to risk management, banks can position themselves as industry leaders, enhance customer relationships, and drive sustainable growth in the digital era.
-
+- Effective risk management practices, proactive monitoring, robust internal controls, and compliance with regulations are crucial for banks to navigate the opportunities and challenges presented by cryptocurrencies and digital assets. 
 ```
 
 ## Introduction
