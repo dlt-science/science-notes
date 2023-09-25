@@ -11,7 +11,7 @@
 :text-align: center
 :shadow: md
 
-<img src= "https://media.licdn.com/dms/image/D4E12AQEZ0nWmNnsejA/article-cover_image-shrink_600_2000/0/1690551286433?e=1698883200&v=beta&t=Y5RiUXwPcwtJhptc9W9pLz7D6a7moPCTJfocifOhOZI">
+<img src= "https://media.licdn.com/dms/image/D4E12AQEZ0nWmNnsejA/article-cover_image-shrink_600_2000/0/1690551286433?e=1698883200&v=beta&t=Y5RiUXwPcwtJhptc9W9pLz7D6a7moPCTJfocifOhOZI" width="350px" height="200px">
 
 :::
 

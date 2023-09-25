@@ -23,8 +23,6 @@
 :text-align: center
 :shadow: md
 
-<!-- <img src= "https://images.ctfassets.net/0idwgenf7ije/6l6n6P2UwYXrFafFpRDo7j/932694c7548f798e87feafa5eb3b62c5/Gemini-Cryptocurrency_Brings_New_Meaning_to_Risk_Management.png?fm=webp&w=1024&q=100" width="350px" height="200px"> -->
-
 <img src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNjhXdVVvkmieR-L8ve2giSwLn8-_R5jB6CKvLCJMZ3zM7TuqIc3vCGUcMhin_FSNPARs&usqp=CAU" width="350px" height="200px">
 
 
