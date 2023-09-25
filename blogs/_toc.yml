@@ -28,11 +28,11 @@ parts:
         title: Academic Insights
         sections:
           - file: SDE/ScamDetec
+          - file: BOER/boer
       - file: STRUCTURE/industry_2
         sections:
           - file: HED/hed
           - file: ARM/arm
-          - file: BOER/boer
       - file: STRUCTURE/innovation_2
         sections:
           - file: SBT/SBT

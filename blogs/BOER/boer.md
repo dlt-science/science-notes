@@ -3,7 +3,7 @@
 
 **Disclaimer:** The views and opinions expressed in this article are solely those of the author
 
-<!-- ```{admonition} Key Insights
+```{admonition} Key Insights
 :class: tip
 - Legacy banks and financial institutions face internal and external challenges in integrating cryptocurrencies into their existing business framework for generating new revenue streams.
 - The internal perspective involves leveraging distributed ledger technology for an overall better management.
@@ -14,7 +14,7 @@
 - Talent acquisition and skill development are crucial to improve crypto risk management within legacy banks.
 - Additional expertise is required in advanced programming languages, an end-to-end vision of innovation, and product design.
 - By addressing these challenges, legacy financial institutions can embrace the potential of cryptocurrencies and stay ahead in the evolving financial landscape.
-``` -->
+```
 
 ## Introduction
 The decentralized finance (DeFi) ecosystem, with its innovative models and frameworks, has introduced disruptive business models that challenge the traditional financial landscape. This article aims to analyze this challenge in detail, exploring how traditional players in finance can leverage the hidden and visible value within DeFi business models. To enhance your understanding of this topic and to provide you with a better understanding of this article, I recommend reviewing the following articles “*Short Survey on Business Models of Decentralized Finance*” by Jiahua Xu and Teng Andrea Xu and “*DeFi vs TradFi: Valuation Using Multiples and Discounted Cash Flow*” by Teng Andrea Xu, Jiahua Xu, Kristof Lommers.
