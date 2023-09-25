@@ -4,7 +4,7 @@
 ::::{grid} 1 2 2 2
 :gutter: 2
 
-:::{grid-item-card} Scam Detection on Ethereum
+:::{grid-item-card} The Detection of Scams on the Ethereum Blockchain
 :margin: 3 0 0 0
 :link: https://dlt-science.github.io/science-notes/SDE/ScamDetec.html
 :link-type: url

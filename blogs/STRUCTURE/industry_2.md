@@ -19,7 +19,6 @@
 :::{grid-item-card} Crypto and Digital Assets Risk Management: Navigating Opportunities and Challenges
 :margin: 3 0 0 0
 :link: https://dlt-science.github.io/science-notes/ARM/arm.html
-<!-- file:///Users/yimikz/science-notes/blogs/_build/html/ARM/arm.html -->
 :link-type: url
 :text-align: center
 :shadow: md

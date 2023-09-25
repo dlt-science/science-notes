@@ -1,4 +1,4 @@
-# Scam Detection on Ethereum
+# The Detection of Scams on the Ethereum Blockchain
 
 <!-- ![Academic Insight](images/AI.svg) -->
 <ins>**Academic Insight**</ins>
