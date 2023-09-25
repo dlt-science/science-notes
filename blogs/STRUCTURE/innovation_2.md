@@ -12,6 +12,6 @@
 :shadow: md
 
 
-<img src= "https://img.decrypt.co/insecure/rs:fit:1536:0:0:0/plain/https://cdn.decrypt.co/wp-content/uploads/2022/06/soulbound-token-gID_1-pID_1.png@webp">
+<img src= "https://img.decrypt.co/insecure/rs:fit:1536:0:0:0/plain/https://cdn.decrypt.co/wp-content/uploads/2022/06/soulbound-token-gID_1-pID_1.png@webp" width="350px" height="200px">
 
 :::
