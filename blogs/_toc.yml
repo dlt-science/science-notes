@@ -4,14 +4,27 @@
 format: jb-book
 root: intro
 parts:
-  - caption: Academic Insights
+  - caption: Q2 2023
     numbered: False
     chapters:
-    - file: GOV/gov
-    - file: BBSecurity/bbsecurity
-  - caption: Industry Perspectives
+      - file: STRUCTURE/academic
+        title: Academic Insights
+        sections:
+          - file: GOV/gov
+          - file: BBSecurity/bbsecurity
+      - file: STRUCTURE/industry
+        sections:
+          - file: MTP/mtp
+          - file: LEGACY/legacy
+      - file: STRUCTURE/innovation
+        sections:
+          - file: SHARDING/sharding
+          - file: SSI/ssi
+      
+  - caption: Q3 2023
     numbered: False
     chapters:
+<<<<<<< HEAD
     - file: MTP/mtp
     # - file: legacy/legacy
   - caption: Innovation & Ideation
@@ -21,3 +34,17 @@ parts:
     - file: SHARDING/sharding
     - file: SBT/SBT
     - file: ZKP/zkp
+=======
+      - file: STRUCTURE/academic_2
+        title: Academic Insights
+        sections:
+          - file: SDE/ScamDetec
+          - file: BOER/boer
+      - file: STRUCTURE/industry_2
+        sections:
+          - file: HED/hed
+          - file: ARM/arm
+      - file: STRUCTURE/innovation_2
+        sections:
+          - file: SBT/SBT
+>>>>>>> 6f9e13e239e3be5f8b330a7b45068cee859b892e
