@@ -24,17 +24,6 @@ parts:
   - caption: Q3 2023
     numbered: False
     chapters:
-<<<<<<< HEAD
-    - file: MTP/mtp
-    # - file: legacy/legacy
-  - caption: Innovation & Ideation
-    numbered: False
-    chapters:
-    - file: SSI/ssi
-    - file: SHARDING/sharding
-    - file: SBT/SBT
-    - file: ZKP/zkp
-=======
       - file: STRUCTURE/academic_2
         title: Academic Insights
         sections:
@@ -47,4 +36,3 @@ parts:
       - file: STRUCTURE/innovation_2
         sections:
           - file: SBT/SBT
->>>>>>> 6f9e13e239e3be5f8b330a7b45068cee859b892e
