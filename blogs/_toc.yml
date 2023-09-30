@@ -37,3 +37,15 @@ parts:
         sections:
           - file: SBT/SBT
           - file: ZKP/zkp
+
+  - caption: Q4 2023
+    numbered: False
+    chapters:
+      # - file: STRUCTURE/academic_3
+      #   title: Academic Insights
+      #   sections:
+      - file: STRUCTURE/innovation_3
+        sections:
+          - file: INTEROPERABILITY/CCI
+      # - file: STRUCTURE/innovation_3
+      #   sections:
