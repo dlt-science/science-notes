@@ -4,13 +4,17 @@
 format: jb-book
 root: intro
 parts:
-  # - caption: Q4 2023
-  #   numbered: False
-  #   chapters:
-  #     - file: STRUCTURE/industry_3
-  #       title: Industry Perspective
-  #       sections:
-  #         - file: AIB/aib
+  - caption: Q4 2023
+    numbered: False
+    chapters:
+      - file: STRUCTURE/academic_3
+        title: Academic Insights
+        sections:
+          - file: POS/pos
+      - file: STRUCTURE/industry_3
+        title: Industry Perspective
+        sections:
+          - file: AIB/aib
 
   - caption: Q3 2023
     numbered: False

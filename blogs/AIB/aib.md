@@ -30,7 +30,7 @@ Most commonly, research and applications have explored the potential of using bl
 
 Raheman et al. {cite}`9686345` designed an infrastructure of AI agents or "Oracles" for portfolio management, liquidity provision, and price prediction in various decentralized financial markets. As shown in Figure 1, these Oracles will increase investment value and returns by offering liquidity. They serve end business applications, smart contracts, and other agents. A key aspect is the distinction between an "inventory/portfolio" that comprises multiple assets and a "DEX swap pool" or "DEX balancing pool," which is one of several portfolio maintenance strategies. Therefore, a single "inventory/portfolio" may contain multiple "DEX swap pools" or "DEX balancing pools" with various strategies.
 
-```{figure} images/hashgraph.png
+```{figure} images/defi&ai.png
 ---
 width: 450px
 height: 551px
