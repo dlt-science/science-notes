@@ -8,10 +8,9 @@ parts:
     numbered: False
     chapters:
       - file: STRUCTURE/industry_3
-        title: Academic Insights
+        title: Industry Perspective
         sections:
-          - file: SDE/ScamDetec
-          - file: BOER/boer
+          - file: AIB/aib
 
   - caption: Q3 2023
     numbered: False

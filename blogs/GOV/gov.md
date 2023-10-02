@@ -1,7 +1,7 @@
-# Governance In DeFi
+# Governance in DeFi
 
 <!-- ![Academic Insight](images/AI.svg) -->
-<ins>**Academic insight**</ins>
+<ins>**Academic Insight**</ins>
 
 ```{admonition} Key Insights
 :class: tip
