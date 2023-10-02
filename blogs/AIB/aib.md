@@ -91,7 +91,7 @@ While blockchain technology does not natively recognize or comprehend real-world
 The symbiotic relationship between blockchain and artificial intelligence can pave the way for transformative developments in various industries. The strengths of these technologies address each other's challenges, resulting in a more secure, efficient, and intelligent system. Decentralized finance (DeFi), a prominent application of blockchain, has particularly benefited from this convergence, with AI enhancing analytic capabilities and optimizing yields. Yet, challenges remain, such as proving the origins of AI-generated content and computations in the blockchain environment. Emerging solutions like Zero-Knowledge Machine Learning (ZKML) and blockchain-backed NFTs for AI models offer promising possibilities but require further exploration. As research and development continue, we can anticipate a future where these powerful technologies seamlessly intertwine, driving innovative solutions across a multitude of sectors.
 
 <div style="text-align: right;font-weight: bold;">Ruoyi Zhao</div>
-<div style="text-align: right;font-style: italic;">June 2023</div>
+<div style="text-align: right;font-style: italic;">October 2023</div>
 
 ## References
 

@@ -81,7 +81,7 @@ The study identified the assumption that the number of validators is an affine f
 Platt et al. {cite}`platt2021energy` emphasised the urgent need for transitioning from energy-intensive PoW systems to more efficient PoS systems. Their analysis reveals that by opting for energy-saving hardware, PoS systems could drastically lower their energy consumption, potentially outperforming even traditional central payment systems in terms of energy usage. This research injects optimism into the discourse around blockchain technology's role in addressing climate change. Moreover, it serves as an important call-to-action for blockchain developers and practitioners, urging them to prioritise energy efficiency in their system designs. Utilising benchmarking frameworks to quantify real energy usage could be especially beneficial for permissioned systems that strive for high performance {cite}`sedlmeir2021dlps`. In the future, more nuanced models and factors influencing validator count, beyond network throughput, could be considered for a more comprehensive understanding. 
 
 <div style="text-align: right;font-weight: bold;">Ali Kathia</div>
-<div style="text-align: right;font-style: italic;">July 2023</div>
+<div style="text-align: right;font-style: italic;">October 2023</div>
 
 ## References
 
