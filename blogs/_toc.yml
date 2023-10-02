@@ -4,6 +4,14 @@
 format: jb-book
 root: intro
 parts:
+  - caption: Q4 2023
+    numbered: False
+    chapters:
+      - file: STRUCTURE/industry_3
+        title: Industry Perspective
+        sections:
+          - file: AIB/aib
+
   - caption: Q3 2023
     numbered: False
     chapters:
@@ -20,7 +28,7 @@ parts:
         sections:
           - file: SBT/SBT
           - file: ZKP/zkp
-          
+
   - caption: Q2 2023
     numbered: False
     chapters:
@@ -37,4 +45,3 @@ parts:
         sections:
           - file: SHARDING/sharding
           - file: SSI/ssi
-      
