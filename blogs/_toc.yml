@@ -7,7 +7,7 @@ parts:
   - caption: Q4 2023
     numbered: False
     chapters:
-      - file: STRUCTURE/indutsry_3
+      - file: STRUCTURE/industry_3
         title: Academic Insights
         sections:
           - file: SDE/ScamDetec
