@@ -5,8 +5,8 @@
 ```{admonition} Key Insights
 :class: tip
 - Zero-Knowledge Proofs (ZKPs), a cryptographic method, enhances privacy and security in blockchain transactions without sacrificing transparency.
-- Advanced ZKP forms, such as zk-SNARKs and zk-STARKs, have evolved to offer shorter proofs, reduced computational requirements, and avoid the need for a 'trusted setup'.
-- ZKPs are transforming various blockchain applications, including Digital Identity Management Systems, Traffic Management Systems, Mobile Health Systems, ridesharing, and real estate transactions, by providing privacy-preserving verification.
+- Advanced forms of ZKP, like zk-SNARKs and zk-STARKs, have evolved to provide shorter proofs, lower computational requirements, and eliminate the need for a trusted setup.
+- ZKPs are revolutionizing a range of blockchain applications, from Digital Identity and Traffic Management Systems to Mobile Health, ridesharing, and real estate transactions, by ensuring privacy-centric verification.
 - Despite their benefits, ZKPs present challenges, including non-deterministic truthfulness, potential undisclosed secrets, and integrity risks. They also require considerable computational resources and lack user-friendliness for developers.
 - Despite these challenges, ZKPs play a crucial role in the ongoing evolution of blockchain technologies, promising a future for more private, secure, and decentralized systems.
 ```
@@ -95,7 +95,7 @@ ZKP doesn't offer a user-friendly experience, particularly for developers. For i
 As blockchain technologies continue to evolve, the role of Zero-Knowledge Proofs in shaping the future of blockchain applications is undeniably significant. By enabling verification without compromising confidentiality, ZKPs open the door to a vast array of innovative applications in various industries. From digital identity and cybersecurity to decentralised finance and voting systems, the potential for ZKPs to promote a more private, secure, and decentralised future is promising.
 
 <div style="text-align: right;font-weight: bold;">Ali Kathia</div>
-<div style="text-align: right;font-style: italic;">June 2023</div>
+<div style="text-align: right;font-style: italic;">September 2023</div>
 
 ## References
  

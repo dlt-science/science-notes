@@ -4,6 +4,23 @@
 format: jb-book
 root: intro
 parts:
+  - caption: Q3 2023
+    numbered: False
+    chapters:
+      - file: STRUCTURE/academic_2
+        title: Academic Insights
+        sections:
+          - file: SDE/ScamDetec
+          - file: BOER/boer
+      - file: STRUCTURE/industry_2
+        sections:
+          - file: HED/hed
+          - file: ARM/arm
+      - file: STRUCTURE/innovation_2
+        sections:
+          - file: SBT/SBT
+          - file: ZKP/zkp
+          
   - caption: Q2 2023
     numbered: False
     chapters:
@@ -21,18 +38,3 @@ parts:
           - file: SHARDING/sharding
           - file: SSI/ssi
       
-  - caption: Q3 2023
-    numbered: False
-    chapters:
-      - file: STRUCTURE/academic_2
-        title: Academic Insights
-        sections:
-          - file: SDE/ScamDetec
-          - file: BOER/boer
-      - file: STRUCTURE/industry_2
-        sections:
-          - file: HED/hed
-          - file: ARM/arm
-      - file: STRUCTURE/innovation_2
-        sections:
-          - file: SBT/SBT
