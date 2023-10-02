@@ -95,7 +95,7 @@ ZKP doesn't offer a user-friendly experience, particularly for developers. For i
 As blockchain technologies continue to evolve, the role of Zero-Knowledge Proofs in shaping the future of blockchain applications is undeniably significant. By enabling verification without compromising confidentiality, ZKPs open the door to a vast array of innovative applications in various industries. From digital identity and cybersecurity to decentralised finance and voting systems, the potential for ZKPs to promote a more private, secure, and decentralised future is promising.
 
 <div style="text-align: right;font-weight: bold;">Ali Kathia</div>
-<div style="text-align: right;font-style: italic;">June 2023</div>
+<div style="text-align: right;font-style: italic;">August 2023</div>
 
 ## References
 
