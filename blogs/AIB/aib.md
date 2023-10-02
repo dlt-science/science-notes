@@ -1,6 +1,6 @@
 # The Symbiotic Relationship between Blockchain and Artificial Intelligence
 
-<ins>**Innovation & Ideation**</ins>
+<ins>**Industry Perspective**</ins>
 
 ```{admonition} Key Insights
 :class: tip
@@ -16,7 +16,7 @@ Artificial intelligence and blockchain are two progressive technologies that hol
 
 ## The mutual empowerment between blockchain and AI technology
 
-Rohan Pinto, the CTO of 1Kosmos BlockID {cite}`pinto2018next` pointed out that the centralized AI can lead to misuse, including extensive surveillance via facial recognition and computer vision technology. Moreover, developing solutions in a centralized setting necessitates businesses to relinquish privacy and control of their data to third parties. Here, blockchain technology plays a crucial role by potentially addressing several drawbacks associated with AI. 
+Rohan Pinto, the CTO of 1Kosmos BlockID {cite}`pinto2018next` pointed out that the centralized AI can lead to misuse, including extensive surveillance via facial recognition and computer vision technology. Moreover, developing solutions in a centralized setting necessitates businesses to relinquish privacy and control of their data to third parties. Here, blockchain technology plays a crucial role by potentially addressing several drawbacks associated with AI.
 
 AI algorithms excel at handling vast amounts of data and mimicking cognitive processes akin to the human brain. Utilizing complex neural networks, they recognize patterns, predict outcomes, and make decisions. Conversely, blockchain networks offer a transparent, decentralized, and tamper-resistant transaction layer. Anyone connected to the network can use it, and once data is stored, it becomes unalterable. This allows users to interact with the blockchain in a trust-minimized, permission-less manner.
 
@@ -26,7 +26,7 @@ Conversely, AI can reciprocate by improving the architecture of blockchain syste
 
 ## Enhancing DeFi Operations with AI
 
-Most commonly, research and applications have explored the potential of using blockchain to augment AI {cite}`inproceedings`. However, our focus is on exploring how AI can enhencing Decentralized Finance. As a core application of blockchain, Decentralised Finance (DeFi) has consistently been a subject of keen interest in both academic and commercial research. 
+Most commonly, research and applications have explored the potential of using blockchain to augment AI {cite}`inproceedings`. However, our focus is on exploring how AI can enhencing Decentralized Finance. As a core application of blockchain, Decentralised Finance (DeFi) has consistently been a subject of keen interest in both academic and commercial research.
 
 Raheman et al. cite{`9686345`} designed an infrastructure of AI agents or "Oracles" for portfolio management, liquidity provision, and price prediction in various decentralized financial markets. As shown in Figure 1, these Oracles will increase investment value and returns by offering liquidity. They serve end business applications, smart contracts, and other agents. A key aspect is the distinction between an "inventory/portfolio" that comprises multiple assets and a "DEX swap pool" or "DEX balancing pool," which is one of several portfolio maintenance strategies. Therefore, a single "inventory/portfolio" may contain multiple "DEX swap pools" or "DEX balancing pools" with various strategies.
 
@@ -49,9 +49,9 @@ name: ai_oracle_interact
 ---
 Figure 2: AI Oracles (in the middle) serving business functions/applications (at the top) relying on data scalping services (at the bottom).
 ```
-AI oracles are being developed for a comprehensive portfolio management system, utilizing on-chain data and predictive analytics. 
+AI oracles are being developed for a comprehensive portfolio management system, utilizing on-chain data and predictive analytics.
 Key components include:
-- A Portfolio Planner Oracle for long-term investment strategies, 
+- A Portfolio Planner Oracle for long-term investment strategies,
 - A Strategy Evaluator Oracle for assessing competitive strategies
 - A Pool Weighting Oracle for adjusting short-term risks
 - A Signal Generator Oracle for real-time trading and liquidity advice
@@ -59,11 +59,11 @@ Key components include:
 
 These components are informed by the Price Predictor, which predicts price trends and volatility using AI and machine learning. Data is sourced from various channels, including centralized exchanges and live Ethereum Nodes. The architecture is currently under construction, with primary components being the Strategy Evaluator, Price Predictor, Portfolio Planner, and Pool Weighter. The research cite{`9686345`} also indicate that there are opportunities to improve the predictor model's efficiency, such as sharing models across similar markets or using pre-trained models that match expected market conditions. For more detail of the architecture and test result, please see [here](https://docs.singularitydao.ai/research-papers/artificial-intelligence/architecture-of-automated-crypto-finance-agent).
 
-In general, DeFi allows user to access financial services without intermediaries. Comparing to traditional finance, DeFi allows users to have greater control over their assets and avoid the fees associated with centralized exchanges. 
+In general, DeFi allows user to access financial services without intermediaries. Comparing to traditional finance, DeFi allows users to have greater control over their assets and avoid the fees associated with centralized exchanges.
 
-- With help of AI, DeFi platforms can analyze vast amounts of data to provide personalized investment and minimizes risks. Machine Learning Algorithms (MLA) can help identify investment opportunities and optimize smart contracts. These can help user to make more informed decisions to increase profits. 
+- With help of AI, DeFi platforms can analyze vast amounts of data to provide personalized investment and minimizes risks. Machine Learning Algorithms (MLA) can help identify investment opportunities and optimize smart contracts. These can help user to make more informed decisions to increase profits.
 
-Yield aggregator and dencentralised exchange (DEX) are specific applications under the DeFi ecosystem. 
+Yield aggregator and dencentralised exchange (DEX) are specific applications under the DeFi ecosystem.
 
 - Yield Aggregators automatically shift their users' funds between different DeFi protocols to seek out the highest yield. This process is typically based on complex algorithms and strategies, and the goal is to maximize return on investment, taking into account factors such as gas fees and potential risks. AI can significantly improve the efficiency and performance of yield aggregators by helping to analyze market trends and determine the optimal strategies for funds allocation.
 
