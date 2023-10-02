@@ -69,7 +69,7 @@ In this section, we will discuss the combination of AI and blockchain technology
 - AI with Blockchain: AI with Blockchain refers to systems and platforms that concurrently employ AI and blockchain technology, with neither being solely reliant on or used as a leveraging tool for the other.
 
 ```
-```{figure} images/AIB.png
+```{figure} images/ai_oracle_interact.png
 ---
 width: 550px
 height: 300px
