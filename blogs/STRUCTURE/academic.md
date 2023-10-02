@@ -14,7 +14,7 @@
 
 <!-- +++ -->
 
-<img src= "https://www.cryptotimes.io/wp-content/uploads/2023/02/DEFI-GOVERNANCE-1.jpg.webp">
+<img src= "https://www.cryptotimes.io/wp-content/uploads/2023/02/DEFI-GOVERNANCE-1.jpg.webp" width="350px" height="200px">
 
 :::
 
@@ -27,6 +27,6 @@
 
 <!-- +++ -->
 
-<img src= "https://cimg.co/news/95314/237705/responsive-images/shubham-dhage-t9rkvi3n0nm-unsplash___media_library_original_1920_1080.jpg">
+<img src= "https://cimg.co/news/95314/237705/responsive-images/shubham-dhage-t9rkvi3n0nm-unsplash___media_library_original_1920_1080.jpg" width="350px" height="200px">
 
 :::

@@ -1,4 +1,4 @@
-# Managing Crypto Customers in Legacy Financial Institutions.
+# Financial Institutions and Crypto Customers
 <ins>**Industry Perspective**</ins>
 
 **Disclaimer:** The views and opinions expressed in this article are solely those of the author
