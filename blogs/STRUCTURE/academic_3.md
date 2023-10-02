@@ -11,7 +11,7 @@
 :text-align: center
 :shadow: md
 
-<img src= "https://s.yimg.com/ny/api/res/1.2/SRedXv3Y74r0xYFrT5SHuQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY3NjtoPTQ1MA--/https://media.zenfs.com/en-US/homerun/coin_rivet_596/af914adcdd377a5478c675bb9050c0de"  width="350px" height="200px">
+<img src= "https://learn.swyftx.com/wp-content/uploads/2021/09/Proof-of-work-vs-prook-of-stake-.png"  width="350px" height="200px">
 
 
 :::
