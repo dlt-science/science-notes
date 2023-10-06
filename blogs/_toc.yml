@@ -11,11 +11,12 @@ parts:
         title: Academic Insights
         sections:
           - file: POS/pos
+          - file: Flashloans/Flashloans
       - file: STRUCTURE/industry_3
         title: Industry Perspective
         sections:
           - file: AIB/aib
-
+     
   - caption: Q3 2023
     numbered: False
     chapters:
