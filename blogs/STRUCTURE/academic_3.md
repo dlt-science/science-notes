@@ -11,7 +11,7 @@
 :text-align: center
 :shadow: md
 
-<img src= "https://learn.swyftx.com/wp-content/uploads/2021/09/Proof-of-work-vs-prook-of-stake-.png"  width="350px" height="200px">
+<img src= "https://learn.g2.com/hs-fs/hubfs/G2CM_FI664_Learn_Article_Images_%5BProof_of_Stake%5D_V1b.png?width=690&name=G2CM_FI664_Learn_Article_Images_%5BProof_of_Stake%5D_V1b.png"  width="350px" height="200px">
 
 
 :::
