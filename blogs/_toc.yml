@@ -11,6 +11,8 @@ parts:
         title: Academic Insights
         sections:
           - file: POS/pos
+          - file: CTBC/ctbc
+          
       - file: STRUCTURE/industry_3
         title: Industry Perspective
         sections:
