@@ -11,7 +11,7 @@
 :text-align: center
 :shadow: md
 
-<img src= "https://media.licdn.com/dms/image/D4D12AQG4Djg6_lcLGw/article-cover_image-shrink_423_752/0/1689060355220?e=1697673600&v=beta&t=5iA1olw-I3M52kTlPcvccGQ9Cvv_j68yv1m-Lm7OSiM"  width="350px" height="200px">
+<img src= "https://dailyhodl.com/wp-content/uploads/2022/09/two-use-cases-hbar.jpg?resize=750,375"  width="350px" height="200px">
 
 
 :::
