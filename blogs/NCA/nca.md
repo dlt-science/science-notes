@@ -6,8 +6,8 @@
 ```{admonition} Key Insights
 :class: tip
 - Bitcoin and Ethereum blockchains use cryptographic algorithms, such as ECDSA {cite}`johnson2001elliptic` and SHA-256, to secure transactions by relying on the computational difficulty of large prime number factorization. 
-- Quantum computers can efficiently break ECDSA through Shor's algorithm{cite}`monz2016realization`, potentially compromising the cryptographic foundations of blockchains.
-- The weakness of SHA-256 against quantum computers is attributed to Grover's algorithm{cite}`long2001grover`, which efficiently searches through its finite 256-bit output space.
+ - Quantum computers can efficiently break ECDSA through Shor's algorithm<!--{cite}`monz2016realization` -->, potentially compromising the cryptographic foundations of blockchains.
+- The weakness of SHA-256 against quantum computers is attributed to Grover's algorithm<!--{cite}`long2001grover` -->, which efficiently searches through its finite 256-bit output space.
 - When scalable quantum computers arrive, they could retrospectively decrypt and forge signatures{cite}`aggarwal2017quantum`, effectively compromising blockchain integrity and security. 
 - This presents an emergent need to transition to quantum-resistant cryptography{cite}`jao2011towards` based on more extencive and infinite problems rather than factorization to primes.
 ```
