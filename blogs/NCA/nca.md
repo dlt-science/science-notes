@@ -102,8 +102,8 @@ In conclusion, the vulnerabilities of traditional cryptographic algorithms to qu
 
 
 
-<div style="text-align: right;font-weight: bold;">Yimika Erinle</div>
-<div style="text-align: right;font-style: italic;">April 2023</div>
+<div style="text-align: right;font-weight: bold;">Bahram Mavandadi</div>
+<div style="text-align: right;font-style: italic;">Nov 2023</div>
 
 ## References
 
