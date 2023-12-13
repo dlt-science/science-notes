@@ -1,6 +1,6 @@
-# NET ZERO BANKING ALLIANCE: A TOKEN-BASED MODEL
+# Net Zero Banking Alliance: A Token-based Model
 
-<ins>**Innovation & Ideation**</ins>
+<ins>**Industry Perspective**</ins>
 
 ```{admonition} Key Insights
 :class: tip
@@ -22,14 +22,14 @@ Within the environmental spectrum, the concept of emissions is stratified into t
 
 **Scope 2** emissions, on the other hand, entail indirect emissions associated with the electricity, heating, and cooling consumed by a bank. While not originating directly from the bank, Scope 2 emissions are nevertheless a consequence of the bank's operations, highlighting the necessity to transition towards cleaner, renewable energy sources.
 
-**Scope 3** emissions broaden the horizon, encompassing a web of indirect emissions that result from a bank's value chain. This includes emissions linked to the bank's customers, suppliers, and the lifecycle of products and services. Thus, a bank's Scope 3 emissions essentially comprise the Scope 1 and Scope 2 emissions of their customers. Consequently, it is common to refer to these as 'financed emissions'.
+**Scope 3** emissions broaden the horizon, encompassing a web of indirect emissions that result from a bank's value chain. This includes emissions linked to the bank's customers, suppliers, and the lifecycle of products and services. Thus, a bank's Scope 3 emissions essentially comprise the Scope 1 and Scope 2 emissions of their customers. Consequently, it is common to refer to these as 'financed emissions' {cite}`nationalgrid2023what`.
 
 `````{margin} **CO2 Equivalent (CO2e)**
   CO2 equivalent, often abbreviated as CO2e, is a crucial measurement that represents a unified metric encompassing various greenhouse gases' impact on global warming.
 `````
-Furthermore, one of the most important metric in ESG world is CO2 Equivalent (CO2e). It quantifies emissions in terms of the amount of CO2 that would exert an equivalent warming effect over a specified period. Understanding CO2e is vital for assessing and mitigating environmental impact.
+Furthermore, one of the most important metric in ESG world is CO2 Equivalent (CO2e) {cite}`europa2023glossary`. It quantifies emissions in terms of the amount of CO2 that would exert an equivalent warming effect over a specified period. Understanding CO2e is vital for assessing and mitigating environmental impact.
 
-In this article, we aim to explore the links between the banking system and its financed emissions. The Net Zero Banking Alliance stands at the forefront of this exploration. This collaborative coalition of banks and financial institutions is dedicated to mitigating climate change. Its primary goal is to address 'Scope 3' emissions, which constitute the largest portion of a bank’s emissions. Banks participating in this initiative commit to reducing their CO2e footprint, particularly by focusing on their Scope 3 emissions. From the customers' perspective, these are equivalent to Scope 1 and Scope 2 emissions, often termed 'financed emissions.' In addition to reducing emissions, these banks support sustainable initiatives. This alliance is crucial in reshaping the financial sector's role in environmental conservation. Its goals include a 55% reduction in financed emissions by 2030 and, by 2050, balancing any remaining financed emissions with activities that remove an equivalent amount of greenhouse gases from the atmosphere, such as afforestation, reforestation, and carbon capture technologies.
+In this article, we aim to explore the links between the banking system and its financed emissions. The Net Zero Banking Alliance {cite}`unepfi2023Net` stands at the forefront of this exploration. This collaborative coalition of banks and financial institutions is dedicated to mitigating climate change. Its primary goal is to address 'Scope 3' emissions, which constitute the largest portion of a bank’s emissions. Banks participating in this initiative commit to reducing their CO2e footprint, particularly by focusing on their Scope 3 emissions. From the customers' perspective, these are equivalent to Scope 1 and Scope 2 emissions, often termed 'financed emissions.' In addition to reducing emissions, these banks support sustainable initiatives. This alliance is crucial in reshaping the financial sector's role in environmental conservation. Its goals include a 55% reduction in financed emissions by 2030 and, by 2050, balancing any remaining financed emissions with activities that remove an equivalent amount of greenhouse gases from the atmosphere, such as afforestation, reforestation, and carbon capture technologies {cite}`unicredit2023our` {cite}`credit2022credit`.
 
 For financial institutions, joining the Net Zero Banking Alliance is pivotal. It goes beyond just meeting regulatory requirements; it establishes credibility, fosters client trust, and attracts eco-conscious investors. Embracing sustainability, banks contribute to environmental protection and enhance their long-term viability and resilience against climate-related risks.
 
@@ -42,7 +42,7 @@ The aim of this article is to argue that the current approach to the Net Zero me
 
 Current strategies and methodologies in the banking industry involve several key steps to integrate Net Zero principles:
 
-- **Identifying Industry Perimeter:** Industry perimeters (e.g., Oil & Gas, Power, Steel, etc.) are identified based on NACE codes related to customers as present in Master Data information. This is one of the most significant pain points. The Net Zero methodology should be linked to the purpose of the financing, not the NACE code of the company. For example, general financing with no clear purpose should no longer be allowed. If a steel company has a loan for installing photovoltaic panels to generate renewable energy for its activities, this loan should not be included in the Net Zero baseline for the Steel industry. This represents a major data quality issue in banks. It's crucial to start an initiative to map the real purpose of historical loans (i.e., stock) to avoid withdrawing credit lines from companies that are paradoxically implementing ESG strategies, as in the steel company example. According to the standard and as-is Net Zero approach, general financing towards steel (typically mapped with steel NACEs) should be avoided due to the carbon intensity emissions of the steel industry. However, financing for renewable energy, mapped with specific NACEs related to the specific purpose of financing and not to the industry, will highlight an ESG benefit derived from this financing.
+- **Identifying Industry Perimeter:** Industry perimeters (e.g., Oil & Gas, Power, Steel, etc.) are identified based on NACE codes {cite}`europa2010list` related to customers as present in Master Data information. This is one of the most significant pain points. The Net Zero methodology should be linked to the purpose of the financing, not the NACE code of the company. For example, general financing with no clear purpose should no longer be allowed. If a steel company has a loan for installing photovoltaic panels to generate renewable energy for its activities, this loan should not be included in the Net Zero baseline for the Steel industry. This represents a major data quality issue in banks. It's crucial to start an initiative to map the real purpose of historical loans (i.e., stock) to avoid withdrawing credit lines from companies that are paradoxically implementing ESG strategies, as in the steel company example. According to the standard and as-is Net Zero approach, general financing towards steel (typically mapped with steel NACEs) should be avoided due to the carbon intensity emissions of the steel industry. However, financing for renewable energy, mapped with specific NACEs related to the specific purpose of financing and not to the industry, will highlight an ESG benefit derived from this financing.
 
 - **Maturity of Loans:** As best practice, loans with a residual maturity of under one year should not be included.
 
@@ -50,12 +50,16 @@ Current strategies and methodologies in the banking industry involve several key
 
 - **Common Metrics Towards Various Industries in Net Zero Baseline:** Establishing common metrics for various industries is essential in the Net Zero baseline.
 
-- **Calculating EVIC for Each Customer:** EVIC, or Enterprise Value Including Cash, is calculated as the sum of the ordinary shares' market capitalization at the fiscal year-end, the market capitalization of preferred shares at the fiscal year-end, and the book values of total debt and minority interests. The current calculation methodology involves determining the proportion of a company’s EVIC that is attributable to a specific bank.
+`````{margin} **Enterprise Value Including Cash (EVIC)**
+  Enterprise Value Including Cash (EVIC) is defined as the aggregate of the market capitalization of a company's ordinary and preferred shares at the end of the fiscal year, combined with the book values of its total debt and minority interests, without subtracting any cash or cash equivalents to preclude the occurrence of negative enterprise values.
+`````
+
+- **Calculating EVIC for Each Customer:** EVIC, or Enterprise Value Including Cash, is calculated as the sum of the ordinary shares' market capitalization at the fiscal year-end, the market capitalization of preferred shares at the fiscal year-end, and the book values of total debt and minority interests {cite}`openriskEnterprise`. The current calculation methodology involves determining the proportion of a company’s EVIC that is attributable to a specific bank.
 
 ```{figure} images/DATA1.png
 ---
-width: 780px
-height: 456px
+width: 393px
+height: 221px
 name: data_1
 ---
 
@@ -67,8 +71,8 @@ However, this is another point of contention. For a bank joining the Net Zero Ba
 
 ```{figure} images/DATA2.png
 ---
-width: 780px
-height: 456px
+width: 393px
+height: 221px
 name: data_2
 ---
 
@@ -78,9 +82,9 @@ As demonstrated in this example, and comparing the two tables, the accurate rati
 
 - **Setting Baseline Years and Targets:** Financial institutions establish baseline perimeters and specific emission reduction targets for high-emission industries such as cement, aviation, automotive, oil & gas, and power sectors. Each perimeter consists of a list of companies operating in one of these industries, serving as the starting point for evaluating environmental impact.
 
-- **Monitoring at Company and Portfolio Levels:** Banks meticulously monitor emissions data at both the company and portfolio levels, with detailed expectations for emission reduction. Actual emission values are compared against expected detailed GHG values during the Net Zero time horizon (2030 and 2050), facilitating a comprehensive analysis of the environmental impact.
+- **Monitoring at Company and Portfolio Levels:** Banks meticulously monitor emissions data at both the company and portfolio levels, with detailed expectations for emission reduction. Actual emission values are compared against expected detailed GHG values during the Net Zero time horizon (2030 and 2050), facilitating a comprehensive analysis of the environmental impact {cite}`credit2022our2050`.
 
-- **Plethora of Metrics:** The metrics used within banks and industries, especially in the Oil & Gas sector, are not uniform. For example, Credit Agricole’s Net Zero Oil & Gas targets include 'Scope 1&2 of all counterparts and Scope 3 of upstream players, based on our on-balance sheet exposure.' In contrast, UniCredit’s Net Zero Oil & Gas targets consider only 'Scope 3, Category 11.' This example illustrates how targets vary depending on the metrics used. The Net Zero Banking Alliance should ensure a top-down approach that is equal for all market players.
+- **Plethora of Metrics:** The metrics used within banks and industries, especially in the Oil & Gas sector, are not uniform. For example, Credit Agricole’s Net Zero Oil & Gas targets {cite}`credit2022credit` include 'Scope 1&2 of all counterparts and Scope 3 of upstream players, based on our on-balance sheet exposure.' In contrast, UniCredit’s Net Zero Oil & Gas targets {cite}`unicredit2022overview` consider only 'Scope 3, Category 11' {cite}`unicredit2022ourpath`. This example illustrates how targets vary depending on the metrics used. The Net Zero Banking Alliance should ensure a top-down approach that is equal for all market players.
 
 - **Integration of Net Zero in Credit Origination Processes:** It is essential to integrate Net Zero principles into credit origination processes. Each potential counterpart is evaluated from a Net Zero perspective, including determining if the counterpart falls within the baseline perimeter. If it does, the next step is to assess whether the counterpart adheres to the expected reduction plan outlined in Net Zero documents. If the criteria are met, the credit process proceeds; if not, additional documentation and commitments are requested. In some cases, if the criteria are not met, the credit may not be approved, ensuring support only for environmentally responsible businesses.
 
@@ -100,14 +104,14 @@ As discussed in the previous section, the current Net Zero approach has several 
 
 In our view, the challenge lies in **mismatched metrics and the unexploited CO2e potential**. For instance, when companies exceed their emission reduction targets, there remains an unutilised CO2e capacity. This presents an opportunity for financing other businesses, both in general financing and specialised financing domains.
 
-By addressing these issues, the proposed approach aims to create a more balanced and effective strategy for implementing Net Zero principles in the banking sector. This would allow for a more nuanced assessment of companies’ emissions and better support the transition towards lower carbon outputs across different industries.
+By addressing these issues, the proposed approach aims to create a more balanced and effective strategy for implementing Net Zero principles in the banking sector. This would allow for a more nuanced assessment of companies’ emissions and better support the transition towards lower carbon outputs across different industries {cite}`intensa2023strategy`.
 
 ### Scenario 1
 
 ```{figure} images/Scenario1.png
 ---
-width: 780px
-height: 456px
+width: 1313px
+height: 217px
 name: scenario_1
 ---
 
@@ -116,8 +120,8 @@ This scenario represents the best-case outcome: assuming a target for reducing e
 
 ```{figure} images/scene1.png
 ---
-width: 780px
-height: 456px
+width: 1035px
+height: 102px
 name: scene_1
 ---
 
@@ -137,8 +141,8 @@ For instance, examining the table provided, it’s evident that all companies wi
 
 ```{figure} images/Scenario2.png
 ---
-width: 780px
-height: 456px
+width: 1313px
+height: 217px
 name: scenario_2
 ---
 
@@ -146,8 +150,8 @@ name: scenario_2
 
 ```{figure} images/scene2.png
 ---
-width: 780px
-height: 456px
+width: 1034px
+height: 154px
 name: scene_2
 ---
 
@@ -169,8 +173,8 @@ This scenario highlights the challenges and strategic decisions involved in mana
 
 ```{figure} images/Scenario3.png
 ---
-width: 780px
-height: 456px
+width: 1313px
+height: 217px
 name: scenario_3
 ---
 
@@ -178,8 +182,8 @@ name: scenario_3
 
 ```{figure} images/scene3.png
 ---
-width: 780px
-height: 456px
+width: 1054px
+height: 167px
 name: scene_3
 ---
 
@@ -205,8 +209,8 @@ This scenario highlights the need for an ongoing, dynamic approach to portfolio 
 
 ```{figure} images/Scenario4.png
 ---
-width: 780px
-height: 456px
+width: 1313px
+height: 217px
 name: scenario_4
 ---
 
@@ -214,8 +218,8 @@ name: scenario_4
 
 ```{figure} images/scene4.png
 ---
-width: 780px
-height: 456px
+width: 1058px
+height: 108px
 name: scene_4
 ---
 
