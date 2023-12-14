@@ -150,8 +150,8 @@ name: scenario_2
 
 ```{figure} images/scene2.png
 ---
-width: 970px
-height: 152px
+width: 1158px
+height: 107px
 name: scene_2
 ---
 
@@ -182,8 +182,8 @@ name: scenario_3
 
 ```{figure} images/scene3.png 
 ---
-width: 965px
-height: 147px
+width: 1158px
+height: 107px
 name: scene_3
 ---
 
@@ -218,7 +218,7 @@ name: scenario_4
 
 ```{figure} images/scene4.png
 ---
-width: 1160px
+width: 1158px
 height: 107px
 name: scene_4
 ---
@@ -256,12 +256,7 @@ Utilising blockchain technology can significantly enhance the transparency, secu
 
 In summary, the proposed token-based Net Zero banking model represents a significant shift in the industry. By adopting tokens, banks can more effectively navigate the complexities of emissions reductions. This model's key components include maximising revenues, introducing tokens, implementing a central organisational structure, and integrating blockchain technology.
 
-Key Findings:
-
-1. **As-Is Net Zero Mechanics:** We have identified pain points in the current use of NACE codes and the EVIC model. It's crucial to consider the NACE of the loan (new business and stock) rather than the NACE related to the company. Additionally, the significance of loans in relation to a single company or economic group should be weighed against the bank’s balance sheet, rather than the other way around.
-2. **Efficient Carbon Credit Management:** The token-based model facilitates the efficient management of CO2 equivalent units, ensuring that emissions reduction targets are met while maximising business opportunities.
-
-3. **Blockchain Integration:** The integration of blockchain technology enhances the transparency and security of CO2 token transactions, fostering trust among stakeholders.
+The key findings highlight areas for improvement in As-Is Net Zero mechanics, suggesting a shift in focus to the NACE of loans rather than companies, and assessing loans based on their impact on the bank's balance sheet. Efficient carbon credit management can be achieved through a token-based model that manages CO2 equivalent units effectively, aiding in meeting emissions targets while maximising business opportunities. Furthermore, Blockchain Integration enhances the transparency and security of CO2 token transactions, fostering trust among stakeholders.
 
 Future research on the token-based Net Zero banking model should focus on two key areas: the effectiveness of transferring CO2 equivalent tokens within the banking system, particularly considering penalties and valuation over time, and the impact of this model on banks' business models, risk management, and client relationships. This exploration is crucial for advancing a sustainable and financially viable approach in the banking sector.
 
