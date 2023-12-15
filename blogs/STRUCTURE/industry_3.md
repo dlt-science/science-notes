@@ -15,3 +15,16 @@
 
 
 :::
+<!-- 
+:::{grid-item-card} Net Zero Banking Alliance: A Token-based Model
+:margin: 3 0 0 0
+:link: https://dlt-science.github.io/science-notes/NetZero/netzero.html
+:link-type: url
+:text-align: center
+:shadow: md
+
+<img src= "https://www.sec-ed.co.uk/media/b35cewpq/climatechange7-as.jpg?width=800&height=533&format=webp&quality=80&bgcolor=White&rnd=133371914054770000" width="350px" height="200px">
+
+
+
+::: -->

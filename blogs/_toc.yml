@@ -11,11 +11,13 @@ parts:
         title: Academic Insights
         sections:
           - file: POS/pos
+          - file: MEVupd/mevupd
       - file: STRUCTURE/industry_3
         title: Industry Perspective
         sections:
           - file: AIB/aib
           - file: DXBAAS/dxbaas
+          - file: NetZero/netzero
 
   - caption: Q3 2023
     numbered: False
@@ -50,3 +52,4 @@ parts:
         sections:
           - file: SHARDING/sharding
           - file: SSI/ssi
+          
