@@ -15,3 +15,16 @@
 
 
 :::
+
+:::{grid-item-card} Lorenz chaotic system cryptography
+:margin: 3 0 0 0
+:link: https://dlt-science.github.io/science-notes/NCA/nca.html
+:link-type: url
+:text-align: center
+:shadow: md
+
+<!-- <img src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAEXtNCAmC7fsCJOrWer49tNsEzWI_Cx9ffg&usqp=CAU"> -->
+
+<img src= "https://images.cointelegraph.com/images/717_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS9zdG9yYWdlL3VwbG9hZHMvdmlldy82OThiOTliNDM0ZGRlYWM3MGEzYzQ5YTcxMGZjYTUzNS5qcGc=.jpg" width="350px" height="200px">
+
+:::
