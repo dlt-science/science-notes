@@ -16,6 +16,7 @@ parts:
         title: Industry Perspective
         sections:
           - file: AIB/aib
+          # - file: NetZero/netzero
 
   - caption: Q3 2023
     numbered: False
@@ -50,3 +51,4 @@ parts:
         sections:
           - file: SHARDING/sharding
           - file: SSI/ssi
+          
