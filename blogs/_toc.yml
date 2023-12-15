@@ -15,6 +15,7 @@ parts:
         title: Industry Perspective
         sections:
           - file: AIB/aib
+          - file: DXBAAS/dxbaas
 
   - caption: Q3 2023
     numbered: False
