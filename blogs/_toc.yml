@@ -11,6 +11,7 @@ parts:
         title: Academic Insights
         sections:
           - file: POS/pos
+          - file: MEVupd/mevupd
       - file: STRUCTURE/industry_3
         title: Industry Perspective
         sections:
