@@ -45,7 +45,7 @@ The impact of MEV is significant, particularly on end users who pay transaction 
 
 Eskandari et al. {cite}`eskandari2020sok` highlighted a disconcerting aspect of economic inequality that MEV introduces into a system fundamentally designed for decentralisation and equality. Their research showed that miners with more significant computational resources are advantaged, leading to an unequal distribution of wealth and power within the network. This core issue necessitates more rigorous examination and underscores the urgency for remedies that reestablish equilibrium and honor the essential principles of blockchain technology.
 
-### Financial losses
+### Financial Losses
 
 Certain forms of MEV extraction can result in direct financial losses for users. A case in point is the predatory sandwich attacks, which led to profits exceeding $3 million for attackers in November 2022 alone {cite}`eigenphi2022sandwich`. This substantial gain was, unfortunately, the result of monetary losses suffered by the victims.
 
