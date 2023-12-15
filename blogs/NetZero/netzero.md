@@ -108,10 +108,10 @@ By addressing these issues, the proposed approach aims to create a more balanced
 
 ### Scenario 1
 
-```{figure} images/Scenario1.png
+```{figure} images/Scenario111.png
 ---
-width: 1141px
-height: 183px
+width: 900.6px
+height: 147.2px
 name: scenario_1
 ---
 
@@ -120,8 +120,8 @@ This scenario represents the best-case outcome: assuming a target for reducing e
 
 ```{figure} images/scene1.png 
 ---
-width: 1158px
-height: 107px
+width: 868.5px
+height: 80.25px
 name: scene_1
 ---
 
@@ -139,10 +139,10 @@ In this scenario, as illustrated in the data below, the portfolio generates a CO
 
 For instance, examining the table provided, it’s evident that all companies within the portfolio eventually reach the target reduction of 30%. The previous CO2 debits (related to years X+1 and X+2) are successfully compensated in subsequent years X+3, X+4, and X+5. 
 
-```{figure} images/Scenario2.png
+```{figure} images/Scenario222.png
 ---
-width: 1138px
-height: 188px
+width: 898.2px
+height: 161px
 name: scenario_2
 ---
 
@@ -150,8 +150,8 @@ name: scenario_2
 
 ```{figure} images/scene2.png
 ---
-width: 1158px
-height: 107px
+width: 868.5px
+height: 80.25px
 name: scene_2
 ---
 
@@ -171,10 +171,10 @@ Additionally, for a company like Company C, which does not meet the target, the 
 
 This scenario highlights the challenges and strategic decisions involved in managing a portfolio with varying levels of emission reductions and underscores the importance of aligning environmental goals with financial and economic considerations.
 
-```{figure} images/Scenario3.png
+```{figure} images/Scenario333.png
 ---
-width: 1137px
-height: 190px
+width: 898px
+height: 161.2px
 name: scenario_3
 ---
 
@@ -182,8 +182,8 @@ name: scenario_3
 
 ```{figure} images/scene3.png 
 ---
-width: 1158px
-height: 107px
+width: 868.5px
+height: 80.25px
 name: scene_3
 ---
 
@@ -207,10 +207,10 @@ Moreover, it becomes necessary to compensate for these CO2 debits with emissions
 
 This scenario highlights the need for an ongoing, dynamic approach to portfolio management, balancing environmental targets with financial and strategic considerations. It underscores the importance of adaptive strategies in achieving Net Zero goals while maintaining profitability.
 
-```{figure} images/Scenario4.png 
+```{figure} images/Scenario444.png
 ---
-width: 1141px
-height: 193px
+width: 899px
+height: 162.2px
 name: scenario_4
 ---
 
@@ -218,8 +218,8 @@ name: scenario_4
 
 ```{figure} images/scene4.png
 ---
-width: 1158px
-height: 107px
+width: 868.5px
+height: 80.25px
 name: scene_4
 ---
 
