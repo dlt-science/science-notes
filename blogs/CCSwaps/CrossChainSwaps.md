@@ -7,9 +7,9 @@
 :class: tip
 - Cross-chain interoperability is paramount for various DeFi applications (DEXs, DApps, etc). The technology must be trustless to prevent reliance on centralized intermediaries. Hash Time Locked Contracts (HTLCs) are commonly used for this purpose.
 - HTLCs and other atomic swap protocols lock assets involved in the exchange and these get released when the transaction is complete. This introduces the risk of asset value fluctuation during the exchange and increased incentives for either party to abort the swap, leading to opportunity costs for the other.
-- A game theoretical framework can be established to construct a parametrized solution for the success rate of cross-chain swaps through HTLCs and Packetized Payments (PPs).
+- A game theoretic framework can be established to construct a parametrized solution for the success rate of cross-chain swaps through HTLCs and Packetized Payments (PPs).
 - Existing parameters lead to high failure rates of cross-chain swaps, and in the case of PPs can theoretically allow malicious agents to make profits. 
-- The game theoretical framework is extended to derive optimization solutions to increase the success rate of atomic swaps and PPs: 1. Collatralization 2. Adjustable Exchange Rates. 
+- The game theoretic framework is extended to derive optimization solutions to increase the success rate of atomic swaps and PPs: 1. Collatralization 2. Adjustable Exchange Rates. 
 ```
 
 ## Introduction
@@ -25,10 +25,10 @@ HTLCs are a type of smart contract that uses elements of cryptocurrency on-chain
 ### PPs
 Packetized Payments start by breaking down transactions into packets. Further, On each step, the participant would match the previous transfer and extend their transfer, hence ensuring equal distribution of counterparty risk. If any participant were to exit the transaction, the other agent would lose a maximum of one packet, which is sized to be economically insignificant.
 
-## Game Theoretical Analysis
-A game theoretical framework is developed to sequentially analyze events in the two protocols and derive probabilities for the success rate of cross-chain exchanges. The detailed version of the below discussion can be found in {cite}`jihua2021htlcs` {cite}`jiahua2021pps`.
+## Game Theoretic Analysis
+A game theoretic framework is developed to sequentially analyze events in the two protocols and derive probabilities for the success rate of cross-chain exchanges. The detailed version of the below discussion can be found in {cite}`jihua2021htlcs` {cite}`jiahua2021pps`.
 
-### Game Theoretical Framework for HTLCs
+### Game Theoretic Framework for HTLCs
 Two agents, Alice (*A*) and Bob (*B*), are aiming to trade token<sub>a</sub> From chain<sub>a</sub> for token<sub>b</sub> from chain<sub>b</sub> at a defined exchange rate **P***. Token<sub>b</sub>'s price at time t is denoted by P<sub>t</sub>. At each step during the exchange, the agents can choose to either stop or continue the exchange. The steps are as follows – 
 - **Step 1:** *A* decides whether to initiate the swap by writing a swap HTLC on chain<sub>a</sub> (cont) or not (stop).
 - **Step 2:** *B* decides whether to write an HTLC on chain<sub>b</sub> (cont) or not (stop).
@@ -82,7 +82,7 @@ name: HTLC_coll
 HTLC with collateral game diagram.
 ```
 
-The extension of the game theoretical framework to this system shows that the success rate increases with collateral amount Q. This is because higher Q allows for larger exchange rate P<sub>t</sub> movements, i.e. the sensitivity of the success rate towards **P***, volatility, and trend is reduced. The incentives that malicious actors may gain from massive price movements are eliminated by the loss of higher collateral. Therefore, the best strategy for malicious actors is to continue – maximizing the success rate of the swap.
+The extension of the game theoretic framework to this system shows that the success rate increases with collateral amount Q. This is because higher Q allows for larger exchange rate P<sub>t</sub> movements, i.e. the sensitivity of the success rate towards **P***, volatility, and trend is reduced. The incentives that malicious actors may gain from massive price movements are eliminated by the loss of higher collateral. Therefore, the best strategy for malicious actors is to continue – maximizing the success rate of the swap.
 
 ### Adjustable Exchange Rates
 This is an extension to the HTLC game. The agents not only have the freedom to choose to continue or stop, but they can also decide the exact amount of funds to lock in, that is, **P*** isn't fixed and can be adjusted as P<sub>t</sub> changes on each step. 
@@ -99,7 +99,7 @@ HTLC with adjustable exchange rate game diagram.
 It is found that the absence of a pre-determined exchange rate boosts the success rate and allows for the possibility of success over a wider range of exchange parameters.
 
 ## Conclusion
-The game theoretical approach developed in the referenced papers and discussed above is a potent method to study the viability and sensitivity of various cross-chain technologies. An analysis of HTLCs and PPs reveals execution success rate bottlenecks. The findings are not local to these protocols as other investigations successfully apply similar game theoretical analysis to a variety of protocols. Extending the analysis offers crucial solutions - collateralization and adjustable exchange rates. These help mitigate counterparty risks by aligning incentives for all parties. The findings, applicable across various trustless cross-chain swap protocols, offer a blueprint for elevating success rates and minimizing vulnerabilities, contributing to the advancement of secure and efficient decentralized finance ecosystems.
+The game theoretic approach developed in the referenced papers and discussed above is a potent method to study the viability and sensitivity of various cross-chain technologies. An analysis of HTLCs and PPs reveals execution success rate bottlenecks. The findings are not local to these protocols as other investigations successfully apply similar game theoretic analysis to a variety of protocols. Extending the analysis offers crucial solutions - collateralization and adjustable exchange rates. These help mitigate counterparty risks by aligning incentives for all parties. The findings, applicable across various trustless cross-chain swap protocols, offer a blueprint for elevating success rates and minimizing vulnerabilities, contributing to the advancement of secure and efficient decentralized finance ecosystems.
 
 <div style="text-align: right;font-weight: bold;">Aaryan Gulia</div>
 <div style="text-align: right;font-style: italic;">December 2023</div>
