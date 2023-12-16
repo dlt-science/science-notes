@@ -12,6 +12,7 @@ parts:
         sections:
           - file: POS/pos
           - file: MEVupd/mevupd
+          - file: CCSwaps/CrossChainSwaps
       - file: STRUCTURE/industry_3
         title: Industry Perspective
         sections:
