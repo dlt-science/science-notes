@@ -74,7 +74,7 @@ Alice and Bob move an allowance to a trusted smart contract on chain<sub>a</sub>
 ---
 width: 450px
 height: 450px
-name: HTLC_img
+name: HTLC_coll
 ---
 HTLC with collateral game diagram.
 ```
@@ -88,7 +88,7 @@ This is an extension to the HTLC game. The agents not only have the freedom to c
 ---
 width: 300px
 height: 400px
-name: HTLC_img
+name: HTLC_adj
 ---
 HTLC with adjustable exchange rate game diagram.
 ```
@@ -98,6 +98,8 @@ It is found that the absence of a pre-determined exchange rate boosts the succes
 ## Conclusion
 The game theoretical approach developed in the referenced papers and discussed above is a potent method to study the viability and sensitivity of various cross-chain technologies. An analysis of HTLCs and PPs reveals execution success rate bottlenecks. The findings are not local to these protocols as other investigations successfully apply similar game theoretical analysis to a variety of protocols. Extending the analysis offers crucial solutions - collateralization and adjustable exchange rates. These help mitigate counterparty risks by aligning incentives for all parties. The findings, applicable across various trustless cross-chain swap protocols, offer a blueprint for elevating success rates and minimizing vulnerabilities, contributing to the advancement of secure and efficient decentralized finance ecosystems.
 
+<div style="text-align: right;font-weight: bold;">Aaryan Gulia</div>
+<div style="text-align: right;font-style: italic;">December 2023</div>
 
 ## References
 
