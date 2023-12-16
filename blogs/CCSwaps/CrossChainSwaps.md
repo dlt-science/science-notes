@@ -13,7 +13,7 @@
 
 ## Introduction
  `````{margin} **Atomic Swaps**
-Atomic Swaps are direct and automatic peer-to-peer (P2P) exchanges of crypto assets existing on fundamentally different blockchain networks without the use of centralized intermediaries {cite}`miraz2019atomic`.
+Direct and automatic peer-to-peer (P2P) exchanges of crypto assets on fundamentally different blockchain networks without the use of centralized intermediaries {cite}`miraz2019atomic`.
 `````
 In the Decentralized Finance (Defi) landscape, interoperability between disparate blockchain networks is paramount to transmitting data and value across chains {cite}`mao2022crosschaintech`. Cross-chain technology is implemented across Decentralized Exchanges (DEXs), cross-platform Decentralized Applications (DApps), tokenized real assets, distributed transaction platforms, etc. The technologies need to enable secure and trustless transactions to prevent reliance on centralized intermediaries. To this end, Hash Time Lock Contracts (HTLCs), a form of atomic swaps, are commonly used to achieve cross-chain asset exchange. An alternative approach is Packetized Payments (PPs) {cite}`robinson2019stanford`, which implement a series of alternating transactions to achieve cross-ledger exchange. This article summarises the recent studies regarding these protocols - unraveling their execution success rate bottlenecks and exploring the proposed solutions {cite}`jihua2021htlcs` {cite}`jiahua2021pps`.
 
@@ -41,10 +41,13 @@ In Step 3, *A* gets to make the sole decision of whether to complete the swap or
 It is found that in steps 1 to 3, the greater the range between maximum and minimum viable values of P<sub>t</sub>, the higher the probability of the swap succeeding. 
 
 ### Key Findings
-2. **Exchange Rate:** The success of the swap depends on a defined range of exchange rates **P***. Deviations from this range significantly impact the success probability.
-1. **Success premium:** This is the measure of how determined each party is to see the swap succeed. Actors with low success premiums would cause a low success rate for the swap and come off as malicious. A high success premium leads to a high success rate and a greater range of feasible **P***. 
-2. **Time preference (r):** Time preference describes an agent’s impatience level - the desire to access assets now rather than later. larger r results in a narrower viable range of values for **P***.
-3. **Transaction confirmation time** Higher confirmation time on either chain shrinks the viable range of **P***. When **P*** is chosen to maximize SR, a lower confirmation time increases the success rate.
+1. **Exchange Rate:** The success of the swap depends on a defined range of exchange rates **P***. Deviations from this range significantly impact the success probability.
+2. **Success premium:** This is the measure of how determined each party is to see the swap succeed. Actors with low success premiums would cause a low success rate for the swap and come off as malicious. A high success premium leads to a high success rate and a greater range of feasible **P***. 
+3. **Time preference (r):** Time preference describes an agent’s impatience level - the desire to access assets now rather than later. larger r results in a narrower viable range of values for **P***.
+  `````{margin} **Transaction Confirmation Time**
+The time between a network receiving a transaction and the transaction getting processed on chain by a miner node.
+`````
+4. **Transaction confirmation time:** Higher confirmation time on either chain shrinks the viable range of **P***. When **P*** is chosen to maximize SR, a lower confirmation time increases the success rate.
 5. **Price trend and volatility:** High upward trend of the exchange rate increases the success rate. In contrast, higher volatility reduces the success rate.
 
 With a high number of failures reported in HTLCs, it can be stated that existing parameters and success premiums of agents are stacked such that success rates cannot be optimal. Extending such a game theoretic framework to PPs goes beyond to prove that not only do malicious agents have no incentive to complete transactions, but also that malicious agents can enter into multiple transactions in parallel to generate large profits. 
@@ -53,6 +56,9 @@ With a high number of failures reported in HTLCs, it can be stated that existing
 This game theoretic analysis is persistent across various trustless cross-chain swap protocols {cite}`belotti2020gametheory`. Hence, solutions derived by extending the methodology can be widely implemented to generate higher success rates of swaps and minimize incentives for malicious actors to stop the exchange.
 
 ### Swaps with collateral
+  `````{margin} **Oracle**
+A third-party service that connects on-chain smart contracts to the external world. 
+`````
 Alice and Bob move an allowance to a trusted smart contract on chain<sub>a</sub> to charge each of them simultaneously the same amount of collateral, Q Token<sub>a</sub>, before the swap. The smart contract can be connected to an oracle that observes the transaction. If any agent decides to stop at any time, the other agent receives both collaterals. 
 
 The extension of the game theoretical framework to this system shows that the success rate increases with collateral amount Q. This is because higher Q allows for larger exchange rate P<sub>t</sub> movements. The incentives that actors may gain from massive price movements are reduced due to the loss of higher collateral. Therefore, the best strategy for malicious actors is to continue – maximizing the success rate of the swap.
@@ -61,7 +67,7 @@ The extension of the game theoretical framework to this system shows that the su
 This is an extension to the HTLC game. The agents not only have the freedom to choose to continue or stop, but they can also decide the exact amount of funds to lock in, that is, **P*** isn't fixed and can be adjusted as P<sub>t</sub> changes on each step. It is found that the absence of a pre-determined exchange rate boosts the success rate and allows for the possibility of success over a wider range of exchange parameters.
 
 ## Conclusion
-The game theoretical approach developed in the referenced papers and discussed above is a potent method to study the viability and sensitivity of various cross-chain technologies. An analysis of HTLCs and PPs reveals execution success rate bottlenecks. The findings are not local to these protocols as other investigations successfully apply similar game theoretical analysis to a variety of protocols. Extending the analysis offers crucial solutions - collateralization and adjustable exchange rates. These help mitigate counterparty risks by aligning incentives for all parties. These findings, applicable across various trustless cross-chain swap protocols, offer a blueprint for elevating success rates and minimizing vulnerabilities, contributing to the advancement of secure and efficient decentralized finance ecosystems.
+The game theoretical approach developed in the referenced papers and discussed above is a potent method to study the viability and sensitivity of various cross-chain technologies. An analysis of HTLCs and PPs reveals execution success rate bottlenecks. The findings are not local to these protocols as other investigations successfully apply similar game theoretical analysis to a variety of protocols. Extending the analysis offers crucial solutions - collateralization and adjustable exchange rates. These help mitigate counterparty risks by aligning incentives for all parties. The findings, applicable across various trustless cross-chain swap protocols, offer a blueprint for elevating success rates and minimizing vulnerabilities, contributing to the advancement of secure and efficient decentralized finance ecosystems.
 
 
 ## References
