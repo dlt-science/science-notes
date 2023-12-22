@@ -29,11 +29,11 @@ Packetized Payments start by breaking down transactions into packets. Further, o
 A game theoretic framework is developed to sequentially analyze events in the two protocols and derive probabilities for the success rate of cross-chain exchanges. The detailed version of the below discussion can be found in {cite}`jiahua2021htlcs` {cite}`jiahua2021pps`.
 
 ### Game Theoretic Framework for HTLCs
-Two agents, Alice ($`A`$) and Bob ($`B`$), are aiming to trade $`token_a`$ From $`chain_a`$ for $`token_b`$ from $`chain_b`$ at a defined exchange rate $`P^*`$. $`token_b`$'s price at time t is denoted by $`P_t`$. At each step during the exchange, the agents can choose to either stop or continue the exchange. The steps are as follows – 
-- **Step 1:** ($`A`$) decides whether to initiate the swap by writing a swap HTLC on $`chain_a`$ (cont) or not (stop).
-- **Step 2:** ($`B`$) decides whether to write an HTLC on $`chain_b`$ (cont) or not (stop).
-- **Step 3:** ($`A`$) decides whether to unlock $`token_b`$ (cont) or not (stop).
-- **Step 4:** ($`B`$) decides whether to unlock $`token_a`$ (cont) or not (stop).
+Two agents, Alice ($A$) and Bob ($B$), are aiming to trade $token_a$ From $chain_a$ for $token_b$ from $chain_b$ at a defined exchange rate $P^*$. $token_b$'s price at time t is denoted by $P_t$. At each step during the exchange, the agents can choose to either stop or continue the exchange. The steps are as follows – 
+- **Step 1:** ($A$) decides whether to initiate the swap by writing a swap HTLC on $chain_a$ (cont) or not (stop).
+- **Step 2:** ($B$) decides whether to write an HTLC on $chain_b$ (cont) or not (stop).
+- **Step 3:** ($A$) decides whether to unlock $token_b$ (cont) or not (stop).
+- **Step 4:** ($B$) decides whether to unlock $token_a$ (cont) or not (stop).
 
 ```{figure} images/HTLC.png
 ---
@@ -44,20 +44,20 @@ name: HTLC_img
 HTLC game diagram.
 ```
 
-Through backward induction, an optimal strategy is derived for each agent to maximize their utility functions at each step. In step 4, it is trivial to deduce that B continues as $`A`$ has already accessed $`token_b`$. In step 1 and step 2, $`P_t`$ has to be in a viability range for the swap to continue. $`P_t`$ being higher than a derived maximum or minimum would bring the success probability to zero.
+Through backward induction, an optimal strategy is derived for each agent to maximize their utility functions at each step. In step 4, it is trivial to deduce that B continues as $A$ has already accessed $token_b$. In step 1 and step 2, $P_t$ has to be in a viability range for the swap to continue. $P_t$ being higher than a derived maximum or minimum would bring the success probability to zero.
 
-In step 3, $`A`$ gets to make the sole decision of whether to complete the swap or not, hence can choose to stop if the exchange price drops and execute if it rises. In this instant, $`A`$ has the optionality akin to an American option, as she can choose to execute or not at any moment up to the expiration time. 
+In step 3, $A$ gets to make the sole decision of whether to complete the swap or not, hence can choose to stop if the exchange price drops and execute if it rises. In this instant, $A$ has the optionality akin to an American option, as she can choose to execute or not at any moment up to the expiration time. 
 
-It is found that in steps 1 to 3, the greater the range between minimum and maximum viable values of $`P_t`$, the higher the probability of the swap succeeding. 
+It is found that in steps 1 to 3, the greater the range between minimum and maximum viable values of $P_t$, the higher the probability of the swap succeeding. 
 
 ### Key Findings
-1. **Exchange Rate:** The success of the swap depends on a defined range of exchange rates $`P^*`$. Deviations from this range significantly impact the success probability. The overall success rate is highly sensitive to the range of values allowed for $`P^*`$; therefore, the stability and security of HTLCs can be optimized by maximizing this range.
-2. **Success premium:** This is the measure of how determined each party is to see the swap succeed. Actors with low success premiums would cause a low success rate for the swap and come off as malicious. A high success premium leads to a high success rate and a greater range of feasible $`P^*`$. 
-3. **Time preference (r):** Time preference describes an agent’s impatience level - the desire to access assets now rather than later. larger r results in a narrower viable range of values for $`P^*`$. If r is greater than a calculated critical value, the swap is rendered impossible as no $`P^*`$ remains feasible. 
+1. **Exchange Rate:** The success of the swap depends on a defined range of exchange rates $P^*$. Deviations from this range significantly impact the success probability. The overall success rate is highly sensitive to the range of values allowed for $P^*$; therefore, the stability and security of HTLCs can be optimized by maximizing this range.
+2. **Success premium:** This is the measure of how determined each party is to see the swap succeed. Actors with low success premiums would cause a low success rate for the swap and come off as malicious. A high success premium leads to a high success rate and a greater range of feasible $P^*$. 
+3. **Time preference (r):** Time preference describes an agent’s impatience level - the desire to access assets now rather than later. larger r results in a narrower viable range of values for $P^*$. If r is greater than a calculated critical value, the swap is rendered impossible as no $P^*$ remains feasible. 
   `````{margin} **Transaction Confirmation Time**
 The time between a network receiving a transaction and the transaction getting processed on chain by a miner node.
 `````
-4. **Transaction confirmation time:** Higher confirmation time on either chain shrinks the viable range of $`P^*`$ as the increased time taken reduces the transaction utility functions for either or both parties. When $`P^*`$ is chosen to maximize the success rate, a lower confirmation time increases the success rate.
+4. **Transaction confirmation time:** Higher confirmation time on either chain shrinks the viable range of $P^*$ as the increased time taken reduces the transaction utility functions for either or both parties. When $P^*$ is chosen to maximize the success rate, a lower confirmation time increases the success rate.
 5. **Price trend and volatility:** A High upward trend of the exchange rate increases the success rate as Alice is highly likely to decide in favor of the final optionality she receives. In contrast, higher volatility reduces the success rate.
 
 HTLCs experience reoccurring and numerous transaction failures. Hence, it can be stated that existing parameters and success premiums of agents are stacked such that success rates cannot be optimal. 
@@ -71,7 +71,7 @@ This game theoretic analysis is persistent across various trustless cross-chain 
   `````{margin} **Oracle**
 A third-party service that connects on-chain smart contracts to the external world. 
 `````
-Alice and Bob move an allowance to a trusted smart contract on $`chain_a`$ to charge each of them simultaneously the same amount of collateral, $`Q`$ $`token_a`$, before the swap. The smart contract can be connected to an oracle that observes the transaction. If any agent decides to stop at any time, the other agent receives both collaterals. 
+Alice and Bob move an allowance to a trusted smart contract on $chain_a$ to charge each of them simultaneously the same amount of collateral, $Q$ $token_a$, before the swap. The smart contract can be connected to an oracle that observes the transaction. If any agent decides to stop at any time, the other agent receives both collaterals. 
 
 ```{figure} images/HTLC_coll.png
 ---
@@ -82,10 +82,10 @@ name: HTLC_coll
 HTLC with collateral game diagram.
 ```
 
-The extension of the game theoretic framework to this system shows that the success rate increases with collateral amount $`Q`$. This is because higher $`Q`$ allows for larger exchange rate $`P_t`$ movements; consequently, the sensitivity of the success rate towards $`P^*`$, volatility, and trend is reduced. The incentives that malicious actors may gain from massive price movements are eliminated by the loss of higher collateral. Therefore, the best strategy for malicious actors is to continue – maximizing the success rate of the swap.
+The extension of the game theoretic framework to this system shows that the success rate increases with collateral amount $Q$. This is because higher $Q$ allows for larger exchange rate $P_t$ movements; consequently, the sensitivity of the success rate towards $P^*$, volatility, and trend is reduced. The incentives that malicious actors may gain from massive price movements are eliminated by the loss of higher collateral. Therefore, the best strategy for malicious actors is to continue – maximizing the success rate of the swap.
 
 ### Adjustable Exchange Rates
-This is an extension to the HTLC game. The agents not only have the freedom to choose to continue or stop, but they can also decide the exact amount of funds to lock in, that is, $`P^*`$ isn't fixed and can be adjusted as $`P_t`$ changes on each step. 
+This is an extension to the HTLC game. The agents not only have the freedom to choose to continue or stop, but they can also decide the exact amount of funds to lock in, that is, $P^*$ isn't fixed and can be adjusted as $P_t$ changes on each step. 
 
 ```{figure} images/HTLC_adj.png
 ---
