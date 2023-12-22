@@ -9,14 +9,14 @@
 - Locking of assets for the transaction duration under atomic swaps introduces the risk of asset value fluctuation during the exchange and increases incentives for either party to abort the swap, leading to opportunity costs for the other.
 - A game theoretic framework can be established to construct a parametrized solution for the success rate of cross-chain swaps through HTLCs and Packetized Payments (PPs).
 - Existing parameters lead to high failure rates of cross-chain swaps, and in the case of PPs can theoretically allow malicious agents to make profits. 
-- The game theoretic framework is extended to derive optimization solutions to increase the success rate of atomic swaps and PPs: 1. Collatralization 2. Adjustable Exchange Rates. 
+- The game theoretic framework is extended to derive optimization solutions to increase the success rate of atomic swaps and PPs: 1. Collateralization 2. Adjustable Exchange Rates. 
 ```
 
 ## Introduction
  `````{margin} **Atomic Swaps**
 Direct and automatic peer-to-peer (P2P) exchanges of crypto assets on fundamentally different blockchain networks without the use of centralized intermediaries {cite}`miraz2019atomic`.
 `````
-In the Decentralized Finance (Defi) landscape, interoperability between disparate blockchain networks is paramount for data and value transmission across chains {cite}`mao2022crosschaintech`. Cross-chain technology has applications in Decentralized Exchanges (DEXs), cross-platform Decentralized Applications (DApps), tokenized real assets, distributed transaction platforms, etc. The technologies need to enable secure and trustless transactions to prevent reliance on centralized intermediaries. To this end, Hash Time Lock Contracts (HTLCs), a form of atomic swaps, are commonly used to achieve cross-chain asset exchange. HTLCs and all other atomic swaps have inherent risks associated with them: (1) value fluctuation during the exchange, and (2) high incentives for malicious agents {cite}`reijsbergen2023crocodai`. An alternative approach is Packetized Payments (PPs) {cite}`robinson2019stanford`, which implement a series of alternating transactions to achieve cross-ledger exchange. This article summarises the recent studies regarding these protocols - unraveling their execution success rate bottlenecks and exploring the proposed solutions {cite}`jiahua2021htlcs` {cite}`jiahua2021pps`.
+In the Decentralized Finance (DeFi) landscape, interoperability between disparate blockchain networks is paramount for data and value transmission across chains {cite}`mao2022crosschaintech`. Cross-chain technology has applications in Decentralized Exchanges (DEXs), cross-platform Decentralized Applications (DApps), tokenized real assets, distributed transaction platforms, etc. The technologies need to enable secure and trustless transactions to prevent reliance on centralized intermediaries. To this end, Hash Time Lock Contracts (HTLCs), a form of atomic swaps, are commonly used to achieve cross-chain asset exchange. HTLCs and all other atomic swaps have inherent risks associated with them: (1) value fluctuation during the exchange, and (2) high incentives for malicious agents {cite}`reijsbergen2023crocodai`. An alternative approach is Packetized Payments (PPs) {cite}`robinson2019stanford`, which implement a series of alternating transactions to achieve cross-ledger exchange. This article summarises the recent studies regarding these protocols - unraveling their execution success rate bottlenecks and exploring the proposed solutions {cite}`jiahua2021htlcs` {cite}`jiahua2021pps`.
 
 
 ### HLTCs
@@ -57,7 +57,7 @@ It is found that in steps 1 to 3, the greater the range between minimum and maxi
   `````{margin} **Transaction Confirmation Time**
 The time between a network receiving a transaction and the transaction getting processed on chain by a miner node.
 `````
-4. **Transaction confirmation time:** Higher confirmation time on either chain shrinks the viable range of $`P^*`$ as greater time taken on any chain reduces the transaction utility functions for either or both parties. When $`P^*`$ is chosen to maximize the success rate, a lower confirmation time increases the success rate.
+4. **Transaction confirmation time:** Higher confirmation time on either chain shrinks the viable range of $`P^*`$ as the increased time taken reduces the transaction utility functions for either or both parties. When $`P^*`$ is chosen to maximize the success rate, a lower confirmation time increases the success rate.
 5. **Price trend and volatility:** A High upward trend of the exchange rate increases the success rate as Alice is highly likely to decide in favor of the final optionality she receives. In contrast, higher volatility reduces the success rate.
 
 HTLCs experience reoccurring and numerous transaction failures. Hence, it can be stated that existing parameters and success premiums of agents are stacked such that success rates cannot be optimal. 
