@@ -6,7 +6,7 @@
 ```{admonition} Key Insights
 :class: tip
 - Cross-chain interoperability is paramount for various DeFi applications (DEXs, DApps, etc). The technology must be trustless to prevent reliance on centralized intermediaries. Hash Time Locked Contracts (HTLCs) are commonly used for this purpose.
-- HTLCs and other atomic swap protocols lock assets involved in the exchange and these get released when the transaction is complete. This introduces the risk of asset value fluctuation during the exchange and increased incentives for either party to abort the swap, leading to opportunity costs for the other.
+- Locking of assets for the transaction duration under atomic swaps introduces the risk of asset value fluctuation during the exchange and increases incentives for either party to abort the swap, leading to opportunity costs for the other.
 - A game theoretic framework can be established to construct a parametrized solution for the success rate of cross-chain swaps through HTLCs and Packetized Payments (PPs).
 - Existing parameters lead to high failure rates of cross-chain swaps, and in the case of PPs can theoretically allow malicious agents to make profits. 
 - The game theoretic framework is extended to derive optimization solutions to increase the success rate of atomic swaps and PPs: 1. Collatralization 2. Adjustable Exchange Rates. 
@@ -29,11 +29,11 @@ Packetized Payments start by breaking down transactions into packets. Further, o
 A game theoretic framework is developed to sequentially analyze events in the two protocols and derive probabilities for the success rate of cross-chain exchanges. The detailed version of the below discussion can be found in {cite}`jiahua2021htlcs` {cite}`jiahua2021pps`.
 
 ### Game Theoretic Framework for HTLCs
-Two agents, Alice (*A*) and Bob (*B*), are aiming to trade token<sub>a</sub> From chain<sub>a</sub> for token<sub>b</sub> from chain<sub>b</sub> at a defined exchange rate **P***. Token<sub>b</sub>'s price at time t is denoted by P<sub>t</sub>. At each step during the exchange, the agents can choose to either stop or continue the exchange. The steps are as follows – 
-- **Step 1:** *A* decides whether to initiate the swap by writing a swap HTLC on chain<sub>a</sub> (cont) or not (stop).
-- **Step 2:** *B* decides whether to write an HTLC on chain<sub>b</sub> (cont) or not (stop).
-- **Step 3:** *A* decides whether to unlock token<sub>b</sub> (cont) or not (stop).
-- **Step 4:** *B* decides whether to unlock token<sub>a</sub> (cont) or not (stop).
+Two agents, Alice ($`A`$) and Bob ($`B`$), are aiming to trade $`token_a`$ From chain<sub>a</sub> for token<sub>b</sub> from chain<sub>b</sub> at a defined exchange rate **P***. Token<sub>b</sub>'s price at time t is denoted by P<sub>t</sub>. At each step during the exchange, the agents can choose to either stop or continue the exchange. The steps are as follows – 
+- **Step 1:** ($`A`$) decides whether to initiate the swap by writing a swap HTLC on chain<sub>a</sub> (cont) or not (stop).
+- **Step 2:** ($`B`$) decides whether to write an HTLC on chain<sub>b</sub> (cont) or not (stop).
+- **Step 3:** ($`A`$) decides whether to unlock token<sub>b</sub> (cont) or not (stop).
+- **Step 4:** ($`B`$) decides whether to unlock token<sub>a</sub> (cont) or not (stop).
 
 ```{figure} images/HTLC.png
 ---
@@ -44,11 +44,11 @@ name: HTLC_img
 HTLC game diagram.
 ```
 
-Through backward induction, an optimal strategy is derived for each agent to maximize their utility functions at each step. In step 4, it is trivial to deduce that B continues as A has already accessed Token<sub>b</sub>. In Step 1 and Step 2, P<sub>t</sub> has to be in a viability range for the swap to continue. P<sub>t</sub> being higher than a derived maximum or minimum would bring the success probability to zero.
+Through backward induction, an optimal strategy is derived for each agent to maximize their utility functions at each step. In step 4, it is trivial to deduce that B continues as $`A`$ has already accessed token<sub>b</sub>. In step 1 and step 2, P<sub>t</sub> has to be in a viability range for the swap to continue. P<sub>t</sub> being higher than a derived maximum or minimum would bring the success probability to zero.
 
-In Step 3, *A* gets to make the sole decision of whether to complete the swap or not, hence can choose to stop if the exchange price drops and execute if it rises. In this instant, *A* has the optionality akin to an American option, as she can choose to execute or not at any moment up to the expiration time. 
+In step 3, $`A`$ gets to make the sole decision of whether to complete the swap or not, hence can choose to stop if the exchange price drops and execute if it rises. In this instant, $`A`$ has the optionality akin to an American option, as she can choose to execute or not at any moment up to the expiration time. 
 
-It is found that in steps 1 to 3, the greater the range between maximum and minimum viable values of P<sub>t</sub>, the higher the probability of the swap succeeding. 
+It is found that in steps 1 to 3, the greater the range between minimum and maximum viable values of P<sub>t</sub>, the higher the probability of the swap succeeding. 
 
 ### Key Findings
 1. **Exchange Rate:** The success of the swap depends on a defined range of exchange rates **P***. Deviations from this range significantly impact the success probability. The overall success rate is highly sensitive to the range of values allowed for **P***; therefore, the stability and security of HTLCs can be optimized by maximizing this range.
