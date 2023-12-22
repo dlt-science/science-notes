@@ -75,7 +75,7 @@ Alice and Bob move an allowance to a trusted smart contract on $chain_a$ to char
 
 ```{figure} images/HTLC_coll.png
 ---
-width: 450px
+width: 600px
 height: 450px
 name: HTLC_coll
 ---
