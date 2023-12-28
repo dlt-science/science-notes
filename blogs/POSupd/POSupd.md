@@ -119,3 +119,12 @@ Finally, the evaluation of decentralisation using the Gini index suggests reward
 ## Conclusion
 
 Modeling (D)PoSs offers insights into the long-term implications of protocol adjustments and enhances our understanding of the behavioral tendencies of validators or stakers. It also highlights their influence on system decentralisation. As we delve deeper into various PoS protocols, it's crucial to recognize not just the attractive return rates but also the centralisation and potential risks inherent in different systems.
+
+<div style="text-align: right;font-weight: bold;">Jinlu Liu</div>
+<div style="text-align: right;font-style: italic;">December 2023</div>
+
+## References
+
+```{bibliography}
+:filter: docname in docnames
+```
