@@ -18,7 +18,7 @@
 
 :::{grid-item-card} Exploring the World of Maximal Extractable Value (MEV) in Blockchain
 :margin: 3 0 0 0
-:link: https://dlt-science.github.io/science-notes/MEV/mev.html
+:link: https://dlt-science.github.io/science-notes/MEVupd/mevupd.html
 :link-type: url
 :text-align: center
 :shadow: md
