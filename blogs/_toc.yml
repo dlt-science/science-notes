@@ -16,7 +16,7 @@ parts:
         title: Industry Perspective
         sections:
           - file: AIB/aib
-          # - file: NetZero/netzero
+          - file: NetZero/netzero
       - file: STRUCTURE/innovation_3
         sections:
           - file: POSupd/POSupd
