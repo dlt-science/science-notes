@@ -17,6 +17,9 @@ parts:
         sections:
           - file: AIB/aib
           - file: NetZero/netzero
+      - file: STRUCTURE/innovation_3
+        sections:
+          - file: POSupd/POSupd
 
   - caption: Q3 2023
     numbered: False
