@@ -15,7 +15,7 @@
 
 
 :::
-<!-- 
+
 :::{grid-item-card} Net Zero Banking Alliance: A Token-based Model
 :margin: 3 0 0 0
 :link: https://dlt-science.github.io/science-notes/NetZero/netzero.html
@@ -27,4 +27,4 @@
 
 
 
-::: -->
+:::

@@ -14,7 +14,7 @@
 
 ## Introduction
 
-ESG, an acronym that stands for Environmental, Social, and Governance, represents a paradigm shift in how businesses and investors evaluate the impact of their activities. While the three pillars—environmental, social, and governance—reflect distinct dimensions, our spotlight falls distinctly on the environmental realm, echoing the growing urgency to address climate change and environmental sustainability.
+ESG, an acronym that stands for Environmental, Social, and Governance, represents a paradigm shift in how businesses, financial systems, and investors evaluate the impact of their activities. While the three pillars—environmental, social, and governance—reflect distinct dimensions, our spotlight falls distinctly on the environmental realm, echoing the growing urgency to address climate change and environmental sustainability.
 
 Within the environmental spectrum, the concept of emissions is stratified into three critical scopes, each bearing a unique set of challenges and opportunities. 
 
@@ -42,11 +42,9 @@ The aim of this article is to argue that the current approach to the Net Zero me
 
 Current strategies and methodologies in the banking industry involve several key steps to integrate Net Zero principles:
 
-- **Identifying Industry Perimeter:** Industry perimeters (e.g., Oil & Gas, Power, Steel, etc.) are identified based on NACE codes {cite}`europa2010list` related to customers as present in Master Data information. This is one of the most significant pain points. The Net Zero methodology should be linked to the purpose of the financing, not the NACE code of the company. For example, general financing with no clear purpose should no longer be allowed. If a steel company has a loan for installing photovoltaic panels to generate renewable energy for its activities, this loan should not be included in the Net Zero baseline for the Steel industry. This represents a major data quality issue in banks. It's crucial to start an initiative to map the real purpose of historical loans (i.e., stock) to avoid withdrawing credit lines from companies that are paradoxically implementing ESG strategies, as in the steel company example. According to the standard and as-is Net Zero approach, general financing towards steel (typically mapped with steel NACEs) should be avoided due to the carbon intensity emissions of the steel industry. However, financing for renewable energy, mapped with specific NACEs related to the specific purpose of financing and not to the industry, will highlight an ESG benefit derived from this financing.
+- **Identifying Industry Perimeter:** A bank should identify which are industries that want to consider its Net-Zero analysis. A bank can have a baseline for each industry analysed. Industry perimeters (e.g., Oil & Gas, Power, Steel, etc.) are identified based on NACE codes {cite}`europa2010list` related to customers as present in Master Data information. This is one of the most significant pain points. The Net Zero methodology should be linked to the purpose of the financing, not the NACE code of the company. For example, general financing with no clear purpose should no longer be allowed. If a steel company has a loan for installing photovoltaic panels to generate renewable energy for its activities, this loan should not be included in the Net Zero baseline for the Steel industry. This represents a major data quality issue in banks. It's crucial to start an initiative to map the real purpose of historical loans (i.e., stock) to avoid withdrawing credit lines from companies that are paradoxically implementing ESG strategies, as in the steel company example. According to the standard and as-is Net Zero approach, general financing towards steel (typically mapped with steel NACEs) should be avoided due to the carbon intensity emissions of the steel industry. However, financing for renewable energy, mapped with specific NACEs related to the specific purpose of financing and not to the industry, will highlight an ESG benefit derived from this financing.
 
-- **Maturity of Loans:** As best practice, loans with a residual maturity of under one year should not be included.
-
-- **Credit Status of Loans:** If a loan is a Non-Performing Exposure, it should not be considered to avoid artificially increasing baselines and preventing greenwashing. That is, a baseline that is artificially too large can be easily reduced to meet Net Zero targets.
+- **Credit features: lifecycle or status:** Credit features, particularly the lifecycle or status of a credit, significantly impact the baselines for financed emissions. Emissions are linked to financed companies, and the characteristics of granted credit play a crucial role in the construction of these baselines. For example, a 30-year credit with 5 years remaining requires the bank to assess its strategic value in the portfolio, impacting whether it's renewed or not. Once such a credit expires, its associated financed emissions are removed from the Net Zero metrics, improving the bank's carbon footprint. This is especially true when credits are at zero residual maturity. Additionally, the credit status, reflecting the borrower's creditworthiness, is a key factor. Credits in good standing that turn non-performing (due to repayment issues) can paradoxically improve Net Zero values. Non-performing credits, often linked to operationally troubled companies, imply reduced emissions. When offloaded by the bank, these credits no longer affect its net-zero metrics. However, including non-performing exposures (NPEs) in baselines without adjustment can lead to inflated baselines and significant apparent reductions in carbon footprints in subsequent years, a form of greenwashing. Therefore, it's best practice to exclude loans with less than a year of residual maturity and to be cautious about including NPEs in baselines to avoid artificially inflated metrics and misleading progress towards Net Zero targets.
 
 - **Common Metrics Towards Various Industries in Net Zero Baseline:** Establishing common metrics for various industries is essential in the Net Zero baseline.
 
@@ -54,24 +52,24 @@ Current strategies and methodologies in the banking industry involve several key
   Enterprise Value Including Cash (EVIC) is defined as the aggregate of the market capitalization of a company's ordinary and preferred shares at the end of the fiscal year, combined with the book values of its total debt and minority interests, without subtracting any cash or cash equivalents to preclude the occurrence of negative enterprise values.
 `````
 
-- **Calculating EVIC for Each Customer:** EVIC, or Enterprise Value Including Cash, is calculated as the sum of the ordinary shares' market capitalization at the fiscal year-end, the market capitalization of preferred shares at the fiscal year-end, and the book values of total debt and minority interests {cite}`openriskEnterprise`. The current calculation methodology involves determining the proportion of a company’s EVIC that is attributable to a specific bank.
+- **Calculating EVIC for Each Customer:** EVIC, or Enterprise Value Including Cash, is calculated as the sum of the ordinary shares' market capitalisation at the fiscal year-end, the market capitalization of preferred shares at the fiscal year-end, and the book values of total debt and minority interests {cite}`openriskEnterprise`. The current calculation methodology involves determining the proportion of a company’s EVIC that is attributable to a specific bank.
 
 ```{figure} images/DATA1.png
 ---
 width: 393px
-height: 221px
+height: 222px
 name: data_1
 ---
 
 ```
 
-For example, let's consider a steel company with a 1 billion € EVIC, financed by several banks. If Bank 1 has extended a loan of 100 million € to this company, it means Bank 1 holds 10% of the steel company’s EVIC. According to the Net Zero methodology, 10% of the steel company’s emissions (Scope 1 and Scope 2) are then attributable to Bank 1’s financed emissions (Scope 3), and this 10% contributes to Bank 1’s Net Zero emissions baseline.
+For example, let's consider a steel company with a €1 billion EVIC, financed by several banks. If Bank 1 has extended a loan of €100 million to this company, it means Bank 1 holds 10% of the steel company’s EVIC. According to the Net Zero methodology, 10% of the steel company’s emissions (Scope 1 and Scope 2) are then attributable to Bank 1’s financed emissions (Scope 3), and this 10% contributes to Bank 1’s Net Zero emissions baseline.
 
 However, this is another point of contention. For a bank joining the Net Zero Banking Alliance, it's more relevant to consider the proportion of the loan granted to the steel company in relation to the bank's balance sheet, rather than the other way around. This requires a paradigm shift in the calculation approach. The table below illustrates this concept.
 
 ```{figure} images/DATA2.png
 ---
-width: 393px
+width: 500px
 height: 221px
 name: data_2
 ---
@@ -80,7 +78,31 @@ name: data_2
 
 As demonstrated in this example, and comparing the two tables, the accurate ratio to consider should be 20%, not 10%. This 20% represents the portion of the steel company’s emissions that should be attributable to Bank 1’s Net Zero baseline.
 
-- **Setting Baseline Years and Targets:** Financial institutions establish baseline perimeters and specific emission reduction targets for high-emission industries such as cement, aviation, automotive, oil & gas, and power sectors. Each perimeter consists of a list of companies operating in one of these industries, serving as the starting point for evaluating environmental impact.
+This paradigm shift enables the consideration of the coefficient of transformation of brown assets into green assets, which serves as a proxy for a bank’s ability to transition from a high-carbon to a low-carbon economy. Consider the following example:
+
+- A small bank with a balance sheet of €10 million, where its only asset is a €10 million loan to a carbon-emitting company.
+- A large bank with a balance sheet of €10 billion that lends €1 billion to the same carbon-emitting company, despite the large bank having 100 times the amount of EVIC (Economically Viable Investment Capital) compared to the small bank.
+
+Which bank is environmentally better? The small bank, with no margin or time to transition from brown assets (the €10 million loan to the carbon-emitting company), finds itself stuck. The loan is already granted and cannot be withdrawn, given its medium to long-term nature. Therefore, its coefficient of transformation of brown assets into green assets is zero, as it cannot invest in green assets. Financially, it isn't viable to sell the entire credit to another institution due to the necessity of accepting a high discount rate, which could lead to financial troubles due to its lack of bargaining power.
+
+In contrast, the large bank has €9 billion available to invest in green assets, as brown assets constitute only 1/10th of its total assets (€1 billion). This significant sum allows the bank to consider divesting from the €1 billion by selling the credit to another financial institution without encountering financial difficulties.
+
+So, paradoxically, from an environmental standpoint (considering a bank's transition capability from a high-carbon to a low-carbon economy), the large bank is more advantageous than the small bank, having both the means and the capital to invest in green assets.
+
+Returning to our data tables, please consider this example:
+
+```{figure} images/newdata.png
+---
+width: 500px
+height: 320px
+name: new_data
+---
+
+```
+
+As you can see, no double counting mechanism is in place.
+
+- **Setting Baseline Years and Targets:** Financial institutions establish baseline perimeter criteria and specific emission reduction targets for high-emission industries, including cement, aviation, automotive, oil & gas, and the power sector. Each perimeter comprises a list of companies operating in one of these industries that meet certain pre-determined criteria, serving as the starting point for evaluating environmental impact. Criteria examples may include the exclusion of non-performing exposures, mid-caps, high-capitalisation companies, and certain low-emitting industries, among others.
 
 - **Monitoring at Company and Portfolio Levels:** Banks meticulously monitor emissions data at both the company and portfolio levels, with detailed expectations for emission reduction. Actual emission values are compared against expected detailed GHG values during the Net Zero time horizon (2030 and 2050), facilitating a comprehensive analysis of the environmental impact {cite}`credit2022our2050`.
 
@@ -108,10 +130,10 @@ By addressing these issues, the proposed approach aims to create a more balanced
 
 ### Scenario 1
 
-```{figure} images/Scenario1.png
+```{figure} images/Scenario111.png
 ---
-width: 1141px
-height: 183px
+width: 900.6px
+height: 147.2px
 name: scenario_1
 ---
 
@@ -120,8 +142,8 @@ This scenario represents the best-case outcome: assuming a target for reducing e
 
 ```{figure} images/scene1.png 
 ---
-width: 1158px
-height: 107px
+width: 868.5px
+height: 80.25px
 name: scene_1
 ---
 
@@ -139,10 +161,10 @@ In this scenario, as illustrated in the data below, the portfolio generates a CO
 
 For instance, examining the table provided, it’s evident that all companies within the portfolio eventually reach the target reduction of 30%. The previous CO2 debits (related to years X+1 and X+2) are successfully compensated in subsequent years X+3, X+4, and X+5. 
 
-```{figure} images/Scenario2.png
+```{figure} images/Scenario222.png
 ---
-width: 1138px
-height: 188px
+width: 898.2px
+height: 161px
 name: scenario_2
 ---
 
@@ -150,8 +172,8 @@ name: scenario_2
 
 ```{figure} images/scene2.png
 ---
-width: 1158px
-height: 107px
+width: 868.5px
+height: 80.25px
 name: scene_2
 ---
 
@@ -171,10 +193,10 @@ Additionally, for a company like Company C, which does not meet the target, the 
 
 This scenario highlights the challenges and strategic decisions involved in managing a portfolio with varying levels of emission reductions and underscores the importance of aligning environmental goals with financial and economic considerations.
 
-```{figure} images/Scenario3.png
+```{figure} images/Scenario333.png
 ---
-width: 1137px
-height: 190px
+width: 898px
+height: 161.2px
 name: scenario_3
 ---
 
@@ -182,8 +204,8 @@ name: scenario_3
 
 ```{figure} images/scene3.png 
 ---
-width: 1158px
-height: 107px
+width: 868.5px
+height: 80.25px
 name: scene_3
 ---
 
@@ -207,10 +229,10 @@ Moreover, it becomes necessary to compensate for these CO2 debits with emissions
 
 This scenario highlights the need for an ongoing, dynamic approach to portfolio management, balancing environmental targets with financial and strategic considerations. It underscores the importance of adaptive strategies in achieving Net Zero goals while maintaining profitability.
 
-```{figure} images/Scenario4.png 
+```{figure} images/Scenario444.png
 ---
-width: 1141px
-height: 193px
+width: 899px
+height: 162.2px
 name: scenario_4
 ---
 
@@ -218,8 +240,8 @@ name: scenario_4
 
 ```{figure} images/scene4.png
 ---
-width: 1158px
-height: 107px
+width: 868.5px
+height: 80.25px
 name: scene_4
 ---
 
