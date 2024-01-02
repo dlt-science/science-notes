@@ -16,7 +16,8 @@ parts:
         title: Industry Perspective
         sections:
           - file: AIB/aib
-          # - file: NetZero/netzero
+          - file: FLASHLOANS/flashloans
+
 
   - caption: Q3 2023
     numbered: False
