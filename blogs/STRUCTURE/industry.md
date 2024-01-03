@@ -26,7 +26,7 @@
 :shadow: md
 
 
-<img src= "https://finbold.com/app/uploads/2023/03/Over-1200-German-banks-can-now-offer-Bitcoin-trading-to-their-retail-customers-1.jpg" width="350px" height="200px">
+<img src= "https://www.cryptotimes.io/wp-content/uploads/2023/03/Will-Cryptocurrency-Coexist-with-Traditional-Banks.jpg" width="350px" height="200px">
 
 
 :::
