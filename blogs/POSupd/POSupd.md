@@ -1,5 +1,5 @@
 
-# Staking and Reward Mechanisms in PoS Protocols
+# Staking and Reward Mechanisms in Proof of Stake Protocols
 
 <ins>**Innovation & Ideation**</ins>
 

@@ -15,11 +15,11 @@ parts:
       - file: STRUCTURE/industry_3
         title: Industry Perspective
         sections:
-          - file: AIB/aib
           - file: FLASHLOANS/flashloans
           - file: NetZero/netzero
       - file: STRUCTURE/innovation_3
         sections:
+          - file: AIB/aib
           - file: POSupd/POSupd
   - caption: Q3 2023
     numbered: False

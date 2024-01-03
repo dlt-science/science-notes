@@ -1,10 +1,10 @@
-# Flash Loan Attacks in Decentralized Finance: A Comprehensive Review
+# Flash Loan Attacks in Decentralized Finance
 
 <ins>**Industry Perspective**</ins>
 
 ```{admonition} Key Insights
 :class: tip
-- Flash loans, a distinct DeFi feature, offer uncollateralized loans within a single transaction, providing liquidity for various strategies. Flash loan attacks exploit DeFi vulnerabilities, aiming for high profits with minimal risk, resulting in substantial financial losses across multiple DeFi platforms.
+- Flash loans, a distinct DeFi feature, offer uncollateralied loans within a single transaction, providing liquidity for various strategies. Flash loan attacks exploit DeFi vulnerabilities, aiming for high profits with minimal risk, resulting in substantial financial losses across multiple DeFi platforms.
 
 - Attackers use methods like oracle and governance manipulation, front running, and liquidity removal to exploit protocol vulnerabilities.
 

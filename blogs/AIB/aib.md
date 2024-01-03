@@ -1,6 +1,6 @@
 # The Symbiotic Relationship between Blockchain and Artificial Intelligence
 
-<ins>**Industry Perspective**</ins>
+<ins>**Innovation & Ideation**</ins>
 
 ```{admonition} Key Insights
 :class: tip
