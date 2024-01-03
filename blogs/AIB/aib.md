@@ -28,26 +28,26 @@ Conversely, AI can reciprocate by improving the architecture of blockchain syste
 
 Most commonly, research and applications have explored the potential of using blockchain to augment AI {cite}`inproceedings`. However, our focus is on exploring how AI can enhencing Decentralized Finance. As a core application of blockchain, Decentralised Finance (DeFi) has consistently been a subject of keen interest in both academic and commercial research.
 
-Raheman et al. {cite}`9686345` designed an infrastructure of AI agents or "Oracles" for portfolio management, liquidity provision, and price prediction in various decentralized financial markets. As shown in Figure 1, these Oracles will increase investment value and returns by offering liquidity. They serve end business applications, smart contracts, and other agents. A key aspect is the distinction between an "inventory/portfolio" that comprises multiple assets and a "DEX swap pool" or "DEX balancing pool," which is one of several portfolio maintenance strategies. Therefore, a single "inventory/portfolio" may contain multiple "DEX swap pools" or "DEX balancing pools" with various strategies.
+Raheman et al. {cite}`9686345` designed an infrastructure of AI agents or "Oracles" for portfolio management, liquidity provision, and price prediction in various decentralized financial markets. As shown in {numref}`defi&ai`, these Oracles will increase investment value and returns by offering liquidity. They serve end business applications, smart contracts, and other agents. A key aspect is the distinction between an "inventory/portfolio" that comprises multiple assets and a "DEX swap pool" or "DEX balancing pool," which is one of several portfolio maintenance strategies. Therefore, a single "inventory/portfolio" may contain multiple "DEX swap pools" or "DEX balancing pools" with various strategies.
 
 ```{figure} images/defi&ai.png
 ---
-width: 450px
-height: 551px
+width: 400px
+height: 327px
 name: defi&ai
 ---
-Figure 1: the business functions (at the top) served by AI Oracles (at the bottom).
+The business functions (at the top) served by AI Oracles (at the bottom).
 ```
 
-Figure 2 is the diagram showing how the AI oracles interact with each other and the data sources.
+{numref}`ai_oracle_interact` is the diagram showing how the AI oracles interact with each other and the data sources.
 
 ```{figure} images/ai_oracle_interact.png
 ---
-width: 564px
-height: 652px
+width: 500px
+height: 433px
 name: ai_oracle_interact
 ---
-Figure 2: AI Oracles (in the middle) serving business functions/applications (at the top) relying on data scalping services (at the bottom).
+AI Oracles (in the middle) serving business functions/applications (at the top) relying on data scalping services (at the bottom).
 ```
 AI oracles are being developed for a comprehensive portfolio management system, utilizing on-chain data and predictive analytics.
 Key components include:
