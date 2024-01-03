@@ -25,7 +25,7 @@
 <img src= "https://thedailyguardian.com/wp-content/uploads/2022/10/baba.jpg" width="350px" height="200px">
 
 :::
-<!-- 
+
 :::{grid-item-card} Net Zero Banking Alliance: A Token-based Model
 :margin: 3 0 0 0
 :link: https://dlt-science.github.io/science-notes/NetZero/netzero.html
@@ -37,4 +37,4 @@
 
 
 
-::: -->
+:::
