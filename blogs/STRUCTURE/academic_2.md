@@ -11,7 +11,7 @@
 :text-align: center
 :shadow: md
 
-<img src= "https://media.licdn.com/dms/image/D4E12AQEZ0nWmNnsejA/article-cover_image-shrink_600_2000/0/1690551286433?e=1698883200&v=beta&t=Y5RiUXwPcwtJhptc9W9pLz7D6a7moPCTJfocifOhOZI" width="350px" height="200px">
+<img src= "https://imageio.forbes.com/specials-images/imageserve/5f3fc1b017ddedb7fd4422e8/Data-protection-with-padlock/960x0.jpg?height=474&width=711&fit=bounds" width="350px" height="200px">
 
 :::
 
