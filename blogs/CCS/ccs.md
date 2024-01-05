@@ -5,11 +5,11 @@
 
 ```{admonition} Key Insights
 :class: tip
-- Cross-chain interoperability is paramount for various DeFi applications (DEXs, DApps, etc). The technology must be trustless to prevent reliance on centralised intermediaries. Hash Time Locked Contracts (HTLCs) are commonly used for this purpose.
-- Atomic swaps introduce the risk of asset value fluctuation during the exchange and increase incentives for either party to abort the swap, leading to opportunity costs for the other.
-- A game theoretic framework can be established to construct a parametrised solution for the success rate of cross-chain swaps through HTLCs and Packetised Payments (PPs).
-- Existing parameters lead to high failure rates of cross-chain swaps, and in the case of PPs can theoretically allow malicious agents to make profits. 
-- The game theoretic framework is extended to derive optimisation solutions to increase the success rate of atomic swaps and PPs: 1. Collateralisation 2. Adjustable Exchange Rates. 
+- The integration of cross-chain interoperability is crucial for a variety of decentralised finance (DeFi) applications such as decentralised exchanges (DEXs) and decentralised applications (DApps). The technology must be trustless to prevent reliance on centralised intermediaries, Hash Time Locked Contracts (HTLCs) are commonly used for this purpose.
+- Atomic swaps present a risk of asset value fluctuation during the exchange, increasing the likelihood of one party abandoning the swap. This can result in opportunity costs for the other party.
+- A game theoretic framework can be established to construct a parametrised solution for determining the success rate of cross-chain swaps through HTLCs and Packetised Payments (PPs).
+- The current parameters often lead to high failure rates in cross-chain swaps. In the context of PPs, these parameters can theoretically enable malicious actors to gain profits.
+- The game theoretic framework is extended to derive optimisation solutions that enhance the success rate of atomic swaps and PPs, focusing on collateralisation and adjustable exchange rates. 
 ```
 
 ## Introduction
