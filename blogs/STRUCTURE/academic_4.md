@@ -11,7 +11,7 @@
 :text-align: center
 :shadow: md
 
-<img src= "https://learn.g2.com/hs-fs/hubfs/G2CM_FI664_Learn_Article_Images_%5BProof_of_Stake%5D_V1b.png?width=690&name=G2CM_FI664_Learn_Article_Images_%5BProof_of_Stake%5D_V1b.png"  width="350px" height="200px">
+<img src= "https://www.tbstat.com/cdn-cgi/image/format=webp,q=75/wp/uploads/2021/12/20211106-Cross-Chain-Swap-News.png"  width="350px" height="200px">
 
 
 :::
