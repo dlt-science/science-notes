@@ -5,7 +5,7 @@
 
 ```{admonition} Key Insights
 :class: tip
-- The integation of cross-chain interoperability is crucial for a variety of decentralised finance (DeFi) applications such as decentralised exchanges (DEXs) and decentralised applications (DApps). The technology must be trustless to prevent reliance on centralised intermediaries,ash Time Locked Contracts (HTLCs) are commonly used for this purpose.
+- The integration of cross-chain interoperability is crucial for a variety of decentralised finance (DeFi) applications such as decentralised exchanges (DEXs) and decentralised applications (DApps). The technology must be trustless to prevent reliance on centralised intermediaries, Hash Time Locked Contracts (HTLCs) are commonly used for this purpose.
 - Atomic swaps present a risk of asset value fluctuation during the exchange, increasing the likelihood of one party abandoning the swap. This can result in opportunity costs for the other party.
 - A game theoretic framework can be established to construct a parametrised solution for determining the success rate of cross-chain swaps through HTLCs and Packetised Payments (PPs).
 - The current parameters often lead to high failure rates in cross-chain swaps. In the context of PPs, these parameters can theoretically enable malicious actors to gain profits.
