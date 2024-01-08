@@ -28,7 +28,7 @@ Lenders benefit from fee revenue, and borrowing demand boosts overall pool liqui
 
 ## Attack Incentives and Methods
 
-Flash lending made its debut in 2018 by the Marble Protocol and quickly found popularity with traders looking to profit off arbitrage opportunities between decentralised exchanges {cite}`aonFlashLoan`. The central incentive for flash loan attacks is to gain substantial profits with minimal risk. Attackers extract value from DeFi protocols before changes are reverted due to failed repayment. Importantly, there is essentially no cost to attempting attacks repeatedly as long as the initial loan is repayed {cite}`coinledgerFlashLoans`. 
+Flash lending made its debut in 2018 by the Marble Protocol and quickly found popularity with traders looking to profit off arbitrage opportunities between decentralised exchanges {cite}`aonFlashLoan`. The central incentive for flash loan attacks is to gain substantial profits with minimal risk. Attackers extract value from DeFi protocols before changes are reverted due to failed repayment. Importantly, there is essentially no cost to attempting attacks repeatedly as long as the initial loan is repaid {cite}`coinledgerFlashLoans`. 
 
 ```{figure} images/floan.png
 ---
@@ -45,7 +45,7 @@ Typical attack methods include:
 
 - **Price manipulation:** Attackers can use flash loans to manipulate the price of a cryptocurrency by artificially inflating or deflating its value. This can cause significant losses for traders who have placed orders based on manipulated prices.
 
-- **Removal of liquidity/Smart contract exploits:** Draining pooled reserves through flash borrowing to disable markets or deposit contracts {cite}`acmdigitalloan`. Attackers can exploit DeFi smart contract vulnerabilities including reentrancy issues and integer overflow errors by using flash loans. They might be able to carry out more assaults or steal money from the protocol as a result {cite}`hackenFlashLoan`.
+- **Removal of liquidity/Smart contract exploits:** Draining pooled reserves through flash borrowing to disable markets or deposit contracts {cite}`acmdigitalloan`. Attackers can exploit DeFi smart contract vulnerabilities including re-entrancy issues and integer overflow errors by using flash loans. They might be able to carry out more assaults or steal money from the protocol as a result {cite}`hackenFlashLoan`.
 
 These techniques combine borrowed capital with issues in incentive design, oracle integrity, and contract logic. Successful attacks across multiple protocols demonstrate how interconnectivity amplifies vulnerabilities {cite}`aaveFlashLoans`.
 
@@ -57,17 +57,17 @@ In total, 12 of the top 20 DeFi exploits by profit involved flash loans {cite}`D
 
 ## Emerging Defensive Techniques
 
-In response to rampant flash loan attacks, several defensive techniques have emerged. One approach involves transaction monitoring and the detection of common attack patterns, such as rapid pumping and dumping of oracles. This allows for preemptive action against the attack and transaction reversals.
+In response to rampant flash loan attacks, several defensive techniques have emerged. One approach involves transaction monitoring and the detection of common attack patterns, such as rapid pumping and dumping of oracles. This allows for pre-emptive action against the attack and transaction reversals.
 
-Another mitigation strategy is to require credit based approval for flash loan usage in a protocol’s smart contracts. While this restricts manipulation using flash loans, it may also compromise the intended flexibility of flash loans. Usage of models like the Recency, Frequency and Monetary model(RFM) which  is a marketing technique used to quantify user value based on recency, frequency, and monetary value of purchases. Recency measures how recently a user has made a purchase, Frequency measures how often they purchase, and Monetary measures how much money they spend. Users are segmented into groups based on their RFM scores to identify reliable users.
+Another mitigation strategy is to require credit-based approval for flash loan usage in a protocol’s smart contracts. While this restricts manipulation using flash loans, it may also compromise the intended flexibility of flash loans. Usage of models like the Recency, Frequency and Monetary model (RFM) which is a marketing technique used to quantify user value based on recency, frequency, and monetary value of purchases. Recency measures how recently a user has made a purchase, Frequency measures how often they purchase, and Monetary measures how much money they spend. Users are segmented into groups based on their RFM scores to identify reliable users.
 
 At the protocol level, leveraging time-weighted average pricing via oracles helps reduce manipulation, as does using the maximum across multiple oracles. However, oracle designs remain a challenge. Additionally, proposals to share liquidity across central and decentralised exchanges can mitigate the impact of liquidity attacks {cite}`springerTowardsSecure`.
 
-Despite these defenses, the effectiveness remains elusive as attacks continue to grow more sophisticated. Inherent challenges persist in securing economic protocols atop public blockchains that permit open access {cite}`acmdigitalloan`. 
+Despite these defences, the effectiveness remains elusive as attacks continue to grow more sophisticated. Inherent challenges persist in securing economic protocols atop public blockchains that permit open access {cite}`acmdigitalloan`. 
 
 ## Conclusion
 
-In summary, flash loans offer both capital efficiency and the potential for manipulation. Numerous DeFi protocols and users have fallen victim to sophisticated attacks, resulting in damages exceeding $750 million to date. Technical and economic solutions are still evolving, but following best practices like third party auditing, re-entrancy guards and credit based checks can mitigate risks of such attacks immensely.
+In summary, flash loans offer both capital efficiency and the potential for manipulation. Numerous DeFi protocols and users have fallen victim to sophisticated attacks, resulting in damages exceeding $750 million to date. Technical and economic solutions are still evolving, but following best practices like third-party auditing, re-entrancy guards and credit-based checks can mitigate the risks of such attacks immensely.
 
 It is important to stay updated with the latest best practices and reports as the DeFi landscape is continuously evolving, by following best practices and being vigilant, we can help to build a safe DeFi landscape for everyone.
 
