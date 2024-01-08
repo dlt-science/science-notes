@@ -5,7 +5,7 @@
 
 ```{admonition} Key Insights
 :class: tip
-- MEV's impact extends beyond transaction ordering profits, influencing network congestion and fee inflation, with miners potentially altering their behavior to chase these extractable values.
+- MEV's impact extends beyond transaction ordering profits, influencing network congestion and fee inflation, with miners potentially altering their behaviour to chase these extractable values.
 - To reduce the manipulative impact of MEV on transaction order, proposals for including transactions based on objective metrics like gas prices or timestamps are being examined.
 - The emergence of specialised roles, including arbitrage traders and bot operators, signifies the development of a sophisticated MEV ecosystem, focusing on the optimisation of transaction placement for maximum returns.
 - To enhance the fairness of blockchain networks, new protocols are being developed that aim to level the playing field by minimising the advantages of MEV for miners with greater computational resources.
@@ -35,15 +35,15 @@ The impact of MEV is significant, particularly on end users who pay transaction 
 
 **Frontrunning:** This involves placing the attacker’s transactions ahead of the victim's. For instance, an attacker may offer higher transaction fees to ensure their transaction gets executed first to exploit a rare market opportunity. Block space is sold to non-miner MEV extractors in return for transaction fees through Priority Gas Auctions. 
 
-**Backrunning:** In this scenario, the attacker places their transaction right after the victim's transaction to take advantage of the market change initiated by the victim. For instance, if a transaction on Exchange X significantly increases an asset's price, it opens an arbitrage opportunity. Here, the backrunner could purchase the same asset from another exchange, X', at a lower cost and then sell it on X, keeping the price difference {cite}`yang2022sok`. In this scenario, the backrunner's transaction does not harm the user and aids in maintaining price consistency between the two exchanges. In a similar context, backrunning can also be used to capitalise on oracle updates for liquidation opportunities {cite}`qin2021empirical`.
+**Backrunning:** In this scenario, the attacker places their transaction right after the victim's transaction to take advantage of the market change initiated by the victim. For instance, if a transaction on Exchange X significantly increases an asset's price, it opens an arbitrage opportunity. Here, the backrunner could purchase the same asset from another exchange, X', at a lower cost and then sell it on X, keeping the price difference {cite}`yang2022sok`. In this scenario, the backrunner's transaction does not harm the user and aids in maintaining price consistency between the two exchanges. In a similar context, backrunning can also be used to capitalise on Oracle updates for liquidation opportunities {cite}`qin2021empirical`.
 
 **Sandwich Attacks:** Sandwich attacks present a more complex MEV extraction method where the attacker places two transactions, one before and one after the victim's regular trade. The goal is to manipulate asset prices in such a way that the attacker benefits from the victim's loss {cite}`zhou2021high`. However, executing sandwich attacks can be risky for the attacker as any deviation from the desired transaction order can lead to financial loss. In most cases, these attacks are executed via MEV auction platforms.
 
-**Bribery Attacks:** Attackers may generate MEV to encourage miners to act in their favor, this is known as a bribery attack. These attacks can range from incentivizing miners to temporarily delaying a transaction by offering higher fees for a conflicting transaction to more complex schemes facilitated by smart contracts {cite}`tsabary2021mad` {cite}`winzer2019temporary`. The impact of bribery attacks varies depending on the specific application.
+**Bribery Attacks:** Attackers may generate MEV to encourage miners to act in their favour, this is known as a bribery attack. These attacks can range from incentivizing miners to temporarily delaying a transaction by offering higher fees for a conflicting transaction to more complex schemes facilitated by smart contracts {cite}`tsabary2021mad` {cite}`winzer2019temporary`. The impact of bribery attacks varies depending on the specific application.
  
 ## Impact on Blockchain Fairness and Security Risks
 
-Eskandari et al. {cite}`eskandari2020sok` highlighted a disconcerting aspect of economic inequality that MEV introduces into a system fundamentally designed for decentralisation and equality. Their research showed that miners with more significant computational resources are advantaged, leading to an unequal distribution of wealth and power within the network. This core issue necessitates more rigorous examination and underscores the urgency for remedies that reestablish equilibrium and honor the essential principles of blockchain technology.
+Eskandari et al. {cite}`eskandari2020sok` highlighted a disconcerting aspect of economic inequality that MEV introduces into a system fundamentally designed for decentralisation and equality. Their research showed that miners with more significant computational resources are advantaged, leading to an unequal distribution of wealth and power within the network. This core issue necessitates more rigorous examination and underscores the urgency for remedies that re-establish equilibrium and honour the essential principles of blockchain technology.
 
 ### Financial Losses
 
@@ -54,9 +54,9 @@ The competitive pursuit of MEV by bots can lead to on-chain bidding battles. The
 
 ### Threat to Consensus Stability
 
-Carlsten et al. {cite}`carlsten2016instability` demonstrated that when transaction fees surpass block rewards, miners may stray from honest mining practices. They could create forks with high-fee blocks to entice other miners to contribute to their fork. MEV can be seen as an expanded form of transaction fees directed to the miner, and a significant MEV can amplify this issue. Today, lucrative MEV extraction often outweighs block rewards {cite}`flashbot2022transparency`. 
+Carlsten et al. {cite}`carlsten2016instability` demonstrated that when transaction fees surpass block rewards, miners may stray from honest mining practices. They could create forks with high-fee blocks to entice other miners to contribute to their forks. MEV can be seen as an expanded form of transaction fees directed to the miner, and a significant MEV can amplify this issue. Today, lucrative MEV extraction often outweighs block rewards {cite}`flashbot2022transparency`. 
 
-Daian et al. {cite}`daian2020flash` detailed an additional attack method that leverages MEV, referred to as Time-bandit attacks. Essentially, this approach enhances reorganisation of 51% attacks by supplementing them with financial support derived from MEV.
+Daian et al. {cite}`daian2020flash` detailed an additional attack method that leverages MEV, referred to as Time-bandit attacks. Essentially, this approach enhances the reorganisation of 51% attacks by supplementing them with financial support derived from MEV.
 
 ### A Catalyst for Centralisation
 
