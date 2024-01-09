@@ -35,7 +35,7 @@ For financial institutions, joining the Net Zero Banking Alliance is pivotal. It
 
 Additionally, being a pioneer in adopting the Net Zero approach proactively can provide a competitive edge in the growing arena of green assets. Contrary to the common misconception of a trade-off between emissions and profits, it is possible to cut this trade-off by highlighting the potential for simultaneous environmental stewardship and financial growth.
 
-This aim of this science note is to argue that the current approach to the Net Zero methodology in banking is overly cautious and not as effective from an ESG optimisation perspective. In other words, it's not fully efficient in reducing the carbon footprint of current bank portfolios.
+The aim of this science note is to argue that the current approach to the Net Zero methodology in banking is overly cautious and not as effective from an ESG optimisation perspective. In other words, it's not fully efficient in reducing the carbon footprint of current bank portfolios.
 
 
 ## Net Zero as-Is mechanics
