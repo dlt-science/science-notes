@@ -4,7 +4,7 @@
 ::::{grid} 1 2 2 2
 :gutter: 2
 
-:::{grid-item-card} Flash Loan Attacks in Decentralized Finance
+:::{grid-item-card} Flash Loan Attacks in Decentralised Finance
 :margin: 3 0 0 0
 :link: https://dlt-science.github.io/science-notes/FLASHLOANS/flashloans.html
 :link-type: url

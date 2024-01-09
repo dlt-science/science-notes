@@ -17,7 +17,7 @@
  `````{margin} **Atomic Swaps**
 Direct and automatic peer-to-peer (P2P) exchanges of crypto assets on fundamentally different blockchain networks without the use of centralised intermediaries {cite}`miraz2019atomic`.
 `````
-In the Decentralised Finance (DeFi) landscape, interoperability between disparate blockchain networks is paramount for data and value transmission across chains {cite}`mao2022crosschaintech`. Cross-chain technology has applications in Decentralised Exchanges (DEXs), cross-platform Decentralised Applications (DApps), tokenised real assets, distributed transaction platforms, etc. The technologies need to enable secure and trustless transactions to prevent reliance on centralised intermediaries. To this end, Hash Time Lock Contracts (HTLCs), a form of atomic swaps, are commonly used to achieve cross-chain asset exchange. HTLCs and all other atomic swaps have inherent risks associated with them: (1) value fluctuation during the exchange, and (2) high incentives for malicious agents {cite}`reijsbergen2023crocodai`. An alternative approach is Packetised Payments (PPs) {cite}`robinson2019stanford`, which implement a series of alternating transactions to achieve cross-ledger exchange. This article summarises the recent studies regarding these protocols - unraveling their execution success rate bottlenecks and exploring the proposed solutions {cite}`jiahua2021htlcs` {cite}`jiahua2021pps`.
+In the Decentralised Finance (DeFi) landscape, interoperability between disparate blockchain networks is paramount for data and value transmission across chains {cite}`mao2022crosschaintech`. Cross-chain technology has applications in Decentralised Exchanges (DEXs), cross-platform Decentralised Applications (DApps), tokenised real assets, distributed transaction platforms, etc. The technologies need to enable secure and trustless transactions to prevent reliance on centralised intermediaries. To this end, Hash Time Lock Contracts (HTLCs), a form of atomic swaps, are commonly used to achieve cross-chain asset exchange. HTLCs and all other atomic swaps have inherent risks associated with them: (1) value fluctuation during the exchange, and (2) high incentives for malicious agents {cite}`reijsbergen2023crocodai`. An alternative approach is Packetised Payments (PPs) {cite}`robinson2019stanford`, which implement a series of alternating transactions to achieve cross-ledger exchange. This article summarises the recent studies regarding these protocols - unravelling their execution success rate bottlenecks and exploring the proposed solutions {cite}`jiahua2021htlcs` {cite}`jiahua2021pps`.
 
 
 ### HTLCs
@@ -30,7 +30,7 @@ Packetised Payments start by breaking down transactions into packets. Further, o
 
 ## Game Theoretic Analysis
 
-A game theoretic framework is developed to sequentially analyze events in the two protocols and derive probabilities for the success rate of cross-chain exchanges. The detailed version of the below discussion can be found in {cite}`jiahua2021htlcs` {cite}`jiahua2021pps`.
+A game theoretic framework is developed to sequentially analyse events in the two protocols and derive probabilities for the success rate of cross-chain exchanges. The detailed version of the below discussion can be found in {cite}`jiahua2021htlcs` {cite}`jiahua2021pps`.
 
 ### Game Theoretic Framework for HTLCs
 
@@ -58,17 +58,17 @@ It is found that in steps 1 to 3, the greater the range between minimum and maxi
 ### Key Findings
 
 `````{margin} **Transaction Confirmation Time**
-The time between a network receiving a transaction and the transaction getting processed on chain by a miner node.
+The time between a network receiving a transaction and the transaction getting processed on the chain by a miner node.
 `````
 1. **Exchange Rate:** The success of the swap depends on a defined range of exchange rates $P^*$. Deviations from this range significantly impact the success probability. The overall success rate is highly sensitive to the range of values allowed for $P^*$; therefore, the stability and security of HTLCs can be optimised by maximising this range.
 2. **Success premium:** This is the measure of how determined each party is to see the swap succeed. Actors with low success premiums would cause a low success rate for the swap and come off as malicious. A high success premium leads to a high success rate and a greater range of feasible $P^*$. 
 3. **Time preference (r):** Time preference describes an agent’s impatience level - the desire to access assets now rather than later. larger r results in a narrower viable range of values for $P^*$. If r is greater than a calculated critical value, the swap is rendered impossible as no $P^*$ remains feasible. 
 4. **Transaction confirmation time:** Higher confirmation time on either chain shrinks the viable range of $P^*$ as the increased time taken reduces the transaction utility functions for either or both parties. When $P^*$ is chosen to maximise the success rate, a lower confirmation time increases the success rate.
-5. **Price trend and volatility:** A High upward trend of the exchange rate increases the success rate as Alice is highly likely to decide in favor of the final optionality she receives. In contrast, higher volatility reduces the success rate.
+5. **Price trend and volatility:** A High upward trend of the exchange rate increases the success rate as Alice is highly likely to decide in favour of the final optionality she receives. In contrast, higher volatility reduces the success rate.
 
 HTLCs experience reoccurring and numerous transaction failures. Hence, it can be stated that existing parameters and success premiums of agents are stacked such that success rates cannot be optimal. 
 
-Extending the above game theoretic framework to PPs proves that not only do malicious agents have no incentive to complete transactions, but also that they can enter into multiple transactions in parallel to generate large profits. 
+Extending the above game theoretic framework to PPs proves that not only do malicious agents have no incentive to complete transactions, but also that they can enter multiple transactions in parallel to generate large profits. 
 
 ## Optimising Cross-Chain Swaps
 

@@ -8,7 +8,7 @@
 - Tokens quantify CO2 emissions, offering a precise and transparent method to track and manage emissions in banking activities, aligning financial practices with environmental targets.
 - This system allows for nuanced emissions management, supporting intertemporal and cross-industry compensation, and enhancing efforts to achieve Net Zero goals.
 - Utilising blockchain technology for CO2 tokens adds a layer of security and efficiency, fostering trust in the banking sector's environmental commitments.
-- The model shifts focus from traditional metrics to the actual purpose of financing, ensuring more accurate impact in reducing banking portfolios' carbon footprint.
+- The model shifts focus from traditional metrics to the actual purpose of financing, ensuring a more accurate impact in reducing banking portfolios' carbon footprint.
 - Despite its potential, the model's implementation faces challenges such as stakeholder alignment, regulatory compliance, and balancing financial and environmental objectives, underscoring the need for ongoing adaptation in sustainable finance.
 ```
 
@@ -27,22 +27,22 @@ Within the environmental spectrum, the concept of emissions is stratified into t
 `````{margin} **CO2 Equivalent (CO2e)**
   CO2 equivalent, often abbreviated as CO2e, is a crucial measurement that represents a unified metric encompassing various greenhouse gases' impact on global warming.
 `````
-Furthermore, one of the most important metric in ESG world is CO2 Equivalent (CO2e) {cite}`europa2023glossary`. It quantifies emissions in terms of the amount of CO2 that would exert an equivalent warming effect over a specified period. Understanding CO2e is vital for assessing and mitigating environmental impact.
+Furthermore, one of the most important metrics in the ESG world is CO2 Equivalent (CO2e) {cite}`europa2023glossary`. It quantifies emissions in terms of the amount of CO2 that would exert an equivalent warming effect over a specified period. Understanding CO2e is vital for assessing and mitigating environmental impact.
 
 In this article, we aim to explore the links between the banking system and its financed emissions. The Net Zero Banking Alliance {cite}`unepfi2023Net` stands at the forefront of this exploration. This collaborative coalition of banks and financial institutions is dedicated to mitigating climate change. Its primary goal is to address 'Scope 3' emissions, which constitute the largest portion of a bank’s emissions. Banks participating in this initiative commit to reducing their CO2e footprint, particularly by focusing on their Scope 3 emissions. From the customers' perspective, these are equivalent to Scope 1 and Scope 2 emissions, often termed 'financed emissions.' In addition to reducing emissions, these banks support sustainable initiatives. This alliance is crucial in reshaping the financial sector's role in environmental conservation. Its goals include a 55% reduction in financed emissions by 2030 and, by 2050, balancing any remaining financed emissions with activities that remove an equivalent amount of greenhouse gases from the atmosphere, such as afforestation, reforestation, and carbon capture technologies {cite}`unicredit2023our` {cite}`credit2022credit`.
 
 For financial institutions, joining the Net Zero Banking Alliance is pivotal. It goes beyond just meeting regulatory requirements; it establishes credibility, fosters client trust, and attracts eco-conscious investors. Embracing sustainability, banks contribute to environmental protection and enhance their long-term viability and resilience against climate-related risks.
 
-Additionally, being a pioneer in adopting the Net Zero approach in a proactive way can provide a competitive edge in the growing arena of green assets. Contrary to the common misconception of a trade-off between emissions and profits, it is possible to cut this trade-off by highlighting the potential for simultaneous environmental stewardship and financial growth.
+Additionally, being a pioneer in adopting the Net Zero approach proactively can provide a competitive edge in the growing arena of green assets. Contrary to the common misconception of a trade-off between emissions and profits, it is possible to cut this trade-off by highlighting the potential for simultaneous environmental stewardship and financial growth.
 
-The aim of this article is to argue that the current approach to the Net Zero methodology in banking is overly cautious and not as effective from an ESG optimisation perspective. In other words, it's not fully efficient in reducing the carbon footprint of current bank portfolios.
+This aim of this science note is to argue that the current approach to the Net Zero methodology in banking is overly cautious and not as effective from an ESG optimisation perspective. In other words, it's not fully efficient in reducing the carbon footprint of current bank portfolios.
 
 
 ## Net Zero as-Is mechanics
 
 Current strategies and methodologies in the banking industry involve several key steps to integrate Net Zero principles:
 
-- **Identifying Industry Perimeter:** A bank should identify which are industries that want to consider its Net-Zero analysis. A bank can have a baseline for each industry analysed. Industry perimeters (e.g., Oil & Gas, Power, Steel, etc.) are identified based on NACE codes {cite}`europa2010list` related to customers as present in Master Data information. This is one of the most significant pain points. The Net Zero methodology should be linked to the purpose of the financing, not the NACE code of the company. For example, general financing with no clear purpose should no longer be allowed. If a steel company has a loan for installing photovoltaic panels to generate renewable energy for its activities, this loan should not be included in the Net Zero baseline for the Steel industry. This represents a major data quality issue in banks. It's crucial to start an initiative to map the real purpose of historical loans (i.e., stock) to avoid withdrawing credit lines from companies that are paradoxically implementing ESG strategies, as in the steel company example. According to the standard and as-is Net Zero approach, general financing towards steel (typically mapped with steel NACEs) should be avoided due to the carbon intensity emissions of the steel industry. However, financing for renewable energy, mapped with specific NACEs related to the specific purpose of financing and not to the industry, will highlight an ESG benefit derived from this financing.
+- **Identifying Industry Perimeter:** A bank should identify which industries want to consider its Net-Zero analysis. A bank can have a baseline for each industry analysed. Industry perimeters (e.g., Oil & Gas, Power, Steel, etc.) are identified based on NACE codes {cite}`europa2010list` related to customers as present in Master Data information. This is one of the most significant pain points. The Net Zero methodology should be linked to the purpose of the financing, not the NACE code of the company. For example, general financing with no clear purpose should no longer be allowed. If a steel company has a loan for installing photovoltaic panels to generate renewable energy for its activities, this loan should not be included in the Net Zero baseline for the Steel industry. This represents a major data quality issue in banks. It's crucial to start an initiative to map the real purpose of historical loans (i.e., stock) to avoid withdrawing credit lines from companies that are paradoxically implementing ESG strategies, as in the steel company example. According to the standard and as-is Net Zero approach, general financing towards steel (typically mapped with steel NACEs) should be avoided due to the carbon intensity emissions of the steel industry. However, financing for renewable energy, mapped with specific NACEs related to the specific purpose of financing and not to the industry, will highlight an ESG benefit derived from this financing.
 
 - **Credit features: lifecycle or status:** Credit features, particularly the lifecycle or status of a credit, significantly impact the baselines for financed emissions. Emissions are linked to financed companies, and the characteristics of granted credit play a crucial role in the construction of these baselines. For example, a 30-year credit with 5 years remaining requires the bank to assess its strategic value in the portfolio, impacting whether it's renewed or not. Once such a credit expires, its associated financed emissions are removed from the Net Zero metrics, improving the bank's carbon footprint. This is especially true when credits are at zero residual maturity. Additionally, the credit status, reflecting the borrower's creditworthiness, is a key factor. Credits in good standing that turn non-performing (due to repayment issues) can paradoxically improve Net Zero values. Non-performing credits, often linked to operationally troubled companies, imply reduced emissions. When offloaded by the bank, these credits no longer affect its net-zero metrics. However, including non-performing exposures (NPEs) in baselines without adjustment can lead to inflated baselines and significant apparent reductions in carbon footprints in subsequent years, a form of greenwashing. Therefore, it's best practice to exclude loans with less than a year of residual maturity and to be cautious about including NPEs in baselines to avoid artificially inflated metrics and misleading progress towards Net Zero targets.
 
@@ -100,7 +100,7 @@ name: new_data
 
 ```
 
-As you can see, no double counting mechanism is in place.
+As you can see, no double-counting mechanism is in place.
 
 - **Setting Baseline Years and Targets:** Financial institutions establish baseline perimeter criteria and specific emission reduction targets for high-emission industries, including cement, aviation, automotive, oil & gas, and the power sector. Each perimeter comprises a list of companies operating in one of these industries that meet certain pre-determined criteria, serving as the starting point for evaluating environmental impact. Criteria examples may include the exclusion of non-performing exposures, mid-caps, high-capitalisation companies, and certain low-emitting industries, among others.
 
@@ -217,9 +217,9 @@ In this scenario, none of the companies within our portfolio reach the final tar
 
 In such a case, a detailed analysis is required for each company to determine:
 
-- Which companies should be put in run-off due to their inability to meet emission targets.
+- Which companies should be put in run-off due to their inability to meet emission targets?
 
-- Which companies should be retained in the portfolio. This could be because they are strategically important, or they could potentially be financed with green financing, among other reasons.
+- Which companies should be retained in the portfolio? This could be because they are strategically important, or they could potentially be financed with green financing, among other reasons.
 
 Moreover, it becomes necessary to compensate for these CO2 debits with emissions savings from another portfolio, such as the power portfolio. This analysis should be conducted annually as soon as the yearly data are available. The focus should be on cherry-picking companies that:
 
@@ -263,7 +263,7 @@ Building Blocks of the New Model:
 
 Tokens are digital representations of CO2 equivalent units and possess several characteristics:
 
-- **Fungibility:** Tokens are interchangeable, each having equivalent value within the system.
+- **Fungibility:** Tokens are interchangeable, each having an equivalent value within the system.
 - **Divisibility:** Tokens can be divided into smaller units, enhancing liquidity.
 - **Intrinsic Value:** Tokens hold real value, making them valuable assets.
 
