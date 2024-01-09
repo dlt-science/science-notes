@@ -32,7 +32,7 @@ name: hed_diagram
 Hedera Transaction Recording Process & Its Key Benefits.
 ```
 
-Since Hedera launched in August 2018, it offers unique transactional capabilities through its native HBAR cryptocurrency, used both for network security and as fuel for network services. As a proof-of-stake network, HBARs help safeguard the network by representing voting power; thus, wider distribution of HBARs prevents potential attacks by making it prohibitively expensive for a malicious entity to control one-third of the coins. In addition, HBARs serve as fuel for network services, compensating nodes for providing computing resources, and ensuring low, stable transaction fees. For example, a cryptocurrency transfer currently costs \$0.0001 (paid in HBARs) {cite}`consensus2019`.
+Since Hedera launched in August 2018, it has offered unique transactional capabilities through its native HBAR cryptocurrency, used both for network security and as fuel for network services. As a proof-of-stake network, HBARs help safeguard the network by representing voting power; thus, wider distribution of HBARs prevents potential attacks by making it prohibitively expensive for a malicious entity to control one-third of the coins. In addition, HBARs serve as fuel for network services, compensating nodes for computing resources and ensuring low stable transaction fees. For example, a cryptocurrency transfer currently costs \$0.0001 (paid in HBARs) {cite}`consensus2019`.
 
 ## Hedera Cryptocurrency Service
 
@@ -40,7 +40,7 @@ Hedera provides two distinct services related to digital assets: the Hedera Cryp
 
 ## Fees Associated with Hedera Transactions
 
-Hedera's network fees are designed for specific network operations. The fees are payable in HBAR, but are also fixed in USD for stability.
+Hedera's network fees are designed for specific network operations. The fees are payable in HBAR but are also fixed in USD for stability.
 
 ```{note} **HBAR Denominations and Abbreviations**
 
@@ -64,7 +64,7 @@ Fee structures for various operations are as follows:
 - File Service: The fee for creating a file is \$0.05, updating a file is $0.05, and deleting a file is \$0.007, etc.
 - Smart Contract Service: Fees for creating a contract are $1.0, for updating a contract are \$0.026, and for making a contract call are \$0.05, etc.
 
-Exact service fees will be visible once finalized through the [pricing calculator](https://docs.hedera.com/hedera/networks/mainnet/fees). 
+Exact service fees will be visible once finalised through the [pricing calculator](https://docs.hedera.com/hedera/networks/mainnet/fees). 
 
 ## Hedera Consensus Service
 
@@ -106,7 +106,7 @@ const transaction = new ContractCreateTransaction()
 
 const modifyTransactionFee = transaction.setMaxTransactionFee(new Hbar(16));
 
-//Sign the transaction with the client operator key and submit to a Hedera network
+//Sign the transaction with the client operator key and submit it to a Hedera network
 
 const txResponse = await modifyTransactionFee.execute(client);
 

@@ -6,7 +6,7 @@
 :class: tip
 - Zero-Knowledge Proofs (ZKPs), a cryptographic method, enhances privacy and security in blockchain transactions without sacrificing transparency.
 - Advanced forms of ZKP, like zk-SNARKs and zk-STARKs, have evolved to provide shorter proofs, lower computational requirements, and eliminate the need for a trusted setup.
-- ZKPs are revolutionizing a range of blockchain applications, from Digital Identity and Traffic Management Systems to Mobile Health, ridesharing, and real estate transactions, by ensuring privacy-centric verification.
+- ZKPs are revolutionising a range of blockchain applications, from Digital Identity and Traffic Management Systems to Mobile Health, ridesharing, and real estate transactions, by ensuring privacy-centric verification.
 - Despite their benefits, ZKPs present challenges, including non-deterministic truthfulness, potential undisclosed secrets, and integrity risks. They also require considerable computational resources and lack user-friendliness for developers.
 - Despite these challenges, ZKPs play a crucial role in the ongoing evolution of blockchain technologies, promising a future for more private, secure, and decentralised systems.
 ```
