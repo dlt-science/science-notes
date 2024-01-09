@@ -14,7 +14,7 @@
 ## Introduction
 
 `````{margin} **Web3**
-Web3, short for Web 3.0, is the third generation of internet services for websites and applications that incorporate blockchain-based and decentralised processes. It emphasises a user-centric online experience where data ownership and control is returned to the individual, as opposed to being centralised in large tech companies.
+Web3, short for Web 3.0, is the third generation of internet services for websites and applications that incorporate blockchain-based and decentralised processes. It emphasises a user-centric online experience where data ownership and control are returned to the individual, as opposed to being centralised in large tech companies.
 `````
 
  `````{margin} **DAOs**
@@ -51,7 +51,7 @@ Hyper-financialization refers to the dominance of financial markets, institution
 Web3 aims to revolutionise society beyond just financial systems, but its current lack of mechanisms to represent human identities and relationships in virtual worlds leads to issues like Sybil attacks, collusion, and an inclination towards hyper-financialization {cite}`weyl2022decentralized`. To counter this, Weyl et al. {cite}`weyl2022decentralized` proposed the concept of a Decentralised Society (DeSoc), an approach fostering complex and diverse relationships across digital and physical realities. It is built on trust and cooperation while also correcting for biases and tendencies to overcoordinate.
 
 `````{margin} **Vampire Attack**
-In the context of decentralised finance (DeFi) and blockchain, a vampire attack is a strategy where a new protocol aims to drain liquidity and users from an existing one. This is often done by offering higher rewards or better incentives on the new platform, incentivizing users of the old platform to migrate their assets.
+In the context of decentralised finance (DeFi) and blockchain, a vampire attack is a strategy where a new protocol aims to drain liquidity and users from an existing one. This is often done by offering higher rewards or better incentives on the new platform, incentivising users of the old platform to migrate their assets.
 `````
 Economic growth is primarily driven by networks yielding increasing returns, but the current private property paradigm of DeFi can limit such growth. DeSoc recommends treating networks as partially and collectively shared goods, applying governance mechanisms that balance trust and cooperation, while checking for collusion and capture. This model supports a bottom-up approach in building, participating in, and governing networks. Consequently, it creates structures resilient to Sybil and vampire attacks and collusion, and promotes plural networks that provide widespread benefits, agreed upon by diverse members.
 
@@ -72,7 +72,7 @@ A distinct and pivotal characteristic of Soulbound tokens (SBTs) is their inhere
 
 SBTs are issued and held within unique accounts known as Souls, which serve as a vessel for these tokens and play a crucial role in establishing provenance and reputation. Souls can denote various entities, ranging from individuals to organisations, companies, and more. It's noteworthy that in a decentralised society (DeSoc), Souls are not required to have a direct human equivalence, meaning a single person can be associated with multiple Souls. Unlike regular NFTs, soulbound tokens (SBTs) are a concept of non-transferable assets {cite}`titus2022decentralized`. Once issued, they belong to a specific identity {cite}`hildebrandt2022future`.
 
-This flexibility can manifest in a multitude of ways. For example, an individual could possess an array of 'Souls', each symbolizing different facets of their identity, such as their professional credentials, medical histories, among other elements {cite}`takyar2023what`.
+This flexibility can manifest in a multitude of ways. For example, an individual could possess an array of 'Souls', each symbolizing different facets of their identity, such as their professional credentials, and medical histories, among other elements {cite}`takyar2023what`.
 
 ## Potential Applications of SBTs
 
@@ -96,7 +96,7 @@ Soulbound Tokens (SBTs) can also be used to prevent Sybil attacks in Decentralis
 
 ### Enhancing Trust in Online Property Rental
 
-The economic growth potential of the real estate sector is significant, encompassing diverse industries from retail to housing services. The digitization of real estate, however, has invited several challenges, notably in the form of scams targeting landlords and tenants. To address this issue, a blockchain-based property rental platform is proposed. This platform will utilise Soulbound Tokens (SBTs) to verify the credibility and reputation of users, providing security against online rental fraud. A non-transferable, non-fungible token is provided to the new user that records their reputation across their time on the website. Property listings will be structured as smart contracts on the platform, ensuring secure and immutable transaction terms between landlords and tenants. This could drastically reduce fraud, enhance trust, and potentially transform the online rental industry {cite}`sharma2023implementation`.
+The economic growth potential of the real estate sector is significant, encompassing diverse industries from retail to housing services. The digitisation of real estate, however, has invited several challenges, notably in the form of scams targeting landlords and tenants. To address this issue, a blockchain-based property rental platform is proposed. This platform will utilise Soulbound Tokens (SBTs) to verify the credibility and reputation of users, providing security against online rental fraud. A non-transferable, non-fungible token is provided to the new user that records their reputation across their time on the website. Property listings will be structured as smart contracts on the platform, ensuring secure and immutable transaction terms between landlords and tenants. This could drastically reduce fraud, enhance trust, and potentially transform the online rental industry {cite}`sharma2023implementation`.
 
 ### Decentralised Dispute Resolution
 
@@ -124,9 +124,9 @@ Soulbound Tokens (SBTs), as an emerging concept, come with several challenges. S
 
 - **Interoperability:** Like many NFTs, SBTs are often minted on specific blockchains, which can restrict their versatility and applicability beyond their native chain. This limitation can be partially addressed by integrating EVM-compatible chains into prevalent Web3 applications and ensuring most users stay within a single blockchain ecosystem.
 
-- **Non-transferability:** The non-transferable nature of SBTs, while offering numerous benefits, can also pose challenges. If a token is unwillingly assigned to someone, it may lead to issues. This can be resolved by developing more robust permissioned interfaces on top of the blockchain, allowing users to enjoy the benefits of SBTs while also having the option to conceal or remove SBTs from their profile.
+- **Non-transferability:** The non-transferable nature of SBTs, while offering numerous benefits, can also pose challenges. If a token is unwillingly assigned to someone, it may lead to issues. This can be resolved by developing more robust permissioned interfaces on top of the blockchain, allowing users to enjoy the benefits of SBTs while also having the option to conceal or remove SBTs from their profiles.
 
-To ensure wider adoption and success, these issues associated with SBTs need to be ironed out. Although souls can choose to hide what SBTs reveal, in a way, they could also foster discrimination by revealing too many details in specific situations or contexts. This is particularly true for marginalized social groups who are more likely to experience disfavor {cite}`shrishti2022cbdcs`(HackerNoon, CBDCs and soulbound token explained 2022). With the right solutions, non-transferable NFTs like SBTs have the potential to contribute to a more equitable and privacy-focused digital society.
+To ensure wider adoption and success, these issues associated with SBTs need to be ironed out. Although souls can choose to hide what SBTs reveal, in a way, they could also foster discrimination by revealing too many details in specific situations or contexts. This is particularly true for marginalised social groups who are more likely to experience disfavour {cite}`shrishti2022cbdcs`. With the right solutions, non-transferable NFTs like SBTs have the potential to contribute to a more equitable and privacy-focused digital society.
 
 ## Conclusion
 
