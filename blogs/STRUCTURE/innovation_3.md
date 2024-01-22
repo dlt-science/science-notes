@@ -22,7 +22,7 @@
 :text-align: center
 :shadow: md
 
-<img src= "https://tezos.com/img-mirror/PjOeOZcuQFWpbUVuSsTS.jpg"  width="350px" height="200px">
+<img src= "https://baliprawara.com/wp-content/uploads/2022/09/Proof-of-Stake-850x560.jpg"  width="350px" height="200px">
 
 
 :::
