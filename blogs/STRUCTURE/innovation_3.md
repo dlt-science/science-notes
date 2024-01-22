@@ -22,7 +22,7 @@
 :text-align: center
 :shadow: md
 
-<img src= "https://tezos.com/img-mirror/PjOeOZcuQFWpbUVuSsTS.jpg"  width="350px" height="200px">
+<img src= "https://learn.g2.com/hs-fs/hubfs/G2CM_FI614_Learn_Article_Images_%5BBlockchain_Applications%5D_V1b.png?width=690&name=G2CM_FI614_Learn_Article_Images_%5BBlockchain_Applications%5D_V1b.png"  width="350px" height="200px">
 
 
 :::
