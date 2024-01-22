@@ -22,7 +22,7 @@
 :text-align: center
 :shadow: md
 
-<img src= "https://baliprawara.com/wp-content/uploads/2022/09/Proof-of-Stake-850x560.jpg"  width="350px" height="200px">
+<img src= "https://learn.g2.com/hs-fs/hubfs/G2CM_FI614_Learn_Article_Images_%5BBlockchain_Applications%5D_V1b.png?width=690&name=G2CM_FI614_Learn_Article_Images_%5BBlockchain_Applications%5D_V1b.png"  width="350px" height="200px">
 
 
 :::
