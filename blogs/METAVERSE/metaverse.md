@@ -25,6 +25,15 @@ The essence of the metaverse lies in its integration of various emerging technol
 
 Currently, the metaverse is transitioning from a conceptual stage to a more concrete reality, driven by the rapid advancement and integration of these technologies. This transition has caught the attention of major tech companies worldwide, including Meta (formerly Facebook), Microsoft, Tencent, and NVIDIA, all of which are exploring its potential. The development trajectory of the metaverse is seen through three distinct phases: [[5]](#5)
 
+```{figure} images/mv.png
+---
+width: 718px
+height: 311px
+name: metaverse
+---
+Development trajectory of the Metaverse.
+```
+
 
 1. Starting with the creation of digital twins that mirror the physical world.
 2. Moving towards a stage where digital natives generate unique content and innovations.
