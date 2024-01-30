@@ -1,4 +1,4 @@
-# Metaverse
+# Blockchain in the Metaverse: A New Digital Era
 
 <ins>**Innovation & Ideation**</ins>
 
