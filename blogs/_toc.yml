@@ -10,7 +10,10 @@ parts:
       - file: STRUCTURE/academic_4
         title: Academic Insights
         sections:
-          - file: CCS/ccs  
+          - file: CCS/ccs 
+      - file: STRUCTURE/innovation_4
+        sections:
+          - file: METAVERSE/metaverse        
   - caption: Q4 2023
     numbered: False
     chapters:
