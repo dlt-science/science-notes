@@ -2,12 +2,15 @@
 
 <ins>**Innovation & Ideation**</ins>
 
-
-**Key Insights:**
-* The Metaverse, blending VR, AR, and other technologies, creates a deeply immersive experience with VR and AR crucial for engagement.
-* Blockchain redefines digital transactions with its secure and transparent peer-to-peer system, revolutionising traditional finance.
-* In the Metaverse, blockchain ensures secure, decentralised data and digital asset management.
-* Challenges in merging blockchain with the Metaverse include privacy, potential centralisation, and ensuring data security alongside transparency.
+```{admonition} Key Insights
+:class: tip
+- The Metaverse integrates VR, AR, and XR with blockchain, enhancing immersive experiences and revolutionising digital transactions and asset management.
+- Blockchain serves as both a data repository and an economic system foundation in the Metaverse, linking virtual and real-world economies.
+- Blockchain increases the security and decentralisation of digital interactions in the Metaverse, ensuring transparent and trustworthy asset management.
+- Key projects like Decentraland, Sandbox, Axie Infinity, and Illuvium demonstrate blockchain's diverse applications in the Metaverse, from virtual real estate and gaming to e-commerce.
+- Addressing privacy, potential centralisation, and ensuring secure, reliable blockchain architecture are major challenges for blockchain integration in the Metaverse.
+- The continued development of blockchain is crucial for the Metaverse's growth, hinting at a future where digital and physical realities seamlessly merge, offering new possibilities for digital interaction and economic models.
+```
 
 ## Introduction
 
