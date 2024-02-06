@@ -2,6 +2,8 @@
 
 <ins>**Industry Perspective**</ins>
 
+**Disclaimer:** The views and opinions expressed in this article are solely those of the author
+
 ```{admonition} Key Insights
 :class: tip
 - A token-based model marks a significant evolution in sustainable finance, effectively integrating environmental goals with banking operations, particularly in managing financed emissions.
