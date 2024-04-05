@@ -33,6 +33,15 @@ This section will dissect the core components of blockchain that bolster retail 
 
 **3. Vendor Management:** This subsection discusses how blockchain streamlines vendor vetting, using smart contracts to enforce compliance with security standards, thus fortifying the supply chain against intrusion and fraud.
 
+```{figure} images/BARC1.png
+---
+width: 411px
+height: 281px
+name: BARC1.png
+---
+Blockchain conceptual framework.
+```
+
 ### Reinforcing Transaction Security
 
 **1. Payment Systems:** Blockchain's disruption of traditional payment systems is examined, focusing on how it enables secure, transparent peer-to-peer transactions without the need for financial intermediaries, thereby reducing the avenues for fraud.
@@ -49,6 +58,15 @@ This section will dissect the core components of blockchain that bolster retail 
 ### Case Study: Blockchain in Action
 
 A detailed examination of a real-world application where blockchain technology has been deployed within the retail sector to address specific cybersecurity challenges.
+
+```{figure} images/BARC2.png
+---
+width: 421px
+height: 421px
+name: BARC2.png
+---
+Blockchain system flowchart.
+```
 
 ### Discussion: Blockchain's Real-world Impact
 
