@@ -17,7 +17,7 @@ parts:
       - file: STRUCTURE/academic_4
         title: Academic Insights
         sections:
-          - file: CCSwaps/ccswaps
+          - file: BARC/barc
   - caption: Q4 2023
     numbered: False
     chapters:
