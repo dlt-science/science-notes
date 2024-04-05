@@ -39,7 +39,7 @@ width: 411px
 height: 281px
 name: BARC1.png
 ---
-Blockchain conceptual framework.
+BARC conceptual framework.
 ```
 
 ### Reinforcing Transaction Security
@@ -65,7 +65,7 @@ width: 421px
 height: 421px
 name: BARC2.png
 ---
-Blockchain system flowchart.
+BARC system flowchart.
 ```
 
 ### Discussion: Blockchain's Real-world Impact
