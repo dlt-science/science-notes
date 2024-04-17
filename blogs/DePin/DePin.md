@@ -64,30 +64,3 @@ Even though the DePIN technology is just on the path to becoming a revolutionary
 ```{bibliography}
 :filter: docname in docnames
 ```
-
-Ballandies, M.C., Wang, H., Law, A.C.C., Yang, J.C., Gösken, C., & Andrew, M. (2023) 'A Taxonomy for Blockchain-based Decentralized Physical Infrastructure Networks (DePIN)', *Preprint*, September. DOI: 10.13140/RG.2.2.18553.85605. Available at: https://www.researchgate.net/publication/374005682 (Accessed: 13 March 2024).
-
-Lepcha M, Decentralized Physical Infrastructure Network (DePIN), Techopedia. Available at: https://www.techopedia.com/definition/decentralized-physical-infrastructure-networks-depin#:~:text=Decentralized%20physical%20infrastructure%20networks%20(DePINs)%20are%20blockchain%20protocols%20that%20build,%2C%20data%20collection%2C%20and%20more. (Accessed Date: 13 March 2024)
-
-Selkis R, 2024, Crypto Theses 2024, Masseri. Available at: https://resources.messari.io/pdf/crypto-theses-for-2024.pdf. (Accessed Date: 13 March 2024)
-
-Zhang S, Lee J.H, 2019, Analysis of the main consensus protocols of blockchain. KISC.  Volume 6, Issue 2, Pages 93-97, ISSN 2405-9595, DOI: 10.1016/j.icte.2019.08.001. Available at: https://www.sciencedirect.com/science/article/pii/S240595951930164X (Accessed Date: 13 March 2024)
-
-Nakamoto, S., 2008. Bitcoin: A peer-to-peer electronic cash system. (Accessed Date: 13 March 2024)
-
-OECD (2019), Making Decentralisation Work: A Handbook for Policy-Makers, OECD Multi-level Governance Studies, OECD Publishing, Paris, https://doi.org/10.1787/g2g9faa7-en. (Accessed Date: 13 March 2024)
-
-Sarkar, D., 2023. Generalised DePIN Protocol: A Framework for Decentralized Physical Infrastructure Networks. arXiv preprint arXiv:2311.00551.
-
-Ballandies, M. C. (2022). Fundamentals of Cryptoeconomics: On the design, construction, and impact of blockchain-based systems and incentives. https://doi.org/10.3929/ETHZ-B-000585402
-
-Datsenko, A. (2023). Decentralized Physical Infrastructure (DePIN) Explained. IdeaSoft. Available at: https://ideasoft.io/blog/what-are-decentralized-physical-infrastructure-networks-depin/#:~:text=Let%27s%20explore%20how%20DePIN%20works,to%20that%20of%20venture%20capitalists. [Accessed 16 March 2024].
-
-DePIN Hub. Filecoin. Available at: https://depinhub.io/projects/filecoin (Accessed date: 17 March 2024)
-
-Schoeman, L. (2024). Filecoin Reviewed. SA Shares. Available at: https://sashares.co.za/filecoin-review/#gs.70o4g2 (Accessed date: 27 March 2024)
-
-Peaq. (2023). DePIN: What are Decentralized Physical Infrastructure Networks?  Peaq/ Available at: https://www.peaq.network/blog/what-are-decentralized-physical-infrastructure-networks-depin (Accessed data: 28 March 2024)
-
-
-
