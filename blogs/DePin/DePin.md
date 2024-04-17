@@ -15,13 +15,13 @@ Decentralisation stands as a pivotal method for ensuring information transparenc
 
 Bitcoin introduced the concept of decentralisation as a peer-to-peer cash network [5]. Decentralisation has been a main topic of discussion in recent trends [6]. This concept has also been explored in the context of transitioning traditional physical networks towards decentralisation [1].
 
-Numerous infrastructures such as Wireless networks, cloud storage, and computing can benefit from decentralisation. DePIN, for instance, can be defined as an infrastructure network constructed, maintained, and operated through blockchain protocols within a decentralized and open network [2].
+Numerous infrastructures such as Wireless networks, cloud storage, and computing can benefit from decentralisation. DePIN, for instance, can be defined as an infrastructure network constructed, maintained, and operated through blockchain protocols within a decentralised and open network [2].
 
-The current solution provides a centralised infrastructure for users, such as AWS, where Amazon oversees controlling and maintaining the cloud services. Conversely, in a decentralized solution, the community and token holders assume responsibility for facilitating and delivering these services. The forthcoming sections will delve into the various advantages and drawbacks of such a platform. 
+The current solution provides a centralised infrastructure for users, such as AWS, where Amazon oversees controlling and maintaining the cloud services. Conversely, in a decentralised solution, the community and token holders assume responsibility for facilitating and delivering these services. The forthcoming sections will delve into the various advantages and drawbacks of such a platform. 
 
 ## What is DePIN and How it Works
 
-DePIN has garnered attention in recent developments for bridging decentralization with the physical realm. Decentralisation has promised values such as enhancing transparency, reducing censorship, improving user control by accessing them to the decision-making processes and diminishing reliance on intermediaries within the network [7].
+DePIN has garnered attention in recent developments for bridging decentralisation with the physical realm. Decentralisation has promised values such as enhancing transparency, reducing censorship, improving user control by accessing them to the decision-making processes and diminishing reliance on intermediaries within the network [7].
 
 Functioning as a crypto-economic system, DePIN comprises several components, i) individual autonomous actors, ii) economic policies embedded in software iii) emergent properties arising from the interactions of those actors according to the rules defined by the software” [1, 8]
 
@@ -31,7 +31,7 @@ With a vast network of users utilising their devices to sustain DePIN, participa
 
 ## Use Cases
 
-Filecoin stands out as a great example of DePIN utilization, offering decentralized storage solutions. Miners can engage with the network by allocating their unused storage and earning rewards, effectively transforming cloud storage into an algorithmic market facilitated by peer-to-peer networking. 
+Filecoin stands out as a great example of DePIN utilisation, offering decentralised storage solutions. Miners can engage with the network by allocating their unused storage and earning rewards, effectively transforming cloud storage into an algorithmic market facilitated by peer-to-peer networking. 
 
 This system uses cryptographic algorithms to ensure that all files are saved safely. The community behind Filecoin governs the network’s authority. They are committed to upholding transparency, decentralisation and open-source principles are being applied through the network.
 
