@@ -9,7 +9,7 @@
 
 ## Abstract
 
-Decentralisation stands as a pivotal method for ensuring information transparency. The emergence of technologies like blockchain and Decentralised Ledger Technology (DLT) has illuminated the prospect of integrating such innovations into various infrastructures. This article delves into the workings of this technology, its applications, and its implementation strategies. Moreover, we analyse the benefits of decentralised physical infrastructure networks (DePIN) alongside the concerns surrounding their utilisation within physical infrastructures.
+Decentralisation stands as a pivotal method for ensuring information transparency. The emergence of blockchain and Decentralised Ledger Technology (DLT) has illuminated the prospect of integrating such innovations into various infrastructures. This article delves into the workings of this technology, its applications, and its implementation strategies. Moreover, we analyse the benefits of decentralised physical infrastructure networks (DePIN) alongside the concerns surrounding their utilisation within physical infrastructures.
 
 ## Introduction
 
@@ -27,7 +27,7 @@ Functioning as a crypto-economic system, DePIN comprises several components, i) 
 
 At the core of DePIN's operation lies the tokenisation model, which incentivises participants to contribute essential resources to the network. This participation entails offering resources such as GPU power, hotspots, and storage. Users within the network benefit from transactions based on supply and demand dynamics, wherein they must utilise the provided token to access storage offered by network participants [9].
 
-With a vast network of users utilising their devices to sustain DePIN, participant verification is essential. Methods like Zero-Knowledge Proof (ZKP) enable the verification of new members while ensuring they possess the requisite equipment without revealing their credential information [7].
+Participant verification is essential with a vast network of users utilising their devices to sustain DePIN. Methods like Zero-Knowledge Proof (ZKP) enable the verification of new members while ensuring they possess the requisite equipment without revealing their credential information [7].
 
 ## Use Cases
 
@@ -35,7 +35,7 @@ Filecoin stands out as a great example of DePIN utilisation, offering decentrali
 
 This system uses cryptographic algorithms to ensure that all files are saved safely. The community behind Filecoin governs the network’s authority. They are committed to upholding transparency, decentralisation and open-source principles are being applied through the network.
 
-Numerous advantages come from utilising Filecoin services. Being a decentralised network, there are no geographical limitations on user participation, fostering inclusivity. However, users should consider the efficiency of their equipment and electricity costs. Additionally, the transparency and security provided by cryptographic algorithms enhance user trust. Filecoin is commitment to open-source development ensures users have access to the latest software for seamless operation.  
+Numerous advantages come from utilising Filecoin services. Being a decentralised network, there are no geographical limitations on user participation, fostering inclusivity. However, users should consider the efficiency of their equipment and electricity costs. Additionally, the transparency and security provided by cryptographic algorithms enhance user trust. Filecoin's commitment to open-source development ensures users have access to the latest software for seamless operation.  
 
 Nevertheless, alongside the benefits come certain concerns. Profitability challenges have jeopardised user interest, affecting network participation. The scarcity of users providing necessary equipment and facilities has currently impacted the network's efficacy. Enhanced profitability systems and increased user engagement could mitigate these challenges and drive network growth [10, 11].
 
@@ -53,7 +53,7 @@ Another issue with these networks is that they require massive facilities such a
 
 ## Conclusion
 
-Even though the DePIN technology is just on the path to becoming a revolutionary approach to decentralising physical infrastructure such as sensors, storage, GPUs and more there are several concerns regarding them. Right implementations of these physical infrastructures can help to reduce costs, increase transparency, etc. DePINs can also try to take control of the network out of centralised players such as AWS and challenge them by involving individuals to participants in the network using their Equipments. 
+Even though the DePIN technology is just on the path to becoming a revolutionary approach to decentralising physical infrastructure such as sensors, storage, GPUs and more there are several concerns regarding them. Right implementations of these physical infrastructures can help to reduce costs, increase transparency, etc. DePINs can also try to take control of the network out of centralised players such as AWS and challenge them by involving individuals to participate in the network using their equipment. 
 
 
 <div style="text-align: right;font-weight: bold;"></div>
