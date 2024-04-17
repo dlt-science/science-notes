@@ -9,7 +9,7 @@
 
 ## Abstract
 
-Decentralisation stands as a pivotal method for ensuring information transparency. The emergence of blockchain and Decentralised Ledger Technology (DLT) has illuminated the prospect of integrating such innovations into various infrastructures. This article delves into the workings of this technology, its applications, and its implementation strategies. Moreover, we analyse the benefits of decentralised physical infrastructure networks (DePIN) alongside the concerns surrounding their utilisation within physical infrastructures.
+Decentralisation stands as a pivotal method for ensuring information transparency. The emergence of blockchain and Decentralised Ledger Technology (DLT) has illuminated the prospects of integrating such innovations into various infrastructures. This article delves into the workings of this technology, its applications, and its implementation strategies. Moreover, we analyse the benefits of decentralised physical infrastructure networks (DePIN) alongside the concerns surrounding their utilisation within physical infrastructures.
 
 ## Introduction
 
