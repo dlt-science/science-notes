@@ -21,6 +21,15 @@ The current solution provides a centralised infrastructure for users, such as AW
 
 ## What is DePIN and How it Works
 
+```{figure} images/depin.drawio.png
+---
+width: 695.5px
+height: 739.5px
+name: depin_diagram
+---
+DePIN Life Cycle.
+```
+
 DePIN has garnered attention in recent developments for bridging decentralisation with the physical realm. Decentralisation has promised values such as enhancing transparency, reducing censorship, improving user control by granting access to the decision-making processes, and diminishing reliance on intermediaries within the network {cite}`sarkar2023generalised`.
 
 Functioning as a crypto-economic system, DePIN comprises several components: i) individual autonomous actors, ii) economic policies embedded in software, iii) emergent properties arising from the interactions of those actors according to the rules defined by the software {cite}`ballandies2023taxonomy` {cite}`ballandies2022fundamentals`.
