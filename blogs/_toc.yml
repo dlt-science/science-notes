@@ -13,7 +13,8 @@ parts:
           - file: CCS/ccs 
       - file: STRUCTURE/innovation_4
         sections:
-          - file: METAVERSE/metaverse        
+          - file: METAVERSE/metaverse 
+          - file: DePin/DePin       
   - caption: Q4 2023
     numbered: False
     chapters:
