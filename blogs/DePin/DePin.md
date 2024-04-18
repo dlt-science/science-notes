@@ -4,20 +4,22 @@
 
 ```{admonition} Key Insights
 :class: tip
-
+- DePINs enhance transparency and user control, shifting management from centralised entities to a community-based model.
+- Blockchain and DLT enable secure, innovative applications like Filecoin, which democratises storage and rewards participation.
+- The tokenisation model in DePIN incentivises contributions (e.g., GPU power, storage) with tokens, sustaining network operations.
+- Zero-Knowledge Proofs (ZKPs) in DePIN ensure secure and private verification processes, enhancing data integrity.
+- DePINs require extensive infrastructure, potentially limiting participant access and risking centralisation by powerful entities like mining pools.
+- By decentralising storage and other services, DePIN could reduce costs by up to 70%, though user engagement and profitability remain critical for growth.
+- Successful expansion of DePIN depends on overcoming scalability, governance, and resource access challenges to achieve broader adoption.
 ```
-
-## Abstract
-
-Decentralisation stands as a pivotal method for ensuring information transparency. The emergence of blockchain and Decentralised Ledger Technology (DLT) has illuminated the prospects of integrating such innovations into various infrastructures. This article delves into the workings of this technology, its applications, and its implementation strategies. Moreover, we analyse the benefits of Decentralised Physical Infrastructure Networks (DePIN) alongside the concerns surrounding their use within physical infrastructures.
 
 ## Introduction
 
-Bitcoin introduced the concept of decentralisation as a peer-to-peer cash network {cite}`nakamoto2008bitcoin`. Decentralisation has been a main topic of discussion in recent trends {cite}`organisation2019making`. This concept has also been explored in the context of transitioning traditional physical networks towards decentralisation {cite}`ballandies2023taxonomy`.
+Decentralisation stands as a pivotal method for ensuring information transparency. The emergence of blockchain and Decentralised Ledger Technology (DLT) has illuminated the prospects of integrating such innovations into various infrastructures. Bitcoin introduced the concept of decentralisation as a peer-to-peer cash network {cite}`nakamoto2008bitcoin`. Decentralisation has been a main topic of discussion in recent trends {cite}`organisation2019making`. This concept has also been explored in the context of transitioning traditional physical networks towards decentralisation {cite}`ballandies2023taxonomy`.
 
 Numerous infrastructures, such as wireless networks, cloud storage, and computing, can benefit from decentralisation. DePIN, for instance, can be defined as an infrastructure network constructed, maintained, and operated through blockchain protocols within a decentralised and open network {cite}`lepcha2024decentralized`.
 
-The current solution provides a centralised infrastructure for users, such as AWS, where Amazon oversees controlling and maintaining the cloud services. Conversely, in a decentralised solution, the community and token holders assume responsibility for facilitating and delivering these services. The forthcoming sections will delve into the various advantages and drawbacks of such a platform.
+The current solution provides a centralised infrastructure for users, such as AWS, where Amazon oversees controlling and maintaining the cloud services. Conversely, in a decentralised solution, the community and token holders assume responsibility for facilitating and delivering these services. This science note delves into the workings of this technology, its applications, and its implementation strategies. Moreover, we analyse the benefits of Decentralised Physical Infrastructure Networks (DePIN) alongside the concerns surrounding their use within physical infrastructures.
 
 ## What is DePIN and How it Works
 
