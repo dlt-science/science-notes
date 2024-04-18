@@ -36,7 +36,15 @@ DePIN has garnered attention in recent developments for bridging decentralisatio
 
 Functioning as a crypto-economic system, DePIN comprises several components: i) individual autonomous actors, ii) economic policies embedded in software, iii) emergent properties arising from the interactions of those actors according to the rules defined by the software {cite}`ballandies2023taxonomy` {cite}`ballandies2022fundamentals`.
 
+`````{margin} **Tokenisation**
+Tokenisation is the process of converting assets or rights into digital tokens that can be recorded and managed. These tokens can represent a variety of assets or entitlements, enabling secure, transparent, and decentralised transactions within the network.
+`````
+
 At the core of DePIN's operation lies the tokenisation model, which incentivises participants to contribute essential resources to the network. This participation entails offering resources such as GPU power, hotspots, and storage. Users within the network benefit from transactions based on supply and demand dynamics, wherein they must use the provided token to access storage offered by network participants {cite}`ideasoft2023decentralized`.
+
+`````{margin} **Zero-Knowledge Proof**
+A ZKP is a cryptographic method that enables one party (the prover) to prove to another party (the verifier) that they possess a specific piece of information, without disclosing the information itself, apart from asserting its truth.
+`````
 
 Participant verification is essential in a vast network of users utilising their devices to sustain DePIN. Methods like Zero-Knowledge Proof (ZKP) enable the verification of new members while ensuring they possess the requisite equipment without revealing their credential information {cite}`sarkar2023generalised`.
 
