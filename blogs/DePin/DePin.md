@@ -67,8 +67,8 @@ Additionally, these networks often necessitate large-scale resources such as pow
 Although DePIN technology is on its path to revolutionising the decentralisation of physical infrastructure like sensors, storage, GPUs, and more, there are several concerns that need to be addressed. Proper implementation of these physical infrastructures can help to reduce costs, increase transparency, and enhance overall network resilience. DePINs also offer the potential to take control from centralised players like AWS, challenging them by empowering individuals to participate in the network with their equipment. As the technology develops, addressing these concerns effectively will be crucial to its success and widespread adoption. 
 
 
-<div style="text-align: right;font-weight: bold;"></div>
-<div style="text-align: right;font-style: italic;"></div>
+<div style="text-align: right;font-weight: bold;">Hamed Mousavi</div>
+<div style="text-align: right;font-style: italic;">March 2024</div>
 
 ## References
  
