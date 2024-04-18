@@ -25,8 +25,8 @@ The current solution provides a centralised infrastructure for users, such as AW
 
 ```{figure} images/depin.drawio.png
 ---
-width: 695.5px
-height: 739.5px
+width: 369.75px
+height: 347.75px
 name: depin_diagram
 ---
 DePIN Life Cycle.
@@ -60,7 +60,7 @@ Nevertheless, alongside the benefits come certain concerns. Profitability challe
 
 ## Advantages
 
-Ballandies et al. (2023) explore the advantages of employing DePINs across various domains. Firstly, decentralisation offers resilience and reliability to networks. Blockchain's transparency feature fosters trust among users by ensuring transparency while maintaining participant anonymity. Additionally, permissionless blockchain networks enhance scalability and utility within the infrastructure network {cite}`ballandies2023taxonomy`.
+Ballandies et al. {cite}`ballandies2023taxonomy` explore the advantages of employing DePINs across various domains. Firstly, decentralisation offers resilience and reliability to networks. Blockchain's transparency feature fosters trust among users by ensuring transparency while maintaining participant anonymity. Additionally, permissionless blockchain networks enhance scalability and utility within the infrastructure network.
 
 Cost efficiency emerges as another key benefit of DePIN networks. Adopting a decentralised approach akin to AWS may cut cloud storage costs by as much as 70%. Despite challenges in infrastructure development, this approach holds promise, particularly for smaller businesses {cite}`selkis202crypto`.
 
