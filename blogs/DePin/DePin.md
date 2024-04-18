@@ -15,7 +15,7 @@
 
 ## Introduction
 
-Decentralisation stands as a pivotal method for ensuring information transparency. The emergence of blockchain and Decentralised Ledger Technology (DLT) has illuminated the prospects of integrating such innovations into various infrastructures. Bitcoin introduced the concept of decentralisation as a peer-to-peer cash network {cite}`nakamoto2008bitcoin`. Decentralisation has been a main topic of discussion in recent trends {cite}`organisation2019making`. This concept has also been explored in the context of transitioning traditional physical networks towards decentralisation {cite}`ballandies2023taxonomy`.
+Decentralisation stands as a pivotal method for ensuring information transparency. The emergence of blockchain and Decentralised Ledger Technology (DLT) has illuminated the prospects of integrating such innovations into various infrastructures. Bitcoin introduced the concept of decentralisation as a peer-to-peer cash network {cite}`nakamoto2008bitcoin`. Decentralisation has been a main topic of discussion in recent trends {cite}`OECD2019making`. This concept has also been explored in the context of transitioning traditional physical networks towards decentralisation {cite}`ballandies2023taxonomy`.
 
 Numerous infrastructures, such as wireless networks, cloud storage, and computing, can benefit from decentralisation. DePIN, for instance, can be defined as an infrastructure network constructed, maintained, and operated through blockchain protocols within a decentralised and open network {cite}`lepcha2024decentralized`.
 
